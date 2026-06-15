@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ultimate AI/ML & GenAI Developer Roadmap</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0a0c10;
+    --surface: #111318;
+    --surface2: #181c24;
+    --border: #1f2535;
+    --accent: #6366f1;
+    --accent2: #a78bfa;
+    --accent3: #38bdf8;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --green: #34d399;
+    --phase1: #f59e0b;
+    --phase2: #06b6d4;
+    --phase3: #8b5cf6;
+    --phase4: #10b981;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid scanline texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .content { position: relative; z-index: 1; }
+
+  /* Hero */
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #6366f1, #a78bfa, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Progress bar */
+  .progress-track {
+    background: var(--border);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    background: linear-gradient(90deg, #6366f1, #a78bfa);
+    border-radius: 99px;
+    height: 100%;
+    transition: width 0.6s ease;
+  }
+
+  /* Phase card */
+  .phase-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+  .phase-card:hover { border-color: var(--accent); }
+
+  .phase-header {
+    padding: 24px 28px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .phase-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    padding: 3px 10px;
+    border-radius: 4px;
+    opacity: 0.9;
+  }
+
+  /* Category group */
+  .category-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  /* Skill wrapper & chip */
+  .skill-wrapper {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  .skill-wrapper:hover {
+    border-color: var(--accent);
+  }
+  .skill-wrapper.done-main {
+    border-color: rgba(52,211,153,0.3);
+  }
+
+  .skill-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .skill-wrapper.done-main .skill-chip {
+    background: rgba(52,211,153,0.05);
+  }
+  
+  .skill-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .chip-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .skill-wrapper.done-main .chip-checkbox {
+    background: var(--green);
+    border-color: var(--green);
+  }
+  .chip-text {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+    transition: color 0.2s;
+  }
+  .skill-wrapper.done-main .chip-text {
+    color: var(--green);
+  }
+
+  /* Dropdown arrow for subskills */
+  .sub-chevron {
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    opacity: 0.5;
+  }
+  .skill-wrapper.open .sub-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Sub-skills dropdown container */
+  .sub-skills-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    background: rgba(0,0,0,0.15);
+  }
+  .skill-wrapper.open .sub-skills-container {
+    max-height: 1500px;
+    border-top: 1px dashed var(--border);
+  }
+  .sub-skills-list {
+    padding: 8px 14px 12px 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  /* Sub-skill item */
+  .sub-skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .sub-skill-item:hover {
+    background: rgba(255,255,255,0.03);
+  }
+  .sub-chip-checkbox {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .sub-skill-item.done .sub-chip-checkbox {
+    background: var(--accent3);
+    border-color: var(--accent3);
+  }
+  .sub-chip-text {
+    font-size: 0.8rem;
+    color: var(--muted);
+    transition: all 0.2s;
+  }
+  .sub-skill-item.done .sub-chip-text {
+    color: var(--accent3);
+    text-decoration: line-through;
+    opacity: 0.8;
+  }
+
+  /* Phase body collapse */
+  .phase-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), padding 0.3s;
+    padding: 0 28px;
+  }
+  .phase-body.open {
+    max-height: 5000px;
+    padding: 0 28px 28px;
+  }
+
+  /* Chevron */
+  .chevron {
+    transition: transform 0.3s;
+    flex-shrink: 0;
+  }
+  .chevron.open { transform: rotate(180deg); }
+
+  /* Phase progress mini bar */
+  .phase-mini-bar {
+    height: 4px;
+    border-radius: 99px;
+    background: var(--border);
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .phase-mini-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.4s ease;
+  }
+
+  /* Consolidated grid */
+  .skill-table td, .skill-table th {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  .skill-table th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .skill-table tr:last-child td { border-bottom: none; }
+  .skill-table tr:hover td { background: var(--surface2); }
+
+  /* Stat box */
+  .stat-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  /* Tag pill */
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    font-weight: 500;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  @media (max-width: 640px) {
+    .phase-header { padding: 18px 18px; }
+    .phase-body.open { padding: 0 18px 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="content max-w-4xl mx-auto px-4 py-12 sm:px-6">
+
+  <header class="mb-12">
+    <div class="mb-4 flex items-center gap-3">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.15em;color:var(--accent);background:rgba(99,102,241,0.1);padding:4px 12px;border-radius:4px;border:1px solid rgba(99,102,241,0.25)">LEARNING ROADMAP v4.0 (PRO LEVEL)</span>
+    </div>
+    <h1 class="hero-title mb-3">
+      Ultimate <span class="gradient-text">AI/ML & GenAI</span><br/>Developer Roadmap
+    </h1>
+    <p style="color:var(--muted);font-size:0.95rem;max-width:560px;line-height:1.7">
+      Click on any skill to expand and track your progress from Beginner to Pro level.
+    </p>
+
+    <div class="mt-8 p-5 rounded-2xl" style="background:var(--surface);border:1px solid var(--border)">
+      <div class="flex items-center justify-between mb-3">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;color:var(--muted)">OVERALL PROGRESS (MAIN + SUB SKILLS)</span>
+        <span id="global-pct" style="font-family:'JetBrains Mono',monospace;font-size:0.9rem;font-weight:600;color:var(--accent2)">0%</span>
+      </div>
+      <div class="progress-track" style="height:8px">
+        <div id="global-bar" class="progress-fill" style="width:0%"></div>
+      </div>
+      <div class="flex justify-between mt-3">
+        <span id="global-count" style="font-size:0.8rem;color:var(--muted)">0 / 0 checkpoints completed</span>
+        <button onclick="resetAll()" style="font-size:0.75rem;color:var(--muted);cursor:pointer;text-decoration:underline;background:none;border:none;font-family:inherit">Reset all</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4" id="stats-grid">
+      </div>
+  </header>
+
+  <section class="mb-14 space-y-4" id="phases-container">
+    </section>
+
+  <section class="mb-14">
+    <div class="mb-6">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.15em;color:var(--muted)">SUMMARY</p>
+      <h2 style="font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;margin-top:4px">Consolidated Skills</h2>
+    </div>
+    <div class="phase-card overflow-x-auto">
+      <table class="skill-table w-full">
+        <thead>
+          <tr style="background:var(--surface2)">
+            <th>Category</th>
+            <th>Targeted Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--phase1);font-weight:600;white-space:nowrap">Core Dev</td>
+            <td><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">Python</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">Java</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">DSA</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">OOP</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">Clean Code</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">SOLID</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">Design Patterns</span><span class="tag" style="background:rgba(245,158,11,0.1);color:var(--phase1)">Git/GitHub</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--phase2);font-weight:600;white-space:nowrap">Data & DB</td>
+            <td><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">SQL</span><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">MySQL</span><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">PostgreSQL</span><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">NumPy</span><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">Pandas</span><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">EDA</span><span class="tag" style="background:rgba(6,182,212,0.1);color:var(--phase2)">Feature Engineering</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--phase3);font-weight:600;white-space:nowrap">ML / DL</td>
+            <td><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">Scikit-learn</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">PyTorch</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">TensorFlow</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">CNN</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">RNN/LSTM</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">NLP</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">Computer Vision</span><span class="tag" style="background:rgba(139,92,246,0.1);color:var(--phase3)">Dimensionality Reduction</span></td>
+          </tr>
+          <tr>
+            <td style="color:#c084fc;font-weight:600;white-space:nowrap">GenAI</td>
+            <td><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">LLMs</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">LangChain</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">RAG</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">Prompt Eng.</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">Vector DBs</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">Embeddings</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">LLM Security</span><span class="tag" style="background:rgba(192,132,252,0.1);color:#c084fc">AI Ethics</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--phase4);font-weight:600;white-space:nowrap">Ops & Cloud</td>
+            <td><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">AWS/GCP/Azure</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">Docker</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">Kubernetes</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">FastAPI</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">MLOps</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">CI/CD</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">Model Optimization</span><span class="tag" style="background:rgba(16,185,129,0.1);color:var(--phase4)">ONNX/TensorRT</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+<script>
+// Exhaustive Dataset with Sub-skills for AI/ML Developer (Beginner to Pro Level)
+const PHASES = [
+  {
+    id: 'phase1',
+    number: '01',
+    color: '#f59e0b',
+    title: 'The Foundation',
+    subtitle: 'Building blocks for a robust AI Engineer.',
+    categories: [
+      {
+        label: 'Version Control & Collaboration',
+        skills: [
+          { name: 'Git & GitHub', subs: ['Git Basics (init, add, commit, push)', 'Branching Strategies', 'Pull Requests (PRs) & Code Reviews', 'Merge Conflict Resolution', 'Git Stash & Rebase'] }
+        ]
+      },
+      {
+        label: 'Programming',
+        skills: [
+          { name: 'Python (Advanced Proficiency)', subs: ['Syntax, Variables & Data Types', 'Control Flow (If/Else, Loops)', 'Lists, Dicts, Sets & Tuples', 'Functions, Lambda & Map/Filter', 'OOP & Magic Methods', 'Decorators & Generators', 'Context Managers (with statement)', 'Multithreading & Asyncio', 'Memory Management (GIL)', 'Virtual Environments & Packaging'] },
+          { name: 'Java (High-Performance Systems)', subs: ['JVM Architecture Basics', 'Data Types & Control Structures', 'OOPs in Java', 'Collections Framework', 'Multithreading & Concurrency', 'Streams API & Lambdas', 'Maven/Gradle Build Tools'] }
+        ]
+      },
+      {
+        label: 'Software Engineering',
+        skills: [
+          { name: 'Data Structures & Algorithms (DSA)', subs: ['Time & Space Complexity (Big O)', 'Arrays & Strings', 'Hash Maps & Sets', 'Linked Lists, Stacks & Queues', 'Trees & Graphs (BFS/DFS)', 'Sorting & Searching Algorithms', 'Dynamic Programming Basics'] },
+          { name: 'Object-Oriented Programming (OOP)', subs: ['Classes & Objects', 'Inheritance', 'Polymorphism', 'Encapsulation', 'Abstraction', 'Interfaces & Abstract Classes'] },
+          { name: 'Clean Code Principles', subs: ['Meaningful Naming Conventions', 'DRY (Don\'t Repeat Yourself)', 'KISS (Keep It Simple, Stupid)', 'YAGNI Principle', 'Refactoring Techniques', 'Exception & Error Handling'] },
+          { name: 'SOLID Principles', subs: ['Single Responsibility Principle', 'Open/Closed Principle', 'Liskov Substitution Principle', 'Interface Segregation', 'Dependency Inversion'] },
+          { name: 'Design Patterns', subs: ['Factory Pattern', 'Singleton Pattern', 'Observer Pattern', 'Strategy Pattern', 'Decorator Pattern', 'Adapter Pattern'] }
+        ]
+      },
+      {
+        label: 'Mathematics',
+        skills: [
+          { name: 'Statistics & Probability', subs: ['Mean, Median, Mode & Variance', 'Probability Distributions (Normal, Binomial, Poisson)', 'Bayes Theorem', 'Hypothesis Testing (A/B Testing)', 'P-values & Confidence Intervals'] },
+          { name: 'Linear Algebra', subs: ['Vectors & Matrices', 'Dot Product & Matrix Multiplication', 'Eigenvalues & Eigenvectors', 'Singular Value Decomposition (SVD)', 'Mathematics behind PCA'] },
+          { name: 'Calculus', subs: ['Derivatives & Partial Derivatives', 'Chain Rule', 'Gradients', 'Gradient Descent Intuition', 'Optimization Techniques'] }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'phase2',
+    number: '02',
+    color: '#06b6d4',
+    title: 'Data Handling & ML Mastery',
+    subtitle: 'Core competencies to build and train AI models.',
+    categories: [
+      {
+        label: 'Data Handling',
+        skills: [
+          { name: 'NumPy', subs: ['N-dimensional Arrays', 'Indexing & Slicing', 'Broadcasting', 'Vectorized Operations', 'Matrix Operations'] },
+          { name: 'Pandas (Data Manipulation)', subs: ['Series & DataFrames', 'Data Cleaning & Handling Missing Values', 'GroupBy & Aggregations', 'Merging, Joining & Concatenating', 'Time Series Data Handling'] },
+          { name: 'Feature Engineering', subs: ['Categorical Encoding (One-Hot, Label, Target)', 'Feature Scaling (MinMax, Standard, Robust)', 'Handling Outliers & Anomalies', 'Feature Selection Techniques'] },
+          { name: 'Exploratory Data Analysis (EDA)', subs: ['Data Visualization (Matplotlib, Seaborn)', 'Correlation Matrices & Heatmaps', 'Distribution & Variance Analysis', 'Pandas Profiling'] }
+        ]
+      },
+      {
+        label: 'Databases',
+        skills: [
+          { name: 'SQL Basics & Advanced', subs: ['SELECT, WHERE, GROUP BY, HAVING', 'JOINS (Inner, Left, Right, Full)', 'Subqueries & CTEs', 'Window Functions (RANK, ROW_NUMBER, LEAD/LAG)', 'Query Optimization & Explain Plans'] },
+          { name: 'RDBMS & NoSQL', subs: ['MySQL & PostgreSQL Internals', 'Table Creation, Data Types & Normalization', 'Database Indexing for Performance', 'JSON Operations in Postgres', 'MongoDB Basics (NoSQL)'] }
+        ]
+      },
+      {
+        label: 'Machine Learning',
+        skills: [
+          { name: 'Scikit-learn', subs: ['Model Pipelines', 'Train-Test-Validation Split', 'K-Fold Cross-Validation', 'Hyperparameter Tuning (GridSearch, RandomSearch)'] },
+          { name: 'Supervised Learning', subs: ['Linear & Logistic Regression', 'Decision Trees', 'Random Forests', 'Support Vector Machines (SVM)', 'Gradient Boosting (XGBoost, LightGBM, CatBoost)'] },
+          { name: 'Unsupervised Learning & Dimensionality Reduction', subs: ['K-Means Clustering', 'Hierarchical Clustering', 'DBSCAN', 'PCA (Principal Component Analysis)', 't-SNE & UMAP', 'Anomaly Detection'] },
+          { name: 'Model Evaluation', subs: ['Accuracy, Precision, Recall, F1-Score', 'ROC-AUC Curve', 'Confusion Matrix', 'Mean Squared/Absolute Error (MSE, MAE, RMSE)', 'Log-Loss'] }
+        ]
+      },
+      {
+        label: 'Deep Learning',
+        skills: [
+          { name: 'Neural Networks Basics', subs: ['Perceptrons & Multi-Layer Perceptrons', 'Activation Functions (ReLU, Sigmoid, Tanh, Softmax)', 'Forward & Backpropagation', 'Loss Functions (Cross-Entropy, MSE)', 'Optimizers (Adam, SGD, RMSprop)'] },
+          { name: 'TensorFlow / PyTorch', subs: ['Tensors & Autograd', 'Building Custom Datasets & DataLoaders', 'Model Class Definition', 'Custom Training & Evaluation Loops', 'Saving & Loading Models'] },
+          { name: 'CNN (Computer Vision)', subs: ['Convolutional Layers, Strides & Padding', 'Max & Average Pooling', 'Image Augmentation Techniques', 'Transfer Learning (ResNet, VGG, EfficientNet, YOLO)', 'Object Detection & Image Segmentation Basics'] },
+          { name: 'RNN / LSTM (Sequence Data)', subs: ['Handling Sequential/Time-Series Data', 'RNN, LSTM & GRU Architectures', 'Text & Time-series Forecasting', 'Attention Mechanism Basics'] }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'phase3',
+    number: '03',
+    color: '#8b5cf6',
+    title: 'Modern AI & Generative AI',
+    subtitle: 'Highest-demand skills in the current job market.',
+    categories: [
+      {
+        label: 'LLMs & GenAI',
+        skills: [
+          { name: 'Transformers Architecture', subs: ['Self-Attention Mechanism', 'Encoder-Decoder Intuition', 'Positional Encoding'] },
+          { name: 'OpenAI APIs & Hugging Face', subs: ['Chat Completions API', 'Hugging Face Transformers Library', 'Model Hub, Pipelines & Tokenizers'] },
+          { name: 'Open Source LLMs', subs: ['LLaMA Architecture', 'Mistral & Mixture of Experts (MoE)', 'Running Local Models (Ollama, vLLM, GGUF formats)'] },
+          { name: 'Fine-tuning Techniques', subs: ['Transfer Learning for LLMs', 'LoRA (Low-Rank Adaptation)', 'QLoRA & Parameter-Efficient Fine-Tuning (PEFT)', 'RLHF & DPO Basics'] }
+        ]
+      },
+      {
+        label: 'Agentic Frameworks',
+        skills: [
+          { name: 'LangChain', subs: ['Prompts, Templates & Chains', 'Memory Components', 'Output Parsers', 'Custom Tools Integration', 'Document Loaders & Text Splitters'] },
+          { name: 'LangGraph & AI Agents', subs: ['Stateful Workflows & Graphs', 'ReAct Agent Logic', 'Multi-Agent Systems Basics', 'Tool Routing'] },
+          { name: 'No-Code/Low-Code AI', subs: ['Flowise Basics', 'Langflow Workflows'] }
+        ]
+      },
+      {
+        label: 'Prompt Engineering',
+        skills: [
+          { name: 'Advanced Prompting Techniques', subs: ['Zero-shot & Few-shot Prompting', 'Chain of Thought (CoT)', 'Tree of Thoughts', 'System vs User Prompts'] },
+          { name: 'Function / Tool Calling', subs: ['Defining JSON Schemas for Tools', 'Handling API responses dynamically in LLMs'] },
+          { name: 'Model Evaluation (Evals)', subs: ['Automated LLM Testing', 'BLEU & ROUGE Scores', 'LLM-as-a-Judge', 'RAGAS Framework Basics'] }
+        ]
+      },
+      {
+        label: 'AI Security & Guardrails',
+        skills: [
+          { name: 'LLM Security & Ethics', subs: ['OWASP Top 10 for LLMs', 'Prompt Injection Defense', 'Data Privacy & PII Scrubbing', 'AI Ethics & Bias Mitigation', 'NeMo Guardrails & Input Filtering'] }
+        ]
+      },
+      {
+        label: 'Advanced Data Tech',
+        skills: [
+          { name: 'Embeddings', subs: ['Text to Vector Conversion', 'Semantic Meaning Capture', 'OpenAI vs HuggingFace Embeddings', 'Cross-Encoders vs Bi-Encoders'] },
+          { name: 'Vector Databases', subs: ['ChromaDB Setup & Usage', 'Pinecone / Milvus Integration', 'Cosine Similarity & Distance Metrics', 'HNSW Indexing Algorithms'] },
+          { name: 'RAG Pipelines', subs: ['Document Chunking Strategies', 'Vector Store Integration', 'Advanced Retrieval (Hybrid Search, BM25)', 'Generation with Context (RAG)'] }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'phase4',
+    number: '04',
+    color: '#10b981',
+    title: 'MLOps, Cloud & Production',
+    subtitle: 'Make your models scalable and production-ready.',
+    categories: [
+      {
+        label: 'Cloud Platforms',
+        skills: [
+          { name: 'AWS (Amazon Web Services)', subs: ['EC2 & S3 Basics', 'SageMaker for ML Lifecycle', 'IAM Roles & Security', 'API Gateway'] },
+          { name: 'GCP (Google Cloud Platform)', subs: ['Compute Engine', 'Cloud Storage', 'Vertex AI (Model Training & Deployment)', 'Cloud Run (Serverless Deployments)'] },
+          { name: 'Azure', subs: ['Azure AI Services', 'Azure Machine Learning Studio', 'OpenAI Service on Azure'] }
+        ]
+      },
+      {
+        label: 'Deployment & Optimization',
+        skills: [
+          { name: 'REST APIs', subs: ['FastAPI (Routing, Async, Endpoints)', 'Flask (Basics)', 'Pydantic Data Validation', 'Swagger UI integration'] },
+          { name: 'Docker (Containerization)', subs: ['Writing Dockerfiles', 'Building & Managing Images', 'Docker Compose for Multi-Container Apps', 'Multi-stage Builds'] },
+          { name: 'Kubernetes', subs: ['Pods & Nodes', 'Deployments & Services', 'Scaling ML Workloads', 'Helm Charts Basics'] },
+          { name: 'Model Optimization & Hardware', subs: ['ONNX (Open Neural Network Exchange)', 'TensorRT for Inference Acceleration', 'Model Quantization (FP16, INT8)', 'Model Pruning'] }
+        ]
+      },
+      {
+        label: 'MLOps',
+        skills: [
+          { name: 'Experiment Tracking', subs: ['MLflow Setup & Usage', 'Logging Metrics & Models', 'Model Registry'] },
+          { name: 'Monitoring', subs: ['Model Drift Detection & Data Quality', 'Prometheus Setup', 'Grafana Dashboards'] },
+          { name: 'CI/CD Pipelines', subs: ['GitHub Actions Setup', 'Automated Testing for ML code (PyTest)', 'Continuous Deployment workflows'] }
+        ]
+      },
+      {
+        label: 'System Engineering',
+        skills: [
+          { name: 'Distributed Systems', subs: ['Message Queues (Kafka, RabbitMQ)', 'Load Balancing Concepts', 'Microservices Architecture Basics'] },
+          { name: 'Real-time Data Engineering', subs: ['Streaming Data Processing', 'WebSocket Integration for Fast AI APIs'] }
+        ]
+      }
+    ]
+  }
+];
+
+// Storage helpers
+function loadState() {
+  try { return JSON.parse(localStorage.getItem('aiml-roadmap-v4') || '{}'); } catch { return {}; }
+}
+function saveState(state) {
+  localStorage.setItem('aiml-roadmap-v4', JSON.stringify(state));
+}
+
+// Check SVG Icon
+const checkIcon = `<svg width="11" height="8" viewBox="0 0 11 8" fill="none"><path d="M1 4L4 7L10 1" stroke="#0a0c10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const subCheckIcon = `<svg width="9" height="7" viewBox="0 0 11 8" fill="none"><path d="M1 4L4 7L10 1" stroke="#0a0c10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+// Helpers for counting
+function countTotalCheckpoints() {
+  let total = 0;
+  PHASES.forEach(p => p.categories.forEach(c => {
+    c.skills.forEach(s => {
+      total += 1; // main skill
+      total += s.subs.length; // sub skills
+    });
+  }));
+  return total;
+}
+function countPhaseTotal(phase) {
+  let total = 0;
+  phase.categories.forEach(c => c.skills.forEach(s => {
+    total += 1 + s.subs.length;
+  }));
+  return total;
+}
+function countDone(state) {
+  return Object.values(state).filter(Boolean).length;
+}
+function countPhaseDone(phaseId, state) {
+  return Object.entries(state).filter(([k, v]) => v && k.startsWith(phaseId + '__')).length;
+}
+
+// Global update
+function updateGlobal(state) {
+  const total = countTotalCheckpoints();
+  const done = countDone(state);
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  
+  document.getElementById('global-bar').style.width = pct + '%';
+  document.getElementById('global-pct').textContent = pct + '%';
+  document.getElementById('global-count').textContent = `${done} / ${total} checkpoints completed`;
+
+  PHASES.forEach(p => {
+    const pDone = countPhaseDone(p.id, state);
+    const pTotal = countPhaseTotal(p);
+    const pPct = pTotal ? Math.round((pDone/pTotal)*100) : 0;
+    
+    const el = document.getElementById('stat-' + p.id);
+    if (el) el.textContent = pDone + '/' + pTotal;
+    
+    const bar = document.getElementById('pbar-' + p.id);
+    if (bar) bar.style.width = pPct + '%';
+    
+    const pctEl = document.getElementById('ppct-' + p.id);
+    if (pctEl) pctEl.textContent = pPct + '%';
+  });
+}
+
+// Interactions
+function toggleMainSkill(e, id, el) {
+  e.stopPropagation(); // prevent dropdown toggle
+  const state = loadState();
+  state[id] = !state[id];
+  saveState(state);
+  
+  const wrapper = el.closest('.skill-wrapper');
+  wrapper.classList.toggle('done-main', state[id]);
+  el.innerHTML = state[id] ? checkIcon : '';
+  updateGlobal(state);
+}
+
+function toggleSubSkill(e, id, el) {
+  e.stopPropagation();
+  const state = loadState();
+  state[id] = !state[id];
+  saveState(state);
+  
+  const item = el.closest('.sub-skill-item');
+  item.classList.toggle('done', state[id]);
+  item.querySelector('.sub-chip-checkbox').innerHTML = state[id] ? subCheckIcon : '';
+  updateGlobal(state);
+}
+
+function toggleDropdown(el) {
+  const wrapper = el.closest('.skill-wrapper');
+  wrapper.classList.toggle('open');
+}
+
+function resetAll() {
+  if (!confirm('Reset all progress?')) return;
+  saveState({});
+  
+  document.querySelectorAll('.skill-wrapper.done-main').forEach(c => {
+    c.classList.remove('done-main');
+    c.querySelector('.chip-checkbox').innerHTML = '';
+  });
+  
+  document.querySelectorAll('.sub-skill-item.done').forEach(c => {
+    c.classList.remove('done');
+    c.querySelector('.sub-chip-checkbox').innerHTML = '';
+  });
+  
+  updateGlobal({});
+}
+
+function togglePhase(id) {
+  const body = document.getElementById('body-' + id);
+  const chevron = document.getElementById('chev-' + id);
+  body.classList.toggle('open');
+  chevron.classList.toggle('open');
+}
+
+// Render Initial UI
+function renderStats() {
+  const grid = document.getElementById('stats-grid');
+  grid.innerHTML = PHASES.map(p => `
+    <div class="stat-box">
+      <div class="stat-num" style="color:${p.color}" id="stat-${p.id}">0/${countPhaseTotal(p)}</div>
+      <div style="font-size:0.72rem;color:var(--muted);margin-top:4px;font-family:'JetBrains Mono',monospace">Phase ${p.number}</div>
+    </div>
+  `).join('');
+}
+
+function renderPhases() {
+  const state = loadState();
+  const container = document.getElementById('phases-container');
+  
+  container.innerHTML = PHASES.map(p => {
+    const pTotal = countPhaseTotal(p);
+    const pDone = countPhaseDone(p.id, state);
+    const pPct = pTotal ? Math.round((pDone / pTotal) * 100) : 0;
+
+    const categoriesHtml = p.categories.map(cat => `
+      <div class="mb-6">
+        <div class="category-label">${cat.label}</div>
+        <div class="grid grid-cols-1 gap-2">
+          ${cat.skills.map((skill, idx) => {
+            const mainId = `${p.id}__${cat.label.replace(/\s/g,'')}__${idx}__main`;
+            const mainDone = !!state[mainId];
+            
+            const subsHtml = skill.subs.map((sub, sIdx) => {
+              const subId = `${mainId}__sub__${sIdx}`;
+              const subDone = !!state[subId];
+              return `
+                <div class="sub-skill-item ${subDone ? 'done' : ''}" onclick="toggleSubSkill(event, '${subId}', this)">
+                  <div class="sub-chip-checkbox">${subDone ? subCheckIcon : ''}</div>
+                  <span class="sub-chip-text">${sub}</span>
+                </div>
+              `;
+            }).join('');
+
+            return `
+              <div class="skill-wrapper ${mainDone ? 'done-main' : ''}">
+                <div class="skill-chip" onclick="toggleDropdown(this)">
+                  <div class="chip-checkbox" onclick="toggleMainSkill(event, '${mainId}', this)">
+                    ${mainDone ? checkIcon : ''}
+                  </div>
+                  <div class="skill-header-content">
+                    <span class="chip-text">${skill.name}</span>
+                    <svg class="sub-chevron" width="16" height="16" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="sub-skills-container">
+                  <div class="sub-skills-list">
+                    ${subsHtml}
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    return `
+      <div class="phase-card">
+        <div class="phase-header" onclick="togglePhase('${p.id}')">
+          <div style="flex:1;min-width:0">
+            <div class="flex items-center gap-2 mb-1 flex-wrap">
+              <span class="phase-number" style="background:${p.color}22;color:${p.color};border:1px solid ${p.color}44">PHASE ${p.number}</span>
+              <span id="ppct-${p.id}" style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--muted)">${pPct}%</span>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;letter-spacing:-0.01em">${p.title}</h3>
+            <p style="font-size:0.82rem;color:var(--muted);margin-top:2px">${p.subtitle}</p>
+            <div class="phase-mini-bar mt-3">
+              <div class="phase-mini-fill" id="pbar-${p.id}" style="width:${pPct}%;background:${p.color}"></div>
+            </div>
+          </div>
+          <svg id="chev-${p.id}" class="chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="phase-body" id="body-${p.id}">
+          <div style="border-top:1px solid var(--border);padding-top:22px">
+            ${categoriesHtml}
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Open phase 1 by default if nothing done
+  if (countDone(state) === 0) togglePhase('phase1');
+}
+
+// Init
+renderStats();
+renderPhases();
+updateGlobal(loadState());
+</script>
+</body>
+</html>
