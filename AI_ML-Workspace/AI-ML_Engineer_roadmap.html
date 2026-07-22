@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate AI/ML Engineer Career Roadmap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-glass: rgba(30, 41, 59, 0.7);
+            --text-primary: #f8fafc; --text-secondary: #94a3b8;
+            --accent-primary: #38bdf8; --accent-secondary: #818cf8; --border-color: rgba(255, 255, 255, 0.1);
+            --success: #34d399; --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            --gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            --gradient-alt: linear-gradient(135deg, #f43f5e, #fb923c);
+            --gradient-success: linear-gradient(135deg, #10b981, #34d399);
+        }
+        [data-theme="light"] {
+            --bg-primary: #f8fafc; --bg-secondary: #ffffff; --bg-glass: rgba(255, 255, 255, 0.8);
+            --text-primary: #0f172a; --text-secondary: #475569;
+            --accent-primary: #0284c7; --accent-secondary: #4f46e5; --border-color: rgba(0, 0, 0, 0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); overflow-x: hidden; }
+        #app { display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Sidebar */
+        .sidebar { width: 340px; background: var(--bg-glass); backdrop-filter: blur(12px); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; overflow-y: auto; padding: 1.5rem; z-index: 10; }
+        .logo { font-size: 1.5rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 2rem; }
+        .nav-item { padding: 1rem; margin-bottom: 0.5rem; border-radius: 12px; cursor: pointer; border: 1px solid transparent; display: flex; justify-content: space-between; align-items: center; }
+        .nav-item:hover { background: rgba(255, 255, 255, 0.05); transform: translateX(5px); }
+        .nav-item.active { background: var(--gradient); color: #fff; box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3); }
+        
+        /* Main Content */
+        .main-content { flex: 1; overflow-y: auto; padding: 2rem 4rem; scroll-behavior: smooth; }
+        .topbar { display: flex; justify-content: space-between; margin-bottom: 2rem; }
+        .btn { padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-weight: 600; }
+        .btn:hover { background: var(--accent-primary); color: #fff; }
+        
+        .header-card { background: var(--bg-glass); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; }
+        .header-title { font-size: 2.5rem; font-weight: 800; color: var(--accent-primary); margin-bottom: 1rem; }
+        
+        /* Nested Accordion UI */
+        .children-list { list-style: none; padding-left: 0; margin-top: 0.5rem; }
+        .leaf-node { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.4rem 0.4rem 1.5rem; font-size: 0.95rem; color: var(--text-secondary); border-left: 2px solid transparent; }
+        .leaf-node:hover { color: var(--text-primary); border-left-color: var(--accent-secondary); background: rgba(255,255,255,0.02); }
+        .leaf-node .bullet { color: var(--accent-primary); }
+        
+        .nested-card { margin-top: 0.5rem; border-radius: 8px; border: 1px solid transparent; transition: all 0.2s; border-left: 2px solid var(--border-color); padding-left: 0.5rem; }
+        .nested-card.depth-0 { border: 1px solid var(--border-color); background: var(--bg-secondary); margin-bottom: 1.5rem; padding-left: 0; border-left: none; }
+        .nested-header { padding: 0.8rem; cursor: pointer; user-select: none; border-radius: 6px; transition: background 0.2s; }
+        .nested-header:hover { background: rgba(255,255,255,0.03); }
+        .nested-card.depth-0 > .nested-header { padding: 1.2rem; font-size: 1.2rem; background: rgba(0,0,0,0.2); }
+        .chevron { display: inline-block; transition: transform 0.3s; font-size: 0.8rem; width: 1.2rem; }
+        .nested-card.expanded > .nested-header .chevron { transform: rotate(90deg); }
+        .node-title { font-weight: 600; }
+        .nested-card.completed > .nested-header .node-title { text-decoration: line-through; opacity: 0.6; }
+        .nested-body { padding-left: 1rem; padding-bottom: 0.5rem; display: none; }
+        .nested-card.expanded > .nested-body { display: block; animation: fadeIn 0.3s ease; }
+        input[type="checkbox"] { width: 1.1rem; height: 1.1rem; accent-color: var(--accent-primary); cursor: pointer; }
+        
+        .node-details { margin-top: 1rem; padding: 1rem; background: rgba(0,0,0,0.15); border-radius: 8px; border-left: 3px solid var(--accent-secondary); }
+        .node-details h5 { color: var(--accent-primary); margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .node-details ul { padding-left: 1.2rem; margin-bottom: 1rem; font-size: 0.9rem; color: var(--text-secondary); }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+        .tag { background: #0f172a; border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; color: var(--accent-primary); }
+        
+        /* Checklists */
+        .checklists-section { margin-top: 3rem; padding: 2rem; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color); }
+        .checklist-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .checklist-col h4 { font-size: 1.1rem; color: var(--accent-primary); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        .checklist-item { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem; font-size: 0.9rem; color: var(--text-secondary); }
+        .checklist-item.checked { text-decoration: line-through; opacity: 0.6; }
+
+        /* Projects */
+        .projects-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px dashed var(--border-color); }
+        .tier-title { margin: 2rem 0 1rem 0; font-size: 1.5rem; color: #fff; display: flex; align-items: center; gap: 0.5rem; }
+        .top5-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .top5-card { background: var(--bg-glass); border: 1px solid var(--accent-primary); border-radius: 12px; padding: 1.5rem; position: relative; overflow: hidden; }
+        .top5-card.intermediate { border-color: var(--accent-secondary); }
+        .top5-card.advanced { border-color: #fb923c; }
+        .top5-card::before { content: ''; position: absolute; top:0; left:0; width:100%; height:4px; background: var(--gradient); }
+        .top5-card.advanced::before { background: var(--gradient-alt); }
+        .top5-number { position: absolute; top: -10px; right: 10px; font-size: 4rem; font-weight: 800; opacity: 0.1; color: var(--text-primary); }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <aside class="sidebar">
+        <div class="logo">AI/ML Roadmap</div>
+        <div id="nav-items"></div>
+    </aside>
+    <main class="main-content">
+        <div class="topbar">
+            <button class="btn" onclick="toggleTheme()">🌓 Theme</button>
+            <button class="btn" onclick="window.print()">🖨️ Save PDF</button>
+        </div>
+        <div id="content-area"></div>
+    </main>
+</div>
+
+<script>
+const roadmapData = [
+    {
+        phase: "PHASE 0",
+        title: "Setup, CS Foundations & Data Structures",
+        overview: { why: "AI relies on scalable computing and optimal algorithms. Missing these leads to slow and inefficient models.", duration: "3 Weeks" },
+        skills: [
+            {
+                name: "Development Environment & OS",
+                children: [
+                    { name: "Operating Systems", children: ["Kernel Architecture", "Memory Management (Paging, Virtual Memory, Swap)", "Processes vs Threads", "Context Switching", "Deadlocks & Semaphores", "Concurrency basics", "File Systems", "Inter-process Communication (IPC)", "Interview Questions"] },
+                    { name: "Linux Basics", children: ["File Hierarchy Standard (FHS)", "User & Group Management", "Permissions (chmod, chown, umask)", "Package Managers (apt, yum, pacman)", "Daemons & Services (systemd)", "Environment Variables", "SSH Configuration", "Interview Questions"] },
+                    { name: "CLI & Bash", children: ["Navigation (cd, ls, pwd)", "File Manipulation (cp, mv, rm, touch, mkdir)", "Searching (grep, find, awk, sed)", "Networking (curl, wget, ping, netstat)", "Bash Scripting (variables, loops, conditions, cron jobs)", "Piping & Redirection", "Aliases", "Interview Questions"] },
+                    { name: "Tools", children: ["VS Code / PyCharm", "Jupyter Notebooks", "SSH (Keys, Config)", "Tmux / Screen", "Docker Desktop", "Postman / Insomnia"] }
+                ]
+            },
+            {
+                name: "Version Control & Git",
+                children: [
+                    { name: "Core", children: ["init", "add", "commit", "status", "log", "diff", "blame", "rm", "mv", ".gitignore"] },
+                    { name: "Branching", children: ["branch", "checkout", "switch", "merge", "Merge Conflicts", "Git Flow", "Feature Branching Strategy", "Pull Requests / Merge Requests"] },
+                    { name: "Advanced", children: ["rebase", "Interactive rebase (-i)", "stash", "cherry-pick", "reset (--soft, --mixed, --hard)", "revert", "reflog", "Submodules", "Squashing Commits", "Interview Questions"] }
+                ]
+            },
+            {
+                name: "Data Structures",
+                children: [
+                    { name: "Basic", children: ["Arrays", "Strings", "Linked Lists (Singly, Doubly, Circular)", "Stack", "Queue", "Deque", "Memory Allocation (Contiguous vs Non-Contiguous)", "Interview Questions"] },
+                    { name: "Advanced", children: ["Hash Table (Collision Handling, Open Addressing, Chaining, Load Factor)", "Heap (Min, Max, Heapify, Priority Queue)", "Bloom Filters", "LRU Cache", "Interview Questions"] },
+                    { name: "Trees", children: ["Binary Tree", "Binary Search Tree (BST)", "AVL Tree", "Red Black Tree", "Trie", "Segment Tree", "Fenwick Tree (BIT)", "B Tree, B+ Tree", "Tree Traversals (Inorder, Preorder, Postorder)", "Interview Questions"] },
+                    { name: "Graph", children: ["Adjacency Matrix", "Adjacency List", "Union Find (Disjoint Set)", "Directed vs Undirected", "Weighted vs Unweighted", "DAGs (Directed Acyclic Graphs)", "Interview Questions"] }
+                ]
+            },
+            {
+                name: "Algorithms",
+                children: [
+                    { name: "Complexity", children: ["Time Complexity (Big-O, Omega, Theta)", "Space Complexity", "Amortized Analysis", "Master Theorem", "Best, Worst, Average Case"] },
+                    { name: "Sorting", children: ["Bubble", "Selection", "Insertion", "Merge", "Quick", "Heap", "Counting", "Radix", "Bucket Sort", "Stability in Sorting", "In-place vs Out-of-place", "Interview Questions"] },
+                    { name: "Searching", children: ["Linear Search", "Binary Search", "Ternary Search", "Interpolation Search"] },
+                    { name: "Graph Algos", children: ["DFS", "BFS", "Cycle Detection", "Topological Sort", "Dijkstra", "Bellman-Ford", "Floyd Warshall", "Prim", "Kruskal", "A* Search", "Interview Questions"] },
+                    { name: "Techniques", children: ["Sliding Window", "Two Pointers", "Greedy", "Dynamic Programming (Memoization, Tabulation)", "Backtracking", "Divide and Conquer", "Bit Manipulation", "Interview Questions"] }
+                ],
+                interview: ["Explain Time Complexity of Quick Sort vs Merge Sort.", "Detect a cycle in a directed graph."]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "CLI Bash Script Utilities", uses: ["Bash", "grep", "awk"] },
+                { name: "Custom Stack & Queue Implementation", uses: ["Python", "Data Structures"] },
+                { name: "Sorting Algorithm Visualizer (CLI)", uses: ["Python", "Sorting"] },
+                { name: "GitHub Profile Readme Stats", uses: ["Git", "Markdown"] },
+                { name: "Personal Contact Book (Hash Map)", uses: ["Hash Tables", "Python"] }
+            ],
+            intermediate: [
+                { name: "In-Memory Key-Value Store (Redis Clone)", uses: ["Hash Maps", "TTL", "Concurrency"] },
+                { name: "Pathfinding Visualizer (Web)", uses: ["Dijkstra", "A*", "HTML/JS"] },
+                { name: "File Compression Utility", uses: ["Huffman Coding", "Trees"] },
+                { name: "Custom Version Control System", uses: ["Hashing", "File I/O", "Trees"] },
+                { name: "Maze Generator & Solver", uses: ["DFS", "BFS", "Backtracking"] }
+            ],
+            advanced: [
+                { name: "Distributed Rate Limiter", uses: ["Algorithms", "Redis", "Sliding Window"] },
+                { name: "Regex Engine from Scratch", uses: ["Automata Theory", "Trees", "Parsing"] },
+                { name: "Custom Memory Allocator (C/C++)", uses: ["Pointers", "OS Memory Management"] },
+                { name: "B-Tree Database Indexer", uses: ["B-Trees", "File I/O", "Data Structures"] },
+                { name: "Multi-threaded Web Crawler", uses: ["Graph Traversal", "Concurrency"] }
+            ]
+        },
+        checklists: {
+            phase: ["Setup Linux Environment", "Configure Git and SSH", "Understand Big-O Notation"],
+            skill: ["I can write a Bash script with loops", "I can implement a BST", "I can use git rebase"],
+            revision: ["Revise Graph Algorithms", "Revise DP Tabulation", "Revise Quick Sort Partitioning"],
+            interview: ["Practice LeetCode Array/String questions", "Practice Linked List reversals"],
+            portfolio: ["Push all algorithmic solutions to a clean GitHub Repo"]
+        }
+    },
+    {
+        phase: "PHASE 1",
+        title: "Python Deep Dive",
+        overview: { why: "Writing production-grade, asynchronous, and object-oriented Python is required for all modern AI roles.", duration: "5 Weeks" },
+        skills: [
+            {
+                name: "Python Core",
+                children: [
+                    { name: "Basics", children: ["Variables", "Data Types", "Type Casting", "Input/Output", "Operators", "Mutable vs Immutable", "Memory management (Reference counting, Garbage Collection)"] },
+                    { name: "Data Structures", children: ["Strings (Regex)", "Lists", "Tuples", "Sets", "Dictionary (DefaultDict, OrderedDict, Counter)"] },
+                    { name: "Conditions", children: ["if", "elif", "else", "Ternary Operators", "match case"] },
+                    { name: "Loops & Iteration", children: ["for loop", "while loop", "enumerate()", "zip()", "range()", "Iterators", "Iterable Protocol", "Generators", "Async Generators"] }
+                ]
+            },
+            {
+                name: "Functions & Advanced Concepts",
+                children: [
+                    { name: "Functions", children: ["Positional & Keyword Arguments", "Lambda Functions", "Recursion", "Type Hinting (Generics, Protocols)", "Docstrings"] },
+                    { name: "Functional Programming", children: ["map", "filter", "reduce", "Closures", "Higher-Order Functions", "Partial Functions"] },
+                    { name: "Advanced Constructs", children: ["Decorators (Function & Class)", "Context Managers (__enter__, __exit__, contextlib)", "Descriptors", "Metaclasses", "Slots", "Weak References"] },
+                    { name: "Exception Handling", children: ["try", "except", "finally", "Custom Exceptions", "Assertions", "Traceback handling"] }
+                ]
+            },
+            {
+                name: "Object Oriented Programming (OOP)",
+                children: [
+                    { name: "Core Concepts", children: ["Class", "Object", "Constructors", "Instance/Class/Static Variables", "Methods", "Magic Methods (Dunder methods)"] },
+                    { name: "Inheritance", children: ["Single", "Multiple", "MRO (Method Resolution Order)", "super()"] },
+                    { name: "Polymorphism & More", children: ["Method Overloading", "Method Overriding", "Encapsulation", "Abstraction", "Properties (@property)"] },
+                    { name: "Advanced OOP & Patterns", children: ["Dependency Injection", "Inversion of Control (IoC)", "Strategy Pattern", "Adapter Pattern", "Facade Pattern", "Builder Pattern", "Prototype Pattern", "Repository Pattern", "Unit of Work Pattern", "SOLID Principles", "Dataclasses"] }
+                ],
+                interview: ["Explain MRO in Python.", "What is the difference between @classmethod and @staticmethod?"]
+            },
+            {
+                name: "Production Python",
+                children: [
+                    { name: "Concurrency", children: ["Multithreading (GIL)", "Multiprocessing", "Async Programming (async/await, Event Loop)", "Concurrent.futures"] },
+                    { name: "File Handling", children: ["Text files", "CSV", "JSON", "Pickle", "Parquet", "Pathlib"] },
+                    { name: "Engineering", children: ["Virtual Environments", "Type Hinting (mypy)", "Logging", "Testing (pytest, unittest, mock, fixtures)", "Packaging (setup.py, wheel, PyPI)"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "CLI Expense Tracker", uses: ["File I/O", "JSON", "Functions"] },
+                { name: "Password Generator & Validator", uses: ["Strings", "Regex", "Random"] },
+                { name: "Student Management System", uses: ["Dictionaries", "File Handling", "Loops"] },
+                { name: "Weather API Fetcher", uses: ["Requests", "JSON", "Error Handling"] },
+                { name: "Text File Analyzer", uses: ["File I/O", "String Methods", "Dictionaries"] }
+            ],
+            intermediate: [
+                { name: "Task Manager with SQLite", uses: ["OOP", "SQLite3", "Context Managers"] },
+                { name: "Async Web Scraper", uses: ["AsyncIO", "Aiohttp", "Regex"] },
+                { name: "Bank Management System", uses: ["Encapsulation", "Inheritance", "Custom Exceptions"] },
+                { name: "Multithreaded Log Analyzer", uses: ["Multithreading", "Regex", "Logging"] },
+                { name: "Custom Testing Framework", uses: ["Decorators", "Metaclasses", "Reflection"] }
+            ],
+            advanced: [
+                { name: "Distributed Task Queue Clone", uses: ["Multiprocessing", "Sockets", "OOP"] },
+                { name: "API Rate Limiter Toolkit", uses: ["Decorators", "Concurrency", "Time"] },
+                { name: "Object-Relational Mapping (ORM) Engine", uses: ["Metaclasses", "Descriptors", "SQLite"] },
+                { name: "Event-Driven Game Engine", uses: ["AsyncIO", "Design Patterns", "Dataclasses"] },
+                { name: "Data Pipeline Framework", uses: ["Generators", "Iterators", "Context Managers"] }
+            ]
+        },
+        checklists: {
+            phase: ["Install Python 3.10+", "Understand Python's execution model", "Write async code"],
+            skill: ["I can write a decorator", "I can use inheritance properly", "I can handle JSON files"],
+            revision: ["Revise GIL constraints", "Revise MRO", "Revise Generators"],
+            interview: ["Practice Python specific tricky output questions", "Practice OOP design problems"],
+            portfolio: ["Publish a Python package to PyPI"]
+        }
+    },
+    {
+        phase: "PHASE 2",
+        title: "Mathematics for Machine Learning",
+        overview: { why: "Deep Learning optimization, backpropagation, and algorithm intuition require solid mathematical foundations.", duration: "4 Weeks" },
+        skills: [
+            {
+                name: "Linear Algebra",
+                children: [
+                    { name: "Vectors", children: ["Vector Spaces", "Scalars", "Magnitude", "Dot Product", "Cross Product", "Orthogonality", "Cosine Similarity", "Vector Norms (L1, L2, L-inf)", "Interview Questions"] },
+                    { name: "Matrices", children: ["Matrix Operations (Add, Multiply)", "Transpose", "Inverse", "Identity Matrix", "Determinant", "Rank", "Null Space", "Trace", "Interview Questions"] },
+                    { name: "Transformations", children: ["Linear Transformations", "Basis Vectors", "Change of Basis", "Scaling, Rotation, Translation"] },
+                    { name: "Decompositions", children: ["Eigenvalues", "Eigenvectors", "Singular Value Decomposition (SVD)", "Eigendecomposition", "PCA Mathematics", "Cholesky Decomposition"] }
+                ]
+            },
+            {
+                name: "Calculus",
+                children: [
+                    { name: "Differential Calculus", children: ["Limits", "Derivatives", "Power, Product, Quotient Rules", "Chain Rule (Core to Backprop)", "Higher-Order Derivatives", "Taylor Series"] },
+                    { name: "Multivariate Calculus", children: ["Partial Derivatives", "Gradients", "Jacobian Matrix", "Hessian Matrix", "Directional Derivatives", "Multiple Integrals"] },
+                    { name: "Optimization", children: ["Gradient Descent", "Convex vs Non-Convex Functions", "Local/Global Minima", "Saddle Points", "Learning Rate Intuition", "Lagrange Multipliers", "Constrained Optimization"] }
+                ]
+            },
+            {
+                name: "Probability & Statistics",
+                children: [
+                    { name: "Descriptive Statistics", children: ["Mean, Median, Mode", "Variance", "Standard Deviation", "Skewness", "Kurtosis", "Covariance", "Correlation (Pearson, Spearman)", "Quantiles, Percentiles, IQR"] },
+                    { name: "Probability Theory", children: ["Random Variables (Discrete vs Continuous)", "Independent/Dependent Events", "Conditional Probability", "Bayes' Theorem", "Law of Large Numbers", "Markov Chains", "Interview Questions"] },
+                    { name: "Distributions", children: ["Probability Density Functions (PDF)", "Cumulative Distribution Functions (CDF)", "Normal (Gaussian)", "Binomial", "Poisson", "Uniform", "Exponential", "Central Limit Theorem"] },
+                    { name: "Inferential Statistics", children: ["Hypothesis Testing", "Null & Alternative Hypotheses", "P-Values", "Z-Test", "T-Test", "ANOVA", "Chi-Square Test", "Confidence Intervals", "A/B Testing", "Type I and Type II Errors"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "Matrix Operations Library from Scratch", uses: ["Python", "Loops", "Linear Algebra"] },
+                { name: "Descriptive Stats Calculator", uses: ["Math", "Lists", "Functions"] },
+                { name: "Gradient Descent Visualizer for y=mx+c", uses: ["Calculus", "Matplotlib"] },
+                { name: "Coin Toss / Dice Simulator", uses: ["Probability", "Random"] },
+                { name: "Covariance Matrix Generator", uses: ["Statistics", "Python"] }
+            ],
+            intermediate: [
+                { name: "Custom PCA Implementation", uses: ["SVD", "Eigenvectors", "Numpy"] },
+                { name: "A/B Testing Simulator & Calculator", uses: ["Hypothesis Testing", "P-Values"] },
+                { name: "Naive Bayes Engine from Scratch", uses: ["Bayes Theorem", "Probability Distributions"] },
+                { name: "Multivariate Gradient Descent", uses: ["Partial Derivatives", "Gradients"] },
+                { name: "Monte Carlo Pi Estimator", uses: ["Probability", "Simulation"] }
+            ],
+            advanced: [
+                { name: "Neural Network Backprop from Scratch", uses: ["Chain Rule", "Calculus", "Numpy"] },
+                { name: "Markov Chain Text Generator", uses: ["Probability Matrix", "NLP"] },
+                { name: "Kalman Filter Implementation", uses: ["Linear Algebra", "Statistics"] },
+                { name: "Bayesian Network Simulator", uses: ["Bayes Theorem", "Graph Theory"] },
+                { name: "Statistical Hypothesis Testing Suite", uses: ["ANOVA", "T-Tests", "Chi-Square"] }
+            ]
+        },
+        checklists: {
+            phase: ["Understand matrix multiplication intuitively", "Understand the Chain Rule", "Understand Bayes Theorem"],
+            skill: ["I can compute a derivative", "I can calculate variance", "I can explain an Eigenvector"],
+            revision: ["Revise Gradient Descent", "Revise SVD", "Revise P-Values"],
+            interview: ["Explain Bias-Variance tradeoff mathematically", "Derive Linear Regression cost function derivative"],
+            portfolio: ["Write a blog post explaining PCA without using code"]
+        }
+    }
+    ,{
+        phase: "PHASE 3",
+        title: "SQL, Data Analysis & Data Engineering",
+        overview: { why: "Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad data = bad models.", duration: "6 Weeks" },
+        skills: [
+            {
+                name: "SQL (Deep Dive)",
+                children: [
+                    { name: "Database Basics", children: ["RDBMS vs NoSQL", "Normalization (1NF, 2NF, 3NF, BCNF)", "Denormalization", "Keys", "Constraints"] },
+                    { name: "Queries & Joins", children: ["SELECT", "WHERE", "JOINs", "Set Operations"] },
+                    { name: "Advanced SQL", children: ["Subqueries", "CTEs", "Recursive Queries", "Window Functions (RANK, LEAD, LAG)"] },
+                    { name: "Architecture & Optimization", children: ["Indexes (B-Tree, Hash)", "Views & Materialized Views", "Stored Procedures", "Triggers", "Query Execution Order", "Query Optimization (EXPLAIN)", "Partitioning", "Replication", "Sharding"] },
+                    { name: "Transactions & Concurrency", children: ["ACID Properties", "Transaction Isolation Levels", "Locks", "Deadlocks"] }
+                ]
+            },
+            {
+                name: "Data Processing (Python)",
+                children: [
+                    { name: "NumPy", children: ["NDArrays", "Vectorization", "Broadcasting", "Indexing & Slicing", "Linear Algebra"] },
+                    { name: "Pandas", children: ["Series", "DataFrames", "I/O (CSV, SQL, Parquet)", "Filtering", "Missing Data Handling", "Group By & Aggregations", "Merge & Concat", "Pivot Tables", "Time Series", "MultiIndex", "Categorical dtype", "Apply vs Vectorization", "Performance Optimization"] },
+                    { name: "Alternative Data Libraries", children: ["Polars", "Dask", "Vaex"] }
+                ]
+            },
+            {
+                name: "Data Analyst & BI Mastery",
+                children: [
+                    { name: "Spreadsheets & Query", children: ["Google Sheets", "Advanced Excel (VLOOKUP, XLOOKUP)", "Power Query", "Power Pivot", "Advanced DAX", "Macros/VBA Basics"] },
+                    { name: "BI Tools & Dashboards", children: ["Power BI", "Tableau", "Looker Studio", "Dashboard Design", "Dashboard UX", "Data Storytelling"] },
+                    { name: "Product & Business Analytics", children: ["Business Metrics", "North Star Metrics", "KPI Design", "Funnel Analysis", "Retention Analysis", "Cohort Analysis", "Churn Analysis", "Product Analytics", "Customer Analytics", "Marketing Analytics", "Finance Analytics", "Case Studies", "Business Problem Solving"] },
+                    { name: "Event Tracking", children: ["Mixpanel", "Amplitude"] },
+                    { name: "Interview Prep", children: ["SQL Interview Questions"] }
+                ]
+            },
+            {
+                name: "Data Engineering (ETL / ELT)",
+                children: [
+                    { name: "Big Data Frameworks", children: ["Apache Spark (PySpark)", "Resilient Distributed Datasets (RDD)", "Spark SQL", "Spark Execution Plans", "Spark Streaming"] },
+                    { name: "Data Warehousing & Lakes", children: ["OLTP vs OLAP", "Star & Snowflake Schemas", "Snowflake", "Google BigQuery", "AWS Redshift", "Data Lakes"] },
+                    { name: "Orchestration", children: ["Apache Airflow", "Prefect"] },
+                    { name: "Data Transformation", children: ["dbt (Data Build Tool)", "Models", "Macros", "Tests", "Jinja templating"] },
+                    { name: "Streaming Data", children: ["Apache Kafka", "RabbitMQ", "Redis Pub/Sub"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "LeetCode SQL 50 Challenges", uses: ["SQL", "Window Functions"] },
+                { name: "Exploratory Data Analysis (EDA) on Kaggle dataset", uses: ["Pandas", "Seaborn"] },
+                { name: "Interactive Stock Price Dashboard", uses: ["Plotly", "Streamlit", "Pandas"] },
+                { name: "Excel Sales Dashboard", uses: ["Pivot Tables", "XLOOKUP"] },
+                { name: "Basic SQLite Database Manager", uses: ["Python sqlite3", "SQL CRUD"] }
+            ],
+            intermediate: [
+                { name: "E-Commerce Cohort Analysis", uses: ["Advanced SQL", "CTEs", "Time Series"] },
+                { name: "Airflow Automated ETL Pipeline", uses: ["Airflow", "Pandas", "PostgreSQL"] },
+                { name: "PySpark Big Data Log Analyzer", uses: ["PySpark", "Parquet"] },
+                { name: "Real-time Twitter/X Sentiment Dashboard", uses: ["Kafka", "Python", "Plotly"] },
+                { name: "dbt Data Transformation Pipeline", uses: ["dbt", "Snowflake/BigQuery", "SQL"] }
+            ],
+            advanced: [
+                { name: "End-to-End Enterprise Data Warehouse", uses: ["Airflow", "dbt", "Snowflake", "Kafka"] },
+                { name: "Real-time Fraud Detection Pipeline", uses: ["Spark Streaming", "Kafka", "Postgres"] },
+                { name: "Distributed Web Scraper with Celery", uses: ["Celery", "Redis", "Postgres"] },
+                { name: "Custom BI Dashboard App", uses: ["React", "FastAPI", "Polars", "SQL"] },
+                { name: "Multi-Node Spark Cluster setup", uses: ["Docker", "PySpark", "Hadoop"] }
+            ]
+        },
+        checklists: {
+            phase: ["Understand ACID properties", "Install Airflow locally", "Grasp Pandas Vectorization vs Loops"],
+            skill: ["I can write a Window Function", "I can merge datasets in Pandas", "I can build an Airflow DAG"],
+            revision: ["Revise SQL Joins visually", "Revise B-Tree Indexing", "Revise PySpark lazy evaluation"],
+            interview: ["Practice LeetCode Hard SQL", "Explain difference between WHERE and HAVING"],
+            portfolio: ["Publish an Airflow ETL pipeline project to GitHub"]
+        }
+    },
+    {
+        phase: "PHASE 4",
+        title: "Core Machine Learning",
+        overview: { why: "Deep Learning is hype, but classical ML runs the world's recommendation, pricing, and tabular data systems.", duration: "5 Weeks" },
+        skills: [
+            {
+                name: "Feature Engineering (Deep Dive)",
+                children: [
+                    { name: "Feature Selection", children: ["Mutual Information", "Recursive Feature Elimination (RFE)", "Permutation Importance", "Statistical Feature Selection (ANOVA, Chi-Square)"] },
+                    { name: "Feature Engineering Techniques", children: ["Feature Scaling", "Encoding", "Feature Extraction", "Feature Construction", "Dimensionality Reduction"] }
+                ]
+            },
+            {
+                name: "Supervised Learning",
+                children: [
+                    { name: "Linear Models", children: ["Linear Regression (OLS, Cost Function)", "Logistic Regression (Sigmoid, Cross-Entropy Loss, Odds Ratio)"] },
+                    { name: "Regularization", children: ["L1 Regularization (Lasso)", "L2 Regularization (Ridge)", "ElasticNet (L1 + L2)"] },
+                    { name: "Distance Based", children: ["K-Nearest Neighbors (KNN)", "Distance Metrics", "Curse of Dimensionality", "KD-Trees"] },
+                    { name: "Margin Based", children: ["Support Vector Machines (SVM)", "Hyperplanes & Margins", "Kernel Trick", "Hinge Loss"] },
+                    { name: "Probabilistic", children: ["Naive Bayes", "Gaussian NB", "Multinomial NB", "Bernoulli NB", "Laplace Smoothing"] }
+                ]
+            },
+            {
+                name: "Tree-Based Models & Ensembles",
+                children: [
+                    { name: "Decision Trees", children: ["Splitting Criteria", "Pruning", "Feature Importance"] },
+                    { name: "Bagging", children: ["Random Forest", "Out-of-Bag (OOB) Error", "Bootstrapping"] },
+                    { name: "Boosting", children: ["AdaBoost", "Gradient Boosting Machines (GBM)", "XGBoost", "LightGBM", "CatBoost"] }
+                ]
+            },
+            {
+                name: "Unsupervised Learning",
+                children: [
+                    { name: "Clustering", children: ["K-Means", "Elbow Method", "Silhouette Score", "Hierarchical Clustering", "DBSCAN", "Handling Outliers"] },
+                    { name: "Dimensionality Reduction", children: ["Principal Component Analysis (PCA)", "t-SNE", "UMAP"] },
+                    { name: "Anomaly Detection", children: ["Isolation Forest", "One-Class SVM", "Local Outlier Factor (LOF)"] }
+                ]
+            },
+            {
+                name: "Time Series & Forecasting",
+                children: [
+                    { name: "Time Series Foundations", children: ["Seasonality", "Trend", "Stationarity", "Rolling Forecast", "Forecast Evaluation"] },
+                    { name: "Forecasting Models", children: ["ARIMA", "SARIMA", "Prophet", "Holt Winters", "LSTM Forecasting"] }
+                ]
+            },
+            {
+                name: "Advanced Statistics & Design",
+                children: [
+                    { name: "Advanced Topics", children: ["Survival Analysis", "Causal Inference", "Bayesian Statistics", "Bayesian Optimization", "Experiment Design", "Design of Experiments (DOE)"] }
+                ]
+            },
+            {
+                name: "ML Pipeline & Engineering",
+                children: [
+                    { name: "Data Preprocessing", children: ["Imputation", "Encoding", "Scaling", "Scikit-Learn Pipelines"] },
+                    { name: "Imbalanced Data", children: ["SMOTE", "ADASYN", "Class Weights", "Undersampling"] },
+                    { name: "Validation", children: ["Train/Val/Test Split", "K-Fold Cross Validation", "Stratified K-Fold", "Time Series Split", "Data Leakage avoidance"] },
+                    { name: "Hyperparameter Tuning", children: ["Grid Search", "Random Search", "Bayesian Optimization (Optuna)"] },
+                    { name: "Evaluation Metrics", children: ["Classification", "Regression"] },
+                    { name: "Explainable AI (XAI)", children: ["SHAP", "LIME", "Partial Dependence Plots"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "Titanic Survival Predictor", uses: ["Logistic Regression", "Pandas", "Scikit-Learn"] },
+                { name: "House Price Estimator", uses: ["Linear Regression", "Scikit-Learn"] },
+                { name: "Spam Email Classifier", uses: ["Naive Bayes", "TF-IDF"] },
+                { name: "Customer Segmentation Engine", uses: ["K-Means", "PCA"] },
+                { name: "Diabetes Prediction App", uses: ["Random Forest", "Streamlit"] }
+            ],
+            intermediate: [
+                { name: "Credit Card Fraud Detection", uses: ["Isolation Forest", "SMOTE", "Imbalanced Data"] },
+                { name: "Customer Churn Predictor", uses: ["XGBoost", "ROC-AUC", "SHAP"] },
+                { name: "Advanced Kaggle Competition (e.g. TPS)", uses: ["LightGBM", "Optuna", "Ensembling"] },
+                { name: "End-to-End ML Pipeline", uses: ["Scikit-Learn Pipelines", "ColumnTransformer"] },
+                { name: "Recommendation System (Collaborative Filtering)", uses: ["Matrix Factorization", "KNN"] }
+            ],
+            advanced: [
+                { name: "Time Series Demand Forecasting", uses: ["CatBoost", "Time Series Split", "Lag Features"] },
+                { name: "Automated ML (AutoML) Tool Clone", uses: ["Python OOP", "Metaprogramming", "Scikit-Learn"] },
+                { name: "Custom ML Algorithm from Scratch (C++)", uses: ["C++", "Pybind11", "Linear Algebra"] },
+                { name: "High-Frequency Trading Algorithm (Simulated)", uses: ["XGBoost", "Low Latency Data"] },
+                { name: "ML Model Drift Detector", uses: ["Statistical Tests", "Evidently AI", "Python"] }
+            ]
+        },
+        checklists: {
+            phase: ["Understand Bias-Variance Tradeoff", "Master Scikit-Learn API", "Understand Ensembling"],
+            skill: ["I can build a Scikit-Learn Pipeline", "I can optimize with Optuna", "I can explain SHAP values"],
+            revision: ["Revise Gradient Boosting math", "Revise SMOTE", "Revise Evaluation Metrics (F1 vs ROC-AUC)"],
+            interview: ["Explain why XGBoost is better than Random Forest", "What happens if you don't scale data for KNN?"],
+            portfolio: ["Publish a well-documented Kaggle notebook with EDA and Optuna tuning"]
+        }
+    }
+    ,{
+        phase: "PHASE 5",
+        title: "Deep Learning, CV & NLP",
+        overview: { why: "Neural Networks are the backbone of unstructured data processing (images, audio, text). PyTorch is the industry standard.", duration: "8 Weeks" },
+        skills: [
+            {
+                name: "Deep Learning Foundations (PyTorch)",
+                children: [
+                    { name: "Core Concepts", children: ["Perceptron", "MLP", "Forward Propagation", "Backpropagation Calculus", "Computational Graphs", "Vanishing Gradients"] },
+                    { name: "Activation & Loss", children: ["Sigmoid, Tanh, ReLU, GELU, Swish", "Cross-Entropy, Focal Loss, Triplet Margin Loss"] },
+                    { name: "Optimizers & Regularization", children: ["Adam, AdamW, SGD", "LR Schedulers", "Dropout", "Batch/Layer/Group Normalization", "Weight Decay", "Gradient Clipping"] },
+                    { name: "PyTorch Specifics", children: ["Tensors (CUDA)", "Autograd", "nn.Module", "Dataset & DataLoader", "PyTorch Lightning", "TorchMetrics"] },
+                    { name: "Advanced PyTorch & Optimization", children: ["TorchScript", "torch.compile()", "DistributedDataParallel (DDP)", "Mixed Precision", "Gradient Accumulation", "Checkpointing", "xFormers", "Flash Attention", "DeepSpeed"] },
+                    { name: "Ecosystem Libraries", children: ["accelerate", "optimum", "optimum-intel", "optimum-neuron", "SafeTensors"] }
+                ]
+            },
+            {
+                name: "Computer Vision (CV)",
+                children: [
+                    { name: "Image Processing Basics", children: ["OpenCV", "Filters", "Edge Detection", "Morphological Operations"] },
+                    { name: "CNNs & Classical Architectures", children: ["Convolutional Layers", "Pooling", "Receptive Field", "ResNet", "EfficientNet"] },
+                    { name: "Advanced Architectures & Vision Transformers", children: ["Vision Transformers (ViT)", "CLIP", "BLIP", "DETR (DEtection TRansformer)", "Grounding DINO"] },
+                    { name: "Object Detection & Segmentation", children: ["YOLO (v8, v9, v10)", "SSD", "Faster R-CNN", "Segment Anything Model (SAM, SAM2)", "U-Net", "Mask R-CNN"] },
+                    { name: "Generative Vision", children: ["Diffusion Models", "Stable Diffusion", "ControlNet", "Image Captioning", "Image Generation"] },
+                    { name: "Augmentation & Tracking", children: ["Albumentations", "CutMix", "MixUp", "DeepSORT", "ByteTrack"] }
+                ]
+            },
+            {
+                name: "Natural Language Processing (NLP)",
+                children: [
+                    { name: "Text Preprocessing & NLP Libs", children: ["Tokenization (BPE, WordPiece)", "HuggingFace Tokenizers (Deep Dive)", "sentencepiece", "spaCy", "NLTK", "POS Tagging", "Dependency Parsing", "NER"] },
+                    { name: "Embeddings & RNNs", children: ["Word2Vec", "GloVe", "FastText", "LSTM", "GRU", "Seq2Seq Architectures", "Attention Mechanism"] },
+                    { name: "Transformers (NLP)", children: ["BERT Fine-tuning", "RoBERTa", "DistilBERT", "DeBERTa", "ELECTRA", "T5", "Sentence Transformers"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "PyTorch MLP for MNIST", uses: ["PyTorch", "MLP", "Cross-Entropy"] },
+                { name: "Image Filter App", uses: ["OpenCV", "Numpy"] },
+                { name: "Spam Detection with RNN", uses: ["PyTorch", "RNN", "Embeddings"] },
+                { name: "Face Detection Script", uses: ["OpenCV", "Haar Cascades"] },
+                { name: "Custom Dataset Loader", uses: ["PyTorch DataLoader", "Transformations"] }
+            ],
+            intermediate: [
+                { name: "Custom ResNet Image Classifier", uses: ["PyTorch", "CNN", "Skip Connections"] },
+                { name: "Sentiment Analysis with LSTM", uses: ["LSTM", "Word2Vec", "IMDB Dataset"] },
+                { name: "Transfer Learning Dog/Cat Classifier", uses: ["TorchVision", "EfficientNet", "Fine-Tuning"] },
+                { name: "Real-time Mask Detection (YOLO)", uses: ["YOLOv8", "OpenCV", "Webcam"] },
+                { name: "Named Entity Recognition (NER)", uses: ["Bi-LSTM", "CRF", "spaCy"] }
+            ],
+            advanced: [
+                { name: "Medical Image Segmentation", uses: ["U-Net", "Data Augmentation", "Dice Loss"] },
+                { name: "Real-time Multi-Object Tracking", uses: ["YOLOv10", "DeepSORT", "Video Processing"] },
+                { name: "Neural Machine Translation (Seq2Seq)", uses: ["Encoder-Decoder", "Attention Mechanism"] },
+                { name: "Self-Driving Car Lane Detection", uses: ["OpenCV Advanced", "CNNs", "Hough Transform"] },
+                { name: "End-to-End PyTorch Lightning Pipeline", uses: ["PyTorch Lightning", "W&B Tracking"] }
+            ]
+        },
+        checklists: {
+            phase: ["Setup CUDA/cuDNN for GPU", "Understand Backpropagation", "Understand CNN Receptive Fields"],
+            skill: ["I can write a custom PyTorch nn.Module", "I can implement an LSTM loop", "I can use OpenCV"],
+            revision: ["Revise Cross-Entropy vs MSE", "Revise Batch Norm vs Layer Norm", "Revise BPTT"],
+            interview: ["Why do RNNs suffer from vanishing gradients?", "How does a skip connection in ResNet work?"],
+            portfolio: ["Train a YOLOv8 model on custom data and deploy the inference script"]
+        }
+    },
+    {
+        phase: "PHASE 6",
+        title: "Generative AI, LLMs & Agentic Frameworks",
+        overview: { why: "The modern frontier of AI requires adapting foundation models, building RAG systems, and orchestrating autonomous agents.", duration: "10 Weeks" },
+        skills: [
+            {
+                name: "Prompt Engineering & Guardrails",
+                children: [
+                    { name: "Prompting Techniques", children: ["Zero Shot", "Few Shot", "Chain of Thought", "Tree of Thoughts", "Graph of Thoughts", "Self Consistency", "Reflexion", "PAL", "ReAct", "Meta Prompting", "Prompt Chaining", "Prompt Optimization"] },
+                    { name: "Structured Output", children: ["Prompt Templates", "JSON Mode", "Function Calling", "Tool Calling", "Structured Outputs"] },
+                    { name: "AI Safety & Security", children: ["Prompt Injection", "Prompt Leakage", "Jailbreak Protection", "Guardrails", "AI Safety", "AI Security", "Hallucination Detection", "Red Teaming", "Evaluation", "Guardrails AI", "NeMo Guardrails"] }
+                ]
+            },
+            {
+                name: "Transformers & LLM Architecture",
+                children: [
+                    { name: "Transformer Architecture", children: ["Self-Attention Mechanism (Q, K, V)", "Multi-Head Attention", "Feed Forward Networks", "Encoder-Only", "Decoder-Only", "Encoder-Decoder"] },
+                    { name: "Advanced LLM Architectures", children: ["Speculative Decoding", "Continuous Batching", "Mixture of Experts", "Sliding Window Attention", "Flash Attention", "Rotary Positional Embeddings", "ALiBi", "RMSNorm", "SwiGLU", "Grouped Query Attention", "Multi Query Attention", "PagedAttention", "KV Cache", "Megatron-LM"] },
+                    { name: "LLM Mechanics", children: ["Autoregressive Generation", "Temperature", "Top-K Sampling", "Top-P", "Context Window Limits", "Repetition Penalty"] }
+                ],
+                interview: ["Explain KV Caching and why it speeds up generation.", "How does Self-Attention scale with sequence length?"]
+            },
+            {
+                name: "Fine-Tuning & Alignment",
+                children: [
+                    { name: "Full Fine-Tuning", children: ["Catastrophic Forgetting", "Compute constraints", "Instruction Tuning"] },
+                    { name: "PEFT (Parameter-Efficient Fine-Tuning)", children: ["PEFT", "LoRA", "QLoRA", "Prompt Tuning", "Prefix Tuning", "P-Tuning"] },
+                    { name: "Alignment (RLHF)", children: ["SFT", "Reward Modeling", "PPO", "DPO", "KTO", "ORPO"] },
+                    { name: "Quantization & Tools", children: ["bitsandbytes", "FP16 / BF16", "INT8, INT4", "AWQ", "GPTQ", "Unsloth", "Axolotl", "Hugging Face Trainer"] }
+                ]
+            },
+            {
+                name: "Vector Databases (Deep Dive)",
+                children: [
+                    { name: "Vector Index Types", children: ["Index Types", "HNSW", "IVF", "IVF-PQ", "PQ", "ANN Search"] },
+                    { name: "Embeddings & Retrieval", children: ["Sparse Embeddings", "Dense Embeddings", "Hybrid Embeddings", "Hybrid Retrieval", "Metadata Filtering", "Scalar Quantization", "Vector Compression"] }
+                ]
+            },
+            {
+                name: "RAG (Retrieval-Augmented Generation)",
+                children: [
+                    { name: "Core RAG", children: ["Document Loaders", "Chunking", "Embeddings Models", "Vector Stores"] },
+                    { name: "Advanced RAG Techniques", children: ["Context Compression", "Query Transformation", "Multi Query Retriever", "Self RAG", "Adaptive RAG", "RAPTOR", "CRAG", "Corrective RAG", "Hybrid Search", "Re-ranking", "HyDE", "GraphRAG"] }
+                ]
+            },
+            {
+                name: "LangChain & LangGraph",
+                children: [
+                    { name: "LangChain", children: ["LCEL", "Runnable Interface", "Output Parsers", "Memory", "Callback Handlers", "Agents Executor", "Retriever Chains", "Expression Language"] },
+                    { name: "LangGraph", children: ["StateGraph architecture", "Nodes", "Edges", "Reducers", "Commands", "Interrupt", "Resume", "Persistence", "Stores", "Supervisor", "Planner", "Reflection", "Memory Types", "Retry Policies", "Error Handling", "Parallel Branches"] }
+                ]
+            },
+            {
+                name: "Agent Development",
+                children: [
+                    { name: "Agent Core Concepts", children: ["Agent Planning", "Task Planning", "Memory Architecture", "Working Memory", "Long-term Memory", "Vector Memory", "Agent Evaluation"] },
+                    { name: "Agent Architecture", children: ["Event Driven Agents", "Workflow Agents", "Supervisor Agents", "Multi-Agent Systems", "CrewAI", "AutoGen", "Swarm", "Role-playing Agents"] },
+                    { name: "Model Context Protocol", children: ["MCP Servers", "MCP Client Development", "Tool Registry", "Agent Permissions"] }
+                ]
+            },
+            {
+                name: "LLMOps & Serving",
+                children: [
+                    { name: "LLM Evaluation & Observability", children: ["LLM-as-a-judge", "Ragas", "TruLens", "LangSmith", "Phoenix", "Tracing generation chains"] },
+                    { name: "Serving Frameworks", children: ["vLLM (PagedAttention, Continuous Batching)", "TensorRT-LLM", "Ollama API", "LMDeploy", "TGI"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "Local Llama 3 Chatbot", uses: ["Ollama", "Python", "Streamlit"] },
+                { name: "Basic PDF Q&A Bot (Naive RAG)", uses: ["LangChain", "ChromaDB", "OpenAI"] },
+                { name: "Prompt Engineering Playground", uses: ["System Prompts", "Few-Shot", "API"] },
+                { name: "Function Calling Weather Agent", uses: ["OpenAI Tools", "API requests"] },
+                { name: "HF Transformers Text Summarizer", uses: ["Hugging Face Pipeline"] }
+            ],
+            intermediate: [
+                { name: "Advanced RAG with Hybrid Search", uses: ["Pinecone", "BM25", "Cross-Encoders"] },
+                { name: "Fine-tune Llama 3 with QLoRA", uses: ["Unsloth", "LoRA", "Hugging Face"] },
+                { name: "LangGraph Autonomous Researcher", uses: ["LangGraph", "Tavily Search API", "StateGraph"] },
+                { name: "CrewAI Multi-Agent Content Team", uses: ["CrewAI", "Role-playing", "Delegation"] },
+                { name: "LLM Evaluation Pipeline", uses: ["Ragas", "LangSmith", "RAG"] }
+            ],
+            advanced: [
+                { name: "Enterprise Customer Support Agent", uses: ["LangGraph", "Human-in-Loop", "Checkpointers"] },
+                { name: "Self-Reflective Coding Assistant", uses: ["ReAct", "Docker Sandbox execution", "LangChain"] },
+                { name: "Deploy vLLM Server on AWS EC2", uses: ["vLLM", "AWS", "FastAPI"] },
+                { name: "DPO Alignment on Custom Dataset", uses: ["TRL", "DPO", "PyTorch"] },
+                { name: "GraphRAG Knowledge Engine", uses: ["Neo4j", "LLaMA Index", "Cypher queries"] }
+            ]
+        },
+        checklists: {
+            phase: ["Understand Self-Attention math", "Grasp LoRA vs Full Fine-tuning", "Understand ReAct Pattern"],
+            skill: ["I can build a StateGraph in LangGraph", "I can use QLoRA via Unsloth", "I can implement Hybrid Search"],
+            revision: ["Revise KV Caching", "Revise Cross-Encoders", "Revise PagedAttention"],
+            interview: ["How does LoRA drastically reduce VRAM requirements?", "Explain the difference between LangChain and LangGraph."],
+            portfolio: ["Deploy an interactive LangGraph agent on Streamlit Cloud"]
+        }
+    }
+    ,{
+        phase: "PHASE 7",
+        title: "Backend Engineering, APIs & Async Workers",
+        overview: { why: "An AI model is useless if it lives in a notebook. You must expose it as a secure, scalable API.", duration: "5 Weeks" },
+        skills: [
+            {
+                name: "APIs & Web Frameworks",
+                children: [
+                    { name: "API Foundations", children: ["HTTP Methods", "Status Codes", "Headers & Query Params", "JSON Payloads", "RESTful Design Principles", "GraphQL"] },
+                    { name: "FastAPI Deep Dive", children: ["Path & Query Parameters", "Pydantic", "Dependency Injection", "Middleware & CORS", "Exception Handling", "Swagger UI", "Background Tasks", "Lifespan Events", "WebSockets"] },
+                    { name: "Authentication & Security", children: ["JWT", "OAuth2", "API Keys", "Rate Limiting", "Password Hashing", "SQL Injection prevention", "XSS prevention"] },
+                    { name: "Database Integration", children: ["SQLAlchemy", "Alembic", "Connection Pooling", "Session Management"] }
+                ]
+            },
+            {
+                name: "Networking, Gateways & Service Mesh",
+                children: [
+                    { name: "API Gateways", children: ["API Gateway", "Kong", "Traefik", "Nginx", "Load Balancing", "Reverse Proxy"] },
+                    { name: "Service Mesh", children: ["Service Mesh", "Envoy", "Istio", "Consul", "Mutual TLS (mTLS)"] },
+                    { name: "RPC & Messaging", children: ["gRPC", "Protocol Buffers (Protobuf)", "NATS", "WebSockets", "Server-Sent Events (SSE)", "WebRTC"] }
+                ]
+            },
+            {
+                name: "Asynchronous Workflows",
+                children: [
+                    { name: "Message Brokers", children: ["RabbitMQ", "Redis Pub/Sub", "Apache Kafka"] },
+                    { name: "Task Queues", children: ["Celery", "RQ", "Celery Beat", "Flower"] }
+                ],
+                interview: ["Why use Celery for model inference instead of processing it in the FastAPI request loop?"]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "Simple CRUD FastAPI", uses: ["FastAPI", "Pydantic", "SQLite"] },
+                { name: "JWT Auth Service", uses: ["OAuth2", "Bcrypt", "JWT"] },
+                { name: "Text Summarization API", uses: ["Hugging Face", "FastAPI"] },
+                { name: "Basic WebSockets Chat", uses: ["FastAPI WebSockets", "HTML/JS"] },
+                { name: "Rate Limiter Middleware", uses: ["FastAPI", "Redis"] }
+            ],
+            intermediate: [
+                { name: "Image Generation API with Celery", uses: ["FastAPI", "Celery", "Redis", "Stable Diffusion"] },
+                { name: "Real-time AI Chat Backend (Streaming)", uses: ["SSE", "OpenAI API"] },
+                { name: "Database Migration Pipeline", uses: ["SQLAlchemy", "Alembic", "Postgres"] },
+                { name: "OAuth2 GitHub Login App", uses: ["FastAPI", "Third-party OAuth"] },
+                { name: "Stock Price Tracker", uses: ["Celery Beat", "Requests", "PostgreSQL"] }
+            ],
+            advanced: [
+                { name: "LiveKit Voice Agent Server", uses: ["WebRTC", "LiveKit", "AsyncIO", "LLM APIs"] },
+                { name: "Microservices AI Architecture", uses: ["FastAPI", "RabbitMQ", "Docker Compose"] },
+                { name: "Enterprise Gateway Router", uses: ["Nginx", "Rate Limiting", "Load Balancing"] },
+                { name: "Serverless LLM Inference", uses: ["AWS Lambda", "API Gateway"] },
+                { name: "Distributed Cache System", uses: ["Redis Cluster", "Consistent Hashing"] }
+            ]
+        },
+        checklists: {
+            phase: ["Understand async/await in Python", "Understand JWT structure", "Understand Message Brokers"],
+            skill: ["I can build a REST API with FastAPI", "I can use Celery for background tasks", "I can implement WebSockets"],
+            revision: ["Revise SQLAlchemy relationships", "Revise HTTP Status Codes", "Revise CORS concepts"],
+            interview: ["Explain OAuth2 flow", "How do you handle a thundering herd problem in APIs?"],
+            portfolio: ["Deploy a full-stack FastAPI app with Celery and Postgres"]
+        }
+    },
+    {
+        phase: "PHASE 8",
+        title: "MLOps, Cloud Deployment & Kubernetes",
+        overview: { why: "Packaging, deploying, monitoring, and scaling AI models across enterprise cloud infrastructure.", duration: "6 Weeks" },
+        skills: [
+            {
+                name: "Production ML Lifecycle & MLOps Core",
+                children: [
+                    { name: "Feature Store", children: ["Feature Store", "Feast", "Feast Registry", "Online vs Offline Features"] },
+                    { name: "Experiment Tracking & Versioning", children: ["MLflow", "Weights & Biases (W&B)", "DVC", "Model Registry", "Model Versioning"] },
+                    { name: "ML Pipelines & Config", children: ["Kubeflow", "Kubeflow Pipelines (KFP)", "Apache Beam", "ML Metadata (MLMD)", "Hydra", "OmegaConf"] }
+                ],
+                interview: ["Explain how DVC differs from Git."]
+            },
+            {
+                name: "Model Serving & Inference",
+                children: [
+                    { name: "Inference Strategies", children: ["Batch Inference", "Online Inference", "Streaming Inference", "Offline Inference", "Inference Optimization"] },
+                    { name: "Model Optimization & Compilers", children: ["ONNX", "ONNX Runtime", "OpenVINO", "TensorRT", "TensorRT-LLM", "TorchScript", "torch.compile()", "vLLM Scheduler Concepts"] },
+                    { name: "Serving Frameworks", children: ["TorchServe", "BentoML", "KServe", "Seldon Core", "NVIDIA Triton Inference Server", "Ray Serve"] }
+                ]
+            },
+            {
+                name: "Containerization & Orchestration",
+                children: [
+                    { name: "Docker", children: ["Dockerfile", "Multi-Stage Builds", "Docker Compose"] },
+                    { name: "Kubernetes (K8s)", children: ["Pods", "Deployments", "Services", "Ingress", "ConfigMaps", "Helm Charts"] }
+                ]
+            },
+            {
+                name: "Cloud Architecture (Deep Dive)",
+                children: [
+                    { name: "AWS", children: ["IAM", "ECS", "EKS", "CloudWatch", "EventBridge", "SQS", "SNS", "CloudFront", "Route53", "Secrets Manager", "Parameter Store"] },
+                    { name: "Azure", children: ["Azure Functions", "Cosmos DB", "Azure Storage", "Azure Monitor"] },
+                    { name: "GCP", children: ["Pub/Sub", "Cloud Functions", "Cloud Storage", "Cloud Logging"] }
+                ]
+            },
+            {
+                name: "CI/CD & Deployments",
+                children: [
+                    { name: "CI/CD Pipelines", children: ["GitHub Actions", "GitLab CI"] },
+                    { name: "Deployment Strategies", children: ["Canary Deployment", "Shadow Deployment", "Blue Green Deployment", "A/B Deployment"] },
+                    { name: "Infrastructure as Code", children: ["Terraform", "Pulumi"] }
+                ]
+            },
+            {
+                name: "Model Monitoring in Production",
+                children: [
+                    { name: "Monitoring", children: ["Model Monitoring", "Data Drift", "Concept Drift", "Evidently AI", "Prometheus", "Grafana"] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "Dockerize a Python Script", uses: ["Docker", "Dockerfile"] },
+                { name: "Docker Compose FastAPI + Postgres", uses: ["Docker Compose", "Networking"] },
+                { name: "Track Model with MLflow", uses: ["MLflow", "Scikit-Learn"] },
+                { name: "GitHub Actions Linter Pipeline", uses: ["CI/CD", "Flake8", "Pytest"] },
+                { name: "Deploy Static Site to AWS S3", uses: ["AWS S3", "IAM"] }
+            ],
+            intermediate: [
+                { name: "Automated Model Training CI/CD", uses: ["GitHub Actions", "Docker", "PyTorch"] },
+                { name: "Deploy ML Model on AWS EC2", uses: ["EC2", "Nginx", "Gunicorn"] },
+                { name: "Terraform AWS Architecture", uses: ["Terraform", "VPC", "EC2"] },
+                { name: "Prometheus & Grafana Dashboard", uses: ["Prometheus", "Docker", "Monitoring"] },
+                { name: "Data Version Control (DVC) Setup", uses: ["Git", "DVC", "S3"] }
+            ],
+            advanced: [
+                { name: "Deploy Llama 3 with vLLM on K8s", uses: ["Kubernetes", "vLLM", "GPUs"] },
+                { name: "End-to-End MLOps Pipeline", uses: ["Airflow", "MLflow", "Jenkins", "AWS"] },
+                { name: "Distributed Training with Ray", uses: ["Ray Cluster", "PyTorch DDP"] },
+                { name: "Model Drift Monitoring System", uses: ["Evidently AI", "Grafana", "FastAPI"] },
+                { name: "NVIDIA Triton Inference Cluster", uses: ["Triton", "ONNX", "K8s Helm"] }
+            ]
+        },
+        checklists: {
+            phase: ["Understand Docker networking", "Understand K8s Pod lifecycle", "Understand CI/CD principles"],
+            skill: ["I can write a multi-stage Dockerfile", "I can write a GitHub Actions workflow", "I can track experiments in MLflow"],
+            revision: ["Revise Terraform state management", "Revise K8s Ingress vs LoadBalancer", "Revise Data Drift detection"],
+            interview: ["What happens if a Pod crashes in a K8s Deployment?", "Explain Docker Multi-Stage Builds."],
+            portfolio: ["Publish a repository with full IaC (Terraform) and CI/CD setup"]
+        }
+    },
+    {
+        phase: "PHASE 9",
+        title: "Portfolio, Resume & FAANG Interview Prep",
+        overview: { why: "Passing the rigorous technical and behavioral loops of FAANG and top-tier AI startups requires specific preparation strategies.", duration: "Ongoing" },
+        skills: [
+            {
+                name: "System Design (ML & Backend)",
+                children: [
+                    { name: "Scalability Concepts", children: ["Vertical vs Horizontal Scaling", "Load Balancing (Layer 4 vs Layer 7)", "Database Sharding", "Caching (Redis, Memcached)", "CAP Theorem", "Microservices vs Monoliths"] },
+                    { name: "ML System Design", children: ["Feature Stores", "Online vs Offline Predictions", "Model Re-training pipelines", "A/B Testing Deployments (Canary, Blue/Green, Shadow Mode)"] },
+                    { name: "Design Scenarios", children: ["Design Netflix Recommendation Engine", "Design Twitter Feed", "Design a low-latency LLM Voice Agent Architecture", "Design a Fraud Detection System"] }
+                ]
+            },
+            {
+                name: "Algorithms & LeetCode",
+                children: [
+                    { name: "Data Structures Mastery", children: ["Arrays, Strings, Hash Maps, Trees, Graphs"] },
+                    { name: "Coding Patterns", children: ["Sliding Window", "Two Pointers", "Fast & Slow Pointers", "Merge Intervals", "Cyclic Sort", "Top K Elements", "Prefix Sum"] },
+                    { name: "Mock Interviews", children: ["Pramp", "Interviewing.io", "Whiteboard coding", "Time/Space Complexity articulation"] }
+                ]
+            },
+            {
+                name: "Portfolio, Branding & Behavioral",
+                children: [
+                    { name: "Resume Optimization", children: ["Action Verbs", "Quantifiable Metrics (e.g., 'Reduced latency by 40%')", "ATS Friendly Formats (Harvard Template)", "Highlighting End-to-End projects"] },
+                    { name: "GitHub Portfolio", children: ["Markdown READMEs", "Architecture Diagrams (Mermaid/Excalidraw)", "Contribution Graph", "Open Source PRs"] },
+                    { name: "Behavioral Prep (STAR Method)", children: ["Situation, Task, Action, Result", "Handling conflict with PMs", "Navigating technical debt", "Why do you want to work here?", "Tell me about a time you failed."] }
+                ]
+            }
+        ],
+        projects: {
+            beginner: [
+                { name: "Resume Overhaul", uses: ["LaTeX", "Metrics", "Action Verbs"] },
+                { name: "GitHub Profile Polish", uses: ["Markdown", "Pinned Repos"] },
+                { name: "Solve 50 LeetCode Easy", uses: ["Python", "Data Structures"] },
+                { name: "Write STAR Stories", uses: ["Behavioral Prep", "Google Docs"] },
+                { name: "System Design Primer Read", uses: ["Grokking System Design"] }
+            ],
+            intermediate: [
+                { name: "Solve 50 LeetCode Medium", uses: ["Patterns", "Optimization"] },
+                { name: "Technical Blog Post", uses: ["Medium/Substack", "System Design Breakdown"] },
+                { name: "Architecture Diagram Portfolio", uses: ["Excalidraw", "AWS", "Microservices"] },
+                { name: "Open Source Contribution", uses: ["LangChain/HuggingFace repo", "Pull Requests"] },
+                { name: "Live Mock Interview Recordings", uses: ["Pramp", "Peer Feedback"] }
+            ],
+            advanced: [
+                { name: "Capstone: Enterprise Scalable GenAI SaaS", uses: ["Next.js", "FastAPI", "vLLM", "Docker", "Stripe"] },
+                { name: "Kaggle Competitions Master Tier", uses: ["Ensembling", "Custom Architectures"] },
+                { name: "AI Research Paper Recreation", uses: ["PyTorch", "ArXiv", "GitHub Release"] },
+                { name: "End-to-End System Design Mock Loop", uses: ["FAANG Engineer Mocking"] },
+                { name: "Full Stack AI Automation Tool", uses: ["LangGraph", "React", "Postgres"] }
+            ]
+        },
+        checklists: {
+            phase: ["Format Resume to Harvard standard", "Write 5 STAR behavioral stories", "Understand the CAP Theorem"],
+            skill: ["I can solve LeetCode mediums in 25 mins", "I can draw a system design architecture", "I can articulate time/space complexity smoothly"],
+            revision: ["Revise Sliding Window pattern", "Revise Load Balancing algorithms", "Revise Canary vs Blue/Green deployments"],
+            interview: ["Practice a full 45-min System Design Mock", "Practice Behavioral 'Tell me about yourself'"],
+            portfolio: ["Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs"]
+        }
+    }
+];
+
+// UI Logic
+let currentPhaseIndex = 0;
+let userProgress = JSON.parse(localStorage.getItem('aiml_roadmap_progress')) || {};
+
+function init() { renderSidebar(); renderPhase(0); }
+
+function renderSidebar() {
+    const sidebar = document.getElementById('nav-items');
+    sidebar.innerHTML = '';
+    roadmapData.forEach((phase, index) => {
+        const item = document.createElement('div');
+        item.className = `nav-item ${index === currentPhaseIndex ? 'active' : ''}`;
+        item.innerHTML = `<div><strong>${phase.phase}</strong><div style="font-size:0.8rem; opacity:0.8">${phase.title.substring(0,25)}...</div></div>`;
+        item.onclick = () => { currentPhaseIndex = index; renderSidebar(); renderPhase(index); };
+        sidebar.appendChild(item);
+    });
+}
+
+function renderNode(node, depth, parentPath) {
+    if (typeof node === 'string') return `<li class="leaf-node"><span class="bullet">▹</span> ${node}</li>`;
+    const path = parentPath ? `${parentPath}-${node.name.replace(/\W+/g, '')}` : node.name.replace(/\W+/g, '');
+    const isChecked = userProgress[path] ? 'checked' : '';
+    const completedClass = userProgress[path] ? 'completed' : '';
+    
+    let html = `
+        <div class="nested-card depth-${depth} ${completedClass}" id="node-${path}">
+            <div class="nested-header" onclick="toggleNode('${path}')">
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                    <span class="chevron" id="icon-${path}">▶</span>
+                    <input type="checkbox" ${isChecked} onclick="event.stopPropagation(); toggleProgress('${path}')">
+                    <span class="node-title">${node.name}</span>
+                </div>
+            </div>
+            <div class="nested-body" id="body-${path}">
+    `;
+    if (node.children && node.children.length > 0) {
+        html += `<ul class="children-list">`;
+        node.children.forEach(child => { html += renderNode(child, depth + 1, path); });
+        html += `</ul>`;
+    }
+    if(node.interview || node.practice || node.resources) {
+        html += `<div class="node-details">`;
+        if (node.interview) html += `<h5>🎤 Interview Prep</h5><ul>${node.interview.map(i => `<li>${i}</li>`).join('')}</ul>`;
+        if (node.practice) html += `<h5>💻 Practice</h5><ul>${node.practice.map(p => `<li>${p}</li>`).join('')}</ul>`;
+        if (node.resources) html += `<h5>📚 Resources</h5><div class="tags">${node.resources.map(r => `<span class="tag">${r}</span>`).join('')}</div>`;
+        html += `</div>`;
+    }
+    html += `</div></div>`;
+    return html;
+}
+
+function renderProjects(projectsObj) {
+    if(!projectsObj) return '';
+    let html = `<div class="projects-section">`;
+    const tiers = ['beginner', 'intermediate', 'advanced'];
+    tiers.forEach(tier => {
+        if(projectsObj[tier] && projectsObj[tier].length > 0) {
+            html += `<h3 class="tier-title">Top 5 ${tier.charAt(0).toUpperCase() + tier.slice(1)} Projects</h3><div class="top5-grid">`;
+            projectsObj[tier].forEach((p, i) => {
+                html += `
+                    <div class="top5-card ${tier}">
+                        <div class="top5-number">${i+1}</div>
+                        <h4>${p.name}</h4>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Key Concepts:</div>
+                        <div class="tags">${p.uses.map(u => `<span class="tag tool">${u}</span>`).join('')}</div>
+                    </div>
+                `;
+            });
+            html += `</div>`;
+        }
+    });
+    html += `</div>`;
+    return html;
+}
+
+function renderChecklists(checklists, phaseIndex) {
+    if(!checklists) return '';
+    let html = `<div class="checklists-section"><h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: #fff;">Phase Completion Checklists</h3><div class="checklist-grid">`;
+    
+    Object.keys(checklists).forEach(category => {
+        html += `<div class="checklist-col"><h4>${category.toUpperCase()} CHECKLIST</h4>`;
+        checklists[category].forEach((item, i) => {
+            const key = `chk-${phaseIndex}-${category}-${i}`;
+            const isChecked = userProgress[key] ? 'checked' : '';
+            html += `
+                <div class="checklist-item ${isChecked}" id="item-${key}">
+                    <input type="checkbox" ${isChecked} onchange="toggleChecklist('${key}')">
+                    <span>${item}</span>
+                </div>
+            `;
+        });
+        html += `</div>`;
+    });
+    html += `</div></div>`;
+    return html;
+}
+
+function renderPhase(index) {
+    const phase = roadmapData[index];
+    if(!phase) { document.getElementById('content-area').innerHTML = `<h2>Under Construction</h2>`; return; }
+    let html = `<div class="header-card"><h1 class="header-title">${phase.phase}: ${phase.title}</h1><p style="font-size: 1.1rem; color: var(--text-secondary);">${phase.overview.why}</p></div>`;
+    phase.skills.forEach(skill => { html += renderNode(skill, 0, `p${index}`); });
+    html += renderProjects(phase.projects);
+    html += renderChecklists(phase.checklists, index);
+    document.getElementById('content-area').innerHTML = html;
+}
+
+function toggleNode(path) { document.getElementById(`node-${path}`).classList.toggle('expanded'); }
+function toggleProgress(path) {
+    if(userProgress[path]) { delete userProgress[path]; document.getElementById(`node-${path}`).classList.remove('completed'); } 
+    else { userProgress[path] = true; document.getElementById(`node-${path}`).classList.add('completed'); }
+    localStorage.setItem('aiml_roadmap_progress', JSON.stringify(userProgress));
+}
+function toggleChecklist(key) {
+    if(userProgress[key]) { delete userProgress[key]; document.getElementById(`item-${key}`).classList.remove('checked'); }
+    else { userProgress[key] = true; document.getElementById(`item-${key}`).classList.add('checked'); }
+    localStorage.setItem('aiml_roadmap_progress', JSON.stringify(userProgress));
+}
+function toggleTheme() {
+    const root = document.documentElement;
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+}
+window.onload = init;
+</script>
+</body>
+</html>
