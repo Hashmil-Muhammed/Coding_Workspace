@@ -1,0 +1,692 @@
+PHASE 0: Setup, CS Foundations & Data Structures
+Overview: AI relies on scalable computing and optimal algorithms. Missing these leads to slow and inefficient models. (Duration: 3 Weeks)
+
+SKILLS:
+
+1. Development Environment & OS
+   A) Operating Systems:
+    * Kernel Architecture
+      - Monolithic Kernel
+      - Microkernel
+      - Hybrid Kernel
+      - System Calls
+      - User Space vs Kernel Space
+      - Process Scheduler
+      - Memory Manager
+      - Virtual File System (VFS)
+      - Device Drivers
+      - Interrupts and Exceptions
+    * Memory Management
+      - Paging
+      - Virtual Memory
+      - Swap
+      - Segmentation
+      - Page Faults
+    * Processes vs Threads
+      - Processes vs Threads Core Concepts
+      - Processes vs Threads Advanced
+      - Processes vs Threads Interview Prep
+    * Context Switching
+      - Context Switching Core Concepts
+      - Context Switching Advanced
+      - Context Switching Interview Prep
+    * Deadlocks & Semaphores
+      - Deadlocks & Semaphores Core Concepts
+      - Deadlocks & Semaphores Advanced
+      - Deadlocks & Semaphores Interview Prep
+    * Concurrency basics
+      - Concurrency basics Core Concepts
+      - Concurrency basics Advanced
+      - Concurrency basics Interview Prep
+    * File Systems
+      - File Systems Core Concepts
+      - File Systems Advanced
+      - File Systems Interview Prep
+    * Inter-process Communication
+      - IPC
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   B) Linux Basics:
+    * File Hierarchy Standard
+      - FHS
+    * User & Group Management
+      - User & Group Management Core Concepts
+      - User & Group Management Advanced
+      - User & Group Management Interview Prep
+    * Permissions
+      - chmod
+      - chown
+      - umask
+    * Package Managers
+      - apt
+      - yum
+      - pacman
+    * Daemons & Services
+      - systemd
+    * Environment Variables
+      - Environment Variables Core Concepts
+      - Environment Variables Advanced
+      - Environment Variables Interview Prep
+    * SSH Configuration
+      - SSH Configuration Core Concepts
+      - SSH Configuration Advanced
+      - SSH Configuration Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   C) CLI & Bash:
+    * Navigation
+      - cd
+      - ls
+      - pwd
+    * File Manipulation
+      - cp
+      - mv
+      - rm
+      - touch
+      - mkdir
+    * Searching
+      - grep
+      - find
+      - awk
+      - sed
+    * Networking
+      - curl
+      - wget
+      - ping
+      - netstat
+    * Bash Scripting
+      - variables
+      - loops
+      - conditions
+      - cron jobs
+    * Piping & Redirection
+      - Piping & Redirection Core Concepts
+      - Piping & Redirection Advanced
+      - Piping & Redirection Interview Prep
+    * Aliases
+      - Aliases Core Concepts
+      - Aliases Advanced
+      - Aliases Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   D) Tools:
+    * VS Code / PyCharm
+      - VS Code / PyCharm Core Concepts
+      - VS Code / PyCharm Advanced
+      - VS Code / PyCharm Interview Prep
+    * Jupyter Notebooks
+      - Jupyter Notebooks Core Concepts
+      - Jupyter Notebooks Advanced
+      - Jupyter Notebooks Interview Prep
+    * SSH
+      - Keys
+      - Config
+    * Tmux / Screen
+      - Tmux / Screen Core Concepts
+      - Tmux / Screen Advanced
+      - Tmux / Screen Interview Prep
+    * Docker Desktop
+      - Docker Desktop Core Concepts
+      - Docker Desktop Advanced
+      - Docker Desktop Interview Prep
+    * Postman / Insomnia
+      - Postman / Insomnia Core Concepts
+      - Postman / Insomnia Advanced
+      - Postman / Insomnia Interview Prep
+    * JIRA / Azure DevOps
+      - JIRA / Azure DevOps Core Concepts
+      - JIRA / Azure DevOps Advanced
+      - JIRA / Azure DevOps Interview Prep
+
+-------------------------------------------------------
+
+2. Version Control & Git
+   A) Core:
+    * Git
+      - Git Core Concepts
+      - Git Advanced
+      - Git Interview Prep
+    * init
+      - init Core Concepts
+      - init Advanced
+      - init Interview Prep
+    * add
+      - add Core Concepts
+      - add Advanced
+      - add Interview Prep
+    * commit
+      - commit Core Concepts
+      - commit Advanced
+      - commit Interview Prep
+    * status
+      - status Core Concepts
+      - status Advanced
+      - status Interview Prep
+    * log
+      - log Core Concepts
+      - log Advanced
+      - log Interview Prep
+    * diff
+      - diff Core Concepts
+      - diff Advanced
+      - diff Interview Prep
+    * blame
+      - blame Core Concepts
+      - blame Advanced
+      - blame Interview Prep
+    * rm
+      - rm Core Concepts
+      - rm Advanced
+      - rm Interview Prep
+    * mv
+      - mv Core Concepts
+      - mv Advanced
+      - mv Interview Prep
+    * .gitignore
+      - .gitignore Core Concepts
+      - .gitignore Advanced
+      - .gitignore Interview Prep
+   B) Branching:
+    * branch
+      - branch Core Concepts
+      - branch Advanced
+      - branch Interview Prep
+    * checkout
+      - checkout Core Concepts
+      - checkout Advanced
+      - checkout Interview Prep
+    * switch
+      - switch Core Concepts
+      - switch Advanced
+      - switch Interview Prep
+    * merge
+      - merge Core Concepts
+      - merge Advanced
+      - merge Interview Prep
+    * Merge Conflicts
+      - Merge Conflicts Core Concepts
+      - Merge Conflicts Advanced
+      - Merge Conflicts Interview Prep
+    * Git Flow
+      - Git Flow Core Concepts
+      - Git Flow Advanced
+      - Git Flow Interview Prep
+    * Feature Branching Strategy
+      - Feature Branching Strategy Core Concepts
+      - Feature Branching Strategy Advanced
+      - Feature Branching Strategy Interview Prep
+    * Pull Requests / Merge Requests
+      - Pull Requests / Merge Requests Core Concepts
+      - Pull Requests / Merge Requests Advanced
+      - Pull Requests / Merge Requests Interview Prep
+   C) Advanced:
+    * rebase
+      - rebase Core Concepts
+      - rebase Advanced
+      - rebase Interview Prep
+    * Interactive rebase
+      - -i
+    * stash
+      - stash Core Concepts
+      - stash Advanced
+      - stash Interview Prep
+    * cherry-pick
+      - cherry-pick Core Concepts
+      - cherry-pick Advanced
+      - cherry-pick Interview Prep
+    * reset
+      - --soft
+      - --mixed
+      - --hard
+    * revert
+      - revert Core Concepts
+      - revert Advanced
+      - revert Interview Prep
+    * reflog
+      - reflog Core Concepts
+      - reflog Advanced
+      - reflog Interview Prep
+    * Submodules
+      - Submodules Core Concepts
+      - Submodules Advanced
+      - Submodules Interview Prep
+    * Squashing Commits
+      - Squashing Commits Core Concepts
+      - Squashing Commits Advanced
+      - Squashing Commits Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+
+-------------------------------------------------------
+
+3. Data Structures
+   A) Basic:
+    * Arrays
+      - Arrays Core Concepts
+      - Arrays Advanced
+      - Arrays Interview Prep
+    * 2D Arrays
+      - 2D Arrays Core Concepts
+      - 2D Arrays Advanced
+      - 2D Arrays Interview Prep
+    * Multi-Dimensional Arrays
+      - 3D Arrays
+    * Matrix Representation
+      - Matrix Representation Core Concepts
+      - Matrix Representation Advanced
+      - Matrix Representation Interview Prep
+    * Sparse Arrays
+      - Sparse Arrays Core Concepts
+      - Sparse Arrays Advanced
+      - Sparse Arrays Interview Prep
+    * Sparse Matrices
+      - Sparse Matrices Core Concepts
+      - Sparse Matrices Advanced
+      - Sparse Matrices Interview Prep
+    * CSR Format
+      - CSR Format Core Concepts
+      - CSR Format Advanced
+      - CSR Format Interview Prep
+    * CSC Format
+      - CSC Format Core Concepts
+      - CSC Format Advanced
+      - CSC Format Interview Prep
+    * Dynamic Array Resizing
+      - Dynamic Array Resizing Core Concepts
+      - Dynamic Array Resizing Advanced
+      - Dynamic Array Resizing Interview Prep
+    * Amortized Array Growth
+      - Amortized Array Growth Core Concepts
+      - Amortized Array Growth Advanced
+      - Amortized Array Growth Interview Prep
+    * Memory Layout
+      - Memory Layout Core Concepts
+      - Memory Layout Advanced
+      - Memory Layout Interview Prep
+    * Strings
+      - Strings Core Concepts
+      - Strings Advanced
+      - Strings Interview Prep
+    * KMP Algorithm
+      - KMP Algorithm Core Concepts
+      - KMP Algorithm Advanced
+      - KMP Algorithm Interview Prep
+    * Rabin-Karp Algorithm
+      - Rabin-Karp Algorithm Core Concepts
+      - Rabin-Karp Algorithm Advanced
+      - Rabin-Karp Algorithm Interview Prep
+    * Z Algorithm
+      - Z Algorithm Core Concepts
+      - Z Algorithm Advanced
+      - Z Algorithm Interview Prep
+    * Manacher Algorithm
+      - Manacher Algorithm Core Concepts
+      - Manacher Algorithm Advanced
+      - Manacher Algorithm Interview Prep
+    * Suffix Automaton
+      - Suffix Automaton Core Concepts
+      - Suffix Automaton Advanced
+      - Suffix Automaton Interview Prep
+    * Rolling Hash
+      - Rolling Hash Core Concepts
+      - Rolling Hash Advanced
+      - Rolling Hash Interview Prep
+    * Linked Lists
+      - Singly
+      - Doubly
+      - Circular
+    * Stack
+      - Stack Core Concepts
+      - Stack Advanced
+      - Stack Interview Prep
+    * Queue
+      - Queue Core Concepts
+      - Queue Advanced
+      - Queue Interview Prep
+    * Deque
+      - Deque Core Concepts
+      - Deque Advanced
+      - Deque Interview Prep
+    * Memory Allocation
+      - Contiguous vs Non-Contiguous
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   B) Advanced:
+    * Hash Table
+      - Collision Handling
+      - Open Addressing
+      - Chaining
+      - Load Factor
+      - Rehashing
+      - Hash Functions
+    * Heap
+      - Min
+      - Max
+      - Heapify
+      - Priority Queue
+    * Bloom Filters
+      - Bloom Filters Core Concepts
+      - Bloom Filters Advanced
+      - Bloom Filters Interview Prep
+    * LRU Cache
+      - LRU Cache Core Concepts
+      - LRU Cache Advanced
+      - LRU Cache Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   C) Trees:
+    * Binary Tree
+      - Binary Tree Core Concepts
+      - Binary Tree Advanced
+      - Binary Tree Interview Prep
+    * Binary Search Tree
+      - BST
+    * AVL Tree
+      - AVL Tree Core Concepts
+      - AVL Tree Advanced
+      - AVL Tree Interview Prep
+    * Red Black Tree
+      - Red Black Tree Core Concepts
+      - Red Black Tree Advanced
+      - Red Black Tree Interview Prep
+    * Trie
+      - Trie Core Concepts
+      - Trie Advanced
+      - Trie Interview Prep
+    * Segment Tree
+      - Segment Tree Core Concepts
+      - Segment Tree Advanced
+      - Segment Tree Interview Prep
+    * Fenwick Tree
+      - BIT
+    * B Tree
+      - B Tree Core Concepts
+      - B Tree Advanced
+      - B Tree Interview Prep
+    * B+ Tree
+      - B+ Tree Core Concepts
+      - B+ Tree Advanced
+      - B+ Tree Interview Prep
+    * LSM Trees
+      - LSM Trees Core Concepts
+      - LSM Trees Advanced
+      - LSM Trees Interview Prep
+    * Log Structured Merge Trees
+      - Log Structured Merge Trees Core Concepts
+      - Log Structured Merge Trees Advanced
+      - Log Structured Merge Trees Interview Prep
+    * Suffix Trees
+      - Suffix Trees Core Concepts
+      - Suffix Trees Advanced
+      - Suffix Trees Interview Prep
+    * Suffix Arrays
+      - Suffix Arrays Core Concepts
+      - Suffix Arrays Advanced
+      - Suffix Arrays Interview Prep
+    * Tree Compression
+      - Tree Compression Core Concepts
+      - Tree Compression Advanced
+      - Tree Compression Interview Prep
+    * Persistent Trees
+      - Persistent Trees Core Concepts
+      - Persistent Trees Advanced
+      - Persistent Trees Interview Prep
+    * Tree Traversals
+      - Inorder
+      - Preorder
+      - Postorder
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   D) Graph:
+    * Adjacency Matrix
+      - Adjacency Matrix Core Concepts
+      - Adjacency Matrix Advanced
+      - Adjacency Matrix Interview Prep
+    * Adjacency List
+      - Adjacency List Core Concepts
+      - Adjacency List Advanced
+      - Adjacency List Interview Prep
+    * Union Find
+      - Disjoint Set
+    * Directed vs Undirected
+      - Directed vs Undirected Core Concepts
+      - Directed vs Undirected Advanced
+      - Directed vs Undirected Interview Prep
+    * Weighted vs Unweighted
+      - Weighted vs Unweighted Core Concepts
+      - Weighted vs Unweighted Advanced
+      - Weighted vs Unweighted Interview Prep
+    * DAGs
+      - Directed Acyclic Graphs
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+
+-------------------------------------------------------
+
+4. Algorithms
+   A) Complexity:
+    * Time Complexity
+      - Big-O
+      - Omega
+      - Theta
+    * Space Complexity
+      - Space Complexity Core Concepts
+      - Space Complexity Advanced
+      - Space Complexity Interview Prep
+    * Amortized Analysis
+      - Amortized Analysis Core Concepts
+      - Amortized Analysis Advanced
+      - Amortized Analysis Interview Prep
+    * Master Theorem
+      - Master Theorem Core Concepts
+      - Master Theorem Advanced
+      - Master Theorem Interview Prep
+    * Best
+      - Best Core Concepts
+      - Best Advanced
+      - Best Interview Prep
+    * Worst
+      - Worst Core Concepts
+      - Worst Advanced
+      - Worst Interview Prep
+    * Average Case
+      - Average Case Core Concepts
+      - Average Case Advanced
+      - Average Case Interview Prep
+   B) Sorting:
+    * Bubble
+      - Bubble Core Concepts
+      - Bubble Advanced
+      - Bubble Interview Prep
+    * Selection
+      - Selection Core Concepts
+      - Selection Advanced
+      - Selection Interview Prep
+    * Insertion
+      - Insertion Core Concepts
+      - Insertion Advanced
+      - Insertion Interview Prep
+    * Merge
+      - Merge Core Concepts
+      - Merge Advanced
+      - Merge Interview Prep
+    * Quick
+      - Quick Core Concepts
+      - Quick Advanced
+      - Quick Interview Prep
+    * Heap
+      - Heap Core Concepts
+      - Heap Advanced
+      - Heap Interview Prep
+    * Counting
+      - Counting Core Concepts
+      - Counting Advanced
+      - Counting Interview Prep
+    * Radix
+      - Radix Core Concepts
+      - Radix Advanced
+      - Radix Interview Prep
+    * Bucket Sort
+      - Bucket Sort Core Concepts
+      - Bucket Sort Advanced
+      - Bucket Sort Interview Prep
+    * Stability in Sorting
+      - Stability in Sorting Core Concepts
+      - Stability in Sorting Advanced
+      - Stability in Sorting Interview Prep
+    * In-place vs Out-of-place
+      - In-place vs Out-of-place Core Concepts
+      - In-place vs Out-of-place Advanced
+      - In-place vs Out-of-place Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   C) Searching:
+    * Linear Search
+      - Linear Search Core Concepts
+      - Linear Search Advanced
+      - Linear Search Interview Prep
+    * Binary Search
+      - Binary Search Core Concepts
+      - Binary Search Advanced
+      - Binary Search Interview Prep
+    * Ternary Search
+      - Ternary Search Core Concepts
+      - Ternary Search Advanced
+      - Ternary Search Interview Prep
+    * Interpolation Search
+      - Interpolation Search Core Concepts
+      - Interpolation Search Advanced
+      - Interpolation Search Interview Prep
+   D) Graph Algos:
+    * DFS
+      - DFS Core Concepts
+      - DFS Advanced
+      - DFS Interview Prep
+    * BFS
+      - BFS Core Concepts
+      - BFS Advanced
+      - BFS Interview Prep
+    * Cycle Detection
+      - Cycle Detection Core Concepts
+      - Cycle Detection Advanced
+      - Cycle Detection Interview Prep
+    * Topological Sort
+      - Topological Sort Core Concepts
+      - Topological Sort Advanced
+      - Topological Sort Interview Prep
+    * Dijkstra
+      - Dijkstra Core Concepts
+      - Dijkstra Advanced
+      - Dijkstra Interview Prep
+    * Bellman-Ford
+      - Bellman-Ford Core Concepts
+      - Bellman-Ford Advanced
+      - Bellman-Ford Interview Prep
+    * Floyd Warshall
+      - Floyd Warshall Core Concepts
+      - Floyd Warshall Advanced
+      - Floyd Warshall Interview Prep
+    * Prim
+      - Prim Core Concepts
+      - Prim Advanced
+      - Prim Interview Prep
+    * Kruskal
+      - Kruskal Core Concepts
+      - Kruskal Advanced
+      - Kruskal Interview Prep
+    * A* Search
+      - A* Search Core Concepts
+      - A* Search Advanced
+      - A* Search Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   E) Techniques:
+    * Sliding Window
+      - Sliding Window Core Concepts
+      - Sliding Window Advanced
+      - Sliding Window Interview Prep
+    * Two Pointers
+      - Two Pointers Core Concepts
+      - Two Pointers Advanced
+      - Two Pointers Interview Prep
+    * Greedy
+      - Greedy Core Concepts
+      - Greedy Advanced
+      - Greedy Interview Prep
+    * Dynamic Programming
+      - Memoization
+      - Tabulation
+    * Backtracking
+      - Backtracking Core Concepts
+      - Backtracking Advanced
+      - Backtracking Interview Prep
+    * Divide and Conquer
+      - Divide and Conquer Core Concepts
+      - Divide and Conquer Advanced
+      - Divide and Conquer Interview Prep
+    * Bit Manipulation
+      - Bit Manipulation Core Concepts
+      - Bit Manipulation Advanced
+      - Bit Manipulation Interview Prep
+    * Interview Questions
+      - Interview Questions Core Concepts
+      - Interview Questions Advanced
+      - Interview Questions Interview Prep
+   F) Interview Questions:
+    * Explain Time Complexity of Quick Sort vs Merge Sort.
+      - Explain Time Complexity of Quick Sort vs Merge Sort. Core Concepts
+      - Explain Time Complexity of Quick Sort vs Merge Sort. Advanced
+      - Explain Time Complexity of Quick Sort vs Merge Sort. Interview Prep
+    * Detect a cycle in a directed graph.
+      - Detect a cycle in a directed graph. Core Concepts
+      - Detect a cycle in a directed graph. Advanced
+      - Detect a cycle in a directed graph. Interview Prep
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - CLI Bash Script Utilities (Uses: Bash, grep, awk)
+  - Custom Stack & Queue Implementation (Uses: Python, Data Structures)
+  - Sorting Algorithm Visualizer (CLI) (Uses: Python, Sorting)
+  - GitHub Profile Readme Stats (Uses: Git, Markdown)
+  - Personal Contact Book (Hash Map) (Uses: Hash Tables, Python)
+  Intermediate:
+  - In-Memory Key-Value Store (Redis Clone) (Uses: Hash Maps, TTL, Concurrency)
+  - Pathfinding Visualizer (Web) (Uses: Dijkstra, A*, HTML/JS)
+  - File Compression Utility (Uses: Huffman Coding, Trees)
+  - Custom Version Control System (Uses: Hashing, File I/O, Trees)
+  - Maze Generator & Solver (Uses: DFS, BFS, Backtracking)
+  Advanced:
+  - Distributed Rate Limiter (Uses: Algorithms, Redis, Sliding Window)
+  - Regex Engine from Scratch (Uses: Automata Theory, Trees, Parsing)
+  - Custom Memory Allocator (C/C++) (Uses: Pointers, OS Memory Management)
+  - B-Tree Database Indexer (Uses: B-Trees, File I/O, Data Structures)
+  - Multi-threaded Web Crawler (Uses: Graph Traversal, Concurrency)
+
+CHECKLISTS:
+  - Phase: Setup Linux Environment, Configure Git and SSH, Understand Big-O Notation
+  - Skill: I can write a Bash script with loops, I can implement a BST, I can use git rebase
+  - Revision: Revise Graph Algorithms, Revise DP Tabulation, Revise Quick Sort Partitioning
+  - Interview: Practice LeetCode Array/String questions, Practice Linked List reversals
+  - Portfolio: Push all algorithmic solutions to a clean GitHub Repo

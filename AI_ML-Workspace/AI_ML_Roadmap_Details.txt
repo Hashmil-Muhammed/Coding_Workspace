@@ -1,0 +1,6269 @@
+AI/ML ENGINEER ROADMAP
+========================
+
+PHASE 0: Setup, CS Foundations & Data Structures
+Overview: AI relies on scalable computing and optimal algorithms. Missing these leads to slow and inefficient models. (Duration: 3 Weeks)
+
+SKILLS:
+
+1. Development Environment & OS
+   A) Operating Systems:
+    * Kernel Architecture
+    * Memory Management
+    * Processes vs Threads
+    * Context Switching
+    * Deadlocks & Semaphores
+    * Concurrency basics
+    * File Systems
+    * Inter-process Communication
+    * Interview Questions
+   B) Linux Basics:
+    * File Hierarchy Standard
+    * User & Group Management
+    * Permissions
+    * Package Managers
+    * Daemons & Services
+    * Environment Variables
+    * SSH Configuration
+    * Interview Questions
+   C) CLI & Bash:
+    * Navigation
+    * File Manipulation
+    * Searching
+    * Networking
+    * Bash Scripting
+    * Piping & Redirection
+    * Aliases
+    * Interview Questions
+   D) Tools:
+    * VS Code / PyCharm
+    * Jupyter Notebooks
+    * SSH
+    * Tmux / Screen
+    * Docker Desktop
+    * Postman / Insomnia
+    * JIRA / Azure DevOps
+
+-------------------------------------------------------
+
+2. Version Control & Git
+   A) Core:
+    * Git
+    * init
+    * add
+    * commit
+    * status
+    * log
+    * diff
+    * blame
+    * rm
+    * mv
+    * .gitignore
+   B) Branching:
+    * branch
+    * checkout
+    * switch
+    * merge
+    * Merge Conflicts
+    * Git Flow
+    * Feature Branching Strategy
+    * Pull Requests / Merge Requests
+   C) Advanced:
+    * rebase
+    * Interactive rebase
+    * stash
+    * cherry-pick
+    * reset
+    * revert
+    * reflog
+    * Submodules
+    * Squashing Commits
+    * Interview Questions
+
+-------------------------------------------------------
+
+3. Data Structures
+   A) Basic:
+    * Arrays
+    * 2D Arrays
+    * Multi-Dimensional Arrays
+    * Matrix Representation
+    * Sparse Arrays
+    * Sparse Matrices
+    * CSR Format
+    * CSC Format
+    * Dynamic Array Resizing
+    * Amortized Array Growth
+    * Memory Layout
+    * Strings
+    * KMP Algorithm
+    * Rabin-Karp Algorithm
+    * Z Algorithm
+    * Manacher Algorithm
+    * Suffix Automaton
+    * Rolling Hash
+    * Linked Lists
+    * Stack
+    * Queue
+    * Deque
+    * Memory Allocation
+    * Interview Questions
+   B) Advanced:
+    * Hash Table
+    * Heap
+    * Bloom Filters
+    * LRU Cache
+    * Interview Questions
+   C) Trees:
+    * Binary Tree
+    * Binary Search Tree
+    * AVL Tree
+    * Red Black Tree
+    * Trie
+    * Segment Tree
+    * Fenwick Tree
+    * B Tree
+    * B+ Tree
+    * LSM Trees
+    * Log Structured Merge Trees
+    * Suffix Trees
+    * Suffix Arrays
+    * Tree Compression
+    * Persistent Trees
+    * Tree Traversals
+    * Interview Questions
+   D) Graph:
+    * Adjacency Matrix
+    * Adjacency List
+    * Union Find
+    * Directed vs Undirected
+    * Weighted vs Unweighted
+    * DAGs
+    * Interview Questions
+
+-------------------------------------------------------
+
+4. Algorithms
+   A) Complexity:
+    * Time Complexity
+    * Space Complexity
+    * Amortized Analysis
+    * Master Theorem
+    * Best
+    * Worst
+    * Average Case
+   B) Sorting:
+    * Bubble
+    * Selection
+    * Insertion
+    * Merge
+    * Quick
+    * Heap
+    * Counting
+    * Radix
+    * Bucket Sort
+    * Stability in Sorting
+    * In-place vs Out-of-place
+    * Interview Questions
+   C) Searching:
+    * Linear Search
+    * Binary Search
+    * Ternary Search
+    * Interpolation Search
+   D) Graph Algos:
+    * DFS
+    * BFS
+    * Cycle Detection
+    * Topological Sort
+    * Dijkstra
+    * Bellman-Ford
+    * Floyd Warshall
+    * Prim
+    * Kruskal
+    * A* Search
+    * Interview Questions
+   E) Techniques:
+    * Sliding Window
+    * Two Pointers
+    * Greedy
+    * Dynamic Programming
+    * Backtracking
+    * Divide and Conquer
+    * Bit Manipulation
+    * Interview Questions
+   F) Interview Questions:
+    * Explain Time Complexity of Quick Sort vs Merge Sort.
+    * Detect a cycle in a directed graph.
+
+
+5. AI-Assisted Development Tools
+   A) Core:
+    * Windsurf
+    * Claude Code Models
+
+6. Soft Skills
+   A) Core:
+    * Accuracy & Attention to Detail
+    * Logical & Analytical Thinking
+    * Business Problem Solving
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - CLI Bash Script Utilities (Uses: Bash, grep, awk)
+  - Custom Stack & Queue Implementation (Uses: Python, Data Structures)
+  - Sorting Algorithm Visualizer (CLI) (Uses: Python, Sorting)
+  - GitHub Profile Readme Stats (Uses: Git, Markdown)
+  - Personal Contact Book (Hash Map) (Uses: Hash Tables, Python)
+  Intermediate:
+  - In-Memory Key-Value Store (Redis Clone) (Uses: Hash Maps, TTL, Concurrency)
+  - Pathfinding Visualizer (Web) (Uses: Dijkstra, A*, HTML/JS)
+  - File Compression Utility (Uses: Huffman Coding, Trees)
+  - Custom Version Control System (Uses: Hashing, File I/O, Trees)
+  - Maze Generator & Solver (Uses: DFS, BFS, Backtracking)
+  Advanced:
+  - Distributed Rate Limiter (Uses: Algorithms, Redis, Sliding Window)
+  - Regex Engine from Scratch (Uses: Automata Theory, Trees, Parsing)
+  - Custom Memory Allocator (C/C++) (Uses: Pointers, OS Memory Management)
+  - B-Tree Database Indexer (Uses: B-Trees, File I/O, Data Structures)
+  - Multi-threaded Web Crawler (Uses: Graph Traversal, Concurrency)
+
+CHECKLISTS:
+  - Phase: Setup Linux Environment, Configure Git and SSH, Understand Big-O Notation
+  - Skill: I can write a Bash script with loops, I can implement a BST, I can use git rebase
+  - Revision: Revise Graph Algorithms, Revise DP Tabulation, Revise Quick Sort Partitioning
+  - Interview: Practice LeetCode Array/String questions, Practice Linked List reversals
+  - Portfolio: Push all algorithmic solutions to a clean GitHub Repo
+
+------------------------------------------------------------
+
+PHASE 1: Python Deep Dive
+Overview: Writing production-grade, asynchronous, and object-oriented Python is required for all modern AI roles. (Duration: 5 Weeks)
+
+SKILLS:
+
+1. Python Core
+   A) Basics:
+    * Variables
+    * Data Types
+    * Type Casting
+    * Input/Output
+    * Operators
+    * Mutable vs Immutable
+    * Memory management
+   B) Data Structures:
+    * Strings
+    * Lists
+    * Tuples
+    * Sets
+    * Dictionary
+   C) Conditions:
+    * if
+    * elif
+    * else
+    * Ternary Operators
+    * match case
+   D) Loops & Iteration:
+    * for loop
+    * while loop
+    * enumerate
+    * zip
+    * range
+    * Iterators
+    * Iterable Protocol
+    * Generators
+    * Async Generators
+
+-------------------------------------------------------
+
+2. Functions & Advanced Concepts
+   A) Functions:
+    * Positional & Keyword Arguments
+    * Lambda Functions
+    * Recursion
+    * Type Hinting
+    * Docstrings
+   B) Functional Programming:
+    * map
+    * filter
+    * reduce
+    * Closures
+    * Higher-Order Functions
+    * Partial Functions
+   C) Advanced Constructs:
+    * Decorators
+    * Context Managers
+    * Descriptors
+    * Metaclasses
+    * Slots
+    * Weak References
+   D) Exception Handling:
+    * try
+    * except
+    * finally
+    * Custom Exceptions
+    * Assertions
+    * Traceback handling
+
+-------------------------------------------------------
+
+3. Object Oriented Programming (OOP)
+   A) Core Concepts:
+    * Class
+    * Object
+    * Constructors
+    * Instance/Class/Static Variables
+    * Methods
+    * Magic Methods
+   B) Inheritance:
+    * Single
+    * Multiple
+    * MRO
+    * super
+   C) Polymorphism & More:
+    * Method Overloading
+    * Method Overriding
+    * Encapsulation
+    * Abstraction
+    * Properties
+   D) Advanced OOP & Patterns:
+    * Dependency Injection
+    * Inversion of Control
+    * Strategy Pattern
+    * Adapter Pattern
+    * Facade Pattern
+    * Builder Pattern
+    * Prototype Pattern
+    * Repository Pattern
+    * Unit of Work Pattern
+    * SOLID Principles
+    * Dataclasses
+   E) Interview Questions:
+    * Explain MRO in Python.
+    * What is the difference between @classmethod and @staticmethod?
+
+-------------------------------------------------------
+
+4. Production Python
+   A) Concurrency:
+    * Multithreading
+    * Multiprocessing
+    * Async Programming
+    * Concurrent.futures
+   B) File Handling:
+    * Text files
+    * CSV
+    * JSON
+    * Pickle
+    * Parquet
+    * Pathlib
+   C) Engineering:
+    * Virtual Environments
+    * Type Hinting
+    * Logging
+    * Testing
+    * Pytest
+    * Packaging
+    * Debugging & Profiling
+    * Performance Optimization
+    * Complex Calculations
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - CLI Expense Tracker (Uses: File I/O, JSON, Functions)
+  - Password Generator & Validator (Uses: Strings, Regex, Random)
+  - Student Management System (Uses: Dictionaries, File Handling, Loops)
+  - Weather API Fetcher (Uses: Requests, JSON, Error Handling)
+  - Text File Analyzer (Uses: File I/O, String Methods, Dictionaries)
+  Intermediate:
+  - Task Manager with SQLite (Uses: OOP, SQLite3, Context Managers)
+  - Async Web Scraper (Uses: AsyncIO, Aiohttp, Regex)
+  - Bank Management System (Uses: Encapsulation, Inheritance, Custom Exceptions)
+  - Multithreaded Log Analyzer (Uses: Multithreading, Regex, Logging)
+  - Custom Testing Framework (Uses: Decorators, Metaclasses, Reflection)
+  Advanced:
+  - Distributed Task Queue Clone (Uses: Multiprocessing, Sockets, OOP)
+  - API Rate Limiter Toolkit (Uses: Decorators, Concurrency, Time)
+  - Object-Relational Mapping (ORM) Engine (Uses: Metaclasses, Descriptors, SQLite)
+  - Event-Driven Game Engine (Uses: AsyncIO, Design Patterns, Dataclasses)
+  - Data Pipeline Framework (Uses: Generators, Iterators, Context Managers)
+
+CHECKLISTS:
+  - Phase: Install Python 3.10+, Understand Python's execution model, Write async code
+  - Skill: I can write a decorator, I can use inheritance properly, I can handle JSON files
+  - Revision: Revise GIL constraints, Revise MRO, Revise Generators
+  - Interview: Practice Python specific tricky output questions, Practice OOP design problems
+  - Portfolio: Publish a Python package to PyPI
+
+------------------------------------------------------------
+
+PHASE 2: Mathematics for Machine Learning
+Overview: Deep Learning optimization, backpropagation, and algorithm intuition require solid mathematical foundations. (Duration: 4 Weeks)
+
+SKILLS:
+
+1. Linear Algebra
+   A) Vectors:
+    * Vector Spaces
+    * Scalars
+    * Magnitude
+    * Dot Product
+    * Cross Product
+    * Orthogonality
+    * Cosine Similarity
+    * Vector Norms
+    * Interview Questions
+   B) Matrices:
+    * Matrix Operations
+    * Transpose
+    * Inverse
+    * Identity Matrix
+    * Determinant
+    * Rank
+    * Null Space
+    * Trace
+    * Interview Questions
+   C) Transformations:
+    * Linear Transformations
+    * Basis Vectors
+    * Change of Basis
+    * Scaling
+    * Rotation
+    * Translation
+   D) Decompositions:
+    * Eigenvalues
+    * Eigenvectors
+    * Singular Value Decomposition
+    * Eigendecomposition
+    * PCA Mathematics
+    * Cholesky Decomposition
+
+-------------------------------------------------------
+
+2. Calculus
+   A) Differential Calculus:
+    * Limits
+    * Derivatives
+    * Power
+    * Product
+    * Quotient Rules
+    * Chain Rule
+    * Higher-Order Derivatives
+    * Taylor Series
+   B) Multivariate Calculus:
+    * Partial Derivatives
+    * Gradients
+    * Jacobian Matrix
+    * Hessian Matrix
+    * Directional Derivatives
+    * Multiple Integrals
+   C) Optimization:
+    * Gradient Descent
+    * Convex vs Non-Convex Functions
+    * Local/Global Minima
+    * Saddle Points
+    * Learning Rate Intuition
+    * Lagrange Multipliers
+    * Constrained Optimization
+
+-------------------------------------------------------
+
+3. Probability & Statistics
+   A) Descriptive Statistics:
+    * Mean
+    * Median
+    * Mode
+    * Variance
+    * Standard Deviation
+    * Skewness
+    * Kurtosis
+    * Covariance
+    * Correlation
+    * Quantiles
+    * Percentiles
+    * IQR
+   B) Probability Theory:
+    * Random Variables
+    * Independent/Dependent Events
+    * Conditional Probability
+    * Bayes' Theorem
+    * Law of Large Numbers
+    * Markov Chains
+    * Interview Questions
+   C) Distributions:
+    * Probability Density Functions
+    * Cumulative Distribution Functions
+    * Normal
+    * Binomial
+    * Poisson
+    * Uniform
+    * Exponential
+    * Central Limit Theorem
+   D) Inferential Statistics:
+    * Hypothesis Testing
+    * Null & Alternative Hypotheses
+    * P-Values
+    * Z-Test
+    * T-Test
+    * ANOVA
+    * Chi-Square Test
+    * Confidence Intervals
+    * A/B Testing
+    * Type I and Type II Errors
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - Matrix Operations Library from Scratch (Uses: Python, Loops, Linear Algebra)
+  - Descriptive Stats Calculator (Uses: Math, Lists, Functions)
+  - Gradient Descent Visualizer for y=mx+c (Uses: Calculus, Matplotlib)
+  - Coin Toss / Dice Simulator (Uses: Probability, Random)
+  - Covariance Matrix Generator (Uses: Statistics, Python)
+  Intermediate:
+  - Custom PCA Implementation (Uses: SVD, Eigenvectors, Numpy)
+  - A/B Testing Simulator & Calculator (Uses: Hypothesis Testing, P-Values)
+  - Naive Bayes Engine from Scratch (Uses: Bayes Theorem, Probability Distributions)
+  - Multivariate Gradient Descent (Uses: Partial Derivatives, Gradients)
+  - Monte Carlo Pi Estimator (Uses: Probability, Simulation)
+  Advanced:
+  - Neural Network Backprop from Scratch (Uses: Chain Rule, Calculus, Numpy)
+  - Markov Chain Text Generator (Uses: Probability Matrix, NLP)
+  - Kalman Filter Implementation (Uses: Linear Algebra, Statistics)
+  - Bayesian Network Simulator (Uses: Bayes Theorem, Graph Theory)
+  - Statistical Hypothesis Testing Suite (Uses: ANOVA, T-Tests, Chi-Square)
+
+CHECKLISTS:
+  - Phase: Understand matrix multiplication intuitively, Understand the Chain Rule, Understand Bayes Theorem
+  - Skill: I can compute a derivative, I can calculate variance, I can explain an Eigenvector
+  - Revision: Revise Gradient Descent, Revise SVD, Revise P-Values
+  - Interview: Explain Bias-Variance tradeoff mathematically, Derive Linear Regression cost function derivative
+  - Portfolio: Write a blog post explaining PCA without using code
+
+------------------------------------------------------------
+
+PHASE 3: SQL, Data Analysis & Data Engineering
+Overview: Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad data = bad models. (Duration: 6 Weeks)
+
+SKILLS:
+
+1. SQL (Deep Dive)
+   A) Database Basics:
+    * RDBMS vs NoSQL
+    * Data Modeling
+    * Normalization
+    * Denormalization
+    * Keys
+    * Constraints
+   B) Queries & Joins:
+    * SELECT
+    * WHERE
+    * JOINs
+    * Set Operations
+   C) Advanced SQL:
+    * Subqueries
+    * CTEs
+    * Recursive Queries
+    * Window Functions
+    * EXPLAIN
+    * EXPLAIN ANALYZE
+    * Query Execution Plans
+    * Query Cost Estimation
+    * PostgreSQL Query Planner
+    * Index Scan
+    * Sequential Scan
+   D) Architecture & Optimization:
+    * Indexes
+    * Views & Materialized Views
+    * Stored Procedures
+    * Triggers
+    * Query Execution Order
+    * Query Optimization
+    * Partitioning
+    * Replication
+    * Sharding
+   E) Transactions & Concurrency:
+    * ACID Properties
+    * Transaction Isolation Levels
+    * Locks
+    * Deadlocks
+
+-------------------------------------------------------
+
+2. Data Processing (Python)
+   A) NumPy:
+    * NDArrays
+    * Vectorization
+    * Broadcasting
+    * Indexing & Slicing
+    * Linear Algebra
+   B) Pandas:
+    * Series
+    * DataFrames
+    * I/O
+    * Filtering
+    * Missing Data Handling
+    * Group By & Aggregations
+    * Merge & Concat
+    * Pivot Tables
+    * Time Series
+    * MultiIndex
+    * Categorical dtype
+    * Apply vs Vectorization
+    * Performance Optimization
+   C) Alternative Data Libraries:
+    * Polars
+    * Dask
+    * Vaex
+
+-------------------------------------------------------
+
+3. Data Analyst & BI Mastery
+   A) Spreadsheets & Query:
+    * Google Sheets
+    * Advanced Excel
+    * PivotTables
+    * Power Query
+    * Power Pivot
+    * DAX
+    * Advanced DAX
+    * Macros/VBA Basics
+    * excel VBA Macros
+   B) BI Tools & Dashboards:
+    * Power BI
+    * Tableau
+    * Looker Studio
+    * Dashboard Design
+    * Dashboard UX
+    * Data Storytelling
+    * Ad-Hoc Reporting
+    * Dashboard Upkeep
+    * Business Insights
+   C) Product & Business Analytics:
+    * Business Metrics
+    * North Star Metrics
+    * KPI Design
+    * Funnel Analysis
+    * Retention Analysis
+    * Cohort Analysis
+    * Churn Analysis
+    * Product Analytics
+    * Customer Analytics
+    * Marketing Analytics
+    * Finance Analytics
+    * Case Studies
+    * Business Problem Solving
+    * Root Cause analysis
+    * Data Quality Validation
+    * Data profiling
+    * Vendor Data Analysis
+    * Executive Summary Reports
+    * Attention to Detail
+   D) Event Tracking:
+    * Mixpanel
+    * Amplitude
+   E) Interview Prep:
+    * SQL Interview Questions
+   F) Advanced Visualization:
+    * D3.js
+    * SVG
+    * Charts
+    * Interactive Dashboards
+    * AI Visualization
+    * Qlik Sense
+    * Dashboards
+    * Reports
+    * Data Modeling
+    * QlikView
+    * Basic Concepts
+    * D3 Data Visualizations
+
+-------------------------------------------------------
+
+4. Data Engineering (ETL / ELT)
+   A) Big Data Frameworks:
+    * Apache Spark
+    * Databricks
+    * Resilient Distributed Datasets
+    * Spark SQL
+    * Spark Execution Plans
+    * Catalyst Optimizer
+    * Tungsten Execution Engine
+    * Whole Stage Code Generation
+    * Adaptive Query Execution
+    * Broadcast Joins
+    * Shuffle Hash Joins
+    * Sort Merge Join
+    * Data Skew
+    * Salting Techniques
+    * Partition Pruning
+    * Spark Streaming
+    * Apache Flink
+    * Trino
+    * Presto
+   B) Data Warehousing & Lakes:
+    * OLTP vs OLAP
+    * Star & Snowflake Schemas
+    * Snowflake
+    * Google BigQuery
+    * AWS Redshift
+    * Data Lakes
+    * Apache Iceberg
+    * Delta Lake
+    * Apache Hudi
+   C) Orchestration:
+    * Apache Airflow
+    * Prefect
+   D) Data Transformation:
+    * ETL/ELT
+    * Data Pipelines
+    * dbt
+    * Models
+    * Macros
+    * Tests
+    * Jinja templating
+   E) Streaming Data:
+    * Streaming concepts
+    * Apache Kafka
+    * RabbitMQ
+    * Redis Pub/Sub
+
+-------------------------------------------------------
+
+5. NoSQL & Graph Databases
+   A) MongoDB:
+    * History
+    * Documents
+    * Collections
+    * BSON
+    * Aggregation Pipeline
+    * Indexing
+    * Replication
+    * Sharding
+    * Architecture
+    * Queries
+    * Optimization
+    * Interview Questions
+    * Practice
+    * Resources
+   B) DynamoDB:
+    * Partition Keys
+    * Sort Keys
+    * GSIs
+    * LSIs
+    * Streams
+    * Architecture
+    * Queries
+    * Optimization
+    * Interview Questions
+    * Practice
+    * Resources
+   C) Graph Databases (Neo4j):
+    * Nodes
+    * Relationships
+    * Cypher Query Language
+    * Knowledge Graphs
+    * Graph Analytics
+    * Architecture
+    * Queries
+    * Optimization
+    * Interview Questions
+    * Practice
+    * Resources
+   D) Database Selection:
+    * When to use SQL
+    * When to use NoSQL
+    * When to use Graph DB
+    * When to use Vector DB
+    * Trade-offs
+    * Interview Questions
+    * Practice
+
+-------------------------------------------------------
+
+6. Database Engines (Relational)
+   A) MySQL:
+    * Installation
+    * Architecture
+    * Storage Engines
+    * SQL Syntax
+    * Transactions
+    * Indexing
+    * Optimization
+    * Backup & Restore
+    * Interview Questions
+    * Practice
+    * Projects
+   B) PostgreSQL:
+    * Architecture
+    * MVCC
+    * JSONB
+    * Extensions
+    * Indexing
+    * GiST Index
+    * SP-GiST Index
+    * BRIN Index
+    * GIN Index
+    * Partial Indexes
+    * Expression Indexes
+    * Full Text Search
+    * Partitioning
+    * Replication
+    * Performance Tuning
+    * Interview Questions
+    * Projects
+   C) Oracle Database / PL-SQL:
+    * Oracle SQL
+    * PL/SQL
+    * Procedures
+    * Functions
+    * Packages
+    * Triggers
+    * Cursors
+    * Exception Handling
+    * Interview Questions
+
+-------------------------------------------------------
+
+7. Enterprise Analytics (Optional)
+   A) OPTIONAL / ENTERPRISE-SPECIFIC:
+    * Workday Financials
+    * EIB
+    * Core Connectors
+    * Denodo
+    * Power Platform
+    * Power Automate
+    * On-Premise Infrastructure
+
+-------------------------------------------------------
+
+8. Data Science Methodology
+   A) CRISP-DM:
+    * Business Understanding
+    * Data Understanding
+    * Data Preparation
+    * Modeling
+    * Evaluation
+    * Deployment
+    * Real-world Workflow
+
+-------------------------------------------------------
+
+9. Data Collection
+   A) Web Scraping:
+    * BeautifulSoup
+    * Scrapy
+    * Selenium
+    * Data Extraction
+   B) APIs & Streaming:
+    * API-based Data Collection
+    * Streaming Data Collection
+   C) Datasets & Quality:
+    * Survey Data Collection
+    * Public Datasets
+    * Kaggle
+    * Hugging Face Datasets
+    * Data Quality Validation
+    * Data Quality
+    * Data Validation
+    * Ethical Data Collection
+    * Data Verification
+
+
+10. SQL & Databases
+   A) Core:
+    * SQL (Joins, aggregations)
+    * Advanced SQL & Complex Query Writing
+    * BigQuery
+    * MS SQL Server
+
+11. Data Tools & Concepts
+   A) Core:
+    * Data Organization
+    * Dataset Preparation
+    * Large Datasets Handling
+    * Big Data
+    * Hadoop
+
+12. Domain Specific / Reporting
+   A) Core:
+    * VLOOKUP
+    * MIS Reporting
+    * Power Insight
+    * DA2
+    * CCL
+    * Pearl Data Direct
+    * Millennium Data Model
+    * Healthcare Workflows
+    * CRM
+    * Finetech
+
+13. Analytics
+   A) Core:
+    * Data Analysis & Insights
+    * Translating Business Requirements into Data Solutions
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
+  - Exploratory Data Analysis (EDA) on Kaggle dataset (Uses: Pandas, Seaborn)
+  - Interactive Stock Price Dashboard (Uses: Plotly, Streamlit, Pandas)
+  - Excel Sales Dashboard (Uses: Pivot Tables, XLOOKUP)
+  - Basic SQLite Database Manager (Uses: Python sqlite3, SQL CRUD)
+  - MongoDB User Profile Store (Uses: MongoDB, BSON, Python)
+  Intermediate:
+  - E-Commerce Cohort Analysis (Uses: Advanced SQL, CTEs, Time Series)
+  - Airflow Automated ETL Pipeline (Uses: Airflow, Pandas, PostgreSQL)
+  - PySpark Big Data Log Analyzer (Uses: PySpark, Parquet)
+  - Real-time Twitter/X Sentiment Dashboard (Uses: Kafka, Python, Plotly)
+  - dbt Data Transformation Pipeline (Uses: dbt, Snowflake/BigQuery, SQL)
+  - DynamoDB Real-time Leaderboard (Uses: DynamoDB, Streams, AWS)
+  Advanced:
+  - End-to-End Enterprise Data Warehouse (Uses: Airflow, dbt, Snowflake, Kafka)
+  - Real-time Fraud Detection Pipeline (Uses: Spark Streaming, Kafka, Postgres)
+  - Distributed Web Scraper with Celery (Uses: Celery, Redis, Postgres)
+  - Custom BI Dashboard App (Uses: React, FastAPI, Polars, SQL)
+  - Multi-Node Spark Cluster setup (Uses: Docker, MAKE, Zapier, PySpark, Hadoop)
+  - Neo4j Knowledge Graph for Recommendations (Uses: Neo4j, Cypher, Graph Analytics)
+
+CHECKLISTS:
+  - Phase: Understand ACID properties, Install Airflow locally, Grasp Pandas Vectorization vs Loops
+  - Skill: I can write a Window Function, I can merge datasets in Pandas, I can build an Airflow DAG
+  - Revision: Revise SQL Joins visually, Revise B-Tree Indexing, Revise PySpark lazy evaluation
+  - Interview: Practice LeetCode Hard SQL, Explain difference between WHERE and HAVING
+  - Portfolio: Publish an Airflow ETL pipeline project to GitHub
+
+------------------------------------------------------------
+
+PHASE 4: Core Machine Learning
+Overview: Deep Learning is hype, but classical ML runs the world's recommendation, pricing, and tabular data systems. (Duration: 5 Weeks)
+
+SKILLS:
+
+1. Feature Engineering (Deep Dive)
+   A) Feature Selection:
+    * Mutual Information
+    * Recursive Feature Elimination
+    * Permutation Importance
+    * Statistical Feature Selection
+   B) Feature Engineering Techniques:
+    * Feature Scaling
+    * Encoding
+    * Target Encoding
+    * Mean Encoding
+    * Weight of Evidence
+    * Information Value
+    * High Cardinality Encoding
+    * Rare Category Encoding
+    * Frequency Encoding
+    * Feature Extraction
+    * Feature Construction
+    * Dimensionality Reduction
+    * feature engineering
+
+-------------------------------------------------------
+
+2. Supervised Learning
+   A) Linear Models:
+    * Linear Regression
+    * Logistic Regression
+    * Predictive Analysis
+   B) Regularization:
+    * L1 Regularization
+    * L2 Regularization
+    * ElasticNet
+   C) Distance Based:
+    * K-Nearest Neighbors
+    * Distance Metrics
+    * Curse of Dimensionality
+    * KD-Trees
+   D) Margin Based:
+    * Support Vector Machines
+    * Hyperplanes & Margins
+    * Kernel Trick
+    * Hinge Loss
+   E) Probabilistic:
+    * Naive Bayes
+    * Gaussian NB
+    * Multinomial NB
+    * Bernoulli NB
+    * Laplace Smoothing
+
+-------------------------------------------------------
+
+3. Tree-Based Models & Ensembles
+   A) Decision Trees:
+    * Splitting Criteria
+    * Pruning
+    * Feature Importance
+   B) Bagging:
+    * Random Forest
+    * Out-of-Bag (OOB) Error
+    * Bootstrapping
+   C) Boosting:
+    * AdaBoost
+    * Gradient Boosting Machines
+    * XGBoost
+    * Gradient Statistics
+    * Hessian Statistics
+    * Split Finding Algorithm
+    * Histogram Based Learning
+    * LightGBM
+    * GOSS
+    * Exclusive Feature Bundling
+    * Leaf-wise Tree Growth
+    * CatBoost
+
+-------------------------------------------------------
+
+4. Unsupervised Learning
+   A) Clustering:
+    * K-Means
+    * Elbow Method
+    * Silhouette Score
+    * Hierarchical Clustering
+    * DBSCAN
+    * Handling Outliers
+   B) Dimensionality Reduction:
+    * Principal Component Analysis
+    * t-SNE
+    * UMAP
+   C) Anomaly Detection:
+    * Isolation Forest
+    * One-Class SVM
+    * Local Outlier Factor
+    * Data Anomaly Detection
+
+-------------------------------------------------------
+
+5. Time Series & Forecasting
+   A) Time Series Foundations:
+    * Seasonality
+    * Trend
+    * Stationarity
+    * Rolling Forecast
+    * Forecast Evaluation
+   B) Forecasting Models:
+    * ARIMA
+    * SARIMA
+    * Prophet
+    * Holt Winters
+    * LSTM Forecasting
+
+-------------------------------------------------------
+
+6. Advanced Statistics & Design
+   A) Advanced Topics:
+    * Survival Analysis
+    * Causal Inference
+    * Bayesian Statistics
+    * Bayesian Optimization
+    * Experiment Design
+    * Design of Experiments
+    * Propensity Modelling
+    * Risk Analytics
+
+-------------------------------------------------------
+
+7. ML Pipeline & Engineering
+   A) Data Preprocessing:
+    * Imputation
+    * Encoding
+    * Scaling
+    * Scikit-Learn Pipelines
+   B) Imbalanced Data:
+    * SMOTE
+    * Borderline SMOTE
+    * SMOTENC
+    * SMOTEENN
+    * ADASYN
+    * Class Weights
+    * Cost Sensitive Learning
+    * Class Weighted Loss
+    * Custom Loss Functions
+    * Undersampling
+   C) Validation:
+    * Train/Val/Test Split
+    * K-Fold Cross Validation
+    * Stratified K-Fold
+    * Time Series Split
+    * Data Leakage avoidance
+   D) Hyperparameter Tuning:
+    * Grid Search
+    * Random Search
+    * Bayesian Optimization
+   E) Evaluation Metrics:
+    * Classification
+    * Regression
+   F) Explainable AI (XAI):
+    * SHAP
+    * LIME
+    * Partial Dependence Plots
+
+-------------------------------------------------------
+
+8. Pattern Recognition
+   A) Fundamentals:
+    * Statistical Pattern Recognition
+    * Structural Pattern Recognition
+    * Feature Patterns
+   B) Applications:
+    * Classification
+    * Recognition Systems
+    * Symbolic AI
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - Titanic Survival Predictor (Uses: Logistic Regression, Pandas, Scikit-Learn)
+  - House Price Estimator (Uses: Linear Regression, Scikit-Learn)
+  - Spam Email Classifier (Uses: Naive Bayes, TF-IDF)
+  - Customer Segmentation Engine (Uses: K-Means, PCA)
+  - Diabetes Prediction App (Uses: Random Forest, Streamlit)
+  Intermediate:
+  - Credit Card Fraud Detection (Uses: Isolation Forest, SMOTE, Imbalanced Data)
+  - Customer Churn Predictor (Uses: XGBoost, ROC-AUC, SHAP)
+  - Advanced Kaggle Competition (e.g. TPS) (Uses: LightGBM, Optuna, Ensembling)
+  - End-to-End ML Pipeline (Uses: Scikit-Learn Pipelines, ColumnTransformer)
+  - Recommendation System (Collaborative Filtering) (Uses: Matrix Factorization, KNN)
+  Advanced:
+  - Time Series Demand Forecasting (Uses: CatBoost, Time Series Split, Lag Features)
+  - Automated ML (AutoML) Tool Clone (Uses: Python OOP, Metaprogramming, Scikit-Learn)
+  - Custom ML Algorithm from Scratch (C++) (Uses: C++, Pybind11, Linear Algebra)
+  - High-Frequency Trading Algorithm (Simulated) (Uses: XGBoost, Low Latency Data)
+  - ML Model Drift Detector (Uses: Statistical Tests, Evidently AI, Python)
+
+CHECKLISTS:
+  - Phase: Understand Bias-Variance Tradeoff, Master Scikit-Learn API, Understand Ensembling
+  - Skill: I can build a Scikit-Learn Pipeline, I can optimize with Optuna, I can explain SHAP values
+  - Revision: Revise Gradient Boosting math, Revise SMOTE, Revise Evaluation Metrics (F1 vs ROC-AUC)
+  - Interview: Explain why XGBoost is better than Random Forest, What happens if you don't scale data for KNN?
+  - Portfolio: Publish a well-documented Kaggle notebook with EDA and Optuna tuning
+
+------------------------------------------------------------
+
+PHASE 5: Deep Learning, CV & NLP
+Overview: Neural Networks are the backbone of unstructured data processing (images, audio, text). PyTorch is the industry standard. (Duration: 8 Weeks)
+
+SKILLS:
+
+1. Deep Learning Foundations (PyTorch)
+   A) Core Concepts:
+    * Perceptron
+    * MLP
+    * Forward Propagation
+    * Backpropagation Calculus
+    * Computational Graphs
+    * Vanishing Gradients
+   B) Activation & Loss:
+    * Sigmoid
+    * Tanh
+    * ReLU
+    * GELU
+    * Swish
+    * Cross-Entropy
+    * Focal Loss
+    * Triplet Margin Loss
+   C) Optimizers & Regularization:
+    * Adam
+    * AdamW
+    * SGD
+    * LR Schedulers
+    * Dropout
+    * Batch/Layer/Group Normalization
+    * Weight Decay
+    * Gradient Clipping
+   D) PyTorch Specifics:
+    * Tensors
+    * Autograd
+    * nn.Module
+    * Dataset & DataLoader
+    * PyTorch Lightning
+    * TorchMetrics
+   E) Advanced PyTorch & Optimization:
+    * TorchScript
+    * torch.compile
+    * DistributedDataParallel
+    * Mixed Precision
+    * Gradient Accumulation
+    * Checkpointing
+    * xFormers
+    * Flash Attention
+    * DeepSpeed
+   F) Ecosystem Libraries:
+    * accelerate
+    * optimum
+    * optimum-intel
+    * optimum-neuron
+    * SafeTensors
+    * Keras
+
+-------------------------------------------------------
+
+2. Computer Vision (CV)
+   A) Image Processing Basics:
+    * OpenCV
+    * Filters
+    * Edge Detection
+    * Morphological Operations
+    * Optical Flow
+    * Lucas Kanade
+    * Farneback Optical Flow
+   B) CNNs & Classical Architectures:
+    * Convolutional Neural Networks
+    * ResNet
+    * EfficientNet
+    * 3D CNN
+    * Video Classification
+   C) Advanced Architectures & Vision Transformers:
+    * Vision Transformers
+    * CLIP
+    * BLIP
+    * DETR
+    * Grounding DINO
+   D) Object Detection & Segmentation:
+    * YOLO
+    * SSD
+    * Faster R-CNN
+    * Segment Anything Model
+    * U-Net
+    * Mask R-CNN
+    * Pose Estimation
+    * Keypoint Detection
+    * OpenPose
+    * MediaPipe Pose
+   E) Generative Vision:
+    * Diffusion Models
+    * Stable Diffusion
+    * ControlNet
+    * Image Captioning
+    * Image Generation
+    * Neural Radiance Fields
+    * 3D Gaussian Splatting
+   F) Augmentation & Tracking:
+    * Albumentations
+    * CutMix
+    * MixUp
+    * DeepSORT
+    * ByteTrack
+   G) CV Tooling & Annotation:
+    * Roboflow
+    * Dataset Management
+    * Annotation
+    * Augmentation
+    * Export Formats
+    * YOLO Integration
+    * CVAT
+    * Image Annotation
+    * Video Annotation
+    * Labeling
+
+-------------------------------------------------------
+
+3. Natural Language Processing (NLP)
+   A) Text Preprocessing & NLP Libs:
+    * Tokenization
+    * BPE Mathematics
+    * WordPiece Mathematics
+    * Unigram Tokenization
+    * HuggingFace Tokenizers
+    * sentencepiece
+    * spaCy
+    * NLTK
+    * POS Tagging
+    * Dependency Parsing
+    * NER
+    * NLTK
+   B) Embeddings & RNNs:
+    * Word2Vec
+    * GloVe
+    * FastText
+    * Recurrent Neural Networks
+    * Seq2Seq Architectures
+    * Attention Mechanism
+   C) Transformers (NLP):
+    * BERT Fine-tuning
+    * RoBERTa
+    * DistilBERT
+    * DeBERTa
+    * ELECTRA
+    * T5
+    * Sentence Transformers
+    * BLEU Score
+    * ROUGE
+    * METEOR
+    * BERTScore
+
+-------------------------------------------------------
+
+4. Audio Processing & Multimodal AI
+   A) Speech Processing:
+    * Introduction to Audio Processing
+    * Digital Audio Fundamentals
+    * Sampling Rate
+    * Bit Depth
+    * Waveforms
+    * Spectrograms
+    * Interview Questions
+    * Practice
+    * Resources
+   B) Audio Feature Extraction:
+    * MFCC
+    * Mel Spectrogram
+    * Chroma Features
+    * Zero Crossing Rate
+    * Spectral Centroid
+    * Spectral Contrast
+    * RMS Energy
+    * librosa
+    * torchaudio
+    * PyDub
+    * soundfile
+    * Pipeline
+    * Interview Questions
+    * Resources
+   C) Speech Recognition:
+    * History
+    * Pipeline
+    * Automatic Speech Recognition
+    * Libraries
+    * OpenAI Whisper
+    * Whisper Fine-Tuning
+    * wav2vec 2.0
+    * Architecture
+    * Training
+    * Inference
+    * Optimization
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+    * Speech to Text Transcription
+   D) Text To Speech:
+    * History
+    * Pipeline
+    * TTS Basics
+    * Coqui TTS
+    * ElevenLabs API
+    * AI Voice APIs
+    * Bark
+    * XTTS
+    * Architecture
+    * Training
+    * Inference
+    * Optimization
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+   E) Speaker AI:
+    * Speaker Identification
+    * Speaker Verification
+    * Voice Cloning
+    * Voice Activity Detection
+    * Pipeline
+    * Training
+    * Inference
+    * Resources
+   F) Audio Deep Learning:
+    * CNN for Audio
+    * RNN for Audio
+    * Transformers for Audio
+    * Architecture
+    * Training
+    * Optimization
+   G) Multimodal AI:
+    * Vision + Text
+    * Vision + Audio
+    * Audio + Text
+    * Vision + Audio + Text
+    * Multimodal Embeddings
+    * CLAP
+    * Multimodal LLMs
+    * Architecture
+    * Training
+    * Inference
+    * Optimization
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+
+
+5. Architectures
+   A) Core:
+    * Deep Learning Architectures (YOLO, ResNet, MobileNet)
+    * Interpretability
+    * Hybrid AI
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - PyTorch MLP for MNIST (Uses: PyTorch, MLP, Cross-Entropy)
+  - Image Filter App (Uses: OpenCV, Numpy)
+  - Spam Detection with RNN (Uses: PyTorch, RNN, Embeddings)
+  - Face Detection Script (Uses: OpenCV, Haar Cascades)
+  - Custom Dataset Loader (Uses: PyTorch DataLoader, Transformations)
+  - Basic Voice Recorder & Spectrogram Viewer (Uses: Python, librosa)
+  Intermediate:
+  - Custom ResNet Image Classifier (Uses: PyTorch, CNN, Skip Connections)
+  - Sentiment Analysis with LSTM (Uses: LSTM, Word2Vec, IMDB Dataset)
+  - Transfer Learning Dog/Cat Classifier (Uses: TorchVision, EfficientNet, Fine-Tuning)
+  - Real-time Mask Detection (YOLO) (Uses: YOLOv8, OpenCV, Webcam)
+  - Named Entity Recognition (NER) (Uses: Bi-LSTM, CRF, spaCy)
+  - Custom Wake Word Detection (Uses: Audio DL, CNN, PyTorch)
+  Advanced:
+  - Medical Image Segmentation (Uses: U-Net, Data Augmentation, Dice Loss)
+  - Real-time Multi-Object Tracking (Uses: YOLOv10, DeepSORT, Video Processing)
+  - Neural Machine Translation (Seq2Seq) (Uses: Encoder-Decoder, Attention Mechanism)
+  - Self-Driving Car Lane Detection (Uses: OpenCV Advanced, CNNs, Hough Transform)
+  - End-to-End PyTorch Lightning Pipeline (Uses: PyTorch Lightning, W&B Tracking)
+  - Multimodal Video Search Engine (Uses: CLAP, VectorDB, Vision+Audio)
+
+CHECKLISTS:
+  - Phase: Setup CUDA/cuDNN for GPU, Understand Backpropagation, Understand CNN Receptive Fields
+  - Skill: I can write a custom PyTorch nn.Module, I can implement an LSTM loop, I can use OpenCV
+  - Revision: Revise Cross-Entropy vs MSE, Revise Batch Norm vs Layer Norm, Revise BPTT
+  - Interview: Why do RNNs suffer from vanishing gradients?, How does a skip connection in ResNet work?
+  - Portfolio: Train a YOLOv8 model on custom data and deploy the inference script
+
+------------------------------------------------------------
+
+PHASE 6: Generative AI, LLMs & Agentic Frameworks
+Overview: The modern frontier of AI requires adapting foundation models, building RAG systems, and orchestrating autonomous agents. (Duration: 10 Weeks)
+
+SKILLS:
+
+1. Prompt Engineering & Guardrails
+   A) Prompting Techniques:
+    * Zero Shot
+    * Few Shot
+    * Chain of Thought
+    * Tree of Thoughts
+    * Graph of Thoughts
+    * Self Consistency
+    * Reflexion
+    * PAL
+    * ReAct
+    * Meta Prompting
+    * Prompt Chaining
+    * Prompt Optimization
+   B) Structured Output:
+    * Prompt Templates
+    * JSON Mode
+    * Function Calling
+    * Tool Calling
+    * Structured Outputs
+   C) AI Safety & Security:
+    * Prompt Injection
+    * Prompt Leakage
+    * Jailbreak Protection
+    * Guardrails
+    * AI Safety
+    * AI Security
+    * Hallucination Detection
+    * Red Teaming
+    * Evaluation
+    * Guardrails AI
+    * NeMo Guardrails
+
+-------------------------------------------------------
+
+2. Transformers & LLM Architecture
+   A) Transformer Architecture:
+    * Self-Attention Mechanism
+    * Feed Forward Networks
+    * Encoder-Only
+    * Decoder-Only
+    * Encoder-Decoder
+   B) Advanced LLM Architectures:
+    * Speculative Decoding
+    * Continuous Batching
+    * Mixture of Experts
+    * Sliding Window Attention
+    * Flash Attention
+    * Rotary Positional Embeddings
+    * ALiBi
+    * RMSNorm
+    * SwiGLU
+    * Grouped Query Attention
+    * Multi Query Attention
+    * PagedAttention
+    * KV Cache
+    * Megatron-LM
+   C) LLM Mechanics:
+    * Autoregressive Generation
+    * Temperature
+    * Top-K Sampling
+    * Top-P
+    * Context Window Limits
+    * Repetition Penalty
+   D) Interview Questions:
+    * Explain KV Caching and why it speeds up generation.
+    * How does Self-Attention scale with sequence length?
+
+-------------------------------------------------------
+
+3. Fine-Tuning & Alignment
+   A) Full Fine-Tuning:
+    * Catastrophic Forgetting
+    * Compute constraints
+    * Instruction Tuning
+   B) PEFT (Parameter-Efficient Fine-Tuning):
+    * PEFT
+    * LoRA
+    * QLoRA
+    * Prompt Tuning
+    * Prefix Tuning
+    * P-Tuning
+   C) Alignment (RLHF):
+    * SFT
+    * Reward Modeling
+    * PPO
+    * DPO
+    * KTO
+    * ORPO
+   D) Quantization & Tools:
+    * bitsandbytes
+    * FP16 / BF16
+    * INT8
+    * INT4
+    * AWQ
+    * GPTQ
+    * Unsloth
+    * Axolotl
+    * Hugging Face Trainer
+
+-------------------------------------------------------
+
+4. Vector Databases (Deep Dive)
+   A) Vector Index Types:
+    * Index Types
+    * HNSW
+    * IVF
+    * IVF-PQ
+    * PQ
+    * ANN Search
+   B) Embeddings & Retrieval:
+    * Sparse Embeddings
+    * Dense Embeddings
+    * Hybrid Embeddings
+    * Hybrid Retrieval
+    * Metadata Filtering
+    * Scalar Quantization
+    * Vector Compression
+    * BM25
+    * Sparse Retrieval
+    * SPLADE
+    * ColBERT
+    * Late Interaction Retrieval
+    * Semantic Caching
+    * GPTCache
+    * FAISS
+
+-------------------------------------------------------
+
+5. RAG (Retrieval-Augmented Generation)
+   A) Core RAG:
+    * Document Loaders
+    * Chunking
+    * Embeddings Models
+    * Vector Stores
+    * LlamaIndex
+   B) Advanced RAG Techniques:
+    * Context Compression
+    * Query Transformation
+    * Multi Query Retriever
+    * Self RAG
+    * Adaptive RAG
+    * RAPTOR
+    * CRAG
+    * Corrective RAG
+    * Hybrid Search
+    * Re-ranking
+    * HyDE
+    * GraphRAG
+    * Semantic Chunking
+    * Parent Document Retriever
+    * Small to Big Retrieval
+    * Contextual Compression
+    * Knowledge Graph Entity Extraction
+    * Graph Entity Linking
+
+-------------------------------------------------------
+
+6. LangChain & LangGraph
+   A) LangChain:
+    * LCEL
+    * Runnable Interface
+    * Output Parsers
+    * Memory
+    * Callback Handlers
+    * Agents Executor
+    * Retriever Chains
+    * Expression Language
+   B) LangGraph:
+    * StateGraph architecture
+    * Nodes
+    * Edges
+    * Reducers
+    * Commands
+    * Interrupt
+    * Resume
+    * Persistence
+    * Stores
+    * Supervisor
+    * Planner
+    * Reflection
+    * Memory Types
+    * Retry Policies
+    * Error Handling
+    * Parallel Branches
+
+-------------------------------------------------------
+
+7. Agent Development
+   A) Agent Core Concepts:
+    * Agent Planning
+    * Task Planning
+    * Memory Architecture
+    * Working Memory
+    * Long-term Memory
+    * Vector Memory
+    * Agent Evaluation
+    * OpenAI Tool Calling Schema
+    * Function Specifications
+    * JSON Schema Design
+    * Tool Validation
+    * Agent Memory Routing
+    * Query Routing
+    * SQL Memory
+    * Hybrid Memory Routing
+   B) Agent Architecture:
+    * Event Driven Agents
+    * Workflow Agents
+    * Supervisor Agents
+    * Multi-Agent Systems
+    * CrewAI
+    * MAKE
+    * AutoGen
+    * Swarm
+    * Role-playing Agents
+    * GenAI Orchestration
+    * DSPy
+    * Semantic Kernel
+   C) Model Context Protocol:
+    * MCP Servers
+    * MCP Client Development
+    * Tool Registry
+    * Agent Permissions
+   D) A2A (Agent-to-Agent Protocol):
+    * Agent-to-Agent Communication
+    * Multi-Agent Collaboration
+    * Protocol Design
+    * Message Passing
+    * Agent Discovery
+    * Security
+    * Authentication
+    * Use Cases
+    * Integration with MCP
+    * MCP vs A2A
+    * Best Practices
+    * Interview Questions
+   E) Low-Code AI Tools:
+    * Flowise
+    * Installation
+    * Nodes
+    * Workflows
+    * RAG
+    * Agents
+    * Deployment
+    * Langflow
+    * Components
+    * Prompting
+    * n8n
+    * Workflow Automation
+
+-------------------------------------------------------
+
+8. LLMOps & Serving
+   A) LLM Evaluation & Observability:
+    * LLM-as-a-judge
+    * Ragas
+    * TruLens
+    * LangSmith
+    * Phoenix
+    * Tracing generation chains
+   B) Serving Frameworks:
+    * vLLM
+    * TensorRT-LLM
+    * Ollama API
+    * LMDeploy
+    * TGI
+   C) AWS Bedrock:
+    * Introduction
+    * Foundation Models
+    * Bedrock APIs
+    * Knowledge Bases
+    * Bedrock Agents
+    * Guardrails
+    * Model Customization
+    * Inference Profiles
+    * Prompt Management
+    * Integration with LangChain
+    * Integration with RAG
+    * Production Deployment
+    * Best Practices
+    * Interview Questions
+    * Practice
+    * Resources
+
+-------------------------------------------------------
+
+9. Responsible AI
+   A) AI Ethics & Fairness:
+    * History
+    * Fairness
+    * Accountability
+    * Transparency
+    * Explainability
+    * Frameworks
+    * Interview Questions
+    * Practice
+    * Resources
+   B) Privacy:
+    * Data Anonymization
+    * Pseudonymization
+    * Differential Privacy
+    * Techniques
+    * Libraries
+    * Interview Questions
+    * Practice
+    * Resources
+   C) Federated Learning:
+    * Concepts
+    * Advantages
+    * Limitations
+    * Architecture
+    * Training
+    * Optimization
+    * Interview Questions
+    * Practice
+    * Resources
+   D) Bias:
+    * Dataset Bias
+    * Sampling Bias
+    * Label Bias
+    * Model Bias
+    * Mitigation Strategies
+    * Interview Questions
+    * Practice
+    * Resources
+   E) AI Governance:
+    * Responsible AI
+    * AI Regulations
+    * Compliance
+    * Risk Management
+    * Guidelines
+    * Interview Questions
+    * Resources
+   F) AI Security:
+    * Adversarial Attacks
+    * Model Theft
+    * Prompt Injection
+    * Jailbreak Detection
+    * Data Leakage
+    * Defense Mechanisms
+    * Interview Questions
+    * Practice
+    * Resources
+
+
+10. LLM Fundamentals
+   A) Core:
+    * Tokens
+    * Embeddings
+    * Context Windows
+
+11. Generative Models & Platforms
+   A) Core:
+    * Core Native AI
+    * Amazon Bedrock
+    * Mistral
+
+12. RAG & Search
+   A) Core:
+    * Vector Search
+    * RAG Architectures
+
+13. Agents & Safety
+   A) Core:
+    * AI Agent Frameworks
+    * AI Safety (Hallucination, Prompt Injection)
+
+14. Evaluation
+   A) Core:
+    * RAGAS
+    * TruLens
+    * LangSmith
+
+
+
+15. Advanced AI Paradigms
+   A) Core Paradigms:
+    * AI Alignment
+    * Generative Models
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
+  - Basic PDF Q&A Bot (Naive RAG) (Uses: LangChain, ChromaDB, OpenAI)
+  - Prompt Engineering Playground (Uses: System Prompts, Few-Shot, API)
+  - Function Calling Weather Agent (Uses: OpenAI Tools, API requests)
+  - HF Transformers Text Summarizer (Uses: Hugging Face Pipeline)
+  - Dataset Bias Analyzer (Uses: Python, Pandas, Bias Mitigation)
+  Intermediate:
+  - Advanced RAG with Hybrid Search (Uses: Pinecone, BM25, Cross-Encoders)
+  - Fine-tune Llama 3 with QLoRA (Uses: Unsloth, LoRA, Hugging Face)
+  - LangGraph Autonomous Researcher (Uses: LangGraph, Tavily Search API, StateGraph)
+  - CrewAI Multi-Agent Content Team (Uses: CrewAI, Role-playing, Delegation)
+  - LLM Evaluation Pipeline (Uses: Ragas, LangSmith, RAG)
+  - Differential Privacy Aggregator (Uses: Differential Privacy, Opacus)
+  Advanced:
+  - Enterprise Customer Support Agent (Uses: LangGraph, Human-in-Loop, Checkpointers)
+  - Self-Reflective Coding Assistant (Uses: ReAct, Docker Sandbox execution, LangChain)
+  - Deploy vLLM Server on AWS EC2 (Uses: vLLM, AWS, FastAPI)
+  - DPO Alignment on Custom Dataset (Uses: TRL, DPO, PyTorch)
+  - GraphRAG Knowledge Engine (Uses: Neo4j, LLaMA Index, Cypher queries)
+  - Federated Learning System Simulation (Uses: Federated Learning, PyTorch, Flower)
+
+CHECKLISTS:
+  - Phase: Understand Self-Attention math, Grasp LoRA vs Full Fine-tuning, Understand ReAct Pattern
+  - Skill: I can build a StateGraph in LangGraph, I can use QLoRA via Unsloth, I can implement Hybrid Search
+  - Revision: Revise KV Caching, Revise Cross-Encoders, Revise PagedAttention
+  - Interview: How does LoRA drastically reduce VRAM requirements?, Explain the difference between LangChain and LangGraph.
+  - Portfolio: Deploy an interactive LangGraph agent on Streamlit Cloud
+
+------------------------------------------------------------
+
+PHASE 7: Backend Engineering, APIs & Async Workers
+Overview: An AI model is useless if it lives in a notebook. You must expose it as a secure, scalable API. (Duration: 5 Weeks)
+
+SKILLS:
+
+1. APIs & Web Frameworks
+   A) API Foundations:
+    * HTTP Methods
+    * Status Codes
+    * Headers & Query Params
+    * JSON Payloads
+    * RESTful Design Principles
+    * GraphQL
+    * OAuth 2.0
+    * JWT
+    * API packaging
+    * Backend API
+    * AI APIs
+   B) FastAPI Deep Dive:
+    * Path & Query Parameters
+    * Pydantic
+    * Dependency Injection
+    * Middleware & CORS
+    * Exception Handling
+    * Swagger UI
+    * Background Tasks
+    * Lifespan Events
+    * WebSockets
+   C) Authentication & Security:
+    * JWT
+    * OAuth2
+    * API Keys
+    * Rate Limiting
+    * Password Hashing
+    * SQL Injection prevention
+    * XSS prevention
+   D) Database Integration:
+    * SQLAlchemy
+    * Alembic
+    * Connection Pooling
+    * Session Management
+
+-------------------------------------------------------
+
+2. Networking, Gateways & Service Mesh
+   A) API Gateways:
+    * API Gateway
+    * Kong
+    * Traefik
+    * Nginx
+    * Load Balancing
+    * Reverse Proxy
+    * GraphQL
+   B) Service Mesh:
+    * Service Mesh
+    * Envoy
+    * Istio
+    * Consul
+    * Mutual TLS
+   C) RPC & Messaging:
+    * gRPC
+    * Protocol Buffers
+    * NATS
+    * WebSockets
+    * Server-Sent Events
+    * WebRTC
+
+-------------------------------------------------------
+
+3. Asynchronous Workflows
+   A) Message Brokers:
+    * RabbitMQ
+    * Redis Pub/Sub
+    * Apache Kafka
+   B) Task Queues:
+    * Celery
+    * RQ
+    * Celery Beat
+    * Flower
+   C) Interview Questions:
+    * Why use Celery for model inference instead of processing it in the FastAPI request loop?
+
+-------------------------------------------------------
+
+4. Django
+   A) Django Architecture:
+    * MTV
+    * Models
+    * Views
+    * Templates
+    * ORM
+    * Authentication
+    * Admin Panel
+    * Forms
+    * Middleware
+    * Signals
+   B) Advanced Django:
+    * REST Framework
+    * Celery Integration
+    * Deployment
+    * AI Integration
+   C) Progress Tracking:
+    * Projects
+    * Interview Questions
+
+-------------------------------------------------------
+
+5. Flask
+   A) Flask Basics:
+    * Routing
+    * Templates
+    * Blueprints
+    * SQLAlchemy
+    * Authentication
+    * REST APIs
+    * Deployment
+    * AI Model Serving
+   B) Progress Tracking:
+    * Projects
+    * Interview Questions
+
+-------------------------------------------------------
+
+6. Frontend for AI Engineers (React.js)
+   A) React.js Basics:
+    * Components
+    * JSX
+    * Hooks
+    * State Management
+    * Routing
+    * API Integration
+   B) AI Implementations:
+    * Dashboard Development
+    * AI Chat UI
+    * Projects
+
+-------------------------------------------------------
+
+7. Frontend for AI Engineers (Next.js)
+   A) Next.js Core:
+    * Routing
+    * Server Components
+    * Client Components
+    * API Routes
+    * Deployment
+   B) AI Implementations:
+    * AI Applications
+    * Projects
+
+-------------------------------------------------------
+
+8. Streamlit
+   A) Streamlit Core:
+    * Installation
+    * Widgets
+    * Session State
+    * Layout
+    * Charts
+   B) Advanced Streamlit:
+    * Authentication
+    * Deployment
+    * Streamlit Cloud
+    * AI Dashboards
+    * LLM Applications
+    * Best Practices
+
+-------------------------------------------------------
+
+9. Gradio
+   A) Gradio Core:
+    * Blocks
+    * Interface
+    * Components
+   B) Gradio Applications:
+    * Chat Interface
+    * Image Interface
+    * Audio Interface
+    * Deployment
+    * Hugging Face Spaces
+    * AI Demo Applications
+
+
+10. Databases & ORM
+   A) Core:
+    * SQLAlchemy (ORM)
+
+11. Prototyping
+   A) Core:
+    * Demo Prototyping
+    * Rapid Prototyping
+
+12. Documentation
+   A) Core:
+    * Technical Documentation (PRD, FRS, SDD)
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - Simple CRUD FastAPI (Uses: FastAPI, Pydantic, SQLite)
+  - JWT Auth Service (Uses: OAuth2, Bcrypt, JWT)
+  - Text Summarization API (Uses: Hugging Face, FastAPI)
+  - Basic WebSockets Chat (Uses: FastAPI WebSockets, HTML/JS)
+  - Rate Limiter Middleware (Uses: FastAPI, Redis)
+  Intermediate:
+  - Image Generation API with Celery (Uses: FastAPI, Celery, Redis, Stable Diffusion)
+  - Real-time AI Chat Backend (Streaming) (Uses: SSE, OpenAI API)
+  - Database Migration Pipeline (Uses: SQLAlchemy, Alembic, Postgres)
+  - OAuth2 GitHub Login App (Uses: FastAPI, Third-party OAuth)
+  - Stock Price Tracker (Uses: Celery Beat, Requests, PostgreSQL)
+  Advanced:
+  - LiveKit Voice Agent Server (Uses: WebRTC, LiveKit, AsyncIO, LLM APIs)
+  - Microservices AI Architecture (Uses: FastAPI, RabbitMQ, Docker Compose)
+  - Enterprise Gateway Router (Uses: Nginx, Rate Limiting, Load Balancing)
+  - Serverless LLM Inference (Uses: AWS Lambda, API Gateway)
+  - Distributed Cache System (Uses: Redis Cluster, Consistent Hashing)
+
+CHECKLISTS:
+  - Phase: Understand async/await in Python, Understand JWT structure, Understand Message Brokers
+  - Skill: I can build a REST API with FastAPI, I can use Celery for background tasks, I can implement WebSockets
+  - Revision: Revise SQLAlchemy relationships, Revise HTTP Status Codes, Revise CORS concepts
+  - Interview: Explain OAuth2 flow, How do you handle a thundering herd problem in APIs?
+  - Portfolio: Deploy a full-stack FastAPI app with Celery and Postgres
+
+------------------------------------------------------------
+
+PHASE 8: MLOps, Cloud Deployment & Kubernetes
+Overview: Packaging, deploying, monitoring, and scaling AI models across enterprise cloud infrastructure. (Duration: 6 Weeks)
+
+SKILLS:
+
+1. Production ML Lifecycle & MLOps Core
+   A) Feature Store:
+    * Feature Store
+    * Feast
+    * Feast Registry
+    * Online vs Offline Features
+   B) Experiment Tracking & Versioning:
+    * MLflow
+    * Weights & Biases
+    * DVC
+    * Model Registry
+    * Model Versioning
+   C) ML Pipelines & Config:
+    * Kubeflow
+    * Kubeflow Pipelines
+    * Apache Beam
+    * ML Metadata
+    * Hydra
+    * OmegaConf
+   D) Interview Questions:
+    * Explain how DVC differs from Git.
+
+-------------------------------------------------------
+
+2. Model Serving & Inference
+   A) Inference Strategies:
+    * Batch Inference
+    * Online Inference
+    * Streaming Inference
+    * Streaming concepts
+    * Apache Kafka
+    * Offline Inference
+    * Inference Optimization
+   B) Model Optimization & Compilers:
+    * ONNX
+    * ONNX Runtime
+    * OpenVINO
+    * TensorRT
+    * TensorRT Engine Building
+    * Engine Serialization
+    * Dynamic Shapes
+    * TensorRT-LLM
+    * TorchScript
+    * torch.compile
+    * vLLM Scheduler Concepts
+    * Continuous Batching
+    * PagedAttention Internals
+    * GGUF
+    * AWQ
+    * EXL2
+    * GPTQ Comparison
+   C) Serving Frameworks:
+    * TorchServe
+    * BentoML
+    * KServe
+    * Seldon Core
+    * NVIDIA Triton Inference Server
+    * Ray Serve
+    * Ray Train
+    * Ray Tune
+    * Model Deployment
+
+-------------------------------------------------------
+
+3. Containerization & Orchestration
+   A) Docker:
+    * Images vs Containers
+    * Dockerfile
+    * Multi-Stage Builds
+    * Docker Compose
+    * Volumes & Networking
+   B) Kubernetes (K8s):
+    * Pods
+    * Deployments
+    * Services
+    * Ingress
+    * ConfigMaps
+    * Secrets
+    * Helm Charts
+    * Custom Resource Definitions
+    * Kubeflow CRDs
+    * NVIDIA GPU Operator
+    * NVIDIA MIG
+    * GPU Sharing
+    * GPU Partitioning
+    * KEDA
+    * Event Driven Autoscaling
+    * Queue Based Autoscaling
+    * GPU Scheduling
+
+-------------------------------------------------------
+
+4. Cloud Architecture (Deep Dive)
+   A) AWS:
+    * Azure/AWS Cloud basics
+    * IAM
+    * ECS
+    * EKS
+    * CloudWatch
+    * EventBridge
+    * SQS
+    * SNS
+    * CloudFront
+    * Route53
+    * Secrets Manager
+    * Parameter Store
+   B) Azure:
+    * Azure Functions
+    * Cosmos DB
+    * Azure Storage
+    * Azure Monitor
+   C) GCP:
+    * Pub/Sub
+    * Cloud Functions
+    * Cloud Storage
+    * Cloud Logging
+   D) GCP Serverless:
+    * Cloud Run
+    * Container Deployment
+    * FastAPI Deployment
+    * AI Model Serving
+    * Autoscaling
+    * CI/CD Integration
+
+-------------------------------------------------------
+
+5. CI/CD & Deployments
+   A) CI/CD Pipelines:
+    * GitHub Actions
+    * GitLab CI
+    * ArgoCD
+    * Flux
+   B) Deployment Strategies:
+    * Canary Deployment
+    * Shadow Deployment
+    * Blue Green Deployment
+    * A/B Deployment
+   C) Infrastructure as Code:
+    * Terraform
+    * Pulumi
+
+-------------------------------------------------------
+
+6. Model Monitoring in Production
+   A) Monitoring:
+    * Model Monitoring
+    * Data Drift
+    * Concept Drift
+    * Evidently AI
+    * Prometheus
+    * Grafana
+
+-------------------------------------------------------
+
+7. Managed Cloud AI Platforms
+   A) AWS ML Ecosystem:
+    * SageMaker Studio
+    * SageMaker Pipelines
+    * SageMaker Training Jobs
+    * SageMaker Endpoints
+    * Feature Store
+    * Model Registry
+    * Model Monitor
+    * Architecture
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+   B) Google Cloud AI:
+    * Vertex AI
+    * Vertex Pipelines
+    * Vertex Model Registry
+    * Vertex Endpoints
+    * AutoML
+    * Architecture
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+   C) Azure Machine Learning:
+    * Azure ML Studio
+    * Azure ML Pipelines
+    * Azure ML Endpoints
+    * Lifecycle Management
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+
+-------------------------------------------------------
+
+8. Edge AI & Browser Deployment
+   A) ONNX Runtime Web:
+    * Browser Inference
+    * WebAssembly
+    * WebGPU
+    * Pipeline
+    * Optimization
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+   B) TensorFlow.js:
+    * Browser ML
+    * Webcam Inference
+    * Client-side AI
+    * Training
+    * Inference
+    * Deployment
+    * Resources
+   C) TensorFlow Lite:
+    * TFLite
+    * Quantization
+    * Mobile Deployment
+    * Edge Devices
+    * Optimization
+    * Deployment
+    * Interview Questions
+    * Practice
+    * Resources
+   D) Hardware Edge AI:
+    * Raspberry Pi
+    * NVIDIA Jetson
+    * Coral TPU
+    * Deployment Trade-offs
+    * Optimization
+    * Interview Questions
+    * Practice
+    * Resources
+
+
+9. Hardware & Edge AI
+   A) Core:
+    * Edge AI
+    * NVIDIA Jetson Platforms (Xavier, Orin series)
+    * GPU-intensive workloads
+
+10. Observability
+   A) Core:
+    * Logging & Tracing
+    * AI Observability
+
+11. Testing
+   A) Core:
+    * Evaluation & Test Cases
+    * Evaluation Frameworks
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - Dockerize a Python Script (Uses: Docker, Dockerfile)
+  - Docker Compose FastAPI + Postgres (Uses: Docker Compose, Networking)
+  - Track Model with MLflow (Uses: MLflow, Scikit-Learn)
+  - GitHub Actions Linter Pipeline (Uses: CI/CD, Flake8, Pytest)
+  - Deploy Static Site to AWS S3 (Uses: AWS S3, IAM)
+  - Browser-based Object Detection (Uses: TensorFlow.js, Webcam)
+  Intermediate:
+  - Automated Model Training CI/CD (Uses: GitHub Actions, Docker, PyTorch)
+  - Deploy ML Model on AWS EC2 (Uses: EC2, Nginx, Gunicorn)
+  - Terraform AWS Architecture (Uses: Terraform, VPC, EC2)
+  - Prometheus & Grafana Dashboard (Uses: Prometheus, Docker, Monitoring)
+  - Data Version Control (DVC) Setup (Uses: Git, DVC, S3)
+  - SageMaker Automated Training Pipeline (Uses: AWS SageMaker, S3)
+  Advanced:
+  - Deploy Llama 3 with vLLM on K8s (Uses: Kubernetes, vLLM, GPUs)
+  - End-to-End MLOps Pipeline (Uses: Airflow, MLflow, Jenkins, AWS)
+  - Distributed Training with Ray (Uses: Ray Cluster, PyTorch DDP)
+  - Model Drift Monitoring System (Uses: Evidently AI, Grafana, FastAPI)
+  - NVIDIA Triton Inference Cluster (Uses: Triton, ONNX, K8s Helm)
+  - Edge AI People Counter on Jetson Nano (Uses: NVIDIA Jetson, TensorRT, Edge AI)
+
+CHECKLISTS:
+  - Phase: Understand Docker networking, Understand K8s Pod lifecycle, Understand CI/CD principles
+  - Skill: I can write a multi-stage Dockerfile, I can write a GitHub Actions workflow, I can track experiments in MLflow
+  - Revision: Revise Terraform state management, Revise K8s Ingress vs LoadBalancer, Revise Data Drift detection
+  - Interview: What happens if a Pod crashes in a K8s Deployment?, Explain Docker Multi-Stage Builds.
+  - Portfolio: Publish a repository with full IaC (Terraform) and CI/CD setup
+
+------------------------------------------------------------
+
+PHASE 9: Portfolio, Resume & FAANG Interview Prep
+Overview: Passing the rigorous technical and behavioral loops of FAANG and top-tier AI startups requires specific preparation strategies. (Duration: Ongoing)
+
+SKILLS:
+
+1. System Design (ML & Backend)
+   A) Scalability Concepts:
+    * Vertical vs Horizontal Scaling
+    * Load Balancing
+    * Database Sharding
+    * Caching
+    * CAP Theorem
+    * Microservices vs Monoliths
+   B) ML System Design:
+    * Feature Stores
+    * Online vs Offline Predictions
+    * Model Re-training pipelines
+    * A/B Testing Deployments
+   C) Design Scenarios:
+    * Design Netflix Recommendation Engine
+    * Design Twitter Feed
+    * Design a low-latency LLM Voice Agent Architecture
+    * Design a Fraud Detection System
+
+-------------------------------------------------------
+
+2. Algorithms & LeetCode
+   A) Data Structures Mastery:
+    * Arrays
+    * Strings
+    * Hash Maps
+    * Trees
+    * Graphs
+   B) Coding Patterns:
+    * Sliding Window
+    * Two Pointers
+    * Fast & Slow Pointers
+    * Merge Intervals
+    * Cyclic Sort
+    * Top K Elements
+    * Prefix Sum
+   C) Mock Interviews:
+    * Pramp
+    * Interviewing.io
+    * Whiteboard coding
+    * Time/Space Complexity articulation
+
+-------------------------------------------------------
+
+3. Portfolio, Branding & Behavioral
+   A) Resume Optimization:
+    * Action Verbs
+    * Quantifiable Metrics
+    * ATS Friendly Formats
+    * Highlighting End-to-End projects
+   B) GitHub Portfolio:
+    * Markdown READMEs
+    * Architecture Diagrams
+    * Contribution Graph
+    * Open Source PRs
+   C) Behavioral Prep (STAR Method):
+    * Situation
+    * Task
+    * Action
+    * Result
+    * Handling conflict with PMs
+    * Navigating technical debt
+    * Why do you want to work here?
+    * Tell me about a time you failed.
+
+-------------------------------------------------------
+
+4. Professional & Process Skills
+   A) Communication & Collaboration:
+    * Communication Skills
+    * Technical Communication
+    * Cross-Functional Collaboration
+    * Stakeholder Communication
+    * Team Collaboration
+   B) Business & Analysis:
+    * Analytical Thinking
+    * Problem Solving
+    * Business Analysis
+    * Requirements Gathering
+    * Research Skills
+    * AI Trend Analysis
+    * Product Thinking
+   C) Process & Delivery:
+    * SDLC
+    * Agile
+    * Scrum
+    * Documentation
+    * Technical Writing
+    * Code Reviews
+    * Presentation Skills
+   D) Practice & Evaluation:
+    * Interview Questions
+    * Practice Tasks
+    * Real-world Examples
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - Resume Overhaul (Uses: LaTeX, Metrics, Action Verbs)
+  - GitHub Profile Polish (Uses: Markdown, Pinned Repos)
+  - Solve 50 LeetCode Easy (Uses: Python, Data Structures)
+  - Write STAR Stories (Uses: Behavioral Prep, Google Docs)
+  - System Design Primer Read (Uses: Grokking System Design)
+  Intermediate:
+  - Solve 50 LeetCode Medium (Uses: Patterns, Optimization)
+  - Technical Blog Post (Uses: Medium/Substack, System Design Breakdown)
+  - Architecture Diagram Portfolio (Uses: Excalidraw, AWS, Microservices)
+  - Open Source Contribution (Uses: LangChain/HuggingFace repo, Pull Requests)
+  - Live Mock Interview Recordings (Uses: Pramp, Peer Feedback)
+  Advanced:
+  - Capstone: Enterprise Scalable GenAI SaaS (Uses: Next.js, FastAPI, vLLM, Docker, Stripe)
+  - Kaggle Competitions Master Tier (Uses: Ensembling, Custom Architectures)
+  - AI Research Paper Recreation (Uses: PyTorch, ArXiv, GitHub Release)
+  - End-to-End System Design Mock Loop (Uses: FAANG Engineer Mocking)
+  - Full Stack AI Automation Tool (Uses: LangGraph, React, Postgres)
+
+CHECKLISTS:
+  - Phase: Format Resume to Harvard standard, Write 5 STAR behavioral stories, Understand the CAP Theorem
+  - Skill: I can solve LeetCode mediums in 25 mins, I can draw a system design architecture, I can articulate time/space complexity smoothly
+  - Revision: Revise Sliding Window pattern, Revise Load Balancing algorithms, Revise Canary vs Blue/Green deployments
+  - Interview: Practice a full 45-min System Design Mock, Practice Behavioral 'Tell me about yourself'
+  - Portfolio: Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs
+
+------------------------------------------------------------
+
+PHASE 10: Additional Programming Languages for AI/ML Engineers (optional)
+Overview: Although Python is the primary language for AI/ML, modern AI Engineers also benefit from learning several additional languages depending on the type of systems they build. (Duration: 6â€“10 Weeks)
+
+SKILLS:
+
+1. JavaScript
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+   B) Fundamentals:
+    * Variables
+    * Data Types
+    * Operators
+    * Conditions
+    * Loops
+    * Functions
+    * Arrays
+    * Objects
+    * Classes
+    * Modules
+    * Syntax
+   C) Modern JavaScript (Core & Advanced):
+    * ES6+
+    * Arrow Functions
+    * Promises
+    * Async/Await
+    * Fetch API
+    * DOM Basics
+    * Core Concepts
+    * Advanced Concepts
+   D) AI Applications & Use Cases:
+    * TensorFlow.js
+    * Browser AI
+    * Webcam Inference
+    * AI Dashboards
+    * Interactive Visualizations
+    * Industry Use Cases
+   E) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   F) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   G) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   H) Interview Questions:
+    * Explain event delegation.
+    * What is the difference between == and ===?
+    * How does the event loop work?
+   I) Practice:
+    * Implement a simple neural network in pure JS.
+    * Build a webcam object detector with TF.js.
+   J) Resources:
+    * MDN Web Docs
+    * JavaScript.info
+    * TensorFlow.js Documentation
+
+-------------------------------------------------------
+
+2. TypeScript
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Type System (Core Concepts):
+    * Primitive Types
+    * Interfaces
+    * Types
+    * Enums
+    * Generics
+    * Union Types
+    * Utility Types
+   C) Object Oriented Programming:
+    * Classes
+    * Interfaces
+    * Inheritance
+    * Access Modifiers
+   D) Advanced Concepts:
+    * Decorators
+    * Modules
+    * Namespaces
+    * Async Programming
+   E) AI Applications & Use Cases:
+    * LangGraph UI
+    * MCP
+    * AI SaaS
+    * Full Stack AI Applications
+    * Industry Use Cases
+   F) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   G) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   H) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   I) Interview Questions:
+    * What are generics in TypeScript?
+    * Explain the difference between type and interface.
+    * How do utility types like Pick and Omit work?
+   J) Practice:
+    * Migrate a JS AI dashboard to TS.
+    * Write an MCP client in TypeScript.
+   K) Resources:
+    * TypeScript Handbook
+    * Total TypeScript
+    * LangChain TS Docs
+
+-------------------------------------------------------
+
+3. C++
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Fundamentals:
+    * Variables
+    * Data Types
+    * Loops
+    * Functions
+    * Arrays
+    * Pointers
+    * References
+    * Core Concepts
+   C) OOP:
+    * Classes
+    * Objects
+    * Constructors
+    * Destructors
+    * Inheritance
+    * Polymorphism
+   D) Memory Management (Advanced Concepts):
+    * Heap
+    * Stack
+    * Smart Pointers
+    * RAII
+   E) STL (Standard Template Library):
+    * Vector
+    * Map
+    * Set
+    * Queue
+    * Algorithms
+   F) Multithreading:
+    * Threads
+    * Mutex
+    * Locks
+    * Atomics
+   G) AI Applications & Use Cases:
+    * OpenCV Internals
+    * PyTorch Internals
+    * TensorRT
+    * ONNX Runtime
+    * High Performance AI
+    * Industry Use Cases
+   H) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   I) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   J) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   K) Interview Questions:
+    * Explain RAII.
+    * Difference between pointer and reference?
+    * How do smart pointers work?
+   L) Practice:
+    * Implement a custom Matrix multiplication library.
+    * Write a high-performance inference wrapper.
+   M) Resources:
+    * LearnCpp.com
+    * Effective Modern C++
+    * CppReference
+
+-------------------------------------------------------
+
+4. CUDA C++
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) GPU Programming (Core Concepts):
+    * CUDA Architecture
+    * Threads
+    * Blocks
+    * Grids
+    * Kernels
+   C) Memory:
+    * Global Memory
+    * Shared Memory
+    * Constant Memory
+    * Texture Memory
+   D) Optimization (Advanced Concepts):
+    * Memory Coalescing
+    * Occupancy
+    * Streams
+    * CUDA Graphs
+   E) AI Applications & Use Cases:
+    * Deep Learning
+    * TensorRT
+    * PyTorch CUDA
+    * Custom CUDA Kernels
+    * Industry Use Cases
+   F) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   G) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   H) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   I) Interview Questions:
+    * Explain thread blocks and grids.
+    * What is memory coalescing?
+    * How does shared memory speed up execution?
+   J) Practice:
+    * Write a custom CUDA kernel for vector addition.
+    * Optimize matrix multiplication in CUDA.
+   K) Resources:
+    * NVIDIA CUDA Programming Guide
+    * CUDA By Example
+
+-------------------------------------------------------
+
+5. Go (Golang)
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Fundamentals (Core Concepts):
+    * Variables
+    * Data Types
+    * Functions
+    * Structs
+    * Interfaces
+    * Methods
+   C) Concurrency (Advanced Concepts):
+    * Goroutines
+    * Channels
+    * WaitGroups
+    * Context
+   D) Networking:
+    * HTTP
+    * REST APIs
+    * gRPC
+   E) AI Applications & Use Cases:
+    * Kubernetes
+    * Docker
+    * MLOps
+    * AI Infrastructure
+    * Distributed Systems
+    * Industry Use Cases
+   F) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   G) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   H) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   I) Interview Questions:
+    * How do Goroutines differ from OS threads?
+    * Explain channels and deadlocks.
+    * What is the Context package used for?
+   J) Practice:
+    * Build a concurrent web scraper.
+    * Create a gRPC microservice for model inference.
+   K) Resources:
+    * A Tour of Go
+    * Effective Go
+    * Go by Example
+
+-------------------------------------------------------
+
+6. Rust
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Fundamentals (Core Concepts):
+    * Variables
+    * Ownership
+    * Borrowing
+    * Lifetimes
+   C) Collections & Error Handling:
+    * Vector
+    * HashMap
+    * String
+    * Result
+    * Option
+   D) Concurrency (Advanced Concepts):
+    * Threads
+    * Async Rust
+    * Tokio
+   E) Memory Safety:
+    * Smart Pointers
+    * Traits
+    * Generics
+   F) AI Applications & Use Cases:
+    * LLM Serving
+    * AI Infrastructure
+    * High Performance APIs
+    * Vector Databases
+    * Inference Engines
+    * Industry Use Cases
+   G) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   H) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   I) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   J) Interview Questions:
+    * Explain Rust's ownership model.
+    * What is the difference between String and &str?
+    * How does Rust prevent data races?
+   K) Practice:
+    * Write a blazingly fast CLI tool.
+    * Implement a basic Vector Database core in Rust.
+   L) Resources:
+    * The Rust Book
+    * Rust by Example
+    * HuggingFace Candle
+
+-------------------------------------------------------
+
+7. Scala
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Basics (Core Concepts):
+    * Variables
+    * Functions
+    * Classes
+    * Traits
+   C) Functional Programming (Advanced Concepts):
+    * Immutable Collections
+    * Pattern Matching
+    * Higher Order Functions
+   D) Big Data:
+    * Apache Spark
+    * Spark SQL
+    * Spark Streaming
+    * Spark MLlib
+   E) AI Applications & Use Cases:
+    * Large Scale Data Engineering
+    * Distributed Computing
+    * Industry Use Cases
+   F) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   G) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   H) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   I) Interview Questions:
+    * What are case classes in Scala?
+    * Explain pattern matching.
+    * Difference between val and var?
+   J) Practice:
+    * Write a Spark streaming job in Scala.
+    * Implement functional data transformations.
+   K) Resources:
+    * Scala Documentation
+    * Spark Scala Guide
+    * Functional Programming in Scala
+
+-------------------------------------------------------
+
+8. R Programming
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Fundamentals (Core Concepts):
+    * Variables
+    * Data Types
+    * Vectors
+    * Lists
+    * Data Frames
+   C) Statistics (Advanced Concepts):
+    * Hypothesis Testing
+    * Probability
+    * Regression
+    * ANOVA
+   D) Visualization:
+    * ggplot2
+    * plotly
+   E) Data Science:
+    * dplyr
+    * tidyr
+    * caret
+    * randomForest
+   F) AI Applications & Use Cases:
+    * Statistical Analysis
+    * Research
+    * Bioinformatics
+    * Academic AI
+    * Industry Use Cases
+   G) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   H) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   I) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   J) Interview Questions:
+    * What is a Data Frame in R?
+    * Explain the apply family of functions.
+    * How do you handle missing values in R?
+   K) Practice:
+    * Perform EDA on a medical dataset.
+    * Build a statistical model using caret.
+   L) Resources:
+    * R for Data Science
+    * CRAN
+    * ggplot2 documentation
+
+-------------------------------------------------------
+
+9. Java
+   A) Overview & Setup:
+    * Introduction
+    * Why AI/ML Engineers should learn it
+    * Installation
+    * IDE Setup
+    * Syntax
+   B) Core Java (Core Concepts):
+    * Variables
+    * Data Types
+    * Operators
+    * Loops
+    * Functions
+    * Arrays
+    * Strings
+   C) Object Oriented Programming:
+    * Classes
+    * Objects
+    * Constructors
+    * Inheritance
+    * Polymorphism
+    * Encapsulation
+    * Abstraction
+   D) Collections Framework:
+    * List
+    * Set
+    * Map
+    * Queue
+   E) Multithreading:
+    * Thread
+    * Executor Framework
+    * Synchronization
+   F) Modern & Enterprise Java (Advanced):
+    * Streams API
+    * Lambda Expressions
+    * Optional
+    * Records
+    * Maven
+    * Gradle
+    * Spring Boot Basics
+    * REST APIs
+   G) AI Applications & Use Cases:
+    * Enterprise AI Systems
+    * Hadoop Ecosystem
+    * Apache Kafka
+    * Distributed Systems
+    * Industry Use Cases
+    * COBOL to Java Refactoring
+   H) Engineering Practices:
+    * Best Practices
+    * Coding Standards
+    * Debugging
+    * Common Mistakes
+   I) Projects & Practice:
+    * Hands-on Practice
+    * Beginner Projects
+    * Intermediate Projects
+    * Advanced Projects
+    * Coding Exercises
+   J) Progress Tracking:
+    * Revision Checklist
+    * Completion Checklist
+   K) Interview Questions:
+    * What is the difference between JDK
+    * JRE
+    * and JVM?
+    * Explain HashMap internal working.
+    * What is the Executor framework?
+   L) Practice:
+    * Build a multithreaded data producer for Kafka.
+    * Create a Spring Boot AI backend.
+   M) Resources:
+    * Oracle Java Tutorials
+    * Effective Java
+    * Spring Documentation
+
+-------------------------------------------------------
+
+10. C Programming
+   A) Fundamentals:
+    * Syntax
+    * Memory
+    * Pointers
+    * Structures
+    * Dynamic Memory
+    * File Handling
+    * Algorithms
+   B) AI System Foundations:
+    * High Performance Computing
+    * Custom Operators
+
+-------------------------------------------------------
+
+11. MATLAB
+   A) Core Usage:
+    * Matrix Computing
+    * Statistics
+    * Signal Processing
+    * Image Processing
+   B) AI Tooling:
+    * Deep Learning Toolbox
+    * AI Prototyping
+
+
+-------------------------------------------------------
+PROJECTS:
+  Beginner:
+  - TensorFlow.js Image Classifier (Uses: JavaScript, HTML/CSS)
+  - CLI To-Do List in Rust (Uses: Rust, Cargo)
+  - Statistical Data Analysis Script (Uses: R, ggplot2)
+  Intermediate:
+  - Concurrent Web Scraper (Uses: Go, Goroutines)
+  - Custom Matrix Ops Library (Uses: C++, STL)
+  - Spark Data ETL Pipeline (Uses: Scala, Apache Spark)
+  Advanced:
+  - High-Performance LLM Inference Engine (Uses: Rust, CUDA C++, Tensors)
+  - Distributed Microservices AI Backend (Uses: Go, gRPC, Kubernetes)
+  - Enterprise ML Orchestrator (Uses: Java, Spring Boot, Kafka)
+
+CHECKLISTS:
+  - Phase: Install compilers/runtimes for C++, Go, and Rust, Understand when to use high-performance languages over Python, Configure IDEs for polyglot development
+  - Skill: I can write a concurrent program in Go, I can manage memory in C++/Rust, I can train a simple model in TF.js
+  - Revision: Revise memory management (Heap vs Stack), Revise OOP principles across Java/C++, Revise Rust ownership
+  - Interview: Practice language-specific Leetcode questions, Explain memory leaks and how to avoid them
+  - Portfolio: Publish a multi-language AI microservices project
+
+------------------------------------------------------------
+
+
+
+
+=================================================================================
+APPENDIX: COMPLETE SKILLS DIRECTORY (Auto-Extracted from Final HTML Roadmap)
+=================================================================================
+
+### PHASE 0: Setup, CS Foundations & Data Structures
+AI relies on scalable computing and optimal algorithms. Missing these leads to slow and inefficient models.
+
+  - Development Environment & OS
+    - Operating Systems
+      - Kernel Architecture
+        - Monolithic Kernel
+        - Microkernel
+        - Hybrid Kernel
+        - System Calls
+        - User Space vs Kernel Space
+        - Process Scheduler
+        - Memory Manager
+        - Virtual File System (VFS)
+        - Device Drivers
+        - Interrupts and Exceptions
+      - Memory Management
+        - Paging
+        - Virtual Memory
+        - Swap
+        - Segmentation
+        - Page Faults
+      - Processes vs Threads
+      - Context Switching
+      - Deadlocks & Semaphores
+      - Concurrency basics
+      - File Systems
+      - Inter-process Communication (IPC)
+      - Interview Questions
+    - Linux Basics
+      - File Hierarchy Standard (FHS)
+      - User & Group Management
+      - Permissions (chmod, chown, umask)
+      - Package Managers (apt, yum, pacman)
+      - Daemons & Services (systemd)
+      - Environment Variables
+      - SSH Configuration
+      - Interview Questions
+    - CLI & Bash
+      - Navigation (cd, ls, pwd)
+      - File Manipulation (cp, mv, rm, touch, mkdir)
+      - Searching (grep, find, awk, sed)
+      - Networking (curl, wget, ping, netstat)
+      - Bash Scripting (variables, loops, conditions, cron jobs)
+      - Piping & Redirection
+      - Aliases
+      - Interview Questions
+    - Tools
+      - VS Code / PyCharm
+      - Jupyter Notebooks
+      - SSH (Keys, Config)
+      - Tmux / Screen
+      - Docker Desktop
+      - Postman / Insomnia
+      - JIRA / Azure DevOps
+  - Version Control & Git
+    - Core
+      - Git
+      - init
+      - add
+      - commit
+      - status
+      - log
+      - diff
+      - blame
+      - rm
+      - mv
+      - .gitignore
+    - Branching
+      - branch
+      - checkout
+      - switch
+      - merge
+      - Merge Conflicts
+      - Git Flow
+      - Feature Branching Strategy
+      - Pull Requests / Merge Requests
+    - Advanced
+      - rebase
+      - Interactive rebase (-i)
+      - stash
+      - cherry-pick
+      - reset (--soft, --mixed, --hard)
+      - revert
+      - reflog
+      - Submodules
+      - Squashing Commits
+      - Interview Questions
+  - Data Structures
+    - Basic
+      - Arrays
+      - 2D Arrays
+      - Multi-Dimensional Arrays (3D Arrays)
+      - Matrix Representation
+      - Sparse Arrays
+      - Sparse Matrices
+      - CSR Format
+      - CSC Format
+      - Dynamic Array Resizing
+      - Amortized Array Growth
+      - Memory Layout
+      - Strings
+      - KMP Algorithm
+      - Rabin-Karp Algorithm
+      - Z Algorithm
+      - Manacher Algorithm
+      - Suffix Automaton
+      - Rolling Hash
+      - Linked Lists (Singly, Doubly, Circular)
+      - Stack
+      - Queue
+      - Deque
+      - Memory Allocation (Contiguous vs Non-Contiguous)
+      - Interview Questions
+    - Advanced
+      - Hash Table
+        - Hash Functions
+        - Collision Resolution (Chaining, Open Addressing)
+        - Load Factor
+        - Rehashing
+      - Heap (Min, Max, Heapify, Priority Queue)
+      - Bloom Filters
+      - LRU Cache
+      - Interview Questions
+    - Trees
+      - Binary Tree
+      - Binary Search Tree (BST)
+      - AVL Tree
+      - Red Black Tree
+      - Trie
+      - Segment Tree
+      - Fenwick Tree (BIT)
+      - B Tree, B+ Tree
+      - LSM Trees
+      - Log Structured Merge Trees
+      - Suffix Trees
+      - Suffix Arrays
+      - Tree Compression
+      - Persistent Trees
+      - Tree Traversals (Inorder, Preorder, Postorder)
+      - Interview Questions
+    - Graph
+      - Adjacency Matrix
+      - Adjacency List
+      - Union Find (Disjoint Set)
+      - Directed vs Undirected
+      - Weighted vs Unweighted
+      - DAGs (Directed Acyclic Graphs)
+      - Interview Questions
+  - Algorithms
+    - Complexity
+      - Time Complexity (Big-O, Omega, Theta)
+      - Space Complexity
+      - Amortized Analysis
+      - Master Theorem
+      - Best, Worst, Average Case
+    - Sorting
+      - Bubble
+      - Selection
+      - Insertion
+      - Merge
+      - Quick
+      - Heap
+      - Counting
+      - Radix
+      - Bucket Sort
+      - Stability in Sorting
+      - In-place vs Out-of-place
+      - Interview Questions
+    - Searching
+      - Linear Search
+      - Binary Search
+      - Ternary Search
+      - Interpolation Search
+    - Graph Algos
+      - DFS
+      - BFS
+      - Cycle Detection
+      - Topological Sort
+      - Dijkstra
+      - Bellman-Ford
+      - Floyd Warshall
+      - Prim
+      - Kruskal
+      - A* Search
+      - Interview Questions
+    - Techniques
+      - Sliding Window
+      - Two Pointers
+      - Greedy
+      - Dynamic Programming (Memoization, Tabulation)
+      - Backtracking
+      - Divide and Conquer
+      - Bit Manipulation
+      - Interview Questions
+  - AI-Assisted Development Tools
+    - Core
+      - Windsurf
+      - Claude Code Models
+  - Soft Skills
+    - Core
+      - Accuracy & Attention to Detail
+      - Logical & Analytical Thinking
+      - Business Problem Solving
+  - Data Structures & Algorithms (DSA)
+    - Data Structures
+      - Arrays, Linked Lists (Singly/Doubly)
+      - Queues & Stacks
+      - Hash Tables / Maps
+      - Trees (Binary, BST, AVL, B-Trees, Trie, Heap)
+      - Graphs (Directed, Undirected)
+    - Algorithms & Complexity
+      - Algorithmic Complexity (Big-O, Time vs Space, Constant, Linear, Logarithmic)
+      - Sorting (Bubble, Merge, Quick, Heap, Insertion, Selection)
+      - Search (Binary, Linear)
+      - Graph Search (BFS, DFS, Dijkstra, A*, Bellman-Ford)
+    - Problem Solving Techniques
+      - Dynamic Programming & Recursion
+      - Greedy Algorithms
+      - Divide and Conquer
+      - Two Pointers & Sliding Window
+      - Backtracking
+
+### PHASE 1: Python Deep Dive
+Writing production-grade, asynchronous, and object-oriented Python is required for all modern AI roles.
+
+  - Python Core
+    - Basics
+      - Variables
+      - Data Types
+      - Type Casting
+      - Input/Output
+      - Operators
+      - Mutable vs Immutable
+      - Memory management (Reference counting, Garbage Collection)
+      - Basic Syntax
+      - Variables and Data Types
+      - Conditionals
+      - Loops
+      - Exceptions
+    - Data Structures
+      - Strings (Regex)
+      - Lists
+      - Tuples
+      - Sets
+      - Dictionary (DefaultDict, OrderedDict, Counter)
+      - Dictionaries
+      - Arrays and Linked Lists
+      - Hash Tables
+      - Heaps, Stacks and Queues
+      - Binary Search Tree
+      - Sorting Algorithms
+    - Conditions
+      - if
+      - elif
+      - else
+      - Ternary Operators
+      - match case
+    - Loops & Iteration
+      - for loop
+      - while loop
+      - enumerate()
+      - zip()
+      - range()
+      - Iterators
+      - Iterable Protocol
+      - Generators
+      - Async Generators
+  - Functions & Advanced Concepts
+    - Functions
+      - Positional & Keyword Arguments
+      - Lambda Functions
+      - Recursion
+      - Type Hinting (Generics, Protocols)
+      - Docstrings
+      - Built-in Functions
+      - args & kwargs
+      - Lambdas
+      - Iterators
+      - Generator Expressions
+      - Regular Expressions
+    - Functional Programming
+      - map
+      - filter
+      - reduce
+      - Closures
+      - Higher-Order Functions
+      - Partial Functions
+    - Advanced Constructs
+      - Decorators (Function & Class)
+      - Context Managers (__enter__, __exit__, contextlib)
+      - Descriptors
+      - Metaclasses
+      - Slots
+      - Weak References
+    - Exception Handling
+      - try
+      - except
+      - finally
+      - Custom Exceptions
+      - Assertions
+      - Traceback handling
+  - Object Oriented Programming (OOP)
+    - Core Concepts
+      - Class
+      - Object
+      - Constructors
+      - Instance/Class/Static Variables
+      - Methods
+      - Magic Methods (Dunder methods)
+    - Inheritance
+      - Single
+      - Multiple
+      - MRO (Method Resolution Order)
+      - super()
+    - Polymorphism & More
+      - Method Overloading
+      - Method Overriding
+      - Encapsulation
+      - Abstraction
+      - Properties (@property)
+    - Advanced OOP & Patterns
+      - Dependency Injection
+      - Inversion of Control (IoC)
+      - Strategy Pattern
+      - Adapter Pattern
+      - Facade Pattern
+      - Builder Pattern
+      - Prototype Pattern
+      - Repository Pattern
+      - Unit of Work Pattern
+      - SOLID Principles
+      - Dataclasses
+  - Production Python
+    - Concurrency
+      - Multithreading (GIL)
+      - Multiprocessing
+      - Async Programming (async/await, Event Loop)
+      - Concurrent.futures
+    - File Handling
+      - Text files
+      - CSV
+      - JSON
+      - Pickle
+      - Parquet
+      - Pathlib
+    - Engineering
+      - Virtual Environments
+      - Type Hinting (mypy)
+      - Logging
+      - Testing (pytest, unittest, mock, fixtures)
+      - Pytest
+      - Packaging (setup.py, wheel, PyPI)
+      - Debugging & Profiling
+      - Performance Optimization
+      - Complex Calculations
+  - Python Ecosystem & Tooling
+    - Package Managers
+      - PyPI
+      - Pip
+      - Conda
+      - Poetry
+      - uv
+    - Environments
+      - virtualenv
+      - pyenv
+      - Pipenv
+    - Static Typing
+      - typing
+      - mypy
+      - pyright
+      - pyre
+      - Pydantic
+    - Code Formatting
+      - black
+      - yapf
+      - ruff
+    - Testing
+      - pytest
+      - unittest / pyUnit
+      - doctest
+      - nose
+      - tox
+  - Python Fundamentals
+    - Variables, Data Types, and Type Casting
+    - Lists, Dictionaries, Tuples, Sets
+    - If/Else Statements
+    - For & While Loops
+    - Functions & Lambda Expressions
+
+### PHASE 2: Mathematics for Machine Learning
+Deep Learning optimization, backpropagation, and algorithm intuition require solid mathematical foundations.
+
+  - Linear Algebra
+    - Vectors
+      - Vector Spaces
+      - Scalars
+      - Magnitude
+      - Dot Product
+      - Cross Product
+      - Orthogonality
+      - Cosine Similarity
+      - Vector Norms (L1, L2, L-inf)
+      - Interview Questions
+    - Matrices
+      - Matrix Operations (Add, Multiply)
+      - Transpose
+      - Inverse
+      - Identity Matrix
+      - Determinant
+      - Rank
+      - Null Space
+      - Trace
+      - Interview Questions
+    - Transformations
+      - Linear Transformations
+      - Basis Vectors
+      - Change of Basis
+      - Scaling, Rotation, Translation
+    - Decompositions
+      - Eigenvalues
+      - Eigenvectors
+      - Singular Value Decomposition (SVD)
+      - Eigendecomposition
+      - PCA Mathematics
+      - Cholesky Decomposition
+  - Calculus
+    - Differential Calculus
+      - Limits
+      - Derivatives
+      - Power, Product, Quotient Rules
+      - Chain Rule (Core to Backprop)
+      - Higher-Order Derivatives
+      - Taylor Series
+    - Multivariate Calculus
+      - Partial Derivatives
+      - Gradients
+      - Jacobian Matrix
+      - Hessian Matrix
+      - Directional Derivatives
+      - Multiple Integrals
+    - Optimization
+      - Gradient Descent
+      - Convex vs Non-Convex Functions
+      - Local/Global Minima
+      - Saddle Points
+      - Learning Rate Intuition
+      - Lagrange Multipliers
+      - Constrained Optimization
+  - Probability & Statistics
+    - Descriptive Statistics
+      - Mean, Median, Mode
+      - Variance
+      - Standard Deviation
+      - Skewness
+      - Kurtosis
+      - Covariance
+      - Correlation (Pearson, Spearman)
+      - Quantiles, Percentiles, IQR
+    - Probability Theory
+      - Random Variables (Discrete vs Continuous)
+      - Independent/Dependent Events
+      - Conditional Probability
+      - Bayes' Theorem
+      - Law of Large Numbers
+      - Markov Chains
+      - Interview Questions
+    - Distributions
+      - Probability Density Functions (PDF)
+      - Cumulative Distribution Functions (CDF)
+      - Normal (Gaussian)
+      - Binomial
+      - Poisson
+      - Uniform
+      - Exponential
+      - Central Limit Theorem
+    - Inferential Statistics
+      - Hypothesis Testing
+      - Null & Alternative Hypotheses
+      - P-Values
+      - Z-Test
+      - T-Test
+      - ANOVA
+      - Chi-Square Test
+      - Confidence Intervals
+      - A/B Testing
+      - Type I and Type II Errors
+    - Basics of Probability (Random Variables, PDFs)
+    - Bayes Theorem
+    - Distributions & Central Limit Theorem
+    - Hypothesis Testing & P-Values
+    - A/B Testing (Minimum Detectable Effect, CUPED, Ratio Metrics)
+  - Mathematics for Machine Learning
+    - Linear Algebra
+      - Scalars, Vectors, Tensors
+      - Matrix & Matrix Operations
+      - Eigenvalues & Diagonalization
+      - Singular Value Decomposition (SVD)
+      - Determinants, Inverse of Matrix
+    - Calculus
+      - Derivatives & Partial Derivatives
+      - Chain Rule of Derivation
+      - Gradients, Jacobian, Hessian Matrix
+    - Discrete Mathematics
+      - Logic, Set Theory, Combinatorics
+  - Descriptive Statistics
+    - Dispersion
+      - Range
+      - Variance
+      - Standard Deviation
+    - Central Tendency
+      - Mean
+      - Median
+      - Mode
+      - Average
+    - Distribution Space
+      - Skewness
+      - Kurtosis
+  - Probability & Distributions
+    - Basic Probability Theory
+    - Normal Distribution
+    - Binomial & Poisson Distributions
+    - Central Limit Theorem
+  - Inferential Statistics
+    - Hypothesis Testing Framework
+    - P-values and Statistical Significance
+    - T-Tests and Z-Tests
+    - Confidence Intervals
+    - Type I and Type II Errors
+    - Correlation Analysis
+    - Regression Analysis
+  - Product & Business Analytics
+    - A/B Testing & Experimentation
+    - Cohort Analysis
+    - Funnel Analysis
+    - Churn Rate & Retention Analysis
+    - Customer Lifetime Value (CLV)
+
+### PHASE 3: SQL, Data Analysis & Data Engineering
+Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad data = bad models.
+
+  - SQL (Deep Dive)
+    - Database Basics
+      - RDBMS vs NoSQL
+      - Data Modeling
+      - Normalization (1NF, 2NF, 3NF, BCNF)
+      - Denormalization
+      - Keys
+      - Constraints
+    - Queries & Joins
+      - SELECT
+      - WHERE
+      - JOINs
+      - Set Operations
+    - Advanced SQL
+      - Subqueries
+      - CTEs
+      - Recursive Queries
+      - Window Functions (RANK, LEAD, LAG)
+      - EXPLAIN
+      - EXPLAIN ANALYZE
+      - Query Execution Plans
+      - Query Cost Estimation
+      - PostgreSQL Query Planner
+      - Index Scan
+      - Sequential Scan
+    - Architecture & Optimization
+      - Indexes (B-Tree, Hash)
+      - Views & Materialized Views
+      - Stored Procedures
+      - Triggers
+      - Query Execution Order
+      - Query Optimization (EXPLAIN)
+      - Partitioning
+      - Replication
+      - Sharding
+    - Transactions & Concurrency
+      - ACID Properties
+      - Transaction Isolation Levels
+      - Locks
+      - Deadlocks
+  - Data Processing (Python)
+    - NumPy
+      - NDArrays
+      - Vectorization
+      - Broadcasting
+      - Indexing & Slicing
+      - Linear Algebra
+      - Arrays & ndarray
+      - Array Operations
+      - Linear Algebra Basics
+      - Random Module
+    - Pandas
+      - Series
+      - DataFrames
+      - I/O (CSV, SQL, Parquet)
+      - Filtering
+      - Missing Data Handling
+      - Group By & Aggregations
+      - Merge & Concat
+      - Pivot Tables
+      - Time Series
+      - MultiIndex
+      - Categorical dtype
+      - Apply vs Vectorization
+      - Performance Optimization
+      - Series and DataFrame
+      - Indexing & Slicing
+      - Filtering & Querying
+      - Groupby & Aggregation
+      - Merging & Joining
+      - Reshaping
+    - Alternative Data Libraries
+      - Polars
+      - Dask
+      - Vaex
+    - Reading Data
+      - CSV
+      - Excel
+      - JSON
+      - Parquet
+      - APIs with requests
+      - BeautifulSoup
+      - scrapy
+    - Data Cleaning
+      - Missing Values (isnull, isna, Dropping vs Imputing, Forward/Backward Fill)
+      - Outlier Detection (IQR, Z-score, Visual Inspection)
+      - String Cleaning (strip, replace, split, re, Pandas String Methods)
+      - Data Type Conversion (Casting Types, Parsing Dates, Encoding Categories)
+  - Data Analyst & BI Mastery
+    - Types of Data Analytics
+      - Descriptive Analytics
+      - Diagnostic Analytics
+      - Predictive Analytics
+      - Prescriptive Analytics
+    - Spreadsheets & Query
+      - Google Sheets
+      - Advanced Excel (XLOOKUP/INDEX MATCH)
+      - PivotTables
+      - Power Query
+      - Power Pivot
+      - DAX
+      - Advanced DAX
+      - Macros/VBA Basics
+      - excel VBA Macros
+    - BI Tools & Dashboards
+      - Power BI
+      - Tableau
+      - Looker Studio
+      - Dashboard Design
+      - Dashboard UX
+      - Data Storytelling
+      - Ad-Hoc Reporting
+      - Dashboard Upkeep
+      - Business Insights
+    - Product & Business Analytics
+      - Business Metrics
+      - North Star Metrics
+      - KPI Design
+      - Funnel Analysis
+      - Retention Analysis
+      - Cohort Analysis
+      - Churn Analysis
+      - Product Analytics
+      - Customer Analytics
+      - Marketing Analytics
+      - Finance Analytics
+      - Case Studies
+      - Business Problem Solving
+      - Root Cause analysis
+      - Data Quality Validation
+      - Data profiling
+      - Vendor Data Analysis
+      - Executive Summary Reports
+      - Attention to Detail
+    - Event Tracking
+      - Mixpanel
+      - Amplitude
+    - Interview Prep
+      - SQL Interview Questions
+    - Advanced Visualization
+      - D3.js
+      - SVG
+      - Charts
+      - Interactive Dashboards
+      - AI Visualization
+      - Qlik Sense
+      - Dashboards
+      - Reports
+      - Data Modeling
+      - QlikView
+      - Basic Concepts
+      - D3 Data Visualizations
+  - Data Engineering (ETL / ELT)
+    - Big Data Frameworks
+      - Apache Spark (PySpark)
+        - RDDs
+        - DataFrames
+        - Spark SQL
+        - Lazy Evaluation
+        - Transformations vs Actions
+      - Databricks
+      - Resilient Distributed Datasets (RDD)
+      - Spark SQL
+      - Spark Execution Plans
+      - Catalyst Optimizer
+      - Tungsten Execution Engine
+      - Whole Stage Code Generation
+      - Adaptive Query Execution
+      - Broadcast Joins
+      - Shuffle Hash Joins
+      - Sort Merge Join
+      - Data Skew
+      - Salting Techniques
+      - Partition Pruning
+      - Spark Streaming
+      - Apache Flink
+      - Trino
+      - Presto
+      - Hadoop & MapReduce Paradigm
+      - Parallel Processing Concepts (MPI)
+    - Data Warehousing & Lakes
+      - OLTP vs OLAP
+      - Star & Snowflake Schemas
+      - Snowflake
+      - Google BigQuery
+      - AWS Redshift
+      - Data Lakes
+      - Apache Iceberg
+      - Delta Lake
+      - Apache Hudi
+    - Orchestration
+      - Apache Airflow
+      - Prefect
+    - Data Transformation
+      - ETL/ELT
+      - Data Pipelines
+      - dbt (Data Build Tool)
+      - Models
+      - Macros
+      - Tests
+      - Jinja templating
+    - Streaming Data
+      - Streaming concepts
+      - Apache Kafka
+        - Topics & Partitions
+        - Producers & Consumers
+        - Brokers & Clusters
+        - Zookeeper / KRaft
+        - Consumer Groups
+        - Offset Management
+        - Exactly Once Semantics
+        - Idempotent Producer
+        - Transactions
+        - Log Compaction
+      - RabbitMQ
+      - Redis Pub/Sub
+  - NoSQL & Graph Databases
+    - MongoDB
+      - History
+      - Documents
+      - Collections
+      - BSON
+      - Aggregation Pipeline
+      - Indexing
+      - Replication
+      - Sharding
+      - Architecture
+      - Queries
+      - Optimization
+      - Interview Questions
+      - Practice
+      - Resources
+    - DynamoDB
+      - Partition Keys
+      - Sort Keys
+      - GSIs
+      - LSIs
+      - Streams
+      - Architecture
+      - Queries
+      - Optimization
+      - Interview Questions
+      - Practice
+      - Resources
+    - Graph Databases (Neo4j)
+      - Nodes
+      - Relationships
+      - Cypher Query Language
+      - Knowledge Graphs
+      - Graph Analytics
+      - Architecture
+      - Queries
+      - Optimization
+      - Interview Questions
+      - Practice
+      - Resources
+    - Database Selection
+      - When to use SQL
+      - When to use NoSQL
+      - When to use Graph DB
+      - When to use Vector DB
+      - Trade-offs
+      - Interview Questions
+      - Practice
+  - Database Engines (Relational)
+    - MySQL
+      - Installation
+      - Architecture
+      - Storage Engines
+      - SQL Syntax
+      - Transactions
+      - Indexing
+      - Optimization
+      - Backup & Restore
+      - Interview Questions
+      - Practice
+      - Projects
+    - PostgreSQL
+      - Architecture
+      - MVCC
+      - JSONB
+      - Extensions
+      - Indexing
+      - GiST Index
+      - SP-GiST Index
+      - BRIN Index
+      - GIN Index
+      - Partial Indexes
+      - Expression Indexes
+      - Full Text Search
+      - Partitioning
+      - Replication
+      - Performance Tuning
+      - Interview Questions
+      - Projects
+    - Oracle Database / PL-SQL
+      - Oracle SQL
+      - PL/SQL
+      - Procedures
+      - Functions
+      - Packages
+      - Triggers
+      - Cursors
+      - Exception Handling
+      - Interview Questions
+  - Enterprise Analytics (Optional)
+    - OPTIONAL / ENTERPRISE-SPECIFIC
+      - Workday Financials
+      - EIB
+      - Core Connectors
+      - Denodo
+      - Power Platform
+      - Power Automate
+      - On-Premise Infrastructure
+  - Data Science Methodology
+    - CRISP-DM
+      - Business Understanding
+      - Data Understanding
+      - Data Preparation
+      - Modeling
+      - Evaluation
+      - Deployment
+      - Real-world Workflow
+  - Data Collection
+    - Web Scraping
+      - BeautifulSoup
+      - Scrapy
+      - Selenium
+      - Data Extraction
+    - APIs & Streaming
+      - API-based Data Collection
+      - Streaming Data Collection
+    - Datasets & Quality
+      - Survey Data Collection
+      - Public Datasets
+      - Kaggle
+      - Hugging Face Datasets
+      - Data Quality Validation
+      - Data Quality
+      - Data Validation
+      - Ethical Data Collection
+      - Data Verification
+  - SQL & Databases
+    - Core
+      - SQL (Joins, aggregations)
+      - Advanced SQL & Complex Query Writing
+      - BigQuery
+      - MS SQL Server
+  - Data Tools & Concepts
+    - Core
+      - Data Organization
+      - Dataset Preparation
+      - Large Datasets Handling
+      - Big Data
+      - Hadoop
+  - Domain Specific / Reporting
+    - Core
+      - VLOOKUP
+      - MIS Reporting
+      - Power Insight
+      - DA2
+      - CCL
+      - Pearl Data Direct
+      - Millennium Data Model
+      - Healthcare Workflows
+      - CRM
+      - Finetech
+  - Analytics
+    - Core
+      - Data Analysis & Insights
+      - Translating Business Requirements into Data Solutions
+  - Data Analyst Fundamentals & Spreadsheets
+    - Spreadsheet Basics (Excel / Google Sheets)
+      - Formatting & Data Types
+      - Basic Formulas (SUM, AVERAGE, COUNT, MIN, MAX)
+      - Conditional Formatting
+    - Advanced Formulas & Functions
+      - Logical Functions (IF, AND, OR, IFERROR)
+      - Lookup Functions (VLOOKUP, HLOOKUP, XLOOKUP, INDEX/MATCH)
+      - Text & Date Functions (LEFT, RIGHT, DATEDIF, etc.)
+    - Data Analysis in Spreadsheets
+      - Pivot Tables & Pivot Charts
+      - Power Query Basics
+      - What-If Analysis (Goal Seek, Scenario Manager)
+  - Business Intelligence (BI) Tools
+    - Data Visualization Principles
+      - Choosing the Right Chart Type
+      - Color Theory & Typography for Data
+      - Data Storytelling & Executive Summary Reports
+    - Power BI
+      - Getting & Cleaning Data (Power Query)
+      - Data Modeling (Star Schema)
+      - DAX Basics & Advanced (CALCULATE, Time Intelligence)
+    - Tableau
+      - Connecting to Data Sources
+      - Calculated Fields & Parameters
+      - Level of Detail (LOD) Expressions
+  - Product & Business Analytics
+    - Understanding Business Metrics (KPIs, OKRs)
+    - A/B Testing & Experimentation Methodologies
+    - Cohort Analysis
+    - Funnel Analysis
+    - Churn Rate & Retention Analysis
+    - Customer Lifetime Value (CLV)
+  - Spreadsheet Basics (Excel / Google Sheets)
+    - Formatting & Data Types
+    - Basic Formulas (SUM, AVERAGE, COUNT, MIN, MAX)
+    - Relative vs Absolute Referencing
+    - Conditional Formatting
+  - Advanced Formulas & Functions
+    - Logical Functions (IF, AND, OR, IFERROR)
+    - Lookup Functions (VLOOKUP, HLOOKUP, XLOOKUP, INDEX/MATCH)
+    - Text Functions (LEFT, RIGHT, MID, CONCATENATE, TRIM)
+    - Date & Time Functions
+    - Specific Functions
+      - IF, DATEDIF
+      - REPLACE, SUBSTITUTE
+      - UPPER, LOWER, PROPER
+      - CONCAT, TRIM
+  - Data Analysis in Spreadsheets
+    - Pivot Tables & Pivot Charts
+    - Data Validation & Dropdowns
+    - What-If Analysis (Goal Seek, Data Tables, Scenario Manager)
+    - Power Query Basics
+  - Business & Domain Knowledge
+    - Types of Data Analytics
+      - Descriptive Analytics
+      - Diagnostic Analytics
+      - Predictive Analytics
+      - Prescriptive Analytics
+    - Understanding Business Metrics (KPIs, OKRs)
+    - Problem Solving Frameworks
+    - Translating Business Requirements into Data Solutions
+  - Relational Database Concepts
+    - RDBMS Basics (Tables, Rows, Columns)
+    - Primary Keys & Foreign Keys
+    - Data Types in SQL
+    - Database Normalization (1NF, 2NF, 3NF)
+  - Basic SQL Queries
+    - SELECT, FROM, WHERE
+    - Filtering with AND, OR, IN, NOT, BETWEEN, LIKE
+    - ORDER BY & LIMIT / TOP
+    - Aliasing (AS)
+  - Aggregations & Grouping
+    - Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
+    - GROUP BY
+    - HAVING clause
+  - SQL Joins
+    - INNER JOIN
+    - LEFT JOIN / RIGHT JOIN
+    - FULL OUTER JOIN
+    - CROSS JOIN & Self Join
+    - UNION & UNION ALL
+  - Advanced SQL
+    - Subqueries & Nested Queries
+    - Common Table Expressions (CTEs)
+    - Window Functions (RANK, DENSE_RANK, ROW_NUMBER, LEAD, LAG)
+    - String, Date, and Math Functions
+    - CASE WHEN statements
+  - Performance & Optimization
+    - Understanding Query Execution Order
+    - Indexes
+    - EXPLAIN / Query Execution Plans
+  - Data Visualization Principles
+    - Choosing the Right Chart Type
+    - Color Theory & Typography for Data
+    - Minimizing Chart Junk
+    - Data Storytelling
+    - Charting Types
+      - Bar Charts, Line Charts, Pie Charts
+      - Histograms, Stacked Charts, Scatter Plots
+      - Funnel Charts, Heatmaps
+  - Power BI
+    - Getting & Cleaning Data (Power Query)
+    - Data Modeling (Star Schema, Relationships)
+    - DAX (Data Analysis Expressions) Basics
+    - Advanced DAX (CALCULATE, Time Intelligence)
+    - Building Interactive Dashboards
+    - Publishing to Power BI Service
+  - Tableau (Alternative to Power BI)
+    - Connecting to Data Sources
+    - Dimensions vs Measures
+    - Calculated Fields & Parameters
+    - Level of Detail (LOD) Expressions
+    - Creating Interactive Dashboards & Stories
+  - Data Manipulation (Pandas & NumPy)
+    - NumPy Arrays & Vectorization
+    - Pandas Series & DataFrames
+    - Reading/Writing Data (CSV, Excel, SQL)
+    - Data Cleaning & Handling Missing Values
+    - Filtering, Sorting, and Grouping
+    - Merging, Joining, and Concatenating DataFrames
+    - Pivot Tables in Pandas
+  - Data Visualization in Python
+    - Matplotlib (Figures, Axes, Subplots)
+    - Seaborn (Statistical Graphics, Heatmaps, Pairplots)
+    - Plotly (Interactive Visualizations)
+  - Exploratory Data Analysis (EDA)
+    - Univariate Analysis
+    - Bivariate & Multivariate Analysis
+    - Identifying Outliers & Anomalies
+    - Correlation Analysis
+  - R Programming (Optional)
+    - R Basics
+    - Data Manipulation (Dplyr)
+    - Data Visualization (Ggplot2)
+  - Data Collection & Cleanup
+    - Data Sources (Databases, CSV Files, APIs, Web Scraping)
+    - Handling Missing Data
+    - Removing Duplicates
+    - Finding Outliers
+    - Data Transformation
+
+### PHASE 4: Core Machine Learning
+Deep Learning is hype, but classical ML runs the world's recommendation, pricing, and tabular data systems.
+
+  - Feature Engineering (Deep Dive)
+    - Feature Selection
+      - Mutual Information
+      - Recursive Feature Elimination (RFE)
+      - Permutation Importance
+      - Statistical Feature Selection (ANOVA, Chi-Square)
+    - Feature Engineering Techniques
+      - Feature Scaling
+      - Encoding
+      - Target Encoding
+      - Mean Encoding
+      - Weight of Evidence (WoE)
+      - Information Value (IV)
+      - High Cardinality Encoding
+      - Rare Category Encoding
+      - Frequency Encoding
+      - Feature Extraction
+      - Feature Construction
+      - Dimensionality Reduction
+      - feature engineering
+  - Supervised Learning
+    - Linear Models
+      - Linear Regression (OLS, Cost Function)
+      - Logistic Regression (Sigmoid, Cross-Entropy Loss, Odds Ratio)
+      - Predictive Analysis
+    - Regularization
+      - L1 Regularization (Lasso)
+      - L2 Regularization (Ridge)
+      - ElasticNet (L1 + L2)
+    - Distance Based
+      - K-Nearest Neighbors (KNN)
+      - Distance Metrics
+      - Curse of Dimensionality
+      - KD-Trees
+    - Margin Based
+      - Support Vector Machines (SVM)
+      - Hyperplanes & Margins
+      - Kernel Trick
+      - Hinge Loss
+    - Probabilistic
+      - Naive Bayes
+      - Gaussian NB
+      - Multinomial NB
+      - Bernoulli NB
+      - Laplace Smoothing
+  - Tree-Based Models & Ensembles
+    - Decision Trees
+      - Splitting Criteria
+      - Pruning
+      - Feature Importance
+    - Bagging
+      - Random Forest
+      - Out-of-Bag (OOB) Error
+      - Bootstrapping
+    - Boosting
+      - AdaBoost
+      - Gradient Boosting Machines (GBM)
+      - XGBoost
+      - Gradient Statistics
+      - Hessian Statistics
+      - Split Finding Algorithm
+      - Histogram Based Learning
+      - LightGBM
+      - GOSS
+      - Exclusive Feature Bundling (EFB)
+      - Leaf-wise Tree Growth
+      - CatBoost
+  - Unsupervised Learning
+    - Clustering
+      - K-Means
+      - Elbow Method
+      - Silhouette Score
+      - Hierarchical Clustering
+      - DBSCAN
+      - Handling Outliers
+    - Dimensionality Reduction
+      - Principal Component Analysis (PCA)
+      - t-SNE
+      - UMAP
+    - Anomaly Detection
+      - Isolation Forest
+      - One-Class SVM
+      - Local Outlier Factor (LOF)
+      - Data Anomaly Detection
+  - Time Series & Forecasting
+    - Time Series Foundations
+      - Seasonality
+      - Trend
+      - Stationarity
+      - Rolling Forecast
+      - Forecast Evaluation
+    - Forecasting Models
+      - ARIMA
+      - SARIMA
+      - Prophet
+      - Holt Winters
+      - LSTM Forecasting
+  - Advanced Statistics & Design
+    - Advanced Topics
+      - Survival Analysis
+      - Causal Inference
+      - Bayesian Statistics
+      - Bayesian Optimization
+      - Experiment Design
+      - Design of Experiments (DOE)
+      - Propensity Modelling
+      - Risk Analytics
+  - ML Pipeline & Engineering
+    - Data Preprocessing
+      - Imputation
+      - Encoding
+      - Scaling
+      - Scikit-Learn Pipelines
+    - Imbalanced Data
+      - SMOTE
+      - Borderline SMOTE
+      - SMOTENC
+      - SMOTEENN
+      - ADASYN
+      - Class Weights
+      - Cost Sensitive Learning
+      - Class Weighted Loss
+      - Custom Loss Functions
+      - Undersampling
+    - Validation
+      - Train/Val/Test Split
+      - K-Fold Cross Validation
+      - Stratified K-Fold
+      - Time Series Split
+      - Data Leakage avoidance
+    - Hyperparameter Tuning
+      - Grid Search
+      - Random Search
+      - Bayesian Optimization (Optuna)
+    - Evaluation Metrics
+      - Classification
+      - Regression
+    - Explainable AI (XAI)
+      - SHAP
+      - LIME
+      - Partial Dependence Plots
+  - Pattern Recognition
+    - Fundamentals
+      - Statistical Pattern Recognition
+      - Structural Pattern Recognition
+      - Feature Patterns
+    - Applications
+      - Classification
+      - Recognition Systems
+  - Symbolic AI
+  - Core Machine Learning
+    - Supervised Learning
+      - Classification: K-Nearest Neighbors (KNN), SVM, Logistic Regression, Decision Trees
+      - Regression: Linear Regression, Polynomial Regression
+      - Regularization: Lasso (L1), Ridge (L2), ElasticNet
+      - Ensemble Methods: Random Forest, Gradient Boosting Machines
+    - Unsupervised Learning
+      - Clustering (K-Means, Hierarchical)
+      - Dimensionality Reduction (PCA, Autoencoders)
+    - Reinforcement Learning
+      - Q-Learning
+      - Deep-Q Networks (DQN)
+      - Policy Gradient & Actor-Critic Methods
+    - Model Evaluation
+      - Validation Techniques (K-Fold Cross Validation, LOOCV)
+      - Metrics: Accuracy, Precision, Recall, F1-Score
+      - ROC-AUC, Log Loss, Confusion Matrix
+  - Time Series & Econometrics
+    - ARIMA & Forecasting Models
+    - Time Series Basics
+    - Regression for Time Series
+  - Machine Learning Basics (Optional but recommended)
+    - Supervised vs Unsupervised Learning
+    - Linear Regression (Predictive Modeling)
+    - Logistic Regression (Classification)
+    - K-Means Clustering (Segmentation)
+    - Scikit-Learn Basics
+
+### PHASE 5: Deep Learning, CV & NLP
+Neural Networks are the backbone of unstructured data processing (images, audio, text). PyTorch is the industry standard.
+
+  - Deep Learning Foundations (PyTorch)
+    - Core Concepts
+      - Perceptron
+      - MLP
+      - Forward Propagation
+      - Backpropagation Calculus
+      - Computational Graphs
+      - Vanishing Gradients
+    - Activation & Loss
+      - Sigmoid, Tanh, ReLU, GELU, Swish
+      - Cross-Entropy, Focal Loss, Triplet Margin Loss
+    - Optimizers & Regularization
+      - Adam, AdamW, SGD
+      - LR Schedulers
+      - Dropout
+      - Batch/Layer/Group Normalization
+      - Weight Decay
+      - Gradient Clipping
+    - PyTorch Specifics
+      - Tensors (CUDA)
+      - Autograd
+      - nn.Module
+      - Dataset & DataLoader
+      - PyTorch Lightning
+      - TorchMetrics
+    - Advanced PyTorch & Optimization
+      - TorchScript
+      - torch.compile()
+      - DistributedDataParallel (DDP)
+      - Mixed Precision
+      - Gradient Accumulation
+      - Checkpointing
+      - xFormers
+      - Flash Attention
+      - DeepSpeed
+    - Ecosystem Libraries
+      - accelerate
+      - optimum
+      - optimum-intel
+      - optimum-neuron
+      - SafeTensors
+      - Keras
+  - Computer Vision (CV)
+    - Image Processing Basics
+      - OpenCV
+      - Filters
+      - Edge Detection
+      - Morphological Operations
+      - Optical Flow
+      - Lucas Kanade
+      - Farneback Optical Flow
+    - CNNs & Classical Architectures
+      - Convolutional Neural Networks (CNN)
+        - Convolution Operations
+        - Padding & Stride
+        - Pooling Layers
+        - Receptive Fields
+      - ResNet
+      - EfficientNet
+      - 3D CNN
+      - Video Classification
+    - Advanced Architectures & Vision Transformers
+      - Vision Transformers (ViT)
+      - CLIP
+      - BLIP
+      - DETR (DEtection TRansformer)
+      - Grounding DINO
+    - Object Detection & Segmentation
+      - YOLO (v8, v9, v10)
+      - SSD
+      - Faster R-CNN
+      - Segment Anything Model (SAM, SAM2)
+      - U-Net
+      - Mask R-CNN
+      - Pose Estimation
+      - Keypoint Detection
+      - OpenPose
+      - MediaPipe Pose
+    - Generative Vision
+      - Diffusion Models
+      - Stable Diffusion
+      - ControlNet
+      - Image Captioning
+      - Image Generation
+      - Neural Radiance Fields (NeRF)
+      - 3D Gaussian Splatting
+    - Augmentation & Tracking
+      - Albumentations
+      - CutMix
+      - MixUp
+      - DeepSORT
+      - ByteTrack
+    - CV Tooling & Annotation
+      - Roboflow
+      - Dataset Management
+      - Annotation
+      - Augmentation
+      - Export Formats
+      - YOLO Integration
+      - CVAT
+      - Image Annotation
+      - Video Annotation
+      - Labeling
+  - Natural Language Processing (NLP)
+    - Text Preprocessing & NLP Libs
+      - Tokenization (BPE, WordPiece)
+      - BPE Mathematics
+      - WordPiece Mathematics
+      - Unigram Tokenization
+      - HuggingFace Tokenizers (Deep Dive)
+      - sentencepiece
+      - spaCy
+      - NLTK
+      - POS Tagging
+      - Dependency Parsing
+      - NER
+      - NLTK
+    - Embeddings & RNNs
+      - Word2Vec
+      - GloVe
+      - FastText
+      - Recurrent Neural Networks (RNN)
+        - Hidden States
+        - Backpropagation Through Time (BPTT)
+        - Vanishing Gradients
+        - LSTM
+        - GRU
+      - Seq2Seq Architectures
+      - Attention Mechanism
+    - Transformers (NLP)
+      - BERT Fine-tuning
+      - RoBERTa
+      - DistilBERT
+      - DeBERTa
+      - ELECTRA
+      - T5
+      - Sentence Transformers
+      - BLEU Score
+      - ROUGE
+      - METEOR
+      - BERTScore
+  - Audio Processing & Multimodal AI
+    - Speech Processing
+      - Introduction to Audio Processing
+      - Digital Audio Fundamentals
+      - Sampling Rate
+      - Bit Depth
+      - Waveforms
+      - Spectrograms
+      - Interview Questions
+      - Practice
+      - Resources
+    - Audio Feature Extraction
+      - MFCC
+      - Mel Spectrogram
+      - Chroma Features
+      - Zero Crossing Rate
+      - Spectral Centroid
+      - Spectral Contrast
+      - RMS Energy
+      - librosa
+      - torchaudio
+      - PyDub
+      - soundfile
+      - Pipeline
+      - Interview Questions
+      - Resources
+    - Speech Recognition
+      - History
+      - Pipeline
+      - Automatic Speech Recognition (ASR)
+      - Libraries
+      - OpenAI Whisper
+      - Whisper Fine-Tuning
+      - wav2vec 2.0
+      - Architecture
+      - Training
+      - Inference
+      - Optimization
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+      - Speech to Text Transcription
+    - Text To Speech
+      - History
+      - Pipeline
+      - TTS Basics
+      - Coqui TTS
+      - ElevenLabs API
+      - AI Voice APIs
+      - Bark
+      - XTTS
+      - Architecture
+      - Training
+      - Inference
+      - Optimization
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+    - Speaker AI
+      - Speaker Identification
+      - Speaker Verification
+      - Voice Cloning
+      - Voice Activity Detection
+      - Pipeline
+      - Training
+      - Inference
+      - Resources
+    - Audio Deep Learning
+      - CNN for Audio
+      - RNN for Audio
+      - Transformers for Audio
+      - Architecture
+      - Training
+      - Optimization
+    - Multimodal AI
+      - Vision + Text
+      - Vision + Audio
+      - Audio + Text
+      - Vision + Audio + Text
+      - Multimodal Embeddings
+      - CLAP
+      - Multimodal LLMs
+      - Architecture
+      - Training
+      - Inference
+      - Optimization
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+  - Architectures
+    - Core
+      - Deep Learning Architectures (YOLO, ResNet, MobileNet)
+  - Interpretability
+  - Hybrid AI
+  - Deep Learning (DL)
+    - Neural Network (NN) Basics
+      - Perceptrons & Multi-layer Perceptrons
+      - Forward & Back Propagation
+      - Activation Functions
+      - Loss Functions
+    - Convolutional Neural Networks (CNN)
+      - Convolution, Padding, Strides, Pooling
+      - Applications (Image Classification, Segmentation, Recognition)
+      - Recommendation Systems (CV based)
+    - Recurrent Neural Networks (RNN)
+      - RNN, GRU, LSTM
+      - Time Series & Sequential Data
+    - Attention & Transformers
+      - Self-Attention & Multi-head Attention
+      - Transformers Architecture (Attention Is All You Need)
+  - Explainable AI (XAI)
+    - SHAP
+    - LIME
+    - Feature Importance
+  - Deep Learning (Optional)
+    - Learn the Basics (Neural Networks, CNNs, RNNs)
+    - Frameworks (Tensorflow, Pytorch)
+    - Practice Training Models (Image Recognition, NLP)
+
+### PHASE 6: Generative AI, LLMs & Agentic Frameworks
+The modern frontier of AI requires adapting foundation models, building RAG systems, and orchestrating autonomous agents.
+
+  - Prompt Engineering & Guardrails
+    - Prompting Techniques
+      - Zero Shot
+      - Few Shot
+      - Chain of Thought
+      - Tree of Thoughts
+      - Graph of Thoughts
+      - Self Consistency
+      - Reflexion
+      - PAL
+      - ReAct
+      - Meta Prompting
+      - Prompt Chaining
+      - Prompt Optimization
+    - Structured Output
+      - Prompt Templates
+      - JSON Mode
+      - Function Calling
+      - Tool Calling
+      - Structured Outputs
+    - AI Safety & Security
+      - Prompt Injection
+      - Prompt Leakage
+      - Jailbreak Protection
+      - Guardrails
+      - AI Safety
+      - AI Security
+      - Hallucination Detection
+      - Red Teaming
+      - Evaluation
+      - Guardrails AI
+      - NeMo Guardrails
+  - Transformers & LLM Architecture
+    - Transformer Architecture
+      - Self-Attention Mechanism
+        - Query, Key, Value vectors
+        - Scaled Dot-Product
+        - Softmax
+        - Multi-Head Attention
+        - Attention Score Calculation
+      - Feed Forward Networks
+      - Encoder-Only
+      - Decoder-Only
+      - Encoder-Decoder
+    - Advanced LLM Architectures
+      - Speculative Decoding
+      - Continuous Batching
+      - Mixture of Experts
+      - Sliding Window Attention
+      - Flash Attention
+      - Rotary Positional Embeddings
+      - ALiBi
+      - RMSNorm
+      - SwiGLU
+      - Grouped Query Attention
+      - Multi Query Attention
+      - PagedAttention
+      - KV Cache
+      - Megatron-LM
+    - LLM Mechanics
+      - Autoregressive Generation
+      - Temperature
+      - Top-K Sampling
+      - Top-P
+      - Context Window Limits
+      - Repetition Penalty
+  - Fine-Tuning & Alignment
+    - Full Fine-Tuning
+      - Catastrophic Forgetting
+      - Compute constraints
+      - Instruction Tuning
+    - PEFT (Parameter-Efficient Fine-Tuning)
+      - PEFT
+      - LoRA
+      - QLoRA
+      - Prompt Tuning
+      - Prefix Tuning
+      - P-Tuning
+    - Alignment (RLHF)
+      - SFT
+      - Reward Modeling
+      - PPO
+      - DPO
+      - KTO
+      - ORPO
+    - Quantization & Tools
+      - bitsandbytes
+      - FP16 / BF16
+      - INT8, INT4
+      - AWQ
+      - GPTQ
+      - Unsloth
+      - Axolotl
+      - Hugging Face Trainer
+  - Vector Databases (Deep Dive)
+    - Vector Index Types
+      - Index Types
+      - HNSW
+      - IVF
+      - IVF-PQ
+      - PQ
+      - ANN Search
+    - Embeddings & Retrieval
+      - Sparse Embeddings
+      - Dense Embeddings
+      - Hybrid Embeddings
+      - Hybrid Retrieval
+      - Metadata Filtering
+      - Scalar Quantization
+      - Vector Compression
+      - BM25
+      - Sparse Retrieval
+      - SPLADE
+      - ColBERT
+      - Late Interaction Retrieval
+      - Semantic Caching
+      - GPTCache
+      - FAISS
+  - RAG (Retrieval-Augmented Generation)
+    - Core RAG
+      - Document Loaders
+      - Chunking
+      - Embeddings Models
+      - Vector Stores
+        - ChromaDB
+        - Pinecone
+        - Milvus
+        - Qdrant
+        - FAISS
+      - LlamaIndex
+    - Advanced RAG Techniques
+      - Context Compression
+      - Query Transformation
+      - Multi Query Retriever
+      - Self RAG
+      - Adaptive RAG
+      - RAPTOR
+      - CRAG
+      - Corrective RAG
+      - Hybrid Search
+      - Re-ranking
+      - HyDE
+      - GraphRAG
+      - Semantic Chunking
+      - Parent Document Retriever
+      - Small to Big Retrieval
+      - Contextual Compression
+      - Knowledge Graph Entity Extraction
+      - Graph Entity Linking
+  - LangChain & LangGraph
+    - LangChain
+      - LCEL
+      - Runnable Interface
+      - Output Parsers
+      - Memory
+      - Callback Handlers
+      - Agents Executor
+      - Retriever Chains
+      - Expression Language
+    - LangGraph
+      - StateGraph architecture
+      - Nodes
+      - Edges
+      - Reducers
+      - Commands
+      - Interrupt
+      - Resume
+      - Persistence
+      - Stores
+      - Supervisor
+      - Planner
+      - Reflection
+      - Memory Types
+      - Retry Policies
+      - Error Handling
+      - Parallel Branches
+  - Agent Development
+    - Agent Core Concepts
+      - Agent Planning
+      - Task Planning
+      - Memory Architecture
+      - Working Memory
+      - Long-term Memory
+      - Vector Memory
+      - Agent Evaluation
+      - OpenAI Tool Calling Schema
+      - Function Specifications
+      - JSON Schema Design
+      - Tool Validation
+      - Agent Memory Routing
+      - Query Routing
+      - SQL Memory
+      - Hybrid Memory Routing
+    - Agent Architecture
+      - Event Driven Agents
+      - Workflow Agents
+      - Supervisor Agents
+      - Multi-Agent Systems
+      - CrewAI
+      - MAKE
+      - AutoGen
+      - Swarm
+      - Role-playing Agents
+      - GenAI Orchestration
+      - DSPy
+      - Semantic Kernel
+    - Model Context Protocol
+      - MCP Servers
+      - MCP Client Development
+      - Tool Registry
+      - Agent Permissions
+    - A2A (Agent-to-Agent Protocol)
+      - Agent-to-Agent Communication
+      - Multi-Agent Collaboration
+      - Protocol Design
+      - Message Passing
+      - Agent Discovery
+      - Security
+      - Authentication
+      - Use Cases
+      - Integration with MCP
+      - MCP vs A2A
+      - Best Practices
+      - Interview Questions
+    - Low-Code AI Tools
+      - Flowise
+      - Installation
+      - Nodes
+      - Workflows
+      - RAG
+      - Agents
+      - Deployment
+      - Langflow
+      - Components
+      - Prompting
+      - n8n
+      - Workflow Automation
+  - LLMOps & Serving
+    - LLM Evaluation & Observability
+      - LLM-as-a-judge
+      - Ragas
+      - TruLens
+      - LangSmith
+      - Phoenix
+      - Tracing generation chains
+    - Serving Frameworks
+      - vLLM (PagedAttention, Continuous Batching)
+      - TensorRT-LLM
+      - Ollama API
+      - LMDeploy
+      - TGI
+    - AWS Bedrock
+      - Introduction
+      - Foundation Models
+      - Bedrock APIs
+      - Knowledge Bases
+      - Bedrock Agents
+      - Guardrails
+      - Model Customization
+      - Inference Profiles
+      - Prompt Management
+      - Integration with LangChain
+      - Integration with RAG
+      - Production Deployment
+      - Best Practices
+      - Interview Questions
+      - Practice
+      - Resources
+  - Responsible AI
+    - AI Ethics & Fairness
+      - History
+      - Fairness
+      - Accountability
+      - Transparency
+      - Explainability
+      - Frameworks
+      - Interview Questions
+      - Practice
+      - Resources
+    - Privacy
+      - Data Anonymization
+      - Pseudonymization
+      - Differential Privacy
+      - Techniques
+      - Libraries
+      - Interview Questions
+      - Practice
+      - Resources
+    - Federated Learning
+      - Concepts
+      - Advantages
+      - Limitations
+      - Architecture
+      - Training
+      - Optimization
+      - Interview Questions
+      - Practice
+      - Resources
+    - Bias
+      - Dataset Bias
+      - Sampling Bias
+      - Label Bias
+      - Model Bias
+      - Mitigation Strategies
+      - Interview Questions
+      - Practice
+      - Resources
+    - AI Governance
+      - Responsible AI
+      - AI Regulations
+      - Compliance
+      - Risk Management
+      - Guidelines
+      - Interview Questions
+      - Resources
+    - AI Security
+      - Adversarial Attacks
+      - Model Theft
+      - Prompt Injection
+      - Jailbreak Detection
+      - Data Leakage
+      - Defense Mechanisms
+      - Interview Questions
+      - Practice
+      - Resources
+  - LLM Fundamentals
+    - Core
+      - Tokens
+      - Embeddings
+      - Context Windows
+  - Generative Models & Platforms
+    - Core
+      - Core Native AI
+      - Amazon Bedrock
+      - Mistral
+  - RAG & Search
+    - Core
+      - Vector Search
+      - RAG Architectures
+  - Agents & Safety
+    - Core
+      - AI Agent Frameworks
+      - AI Safety (Hallucination, Prompt Injection)
+  - Evaluation
+    - Core
+      - RAGAS
+      - TruLens
+      - LangSmith
+  - AI Alignment
+  - Generative Models
+  - Prompt Engineering (Deep Dive)
+    - Introduction & Core Concepts
+      - LLMs and how they work
+      - Tokens
+      - Context Window
+      - Hallucination
+      - Prompt Injection
+      - Fine-Tuning vs Prompt Engg
+      - AI vs AGI
+    - LLM Configuration
+      - Temperature
+      - Top-K
+      - Top-P
+      - Max Tokens
+      - Stop Sequences
+      - Frequency Penalty
+      - Presence Penalty
+    - Prompting Techniques
+      - Zero-Shot / One-Shot / Few-Shot Prompting
+      - System Prompting / Role Prompting / Contextual Prompting
+      - Step-back Prompting
+      - Chain of Thought (CoT) Prompting
+      - Self-Consistency Prompting
+      - Tree of Thoughts (ToT) Prompting
+      - ReAct Prompting
+    - Prompting Best Practices & Reliability
+      - Provide few-shot examples for structure
+      - Delimit sections with triple backticks or XML
+      - Guard against prompt injection
+      - Prompt Debiasing & Prompt Ensembling
+      - LLM Self Evaluation
+      - AI Red Teaming
+  - AI Agents Architecture & Development
+    - AI Agents 101
+      - What are AI Agents?
+      - What are Tools?
+      - Agent Loop: Perception/User Input -> Reason and Plan -> Acting/Tool Invocation -> Observation & Reflection
+    - Tools / Actions
+      - Tool Definition (Input/Output Schema, Error Handling)
+      - Model Context Protocol (MCP) (MCP Hosts, MCP Client, MCP Servers)
+      - Examples: Web Search, Code Execution/REPL, Database Queries, API Requests
+    - Agent Memory
+      - Episodic vs Semantic Memory
+      - Short Term vs Long Term Memory
+      - Vector DB / SQL / Custom Storage
+      - User Profile Storage
+      - Summarization / Forgetting Strategies
+    - Agent Architectures
+      - RAG Agent
+      - ReAct (Reason + Act)
+      - Planner Executor
+      - DAG Agents
+      - Tree-of-Thought
+    - Building Agents & Frameworks
+      - Direct LLM API calls & Manual loop parsing
+      - LLM Native Function Calling (OpenAI, Gemini, Anthropic)
+      - Langchain
+      - LlamaIndex
+      - Haystack
+      - AutoGen
+      - CrewAI
+      - Smol Depot
+    - Evaluation, Security & Observability
+      - LangSmith
+      - DeepEval
+      - Ragas
+      - Helicone
+      - openllmetry
+      - Prompt Injection / Jailbreaks
+      - Tool sandboxing / Permissioning
+      - Bias & Toxicity Guardrails
+  - AI Engineering Ecosystem
+    - Pre-trained Models & Providers
+      - OpenAI API (Chat Completions, Playgrounds, Pricing)
+      - Anthropic Claude, Google Gemini, Meta Llama
+      - Azure AI & AWS SageMaker
+      - OpenSource AI: Hugging Face (Hub, Tasks, Inference SDK), Transformers.js, Ollama
+    - Embeddings & Vector Databases
+      - What are Embeddings? (Semantic Search, Classification, Anomaly Detection)
+      - Sentence Transformers & Models on Hugging Face
+      - Vector DBs: Chroma, Pinecone, Weaviate, FAISS, LanceDB, Qdrant, Milvus
+      - Indexing & Performing Similarity Search
+    - Advanced RAG Implementations
+      - Chunking Strategies
+      - Vectorization & Retrieval Process
+      - Generation via LLM
+      - RAG vs Fine-tuning
+      - Using LlamaIndex & Langchain for RAG
+    - Multimodal AI
+      - OpenAI Vision API & DALL-E (Image Gen & Understanding)
+      - Whisper API (Speech-to-Text)
+      - Audio Processing & Text-to-Speech
+      - LangChain/LlamaIndex for Multimodal Apps
+
+### PHASE 7: Backend Engineering, APIs & Async Workers
+An AI model is useless if it lives in a notebook. You must expose it as a secure, scalable API.
+
+  - APIs & Web Frameworks
+    - API Foundations
+      - HTTP Methods
+      - Status Codes
+      - Headers & Query Params
+      - JSON Payloads
+      - RESTful Design Principles
+      - GraphQL
+      - OAuth 2.0
+      - JWT
+      - API packaging
+      - Backend API
+      - AI APIs
+    - FastAPI Deep Dive
+      - Path & Query Parameters
+      - Pydantic
+      - Dependency Injection
+      - Middleware & CORS
+      - Exception Handling
+      - Swagger UI
+      - Background Tasks
+      - Lifespan Events
+      - WebSockets
+    - Authentication & Security
+      - JWT
+      - OAuth2
+      - API Keys
+      - Rate Limiting
+      - Password Hashing
+      - SQL Injection prevention
+      - XSS prevention
+    - Database Integration
+      - SQLAlchemy
+      - Alembic
+      - Connection Pooling
+      - Session Management
+  - Networking, Gateways & Service Mesh
+    - API Gateways
+      - API Gateway
+      - Kong
+      - Traefik
+      - Nginx
+      - Load Balancing
+      - Reverse Proxy
+      - GraphQL
+    - Service Mesh
+      - Service Mesh
+      - Envoy
+      - Istio
+      - Consul
+      - Mutual TLS (mTLS)
+    - RPC & Messaging
+      - gRPC
+      - Protocol Buffers (Protobuf)
+      - NATS
+      - WebSockets
+      - Server-Sent Events (SSE)
+      - WebRTC
+  - Asynchronous Workflows
+    - Message Brokers
+      - RabbitMQ
+      - Redis Pub/Sub
+      - Apache Kafka
+    - Task Queues
+      - Celery
+      - RQ
+      - Celery Beat
+      - Flower
+  - Django
+    - Django Architecture
+      - MTV
+      - Models
+      - Views
+      - Templates
+      - ORM
+      - Authentication
+      - Admin Panel
+      - Forms
+      - Middleware
+      - Signals
+    - Advanced Django
+      - REST Framework (DRF)
+      - Celery Integration
+      - Deployment
+      - AI Integration
+    - Progress Tracking
+      - Projects
+      - Interview Questions
+  - Flask
+    - Flask Basics
+      - Routing
+      - Templates
+      - Blueprints
+      - SQLAlchemy
+      - Authentication
+      - REST APIs
+      - Deployment
+      - AI Model Serving
+    - Progress Tracking
+      - Projects
+      - Interview Questions
+  - Frontend for AI Engineers (React.js)
+    - React.js Basics
+      - Components
+      - JSX
+      - Hooks
+      - State Management
+      - Routing
+      - API Integration
+    - AI Implementations
+      - Dashboard Development
+      - AI Chat UI
+      - Projects
+  - Frontend for AI Engineers (Next.js)
+    - Next.js Core
+      - Routing
+      - Server Components
+      - Client Components
+      - API Routes
+      - Deployment
+    - AI Implementations
+      - AI Applications
+      - Projects
+  - Streamlit
+    - Streamlit Core
+      - Installation
+      - Widgets
+      - Session State
+      - Layout
+      - Charts
+    - Advanced Streamlit
+      - Authentication
+      - Deployment
+      - Streamlit Cloud
+      - AI Dashboards
+      - LLM Applications
+      - Best Practices
+  - Gradio
+    - Gradio Core
+      - Blocks
+      - Interface
+      - Components
+    - Gradio Applications
+      - Chat Interface
+      - Image Interface
+      - Audio Interface
+      - Deployment
+      - Hugging Face Spaces
+      - AI Demo Applications
+  - Databases & ORM
+    - Core
+      - SQLAlchemy (ORM)
+  - Prototyping
+    - Core
+      - Demo Prototyping
+      - Rapid Prototyping
+  - Documentation
+    - Core
+      - Technical Documentation (PRD, FRS, SDD)
+  - AWS Databases & Networking
+    - RDS (DB Instances, Storage Types, Backup/Restore)
+    - DynamoDB (Primary Keys, Data Modeling, Streams, Capacity Settings)
+    - ElastiCache (Redis/Memcached)
+    - CloudFront (Distributions, Policies, Invalidations)
+    - Route53 (Hosted Zones, Routing Policies, Health Checks)
+    - Cloudwatch (Metrics, Events, Logs)
+    - SES (Identity Verification, DKIM, Sending Limits)
+
+### PHASE 8: MLOps, Cloud Deployment & Kubernetes
+Packaging, deploying, monitoring, and scaling AI models across enterprise cloud infrastructure.
+
+  - Production ML Lifecycle & MLOps Core
+    - Feature Store
+      - Feature Store
+      - Feast
+      - Feast Registry
+      - Online vs Offline Features
+    - Experiment Tracking & Versioning
+      - MLflow
+      - Weights & Biases (W&B)
+      - DVC
+      - Model Registry
+      - Model Versioning
+      - ClearML
+      - Neptune
+    - ML Pipelines & Config
+      - Kubeflow
+      - Kubeflow Pipelines (KFP)
+      - Apache Beam
+      - ML Metadata (MLMD)
+      - Hydra
+      - OmegaConf
+  - Model Serving & Inference
+    - Inference Strategies
+      - Batch Inference
+      - Online Inference
+      - Streaming Inference
+      - Streaming concepts
+      - Apache Kafka
+      - Offline Inference
+      - Inference Optimization
+    - Model Optimization & Compilers
+      - ONNX
+      - ONNX Runtime
+      - OpenVINO
+      - TensorRT
+      - TensorRT Engine Building
+      - Engine Serialization
+      - Dynamic Shapes
+      - TensorRT-LLM
+      - TorchScript
+      - torch.compile()
+      - vLLM Scheduler Concepts
+      - Continuous Batching
+      - PagedAttention Internals
+      - GGUF
+      - AWQ
+      - EXL2
+      - GPTQ Comparison
+    - Serving Frameworks
+      - TorchServe
+      - BentoML
+      - KServe
+      - Seldon Core
+      - NVIDIA Triton Inference Server
+      - Ray Serve
+      - Ray Train
+      - Ray Tune
+      - Model Deployment
+  - Containerization & Orchestration
+    - Docker
+      - Images vs Containers
+      - Dockerfile
+      - Multi-Stage Builds
+      - Docker Compose
+      - Volumes & Networking
+    - Kubernetes (K8s)
+      - Pods
+      - Deployments
+      - Services
+      - Ingress
+      - ConfigMaps
+      - Secrets
+      - Helm Charts
+      - Custom Resource Definitions (CRDs)
+      - Kubeflow CRDs
+      - NVIDIA GPU Operator
+      - NVIDIA MIG
+      - GPU Sharing
+      - GPU Partitioning
+      - KEDA
+      - Event Driven Autoscaling
+      - Queue Based Autoscaling
+      - GPU Scheduling
+  - Cloud Architecture (Deep Dive)
+    - AWS
+      - Azure/AWS Cloud basics
+      - IAM
+      - ECS
+      - EKS
+      - CloudWatch
+      - EventBridge
+      - SQS
+      - SNS
+      - CloudFront
+      - Route53
+      - Secrets Manager
+      - Parameter Store
+    - Azure
+      - Azure Functions
+      - Cosmos DB
+      - Azure Storage
+      - Azure Monitor
+    - GCP
+      - Pub/Sub
+      - Cloud Functions
+      - Cloud Storage
+      - Cloud Logging
+    - GCP Serverless
+      - Cloud Run
+      - Container Deployment
+      - FastAPI Deployment
+      - AI Model Serving
+      - Autoscaling
+      - CI/CD Integration
+  - CI/CD & Deployments
+    - CI/CD Pipelines
+      - GitHub Actions
+      - GitLab CI
+      - ArgoCD
+      - Flux (GitOps)
+    - Deployment Strategies
+      - Canary Deployment
+      - Shadow Deployment
+      - Blue Green Deployment
+      - A/B Deployment
+    - Infrastructure as Code
+      - Terraform
+      - Pulumi
+  - Model Monitoring in Production
+    - Monitoring
+      - Model Monitoring
+      - Data Drift
+      - Concept Drift
+      - Evidently AI
+      - Prometheus
+      - Grafana
+  - Managed Cloud AI Platforms
+    - AWS ML Ecosystem
+      - SageMaker Studio
+      - SageMaker Pipelines
+      - SageMaker Training Jobs
+      - SageMaker Endpoints
+      - Feature Store
+      - Model Registry
+      - Model Monitor
+      - Architecture
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+    - Google Cloud AI
+      - Vertex AI
+      - Vertex Pipelines
+      - Vertex Model Registry
+      - Vertex Endpoints
+      - AutoML
+      - Architecture
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+    - Azure Machine Learning
+      - Azure ML Studio
+      - Azure ML Pipelines
+      - Azure ML Endpoints
+      - Lifecycle Management
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+  - Edge AI & Browser Deployment
+    - ONNX Runtime Web
+      - Browser Inference
+      - WebAssembly
+      - WebGPU
+      - Pipeline
+      - Optimization
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+    - TensorFlow.js
+      - Browser ML
+      - Webcam Inference
+      - Client-side AI
+      - Training
+      - Inference
+      - Deployment
+      - Resources
+    - TensorFlow Lite
+      - TFLite
+      - Quantization
+      - Mobile Deployment
+      - Edge Devices
+      - Optimization
+      - Deployment
+      - Interview Questions
+      - Practice
+      - Resources
+    - Hardware Edge AI
+      - Raspberry Pi
+      - NVIDIA Jetson
+      - Coral TPU
+      - Deployment Trade-offs
+      - Optimization
+      - Interview Questions
+      - Practice
+      - Resources
+  - Hardware & Edge AI
+    - Core
+      - Edge AI
+      - NVIDIA Jetson Platforms (Xavier, Orin series)
+      - GPU-intensive workloads
+  - Observability
+    - Core
+      - Logging & Tracing
+      - AI Observability
+  - Testing
+    - Core
+      - Evaluation & Test Cases
+      - Evaluation Frameworks
+  - AWS Cloud Essentials for ML
+    - Introduction to AWS
+      - IaaS vs PaaS vs SaaS
+      - Public vs Private vs Hybrid Cloud
+      - AWS Global Infrastructure
+      - Shared Responsibility Model
+      - Well Architected Framework
+    - Compute & Scaling
+      - EC2 (Instance Types, CPU Credits, Storage/Volumes, Keypairs, Elastic IP)
+      - Auto-Scaling (AMIs, Launch Templates, Scaling Policies, ELB)
+    - Storage (S3)
+      - Buckets / Objects
+      - Bucket / Object Lifecycle
+      - Storage Types (Standard, S3-IA, Glacier)
+    - IAM (Identity and Access Management)
+      - Identity-based vs Resource-based Policies
+      - Users / User Groups
+      - Roles
+      - Instance Profiles
+      - Assuming Roles
+    - VPC (Virtual Private Cloud)
+      - CIDR Blocks
+      - Public & Private Subnets
+      - Route Tables
+      - Security Groups
+      - Internet Gateway
+      - NAT Gateway
+    - Containers & Kubernetes
+      - ECR
+      - ECS (Clusters, Tasks, Services, Fargate)
+      - EKS
+    - Serverless & Integration
+      - Lambda (Creating/Invoking, Layers, Event Bridge, Cold Start, Lambda@Edge)
+      - API Gateway
+  - MLOps & Data Engineering
+    - MLOps Principles & Components
+      - Version Control & CI/CD for Machine Learning
+      - Orchestration
+      - Experiment Tracking & Model Registry (MLflow, Weights & Biases)
+      - Data Lineage & Feature Stores
+      - Model Training, Serving & APIs
+      - Monitoring & Observability
+    - Data Engineering Fundamentals
+      - Data Pipelines & Ingestion Architecture
+      - Data Lakes & Data Warehouses
+      - Apache Airflow
+      - Apache Spark
+      - Apache Kafka
+      - Apache Flink
+    - Infrastructure as Code (IaC)
+      - Terraform
+      - CloudFormation
+  - Data Warehousing & Cloud
+    - OLTP vs OLAP
+    - Star Schema vs Snowflake Schema
+    - Google BigQuery / Snowflake Basics
+  - ETL & Modern Data Stack
+    - Extract, Transform, Load (ETL) vs ELT
+    - dbt (Data Build Tool) Basics
+    - Airflow / Cron (Basic Scheduling Concepts)
+  - Big Data Technologies
+    - Big Data Concepts
+    - Data Storage Solutions
+    - Data Processing Frameworks (Hadoop, Spark)
+    - Parallel Processing (MPI, MapReduce)
+
+### PHASE 9: Portfolio, Resume & FAANG Interview Prep
+Passing the rigorous technical and behavioral loops of FAANG and top-tier AI startups requires specific preparation strategies.
+
+  - System Design (ML & Backend)
+    - Scalability Concepts
+      - Vertical vs Horizontal Scaling
+      - Load Balancing (Layer 4 vs Layer 7)
+      - Database Sharding
+      - Caching (Redis, Memcached)
+      - CAP Theorem
+      - Microservices vs Monoliths
+    - ML System Design
+      - Feature Stores
+      - Online vs Offline Predictions
+      - Model Re-training pipelines
+      - A/B Testing Deployments (Canary, Blue/Green, Shadow Mode)
+    - Design Scenarios
+      - Design Netflix Recommendation Engine
+      - Design Twitter Feed
+      - Design a low-latency LLM Voice Agent Architecture
+      - Design a Fraud Detection System
+  - Algorithms & LeetCode
+    - Data Structures Mastery
+      - Arrays, Strings, Hash Maps, Trees, Graphs
+    - Coding Patterns
+      - Sliding Window
+      - Two Pointers
+      - Fast & Slow Pointers
+      - Merge Intervals
+      - Cyclic Sort
+      - Top K Elements
+      - Prefix Sum
+    - Mock Interviews
+      - Pramp
+      - Interviewing.io
+      - Whiteboard coding
+      - Time/Space Complexity articulation
+  - Portfolio, Branding & Behavioral
+    - Resume Optimization
+      - Action Verbs
+      - Quantifiable Metrics (e.g., 'Reduced latency by 40%')
+      - ATS Friendly Formats (Harvard Template)
+      - Highlighting End-to-End projects
+    - GitHub Portfolio
+      - Markdown READMEs
+      - Architecture Diagrams (Mermaid/Excalidraw)
+      - Contribution Graph
+      - Open Source PRs
+    - Behavioral Prep (STAR Method)
+      - Situation, Task, Action, Result
+      - Handling conflict with PMs
+      - Navigating technical debt
+      - Why do you want to work here?
+      - Tell me about a time you failed.
+  - Professional & Process Skills
+    - Communication & Collaboration
+      - Communication Skills
+      - Technical Communication
+      - Cross-Functional Collaboration
+      - Stakeholder Communication
+      - Team Collaboration
+    - Business & Analysis
+      - Analytical Thinking
+      - Problem Solving
+      - Business Analysis
+      - Requirements Gathering
+      - Research Skills
+      - AI Trend Analysis
+      - Product Thinking
+    - Process & Delivery
+      - SDLC
+      - Agile
+      - Scrum
+      - Documentation
+      - Technical Writing
+      - Code Reviews
+      - Presentation Skills
+    - Practice & Evaluation
+      - Interview Questions
+      - Practice Tasks
+      - Real-world Examples
+
+### PHASE 10: LeetCode & Coding Patterns (Optional)
+Mastering these coding patterns is essential for clearing technical interviews at FAANG and top-tier tech companies. This phase focuses on practical LeetCode problem solving.
+
+  - Arrays & Hashing
+    - Two Sum
+    - Valid Anagram
+    - Contains Duplicate
+    - Group Anagrams
+    - Top K Frequent Elements
+  - Two Pointers
+    - Valid Palindrome
+    - 3Sum
+    - Container With Most Water
+    - Trapping Rain Water
+    - Two Sum II
+  - Sliding Window
+    - Best Time to Buy and Sell
+    - Substring Without Repetition
+    - Minimum Window Substring
+    - Character Replacement
+    - Sliding Window Maximum
+  - Stacks
+    - Valid Parentheses
+    - Min Stack
+    - Daily Temperatures
+    - Generate Parentheses
+    - Largest Rectangle in Hist.
+  - Binary Search
+    - Binary Search
+    - Search in Rotated Array
+    - Minimum in Rotated Array
+    - Koko Eating Bananas
+    - Median of Two Arrays
+  - Linked List
+    - Reverse Linked List
+    - Merge Two Sorted Lists
+    - Linked List Cycle
+    - Reorder List
+    - Merge K Sorted Lists
+  - Trees
+    - Binary Tree Level Order
+    - Maximum Depth of Binary Tree
+    - Lowest Common Ancestor
+    - Binary Tree Maximum Path Sum
+    - Serialize and Deserialize
+  - Heap / Priority Queue
+    - Kth Largest Element in an Array
+    - K Closest Points to Origin
+    - Task Scheduler
+    - Find Median from Data Stream
+    - Merge K Sorted Lists
+  - Tries
+    - Implement Trie
+    - Design Add and Search Words
+    - Word Search II
+    - Longest Common Prefix
+    - Replace Words
+  - Backtracking
+    - Subsets
+    - Combination Sum
+    - Permutations
+    - Word Search
+    - N-Queens
+  - Graphs
+    - Number of Islands
+    - Clone Graph
+    - Pacific Atlantic Water Flow
+    - Course Schedule
+    - Word Ladder
+  - Advanced Graphs
+    - Network Delay Time
+    - Min Cost to Connect All Points
+    - Cheapest Flights Within K Stops
+    - Swim in Rising Water
+    - Reconstruct Itinerary
+  - 1-D Dynamic Programming
+    - Climbing Stairs
+    - House Robber
+    - Coin Change
+    - Longest Increasing Subsequ.
+    - Word Break
+  - 2-D Dynamic Programming
+    - Unique Paths
+    - Longest Common Subsequence
+    - Edit Distance
+    - Burst Balloons
+    - Regular Expression Matching
+  - Greedy
+    - Jump Game
+    - Jump Game II
+    - Gas Station
+    - Partition Labels
+  - Intervals
+    - Merge Intervals
+    - Insert Interval
+    - Non-overlapping Intervals
+    - Meeting Rooms
+    - Min. Interval to Include Query
+  - Bit Manipulation
+    - Single Number
+    - Number of 1 Bits
+    - Counting Bits
+    - Reverse Bits
+    - Sum of Two Integers
+  - Math & Geometry
+    - Rotate Image
+    - Spiral Matrix
+    - Set Matrix Zeroes
+    - Happy Number
+    - Pow(x, n)
+
+### PHASE 11: Additional Programming Languages for AI/ML Engineers (optional)
+Although Python is the primary language for AI/ML, modern AI Engineers also benefit from learning several additional languages depending on the type of systems they build.
+
+  - JavaScript
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation
+      - IDE Setup (VS Code, Extensions)
+    - Fundamentals
+      - Variables
+      - Data Types
+      - Operators
+      - Conditions
+      - Loops
+      - Functions
+      - Arrays
+      - Objects
+      - Classes
+      - Modules
+      - Syntax
+    - Modern JavaScript (Core & Advanced)
+      - ES6+
+      - Arrow Functions
+      - Promises
+      - Async/Await
+      - Fetch API
+      - DOM Basics
+      - Core Concepts
+      - Advanced Concepts
+    - AI Applications & Use Cases
+      - TensorFlow.js
+      - Browser AI
+      - Webcam Inference
+      - AI Dashboards
+      - Interactive Visualizations
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - TypeScript
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation
+      - IDE Setup
+      - Syntax
+    - Type System (Core Concepts)
+      - Primitive Types
+      - Interfaces
+      - Types
+      - Enums
+      - Generics
+      - Union Types
+      - Utility Types
+    - Object Oriented Programming
+      - Classes
+      - Interfaces
+      - Inheritance
+      - Access Modifiers
+    - Advanced Concepts
+      - Decorators
+      - Modules
+      - Namespaces
+      - Async Programming
+    - AI Applications & Use Cases
+      - LangGraph UI
+      - MCP
+      - AI SaaS
+      - Full Stack AI Applications
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - C++
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation (GCC, Clang, MSVC)
+      - IDE Setup
+      - Syntax
+    - Fundamentals
+      - Variables
+      - Data Types
+      - Loops
+      - Functions
+      - Arrays
+      - Pointers
+      - References
+      - Core Concepts
+    - OOP
+      - Classes
+      - Objects
+      - Constructors
+      - Destructors
+      - Inheritance
+      - Polymorphism
+    - Memory Management (Advanced Concepts)
+      - Heap
+      - Stack
+      - Smart Pointers
+      - RAII
+    - STL (Standard Template Library)
+      - Vector
+      - Map
+      - Set
+      - Queue
+      - Algorithms
+    - Multithreading
+      - Threads
+      - Mutex
+      - Locks
+      - Atomics
+    - AI Applications & Use Cases
+      - OpenCV Internals
+      - PyTorch Internals
+      - TensorRT
+      - ONNX Runtime
+      - High Performance AI
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging (GDB, Valgrind)
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - CUDA C++
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation (CUDA Toolkit)
+      - IDE Setup
+      - Syntax
+    - GPU Programming (Core Concepts)
+      - CUDA Architecture
+      - Threads
+      - Blocks
+      - Grids
+      - Kernels
+    - Memory
+      - Global Memory
+      - Shared Memory
+      - Constant Memory
+      - Texture Memory
+    - Optimization (Advanced Concepts)
+      - Memory Coalescing
+      - Occupancy
+      - Streams
+      - CUDA Graphs
+    - AI Applications & Use Cases
+      - Deep Learning
+      - TensorRT
+      - PyTorch CUDA
+      - Custom CUDA Kernels
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging (Nsight)
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - Go (Golang)
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation
+      - IDE Setup
+      - Syntax
+    - Fundamentals (Core Concepts)
+      - Variables
+      - Data Types
+      - Functions
+      - Structs
+      - Interfaces
+      - Methods
+    - Concurrency (Advanced Concepts)
+      - Goroutines
+      - Channels
+      - WaitGroups
+      - Context
+    - Networking
+      - HTTP
+      - REST APIs
+      - gRPC
+    - AI Applications & Use Cases
+      - Kubernetes
+      - Docker
+      - MLOps
+      - AI Infrastructure
+      - Distributed Systems
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - Rust
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation (rustup, Cargo)
+      - IDE Setup
+      - Syntax
+    - Fundamentals (Core Concepts)
+      - Variables
+      - Ownership
+      - Borrowing
+      - Lifetimes
+    - Collections & Error Handling
+      - Vector
+      - HashMap
+      - String
+      - Result
+      - Option
+    - Concurrency (Advanced Concepts)
+      - Threads
+      - Async Rust
+      - Tokio
+    - Memory Safety
+      - Smart Pointers
+      - Traits
+      - Generics
+    - AI Applications & Use Cases
+      - LLM Serving
+      - AI Infrastructure
+      - High Performance APIs
+      - Vector Databases
+      - Inference Engines
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - Scala
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation
+      - IDE Setup
+      - Syntax
+    - Basics (Core Concepts)
+      - Variables
+      - Functions
+      - Classes
+      - Traits
+    - Functional Programming (Advanced Concepts)
+      - Immutable Collections
+      - Pattern Matching
+      - Higher Order Functions
+    - Big Data
+      - Apache Spark
+      - Spark SQL
+      - Spark Streaming
+      - Spark MLlib
+    - AI Applications & Use Cases
+      - Large Scale Data Engineering
+      - Distributed Computing
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - R Programming
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation
+      - IDE Setup (RStudio)
+      - Syntax
+    - Fundamentals (Core Concepts)
+      - Variables
+      - Data Types
+      - Vectors
+      - Lists
+      - Data Frames
+    - Statistics (Advanced Concepts)
+      - Hypothesis Testing
+      - Probability
+      - Regression
+      - ANOVA
+    - Visualization
+      - ggplot2
+      - plotly
+    - Data Science
+      - dplyr
+      - tidyr
+      - caret
+      - randomForest
+    - AI Applications & Use Cases
+      - Statistical Analysis
+      - Research
+      - Bioinformatics
+      - Academic AI
+      - Industry Use Cases
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - Java
+    - Overview & Setup
+      - Introduction
+      - Why AI/ML Engineers should learn it
+      - Installation (JDK)
+      - IDE Setup (IntelliJ)
+      - Syntax
+    - Core Java (Core Concepts)
+      - Variables
+      - Data Types
+      - Operators
+      - Loops
+      - Functions
+      - Arrays
+      - Strings
+    - Object Oriented Programming
+      - Classes
+      - Objects
+      - Constructors
+      - Inheritance
+      - Polymorphism
+      - Encapsulation
+      - Abstraction
+    - Collections Framework
+      - List
+      - Set
+      - Map
+      - Queue
+    - Multithreading
+      - Thread
+      - Executor Framework
+      - Synchronization
+    - Modern & Enterprise Java (Advanced)
+      - Streams API
+      - Lambda Expressions
+      - Optional
+      - Records
+      - Maven
+      - Gradle
+      - Spring Boot Basics
+      - REST APIs
+    - AI Applications & Use Cases
+      - Enterprise AI Systems
+      - Hadoop Ecosystem
+      - Apache Kafka
+      - Distributed Systems
+      - Industry Use Cases
+      - COBOL to Java Refactoring
+    - Engineering Practices
+      - Best Practices
+      - Coding Standards
+      - Debugging
+      - Common Mistakes
+    - Projects & Practice
+      - Hands-on Practice
+      - Beginner Projects
+      - Intermediate Projects
+      - Advanced Projects
+      - Coding Exercises
+    - Progress Tracking
+      - Revision Checklist
+      - Completion Checklist
+  - C Programming
+    - Fundamentals
+      - Syntax
+      - Memory
+      - Pointers
+      - Structures
+      - Dynamic Memory
+      - File Handling
+      - Algorithms
+    - AI System Foundations
+      - High Performance Computing
+      - Custom Operators
+  - MATLAB
+    - Core Usage
+      - Matrix Computing
+      - Statistics
+      - Signal Processing
+      - Image Processing
+    - AI Tooling
+      - Deep Learning Toolbox
+      - AI Prototyping
+  - R Programming (Data Analytics)
+    - R Fundamentals
+    - Data Manipulation (Dplyr, Tidyr)
+    - Data Visualization (Ggplot2)
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+JOB ROLES & SKILL REQUIREMENTS (Detailed)
+=========================================
+
+1. Data Analyst
+Enthu padikkanam (Required Skills):
+- Phase 1: Python Core (Variables, Data Types, Lists, Dicts), Loops & Iteration, Pandas for Data Manipulation.
+- Phase 2: Mathematics & Statistics (Basic Maths, Probability).
+- Phase 3: SQL (Deep Dive, Joins, Window Functions), Data Processing (Python), Data Analyst & BI Mastery (Excel, PowerBI/Tableau), Data Cleaning, Data Collection.
+(Ithu mathram nannayi padichal thanne Data Analyst job kittum).
+
+2. Data Scientist
+Enthu padikkanam (Required Skills):
+- Phase 1: Python Deep Dive (Core, Functions, OOP).
+- Phase 2: Mathematics for Machine Learning (Linear Algebra, Calculus, Probability & Statistics).
+- Phase 3: SQL, Data Analysis (Pandas/NumPy), Data Science Methodology, Data Collection.
+- Phase 4: Core Machine Learning (Feature Engineering, Supervised/Unsupervised Learning, Tree-Based Models, Time Series, Advanced Statistics).
+(Data Analyst skills-inte koode predictive modeling (ML) koodi padikkum).
+
+3. Data Engineer
+Enthu padikkanam (Required Skills):
+- Phase 1: Python Advanced (OOP, Async, Generators).
+- Phase 3: Advanced SQL, Data Engineering (ETL/ELT), NoSQL & Graph Databases, Database Engines, Enterprise Analytics.
+- Phase 7: Backend Engineering, APIs & Web Frameworks, Asynchronous Workflows.
+- Phase 8: Cloud Architecture (Deep Dive), Containerization & Orchestration.
+(Algorithms-nekkal kooduthal data handle cheyyanulla tools-il aanu focus - Apache Spark, Kafka, Airflow, Snowflake).
+
+4. Machine Learning Engineer (ML Engineer)
+Enthu padikkanam (Required Skills):
+- Phase 0: Setup, CS Foundations & Data Structures.
+- Phase 1, 2, 3: Python Deep Dive, Math for ML, SQL & Data Analysis.
+- Phase 4: Core Machine Learning (All concepts, Pipeline & Engineering).
+- Phase 5: Deep Learning Foundations (PyTorch).
+- Phase 7: Backend Engineering, APIs (FastAPI for model serving).
+- Phase 8: MLOps, Containerization & Orchestration (Docker, Kubernetes), CI/CD, Cloud Deployments, Model Monitoring.
+(Model undakkiyathu mathram pora, athine software aayi deploy cheyyanulla (MLOps) skills koodi venam).
+
+5. AI Engineer / GenAI Engineer (Prompt Engineer)
+Enthu padikkanam (Required Skills):
+- Phase 1: Python (Production level, Async).
+- Phase 5: Deep Learning Foundations, NLP Basics.
+- Phase 6: Generative AI, Prompt Engineering & Guardrails, Transformers & LLMs, Fine-Tuning, Vector Databases, RAG, LangChain, Agent Development.
+- Phase 7: Backend & APIs (FastAPI, Streamlit, Gradio).
+(Mainly OpenAI/Llama API-kal vechu puthiya AI products undakkan ulla skills).
+
+6. Computer Vision Engineer
+Enthu padikkanam (Required Skills):
+- Phase 1 & 2: Python Core, Linear Algebra & Calculus.
+- Phase 4: Machine Learning basics (Pattern Recognition).
+- Phase 5: Deep Learning Foundations (PyTorch), Computer Vision (CV), OpenCV, CNNs, YOLO, Image Processing, Object Detection.
+(Image/Video related AI undakkan).
+
+7. NLP Engineer (Natural Language Processing)
+Enthu padikkanam (Required Skills):
+- Phase 1 & 2: Python Core & Maths (Probability, Linear Algebra).
+- Phase 4: Machine Learning basics.
+- Phase 5: Deep Learning Foundations, Natural Language Processing (NLP), Transformers, HuggingFace, RNN, Text Data processing.
+- Phase 6: Prompt Engineering, Transformers & LLM Architecture (Optional but highly recommended).
+(Chatbots, Text summarization, Translation pole ulla text-based AI undakkan).
+
+8. MLOps Engineer
+Enthu padikkanam (Required Skills):
+- Phase 0: Linux Basics (Bash, FHS), Version Control (Git), OS basics.
+- Phase 1: Python Scripting, Production Python.
+- Phase 7: Backend APIs, Networking, Gateways, Asynchronous Workflows (Celery, Redis).
+- Phase 8: Production ML Lifecycle, Containerization & Orchestration (Docker, Kubernetes), CI/CD, MLflow, AWS/GCP architecture, Model Serving.
+(Core algorithms ariyillengilum, software engineering & DevOps knowledge aanu ithil main).
+
+9. Backend Engineer (AI Focused)
+Enthu padikkanam (Required Skills):
+- Phase 0 & 1: CS Foundations, Data Structures, Advanced Python (OOP, Async).
+- Phase 3: Database Engines (Relational), NoSQL Databases.
+- Phase 7: APIs & Web Frameworks (FastAPI, Django/Flask), Database integrations, WebSockets, Message Brokers (RabbitMQ).
+- Phase 8: Containerization & Cloud Basics.
+(AI tools integrate cheythu nalla fast aayittulla website/app backend undakkan).
