@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate AI/ML Engineer Career Roadmap</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             /* Premium Educational Workspace Theme */
@@ -90,7 +90,7 @@
         .nav-item.active::before { content: ''; position: absolute; left: -1px; top: 10%; height: 80%; width: 3px; background: var(--accent-primary); border-radius: 0 4px 4px 0; }
         
         /* Main Content Workspace */
-        .main-content { flex: 1; overflow-y: auto; padding: 2.5rem 5rem; scroll-behavior: smooth; background-color: var(--bg-primary); position: relative; }
+        .main-content { flex: 1; overflow-y: auto; padding: 2.5rem 5rem; scroll-behavior: smooth; background-color: var(--bg-primary); position: relative; display: flex; flex-direction: column; }
         .topbar { display: flex; justify-content: flex-end; margin-bottom: 2rem; position: sticky; top: 0; z-index: 50; padding: 1rem 0; background: var(--bg-primary); }
         .btn { padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: var(--transition); box-shadow: var(--shadow-subtle); display: flex; align-items: center; gap: 0.5rem; }
         .btn:hover { background: var(--bg-hover); border-color: var(--border-hover); transform: translateY(-1px); }
@@ -333,11 +333,89 @@
         .dropdown-content::-webkit-scrollbar-track { background: transparent; }
         .dropdown-content::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
 
+        /* Login Overlay */
+        .login-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at 50% -20%, rgba(99, 102, 241, 0.15), var(--bg-primary) 60%); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000; }
+        /* Premium Glassmorphism Card UI */
+        .login-box { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem 2.5rem; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); max-width: 380px; width: 90%; text-align: center; position: relative; overflow: hidden; }
+        
+        .login-box h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; font-style: bold; margin-bottom: 0.5rem; letter-spacing: -0.02em; text-transform: uppercase; display: flex; justify-content: center; gap: 8px; }
+        .login-box h1 .red-text { color: #d40707; }
+        .login-box h1 .white-text { color: #ffffff; }
+        .login-box p { color: rgba(255, 255, 255, 0.7); margin-bottom: 2rem; font-size: 0.95rem; line-height: 1.6; font-weight: 400; }
+        
+        /* Glassy Inputs */
+        .login-box input { width: 100%; padding: 0.8rem 1rem; margin-bottom: 1rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: #fff; font-size: 0.95rem; transition: all 0.3s ease; }
+        .login-box input:focus { outline: none; border-color: rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.1); box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); }
+        .login-box input::placeholder { color: rgba(255, 255, 255, 0.4); }
+        
+        .password-wrapper { position: relative; width: 100%; margin-bottom: 1.5rem; }
+        .password-wrapper input { margin-bottom: 0; padding-right: 2.5rem; }
+        
+        /* Glassy Button */
+        .login-box button[type="submit"] { width: 100%; padding: 0.8rem 1.5rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); color: #fff; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(10px); }
+        .login-box button[type="submit"]:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+        .login-box button[type="submit"]:active { transform: translateY(0); }
+        
+        .login-box .toggle-password { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: auto; padding: 0.25rem; background: none; color: rgba(255, 255, 255, 0.5); border-radius: 4px; transition: color 0.2s ease; border: none; }
+        .login-box .toggle-password:hover { color: #fff; background: none; }
+        
+        .login-error { color: #fca5a5; margin-top: 1.2rem; font-size: 0.9rem; font-weight: 500; display: none; padding: 0.75rem; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 8px; }
+        
+        .login-logo { width: 200px; height: auto; object-fit: contain; margin: 0 auto 3rem auto; display: block; transform: translateY(-1rem); }
+
+        /* Custom Footer */
+        .custom-footer { width: 100%; position: relative; z-index: 20; background: transparent; padding: 1.5rem; margin-top: auto; border: none; }
+        .footer-inner { max-width: 80rem; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 1rem; }
+        @media (min-width: 640px) { .footer-inner { flex-direction: row; } }
+        .footer-text { font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; }
+        .footer-dot { display: none; margin: 0 0.25rem; color: #94a3b8; }
+        @media (min-width: 640px) { .footer-dot { display: inline; } }
+        .footer-logo { height: 1.75rem; width: auto; object-fit: contain; cursor: pointer; transition: opacity 0.2s; opacity: 0.9; }
+        @media (min-width: 768px) { .footer-logo { height: 2.25rem; } }
+        .footer-logo:hover { opacity: 1; }
+        
+        /* Negative margins to break out of main-content padding */
+        .main-content .custom-footer { margin: auto -5rem -2.5rem -5rem; padding: 1.5rem 5rem; }
+        @media (max-width: 1024px) { .main-content .custom-footer { margin: auto -4rem -3rem -4rem; padding: 1.5rem 4rem; } }
+        @media (max-width: 768px) { .main-content .custom-footer { margin: auto -1.5rem -2rem -1.5rem; padding: 1.5rem; } }
+
     </style>
 </head>
 <body>
 
-<div id="app">
+<div id="login-overlay" class="login-overlay">
+    <img src="logo-transparent-dark.png" alt="Hashmil Logo" class="login-logo" />
+    <div class="login-box">
+        <h1><span class="red-text">AI/ML</span> <span class="white-text">Roadmap</span></h1>
+        <p>Please log in to view the AI/ML Engineer Career Roadmap.</p>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email Address" required />
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Password" required />
+                <button type="button" class="toggle-password" id="toggle-password" aria-label="Toggle password visibility">
+                    <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </button>
+            </div>
+        </br>
+            <button type="submit" id="login-btn">Secure Login</button>
+            <p id="login-error" class="login-error"></p>
+        </form>
+    </div>
+    
+    <footer class="custom-footer" style="position: absolute; bottom: 0; margin: 0; padding: 1.5rem; width: 100%;">
+        <div class="footer-inner">
+            <p class="footer-text">
+                © 2026 Hashmil Muhammed <span class="footer-dot">•</span> All rights reserved
+            </p>
+            <img src="logo-transparent-dark.png" alt="#MIL Logo" class="footer-logo" />
+        </div>
+    </footer>
+</div>
+
+<div id="app" style="display: none;">
     <aside class="sidebar" id="sidebar">
         <button class="sidebar-toggle" onclick="document.getElementById('sidebar').classList.toggle('collapsed')">◀</button>
         <div class="sidebar-inner">
@@ -383,10 +461,20 @@
             </div>
 
             <button class="btn" onclick="toggleTheme()">🌓 Theme</button>
+            <button class="btn" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3); margin-left: 0.75rem;" onclick="logout()">🚪 Logout</button>
             <!-- <button class="btn" onclick="window.print()">🖨️ Save PDF</button> -->
         </div>
         <div id="dashboard-area"></div>
         <div id="content-area"></div>
+        
+        <footer class="custom-footer">
+            <div class="footer-inner">
+                <p class="footer-text">
+                    © 2026 Hashmil Muhammed <span class="footer-dot">•</span> All rights reserved
+                </p>
+                <img src="logo-transparent-dark.png" alt="#MIL Logo" class="footer-logo" />
+            </div>
+        </footer>
     </main>
 </div>
 
@@ -12616,7 +12704,76 @@ function toggleProgress(path) {
     renderDashboard();
 }
 
-function init() { renderSidebar(); renderDashboard(); renderPhase(0); }
+function init() { 
+    if (sessionStorage.getItem('auth') === 'true') {
+        document.getElementById('login-overlay').style.display = 'none';
+        document.getElementById('app').style.display = 'flex';
+        renderSidebar(); 
+        renderDashboard(); 
+        renderPhase(0); 
+    }
+}
+
+function logout() {
+    sessionStorage.removeItem('auth');
+    location.reload();
+}
+
+const togglePassword = document.getElementById('toggle-password');
+const passwordInput = document.getElementById('password');
+const eyeIcon = document.getElementById('eye-icon');
+
+togglePassword.addEventListener('click', function () {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    
+    if (type === 'text') {
+        eyeIcon.innerHTML = '<path d="m2 2 20 20"></path><path d="M6.71 6.71a9.25 9.25 0 0 0-4.71 5.29 10 10 0 0 0 16 6"></path><path d="M12 12a3 3 0 0 0 4.24 4.24"></path><path d="M15.42 9.42a10 10 0 0 1 6.58 2.58"></path>';
+    } else {
+        eyeIcon.innerHTML = '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle>';
+    }
+});
+
+document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value.trim().toLowerCase();
+    const password = document.getElementById('password').value;
+    const btn = document.getElementById('login-btn');
+    const err = document.getElementById('login-error');
+    
+    btn.innerText = 'Authenticating...';
+    err.style.display = 'none';
+    
+    try {
+        // Securely hash the input using the browser's built-in crypto API
+        const hashText = async (text) => {
+            const msgBuffer = new TextEncoder().encode(text);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        };
+
+        const emailHash = await hashText(email);
+        const passHash = await hashText(password);
+
+        // Compare against the pre-computed hashes (Your password is not in this code!)
+        const validEmailHash = 'f6181f89b98660c78b8d9302155f326dc91780b0a1f695521a771f087dc500ea';
+        const validPassHash = 'dc7b2e01a57d712014446ab896f7805ed65d4d0acd31bdecdf9a2810c5eb9b94';
+
+        if (emailHash === validEmailHash && passHash === validPassHash) {
+            sessionStorage.setItem('auth', 'true');
+            init();
+        } else {
+            err.innerText = 'Invalid credentials';
+            err.style.display = 'block';
+            btn.innerText = 'Secure Login';
+        }
+    } catch (error) {
+        err.innerText = 'An error occurred. Please ensure you are viewing this on a secure server or modern browser.';
+        err.style.display = 'block';
+        btn.innerText = 'Secure Login';
+    }
+});
 
 let currentRole = 'All';
 const roleMapping = {
