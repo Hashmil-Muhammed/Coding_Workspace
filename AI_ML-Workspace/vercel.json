@@ -1,6 +1,8 @@
 {
-  "version": 2,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+    {
+      "source": "/",
+      "destination": "/AI-ML_Engineer_roadmap.html"
+    }
   ]
 }
