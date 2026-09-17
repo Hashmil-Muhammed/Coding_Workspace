@@ -200,6 +200,8 @@ SKILLS:
    A) Core:
     * Windsurf
     * Claude Code Models
+    * AI Prompting & Automation
+    * Copilot Studio
 
 6. Soft Skills
    A) Core:
@@ -368,6 +370,7 @@ SKILLS:
     * Debugging & Profiling
     * Performance Optimization
     * Complex Calculations
+    * Scripting & Analysis
 
 
 -------------------------------------------------------
@@ -575,6 +578,8 @@ SKILLS:
     * PostgreSQL Query Planner
     * Index Scan
     * Sequential Scan
+    * Advanced SQL
+    * SQL (Data Extraction, Views & Validation)
    D) Architecture & Optimization:
     * Indexes
     * Views & Materialized Views
@@ -614,6 +619,8 @@ SKILLS:
     * Categorical dtype
     * Apply vs Vectorization
     * Performance Optimization
+    * Data Compilation
+    * Data Wrangling & Preparation
    C) Alternative Data Libraries:
     * Polars
     * Dask
@@ -642,6 +649,9 @@ SKILLS:
     * Ad-Hoc Reporting
     * Dashboard Upkeep
     * Business Insights
+    * MIS Reporting
+    * KPI Dashboards
+    * Alteryx
    C) Product & Business Analytics:
     * Business Metrics
     * North Star Metrics
@@ -652,8 +662,14 @@ SKILLS:
     * Churn Analysis
     * Product Analytics
     * Customer Analytics
-    * Marketing Analytics
-    * Finance Analytics
+    * Marketing Analytics (Ad spend, Funnels, ROI)
+    * Financial Data Analysis (Revenue, Margin, Cashflow)
+    * Business Acquisition
+    * M&A Due Diligence
+    * Data-Driven Recommendations
+    * AI/ML-driven Analytics
+    * Power Apps & Power Platform
+    * Data Quality & Governance
     * Case Studies
     * Business Problem Solving
     * Root Cause analysis
@@ -662,6 +678,9 @@ SKILLS:
     * Vendor Data Analysis
     * Executive Summary Reports
     * Attention to Detail
+    * Retail & Supply Chain Analytics
+    * Fraud & Financial Crime Investigation
+    * Blockchain & Crypto Transaction Analytics
    D) Event Tracking:
     * Mixpanel
     * Amplitude
@@ -717,6 +736,8 @@ SKILLS:
    C) Orchestration:
     * Apache Airflow
     * Prefect
+    * Workflow Orchestration
+    * Recurring
    D) Data Transformation:
     * ETL/ELT
     * Data Pipelines
@@ -861,6 +882,7 @@ SKILLS:
    B) APIs & Streaming:
     * API-based Data Collection
     * Streaming Data Collection
+    * Webhooks
    C) Datasets & Quality:
     * Survey Data Collection
     * Public Datasets
@@ -871,6 +893,9 @@ SKILLS:
     * Data Validation
     * Ethical Data Collection
     * Data Verification
+    * Data Quality Frameworks
+    * Data Validation & Reconciliation
+    * Data Reconciliation & Validation
 
 
 10. SQL & Databases
@@ -1076,6 +1101,7 @@ SKILLS:
     * Encoding
     * Scaling
     * Scikit-Learn Pipelines
+    * Model Training & Optimization
    B) Imbalanced Data:
     * SMOTE
     * Borderline SMOTE
@@ -1100,6 +1126,7 @@ SKILLS:
    E) Evaluation Metrics:
     * Classification
     * Regression
+    * Model Benchmarking & Evaluation
    F) Explainable AI (XAI):
     * SHAP
     * LIME
@@ -1530,6 +1557,8 @@ SKILLS:
     * DPO
     * KTO
     * ORPO
+    * Supervised Fine-Tuning (SFT)
+    * RLHF (Reinforcement Learning from Human Feedback)
    D) Quantization & Tools:
     * bitsandbytes
     * FP16 / BF16
@@ -1696,6 +1725,7 @@ SKILLS:
 8. LLMOps & Serving
    A) LLM Evaluation & Observability:
     * LLM-as-a-judge
+    * LLM Behavior & Reasoning Traces
     * Ragas
     * TruLens
     * LangSmith
@@ -2018,6 +2048,7 @@ SKILLS:
     * Streamlit Cloud
     * AI Dashboards
     * LLM Applications
+    * AI-enabled Solutions
     * Best Practices
 
 -------------------------------------------------------
@@ -6191,79 +6222,3 @@ Although Python is the primary language for AI/ML, modern AI Engineers also bene
 
 
 -------------------------------------------------------------------------------------------------------
-
-
-JOB ROLES & SKILL REQUIREMENTS (Detailed)
-=========================================
-
-1. Data Analyst
-Enthu padikkanam (Required Skills):
-- Phase 1: Python Core (Variables, Data Types, Lists, Dicts), Loops & Iteration, Pandas for Data Manipulation.
-- Phase 2: Mathematics & Statistics (Basic Maths, Probability).
-- Phase 3: SQL (Deep Dive, Joins, Window Functions), Data Processing (Python), Data Analyst & BI Mastery (Excel, PowerBI/Tableau), Data Cleaning, Data Collection.
-(Ithu mathram nannayi padichal thanne Data Analyst job kittum).
-
-2. Data Scientist
-Enthu padikkanam (Required Skills):
-- Phase 1: Python Deep Dive (Core, Functions, OOP).
-- Phase 2: Mathematics for Machine Learning (Linear Algebra, Calculus, Probability & Statistics).
-- Phase 3: SQL, Data Analysis (Pandas/NumPy), Data Science Methodology, Data Collection.
-- Phase 4: Core Machine Learning (Feature Engineering, Supervised/Unsupervised Learning, Tree-Based Models, Time Series, Advanced Statistics).
-(Data Analyst skills-inte koode predictive modeling (ML) koodi padikkum).
-
-3. Data Engineer
-Enthu padikkanam (Required Skills):
-- Phase 1: Python Advanced (OOP, Async, Generators).
-- Phase 3: Advanced SQL, Data Engineering (ETL/ELT), NoSQL & Graph Databases, Database Engines, Enterprise Analytics.
-- Phase 7: Backend Engineering, APIs & Web Frameworks, Asynchronous Workflows.
-- Phase 8: Cloud Architecture (Deep Dive), Containerization & Orchestration.
-(Algorithms-nekkal kooduthal data handle cheyyanulla tools-il aanu focus - Apache Spark, Kafka, Airflow, Snowflake).
-
-4. Machine Learning Engineer (ML Engineer)
-Enthu padikkanam (Required Skills):
-- Phase 0: Setup, CS Foundations & Data Structures.
-- Phase 1, 2, 3: Python Deep Dive, Math for ML, SQL & Data Analysis.
-- Phase 4: Core Machine Learning (All concepts, Pipeline & Engineering).
-- Phase 5: Deep Learning Foundations (PyTorch).
-- Phase 7: Backend Engineering, APIs (FastAPI for model serving).
-- Phase 8: MLOps, Containerization & Orchestration (Docker, Kubernetes), CI/CD, Cloud Deployments, Model Monitoring.
-(Model undakkiyathu mathram pora, athine software aayi deploy cheyyanulla (MLOps) skills koodi venam).
-
-5. AI Engineer / GenAI Engineer (Prompt Engineer)
-Enthu padikkanam (Required Skills):
-- Phase 1: Python (Production level, Async).
-- Phase 5: Deep Learning Foundations, NLP Basics.
-- Phase 6: Generative AI, Prompt Engineering & Guardrails, Transformers & LLMs, Fine-Tuning, Vector Databases, RAG, LangChain, Agent Development.
-- Phase 7: Backend & APIs (FastAPI, Streamlit, Gradio).
-(Mainly OpenAI/Llama API-kal vechu puthiya AI products undakkan ulla skills).
-
-6. Computer Vision Engineer
-Enthu padikkanam (Required Skills):
-- Phase 1 & 2: Python Core, Linear Algebra & Calculus.
-- Phase 4: Machine Learning basics (Pattern Recognition).
-- Phase 5: Deep Learning Foundations (PyTorch), Computer Vision (CV), OpenCV, CNNs, YOLO, Image Processing, Object Detection.
-(Image/Video related AI undakkan).
-
-7. NLP Engineer (Natural Language Processing)
-Enthu padikkanam (Required Skills):
-- Phase 1 & 2: Python Core & Maths (Probability, Linear Algebra).
-- Phase 4: Machine Learning basics.
-- Phase 5: Deep Learning Foundations, Natural Language Processing (NLP), Transformers, HuggingFace, RNN, Text Data processing.
-- Phase 6: Prompt Engineering, Transformers & LLM Architecture (Optional but highly recommended).
-(Chatbots, Text summarization, Translation pole ulla text-based AI undakkan).
-
-8. MLOps Engineer
-Enthu padikkanam (Required Skills):
-- Phase 0: Linux Basics (Bash, FHS), Version Control (Git), OS basics.
-- Phase 1: Python Scripting, Production Python.
-- Phase 7: Backend APIs, Networking, Gateways, Asynchronous Workflows (Celery, Redis).
-- Phase 8: Production ML Lifecycle, Containerization & Orchestration (Docker, Kubernetes), CI/CD, MLflow, AWS/GCP architecture, Model Serving.
-(Core algorithms ariyillengilum, software engineering & DevOps knowledge aanu ithil main).
-
-9. Backend Engineer (AI Focused)
-Enthu padikkanam (Required Skills):
-- Phase 0 & 1: CS Foundations, Data Structures, Advanced Python (OOP, Async).
-- Phase 3: Database Engines (Relational), NoSQL Databases.
-- Phase 7: APIs & Web Frameworks (FastAPI, Django/Flask), Database integrations, WebSockets, Message Brokers (RabbitMQ).
-- Phase 8: Containerization & Cloud Basics.
-(AI tools integrate cheythu nalla fast aayittulla website/app backend undakkan).
