@@ -380,7 +380,16 @@
         @media (max-width: 1024px) { .main-content .custom-footer { margin: auto -4rem -3rem -4rem; padding: 1.5rem 4rem; } }
         @media (max-width: 768px) { .main-content .custom-footer { margin: auto -1.5rem -2rem -1.5rem; padding: 1.5rem; } }
 
-    </style>
+    
+        /* Resources Section */
+        .resources-section { margin-top: 2rem; }
+        .resources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .resource-card { background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 1rem; border-radius: 8px; display: flex; flex-direction: column; gap: 0.5rem; transition: var(--transition); text-decoration: none; color: inherit; }
+        .resource-card:hover { transform: translateY(-3px); border-color: var(--resource); box-shadow: 0 4px 15px rgba(217, 70, 239, 0.15); }
+        .resource-type { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--resource); font-weight: 700; }
+        .resource-name { font-size: 0.95rem; font-weight: 600; line-height: 1.3; }
+        .resource-icon { align-self: flex-end; color: var(--text-muted); }
+</style>
 </head>
 <body>
 
@@ -1612,6 +1621,68 @@ const roadmapData = [
                         "name": "DSA"
                     }
                 ]
+            },
+            {
+                "name": "Version Control System (Git)"
+            },
+            {
+                "name": "VCS Hosting Platforms",
+                "children": [
+                    {
+                        "name": "GitHub"
+                    },
+                    {
+                        "name": "GitLab"
+                    },
+                    {
+                        "name": "Bitbucket"
+                    }
+                ]
+            },
+            {
+                "name": "Fundamental Research & Mindset",
+                "children": [
+                    {
+                        "name": "Market Trends & WEF Future of Jobs Report"
+                    },
+                    {
+                        "name": "Preparing Mind & Body (Sleep cycle, habits)"
+                    },
+                    {
+                        "name": "Mindset Shifts (Problem-solver over perfectionism)"
+                    }
+                ]
+            },
+            {
+                "name": "LinkedIn Mastery & Networking",
+                "children": [
+                    {
+                        "name": "Profile Creation & ATS Optimization"
+                    },
+                    {
+                        "name": "Engaging with Data Influencers"
+                    },
+                    {
+                        "name": "Outreach Strategy & Meaningful Commenting"
+                    }
+                ]
+            },
+            {
+                "name": "Portfolio Building Platforms",
+                "children": [
+                    {
+                        "name": "Novypro (Power BI & Excel)"
+                    },
+                    {
+                        "name": "Datascience Portfolio (Static portfolios)"
+                    },
+                    {
+                        "name": "Linktree (Multiple links)"
+                    },
+                    {
+                        "name": "GitHub"
+                    }
+                ]
             }
         ],
         "projects": {
@@ -1758,7 +1829,14 @@ const roadmapData = [
             "portfolio": [
                 "Push all algorithmic solutions to a clean GitHub Repo"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "CS50's Intro to Programming with Python (Harvard)",
+                "link": "https://cs50.harvard.edu/python",
+                "type": "Course"
+            }
+        ]
     },
     {
         "phase": "PHASE 1",
@@ -1768,6 +1846,26 @@ const roadmapData = [
             "duration": "5 Weeks"
         },
         "skills": [
+            {
+                "name": "Python Fundamentals",
+                "children": [
+                    {
+                        "name": "Introduction to Python"
+                    },
+                    {
+                        "name": "Variables"
+                    },
+                    {
+                        "name": "Data Types (int, float, list, dict)"
+                    },
+                    {
+                        "name": "Control Flow (conditions, loops)"
+                    },
+                    {
+                        "name": "Functions"
+                    }
+                ]
+            },
             {
                 "name": "Python Core",
                 "children": [
@@ -2449,6 +2547,20 @@ const roadmapData = [
                         "name": "Functions & Lambda Expressions"
                     }
                 ]
+            },
+            {
+                "name": "Project Management Basics",
+                "children": [
+                    {
+                        "name": "Scrum Methodology"
+                    },
+                    {
+                        "name": "Kanban Boards"
+                    },
+                    {
+                        "name": "Tools (JIRA, Notion)"
+                    }
+                ]
             }
         ],
         "projects": {
@@ -2491,6 +2603,20 @@ const roadmapData = [
                         "File I/O",
                         "String Methods",
                         "Dictionaries"
+                    ]
+                },
+                {
+                    "name": "CLI expense tracker",
+                    "uses": [
+                        "Python",
+                        "CLI"
+                    ]
+                },
+                {
+                    "name": "CSV summary-stats notebook",
+                    "uses": [
+                        "Python",
+                        "Jupyter"
                     ]
                 }
             ],
@@ -2576,6 +2702,14 @@ const roadmapData = [
                         "Iterators",
                         "Context Managers"
                     ]
+                },
+                {
+                    "name": "Python package wrapping a public API",
+                    "uses": [
+                        "Python",
+                        "Requests",
+                        "Packaging"
+                    ]
                 }
             ]
         },
@@ -2602,7 +2736,74 @@ const roadmapData = [
             "portfolio": [
                 "Publish a Python package to PyPI"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "Data Analysis with Python (freeCodeCamp)",
+                "link": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+                "type": "Course"
+            },
+            {
+                "name": "Python for AI and Data Science (FreeAcademy.ai)",
+                "link": "https://freeacademy.ai",
+                "type": "Course"
+            },
+            {
+                "name": "Kaggle Learn — Python",
+                "link": "https://www.kaggle.com/learn/python",
+                "type": "Tutorial"
+            },
+            {
+                "name": "The Python Tutorial",
+                "link": "https://docs.python.org/3/tutorial/",
+                "type": "Documentation"
+            },
+            {
+                "name": "Python.org",
+                "link": "https://www.python.org/",
+                "type": "Website"
+            },
+            {
+                "name": "Python by Codeacademy",
+                "link": "https://www.codecademy.com/resources/docs/python",
+                "type": "Docs"
+            },
+            {
+                "name": "Learnpython.org",
+                "link": "https://www.learnpython.org/",
+                "type": "Website"
+            },
+            {
+                "name": "Learning Python: From Zero to Hero",
+                "link": "https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/",
+                "type": "Blog"
+            },
+            {
+                "name": "Google's Python Class",
+                "link": "https://developers.google.com/edu/python?hl=en",
+                "type": "Course"
+            },
+            {
+                "name": "W3Schools Python Tutorial",
+                "link": "https://www.w3schools.com/python/default.asp",
+                "type": "Tutorial"
+            },
+            {
+                "name": "Intro to Python (DataCamp)",
+                "link": "https://www.datacamp.com/courses/intro-to-python-for-data-science",
+                "type": "Course"
+            },
+            {
+                "name": "Programming for Everybody (Coursera)",
+                "link": "https://www.coursera.org/learn/python",
+                "type": "Course"
+            },
+            {
+                "name": "Tech With Tim / Alex The Analyst / Tina Huang",
+                "link": "https://www.youtube.com/@TechWithTim",
+                "type": "YouTube"
+            }
+        ]
     },
     {
         "phase": "PHASE 2",
@@ -2612,6 +2813,26 @@ const roadmapData = [
             "duration": "4 Weeks"
         },
         "skills": [
+            {
+                "name": "Statistics Basics",
+                "children": [
+                    {
+                        "name": "Introduction (analysis and interpretation)"
+                    },
+                    {
+                        "name": "Central Tendency (mean, median, mode)"
+                    },
+                    {
+                        "name": "Probability"
+                    },
+                    {
+                        "name": "Distributions"
+                    },
+                    {
+                        "name": "Hypothesis Testing"
+                    }
+                ]
+            },
             {
                 "name": "Linear Algebra",
                 "children": [
@@ -3179,6 +3400,20 @@ const roadmapData = [
                         ]
                     }
                 ]
+            },
+            {
+                "name": "Business Math",
+                "children": [
+                    {
+                        "name": "Arithmetic & Percentages"
+                    },
+                    {
+                        "name": "Year-over-Year (YoY) Growth/Decline"
+                    },
+                    {
+                        "name": "Market Share Calculations"
+                    }
+                ]
             }
         ],
         "projects": {
@@ -3219,6 +3454,13 @@ const roadmapData = [
                         "Statistics",
                         "Python"
                     ]
+                },
+                {
+                    "name": "Simulate dice rolls vs. theoretical probability",
+                    "uses": [
+                        "Python",
+                        "Stats"
+                    ]
                 }
             ],
             "intermediate": [
@@ -3256,6 +3498,13 @@ const roadmapData = [
                     "uses": [
                         "Probability",
                         "Simulation"
+                    ]
+                },
+                {
+                    "name": "Linear regression from scratch with gradient descent",
+                    "uses": [
+                        "Python",
+                        "Math"
                     ]
                 }
             ],
@@ -3296,6 +3545,13 @@ const roadmapData = [
                         "T-Tests",
                         "Chi-Square"
                     ]
+                },
+                {
+                    "name": "PCA from scratch vs. scikit-learn",
+                    "uses": [
+                        "Math",
+                        "Linear Algebra"
+                    ]
                 }
             ]
         },
@@ -3322,7 +3578,64 @@ const roadmapData = [
             "portfolio": [
                 "Write a blog post explaining PCA without using code"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "Mathematics for Machine Learning Specialization",
+                "link": "https://www.coursera.org/specializations/mathematics-machine-learning",
+                "type": "Course"
+            },
+            {
+                "name": "Khan Academy — Statistics & Probability / Linear Algebra",
+                "link": "https://www.khanacademy.org",
+                "type": "Tutorial"
+            },
+            {
+                "name": "StatQuest with Josh Starmer",
+                "link": "https://www.youtube.com/@statquest",
+                "type": "YouTube"
+            },
+            {
+                "name": "Stanford Statistics / Ph.D. Tutorial",
+                "link": "https://www.youtube.com/watch?v=Vfo5le26IhY&t=6654s",
+                "type": "YouTube"
+            },
+            {
+                "name": "MarinStatsLectures",
+                "link": "https://www.youtube.com/watch?v=AN3UkzE3HMg",
+                "type": "YouTube"
+            },
+            {
+                "name": "Crash Course: Statistics",
+                "link": "https://www.youtube.com/watch?v=zouPoc49xbk",
+                "type": "YouTube"
+            },
+            {
+                "name": "Statistics Cheatsheet (Stanford CME 106)",
+                "link": "https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics",
+                "type": "Cheat Sheet"
+            },
+            {
+                "name": "Statistics Cheat Sheet (MIT)",
+                "link": "https://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf",
+                "type": "Cheat Sheet"
+            },
+            {
+                "name": "Descriptive Statistics Cheat Sheet (DataCamp)",
+                "link": "https://www.datacamp.com/cheat-sheet/descriptive-statistics-cheat-sheet",
+                "type": "Cheat Sheet"
+            },
+            {
+                "name": "Think Stats (Book)",
+                "link": "https://greenteapress.com/thinkstats/",
+                "type": "Book"
+            },
+            {
+                "name": "Statistics in Plain English (Book)",
+                "link": "https://www.book2look.com/embed/9781317526988",
+                "type": "Book"
+            }
+        ]
     },
     {
         "phase": "PHASE 3",
@@ -3332,6 +3645,102 @@ const roadmapData = [
             "duration": "6 Weeks"
         },
         "skills": [
+            {
+                "name": "Data Sources",
+                "children": [
+                    {
+                        "name": "File Handling (CSV, Excel, Text)"
+                    },
+                    {
+                        "name": "Databases"
+                    },
+                    {
+                        "name": "APIs (web services)"
+                    },
+                    {
+                        "name": "Web Mining (scraping)"
+                    }
+                ]
+            },
+            {
+                "name": "Frameworks for Data Processing",
+                "children": [
+                    {
+                        "name": "Pandas (structured datasets)"
+                    },
+                    {
+                        "name": "NumPy (numerical computations)"
+                    }
+                ]
+            },
+            {
+                "name": "Exploratory Data Analysis (EDA)",
+                "children": [
+                    {
+                        "name": "Handling Missing Values"
+                    },
+                    {
+                        "name": "Removing Duplicates"
+                    },
+                    {
+                        "name": "Handling Outliers"
+                    },
+                    {
+                        "name": "Understanding Relationships"
+                    },
+                    {
+                        "name": "Basic Visualization"
+                    }
+                ]
+            },
+            {
+                "name": "Data Visualization Libraries",
+                "children": [
+                    {
+                        "name": "Matplotlib (basic plotting)"
+                    },
+                    {
+                        "name": "Seaborn (statistical)"
+                    },
+                    {
+                        "name": "Plotly (interactive)"
+                    }
+                ]
+            },
+            {
+                "name": "Analytics Tools",
+                "children": [
+                    {
+                        "name": "Excel"
+                    },
+                    {
+                        "name": "Power BI (dashboards/reports)"
+                    },
+                    {
+                        "name": "Tableau (visualization)"
+                    },
+                    {
+                        "name": "SQL"
+                    }
+                ]
+            },
+            {
+                "name": "Move Toward Machine Learning",
+                "children": [
+                    {
+                        "name": "Data collection"
+                    },
+                    {
+                        "name": "Data cleaning"
+                    },
+                    {
+                        "name": "Data analysis"
+                    },
+                    {
+                        "name": "Data visualization"
+                    }
+                ]
+            },
             {
                 "name": "SQL",
                 "children": [
@@ -5641,6 +6050,31 @@ const roadmapData = [
                         "name": "Data Transformation"
                     }
                 ]
+            },
+            {
+                "name": "Domain Knowledge & Business Acumen",
+                "children": [
+                    {
+                        "name": "P&L Fundamentals"
+                    },
+                    {
+                        "name": "Industry Case Studies (FMCG, Telecom, Retail)"
+                    }
+                ]
+            },
+            {
+                "name": "Data Engineering Basics for Analysts",
+                "children": [
+                    {
+                        "name": "Data Pipelines (Bronze-Silver-Gold architecture)"
+                    },
+                    {
+                        "name": "ETL vs ELT"
+                    },
+                    {
+                        "name": "Cloud Storage Basics (AWS/Azure/GCP)"
+                    }
+                ]
             }
         ],
         "projects": {
@@ -5687,6 +6121,26 @@ const roadmapData = [
                         "MongoDB",
                         "BSON",
                         "Python"
+                    ]
+                },
+                {
+                    "name": "EDA notebook on a public dataset",
+                    "uses": [
+                        "Pandas",
+                        "EDA"
+                    ]
+                },
+                {
+                    "name": "Small inventory database",
+                    "uses": [
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "Sales dashboard with filters",
+                    "uses": [
+                        "Power BI",
+                        "Tableau"
                     ]
                 }
             ],
@@ -5736,6 +6190,25 @@ const roadmapData = [
                         "DynamoDB",
                         "Streams",
                         "AWS"
+                    ]
+                },
+                {
+                    "name": "Data-cleaning pipeline for raw CSVs",
+                    "uses": [
+                        "Pandas"
+                    ]
+                },
+                {
+                    "name": "ETL script loading CSVs into SQL",
+                    "uses": [
+                        "Python",
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "Executive KPI dashboard",
+                    "uses": [
+                        "BI"
                     ]
                 }
             ],
@@ -5791,6 +6264,20 @@ const roadmapData = [
                         "Cypher",
                         "Graph Analytics"
                     ]
+                },
+                {
+                    "name": "Automated data-quality report generator",
+                    "uses": [
+                        "Python",
+                        "Pandas"
+                    ]
+                },
+                {
+                    "name": "E-commerce data-warehouse schema",
+                    "uses": [
+                        "SQL",
+                        "Data Warehousing"
+                    ]
                 }
             ]
         },
@@ -5817,7 +6304,139 @@ const roadmapData = [
             "portfolio": [
                 "Publish an Airflow ETL pipeline project to GitHub"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "Kaggle Learn — Pandas, Data Cleaning, Intro to SQL",
+                "link": "https://www.kaggle.com",
+                "type": "Tutorial"
+            },
+            {
+                "name": "Python for Data Analysis by Wes McKinney",
+                "link": "#",
+                "type": "Book"
+            },
+            {
+                "name": "SQLBolt",
+                "link": "https://sqlbolt.com/",
+                "type": "Interactive"
+            },
+            {
+                "name": "Mode SQL Tutorial",
+                "link": "https://mode.com/sql-tutorial/",
+                "type": "Tutorial"
+            },
+            {
+                "name": "Microsoft Learn — Power BI",
+                "link": "https://learn.microsoft.com/power-bi",
+                "type": "Course"
+            },
+            {
+                "name": "Tableau Public Training",
+                "link": "https://help.tableau.com/",
+                "type": "Course"
+            },
+            {
+                "name": "Excel Tutorial for Beginners (freeCodeCamp)",
+                "link": "https://www.youtube.com/watch?v=Vl0H-qTclOg",
+                "type": "YouTube"
+            },
+            {
+                "name": "Excel Basics Cheat Sheet (DataCamp)",
+                "link": "https://www.datacamp.com/cheat-sheet/getting-started-with-excel-cheat-sheet",
+                "type": "Cheat Sheet"
+            },
+            {
+                "name": "Hackr Excel / Exceldemy Cheat Sheets",
+                "link": "https://www.exceldemy.com",
+                "type": "Cheat Sheet"
+            },
+            {
+                "name": "SQL Full Course In 10 Hours (Edureka)",
+                "link": "https://www.youtube.com/watch?v=q_JsgpiuY98",
+                "type": "YouTube"
+            },
+            {
+                "name": "SQL Tutorial For Beginners (Simplilearn)",
+                "link": "https://www.youtube.com/watch?v=MtYglLPSfGw",
+                "type": "YouTube"
+            },
+            {
+                "name": "Khan Academy / Codecademy SQL",
+                "link": "https://www.khanacademy.org/computing/computer-programming/sql",
+                "type": "Course"
+            },
+            {
+                "name": "SQLZoo / SQL Bolt Tutorials",
+                "link": "https://sqlzoo.net/",
+                "type": "Tutorial"
+            },
+            {
+                "name": "Codewars / HackerRank / LeetCode SQL Practice",
+                "link": "https://leetcode.com/study-plan/sql/",
+                "type": "Practice"
+            },
+            {
+                "name": "SQL Murder Mystery / SQL Battle",
+                "link": "https://mystery.knightlab.com/",
+                "type": "Practice"
+            },
+            {
+                "name": "SQL Basics / Commands Cheat Sheets",
+                "link": "https://learnsql.com/blog/sql-basics-cheat-sheet/",
+                "type": "Cheat Sheet"
+            },
+            {
+                "name": "Microsoft Learn / Power BI Community",
+                "link": "https://learn.microsoft.com/power-bi",
+                "type": "Docs"
+            },
+            {
+                "name": "Enterprise DNA / Guy in a Cube / SQLBI",
+                "link": "https://www.youtube.com/@GuyInACube",
+                "type": "YouTube"
+            },
+            {
+                "name": "Tableau Public / Tableau Community",
+                "link": "https://public.tableau.com/",
+                "type": "Docs"
+            },
+            {
+                "name": "Tableau Free Training Videos",
+                "link": "https://www.tableau.com/learn/training",
+                "type": "Tutorial"
+            },
+            {
+                "name": "Databricks Free Edition",
+                "link": "https://databricks.com",
+                "type": "Platform"
+            },
+            {
+                "name": "Microsoft Fabric",
+                "link": "https://learn.microsoft.com/en-us/fabric/",
+                "type": "Platform"
+            },
+            {
+                "name": "PL-300 Power BI Certification",
+                "link": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+                "type": "Certification"
+            },
+            {
+                "name": "Google Dataset Search",
+                "link": "https://datasetsearch.research.google.com/",
+                "type": "Datasets"
+            },
+            {
+                "name": "Maven Analytics Data Playground",
+                "link": "https://www.mavenanalytics.io/data-playground",
+                "type": "Datasets"
+            },
+            {
+                "name": "World Bank / UN Data",
+                "link": "https://data.worldbank.org/",
+                "type": "Datasets"
+            }
+        ]
     },
     {
         "phase": "PHASE 4",
@@ -6678,6 +7297,25 @@ const roadmapData = [
                         "Random Forest",
                         "Streamlit"
                     ]
+                },
+                {
+                    "name": "House-price prediction",
+                    "uses": [
+                        "Scikit-learn",
+                        "Regression"
+                    ]
+                },
+                {
+                    "name": "Customer churn prediction",
+                    "uses": [
+                        "Logistic Regression"
+                    ]
+                },
+                {
+                    "name": "Swap Random Forest for XGBoost",
+                    "uses": [
+                        "XGBoost"
+                    ]
                 }
             ],
             "intermediate": [
@@ -6717,6 +7355,24 @@ const roadmapData = [
                     "uses": [
                         "Matrix Factorization",
                         "KNN"
+                    ]
+                },
+                {
+                    "name": "Telecom churn model with feature engineering",
+                    "uses": [
+                        "Scikit-learn"
+                    ]
+                },
+                {
+                    "name": "Feature pipeline with ColumnTransformer",
+                    "uses": [
+                        "Pipelines"
+                    ]
+                },
+                {
+                    "name": "Tuned XGBoost credit-risk model",
+                    "uses": [
+                        "Hyperparameter Tuning"
                     ]
                 }
             ],
@@ -6759,6 +7415,20 @@ const roadmapData = [
                         "Evidently AI",
                         "Python"
                     ]
+                },
+                {
+                    "name": "Ensemble of tree, boosting, and neural models for Kaggle",
+                    "uses": [
+                        "Ensemble",
+                        "ML"
+                    ]
+                },
+                {
+                    "name": "Fraud detection with anomaly detection",
+                    "uses": [
+                        "Isolation Forest",
+                        "Boosting"
+                    ]
                 }
             ]
         },
@@ -6785,7 +7455,29 @@ const roadmapData = [
             "portfolio": [
                 "Publish a well-documented Kaggle notebook with EDA and Optuna tuning"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "Machine Learning Specialization (Andrew Ng)",
+                "link": "https://www.coursera.org/specializations/machine-learning-introduction",
+                "type": "Course"
+            },
+            {
+                "name": "Machine Learning Crash Course (Google)",
+                "link": "https://developers.google.com/machine-learning/crash-course",
+                "type": "Tutorial"
+            },
+            {
+                "name": "ML for Beginners (Microsoft)",
+                "link": "https://github.com/microsoft/ML-For-Beginners",
+                "type": "Repo"
+            },
+            {
+                "name": "Machine Learning Zoomcamp",
+                "link": "https://github.com/DataTalksClub/machine-learning-zoomcamp",
+                "type": "Course"
+            }
+        ]
     },
     {
         "phase": "PHASE 5",
@@ -7947,6 +8639,13 @@ const roadmapData = [
                         "Python",
                         "librosa"
                     ]
+                },
+                {
+                    "name": "Cats-vs-dogs image classifier via transfer learning",
+                    "uses": [
+                        "PyTorch",
+                        "CNN"
+                    ]
                 }
             ],
             "intermediate": [
@@ -7997,6 +8696,19 @@ const roadmapData = [
                         "CNN",
                         "PyTorch"
                     ]
+                },
+                {
+                    "name": "Sentiment classifier",
+                    "uses": [
+                        "NLP",
+                        "PyTorch"
+                    ]
+                },
+                {
+                    "name": "Movie/book recommendation system",
+                    "uses": [
+                        "Collaborative Filtering"
+                    ]
                 }
             ],
             "advanced": [
@@ -8045,6 +8757,12 @@ const roadmapData = [
                         "VectorDB",
                         "Vision+Audio"
                     ]
+                },
+                {
+                    "name": "Sequence model for time-series forecasting",
+                    "uses": [
+                        "RNN/LSTM"
+                    ]
                 }
             ]
         },
@@ -8071,7 +8789,24 @@ const roadmapData = [
             "portfolio": [
                 "Train a YOLOv8 model on custom data and deploy the inference script"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "Practical Deep Learning for Coders (Fast.ai)",
+                "link": "https://course.fast.ai/",
+                "type": "Course"
+            },
+            {
+                "name": "Hugging Face NLP Course",
+                "link": "https://huggingface.co/course",
+                "type": "Course"
+            },
+            {
+                "name": "Machine Learning with Python (PyTorch) - freeCodeCamp",
+                "link": "https://www.freecodecamp.org",
+                "type": "Course"
+            }
+        ]
     },
     {
         "phase": "PHASE 6",
@@ -9709,6 +10444,34 @@ const roadmapData = [
                         ]
                     }
                 ]
+            },
+            {
+                "name": "Becoming an AI Generalist",
+                "children": [
+                    {
+                        "name": "Using LLMs for SQL generation & Data Cleaning"
+                    },
+                    {
+                        "name": "Retrieval-Augmented Generation (RAG) Basics"
+                    }
+                ]
+            },
+            {
+                "name": "AI Automations",
+                "children": [
+                    {
+                        "name": "Power Automate (Microsoft)"
+                    },
+                    {
+                        "name": "Zapier"
+                    },
+                    {
+                        "name": "n8n & Make.com"
+                    },
+                    {
+                        "name": "Automating CSV uploads and dashboard refreshes"
+                    }
+                ]
             }
         ],
         "projects": {
@@ -9882,7 +10645,14 @@ const roadmapData = [
             "portfolio": [
                 "Deploy an interactive LangGraph agent on Streamlit Cloud"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "FreeAcademy.ai courses, OpenAI/Google tutorials",
+                "link": "#",
+                "type": "Tutorial"
+            }
+        ]
     },
     {
         "phase": "PHASE 7",
@@ -10744,7 +11514,8 @@ const roadmapData = [
             "portfolio": [
                 "Deploy a full-stack FastAPI app with Celery and Postgres"
             ]
-        }
+        },
+        "resources": []
     },
     {
         "phase": "PHASE 8",
@@ -11923,6 +12694,19 @@ const roadmapData = [
                         "TensorFlow.js",
                         "Webcam"
                     ]
+                },
+                {
+                    "name": "Dockerize a Flask/FastAPI app",
+                    "uses": [
+                        "Docker",
+                        "FastAPI"
+                    ]
+                },
+                {
+                    "name": "Simple ETL pipeline into a database",
+                    "uses": [
+                        "Docker"
+                    ]
                 }
             ],
             "intermediate": [
@@ -11971,6 +12755,19 @@ const roadmapData = [
                     "uses": [
                         "AWS SageMaker",
                         "S3"
+                    ]
+                },
+                {
+                    "name": "Deploy a churn model via API + simple web UI",
+                    "uses": [
+                        "FastAPI",
+                        "Web"
+                    ]
+                },
+                {
+                    "name": "PySpark aggregation job on a large dataset",
+                    "uses": [
+                        "PySpark"
                     ]
                 }
             ],
@@ -12022,6 +12819,27 @@ const roadmapData = [
                         "TensorRT",
                         "Edge AI"
                     ]
+                },
+                {
+                    "name": "Full Airflow pipeline with multiple DAGs",
+                    "uses": [
+                        "Airflow",
+                        "ETL"
+                    ]
+                },
+                {
+                    "name": "Add CI/CD and monitoring/alerts to app",
+                    "uses": [
+                        "GitHub Actions",
+                        "Prometheus"
+                    ]
+                },
+                {
+                    "name": "End-to-end ML API with FastAPI + Docker",
+                    "uses": [
+                        "Deployment",
+                        "Docker"
+                    ]
                 }
             ]
         },
@@ -12048,7 +12866,19 @@ const roadmapData = [
             "portfolio": [
                 "Publish a repository with full IaC (Terraform) and CI/CD setup"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "ML Zoomcamp Deployment Track",
+                "link": "https://github.com/DataTalksClub/machine-learning-zoomcamp",
+                "type": "Course"
+            },
+            {
+                "name": "FastAPI / Docker Documentation",
+                "link": "#",
+                "type": "Documentation"
+            }
+        ]
     },
     {
         "phase": "PHASE 9",
@@ -12379,6 +13209,105 @@ const roadmapData = [
                         ]
                     }
                 ]
+            },
+            {
+                "name": "Soft Skills for Data Analyst",
+                "children": [
+                    {
+                        "name": "Analytical Thinking (Logical and Critical)"
+                    },
+                    {
+                        "name": "Communication Skills (Technical to Non-Technical)"
+                    },
+                    {
+                        "name": "Problem Solving"
+                    },
+                    {
+                        "name": "Teamwork & Collaboration"
+                    },
+                    {
+                        "name": "Business Understanding (Needs and Goals)"
+                    },
+                    {
+                        "name": "Storytelling (Presenting Data Understandably)"
+                    }
+                ]
+            },
+            {
+                "name": "Resume & Interview Preparation",
+                "children": [
+                    {
+                        "name": "Prepare one-page professional resume"
+                    },
+                    {
+                        "name": "Tailor resume based on role/company"
+                    },
+                    {
+                        "name": "Include certifications and projects"
+                    },
+                    {
+                        "name": "Watch podcasts and interview experiences"
+                    },
+                    {
+                        "name": "Practice interview questions (LinkedIn, Indeed, Glassdoor)"
+                    }
+                ]
+            },
+            {
+                "name": "Stakeholder Management & Communication",
+                "children": [
+                    {
+                        "name": "Managing Stakeholder Expectations"
+                    },
+                    {
+                        "name": "Asking sharp, clarifying questions"
+                    },
+                    {
+                        "name": "Translating vague requests into analytics problems"
+                    }
+                ]
+            },
+            {
+                "name": "Strategic Collaboration & Critical Thinking",
+                "children": [
+                    {
+                        "name": "Thinking like a business partner"
+                    },
+                    {
+                        "name": "Challenging assumptions respectfully"
+                    },
+                    {
+                        "name": "Proposing actionable solutions"
+                    }
+                ]
+            },
+            {
+                "name": "90-Day Portfolio Strategy",
+                "children": [
+                    {
+                        "name": "Project 1: Data Cleaning & Exploration (Excel/Python)"
+                    },
+                    {
+                        "name": "Project 2: SQL Analysis (5-7 business questions)"
+                    },
+                    {
+                        "name": "Project 3: Interactive Dashboard (Power BI/Tableau telling a story)"
+                    }
+                ]
+            },
+            {
+                "name": "Job Application Strategy",
+                "children": [
+                    {
+                        "name": "Cold Emailing Hiring Managers"
+                    },
+                    {
+                        "name": "Leveraging Job Referrals"
+                    },
+                    {
+                        "name": "Following Up Systematically"
+                    }
+                ]
             }
         ],
         "projects": {
@@ -12522,7 +13451,29 @@ const roadmapData = [
             "portfolio": [
                 "Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs"
             ]
-        }
+        },
+        "resources": [
+            {
+                "name": "Novo Resume Templates",
+                "link": "https://novoresume.com/resume-templates",
+                "type": "Resume"
+            },
+            {
+                "name": "Resume.io Templates",
+                "link": "https://resume.io/resume-templates",
+                "type": "Resume"
+            },
+            {
+                "name": "Canva Resume Templates",
+                "link": "https://www.canva.com/resumes/templates/",
+                "type": "Resume"
+            },
+            {
+                "name": "Resume.com",
+                "link": "https://www.resume.com/",
+                "type": "Resume"
+            }
+        ]
     },
     {
         "phase": "PHASE 10",
@@ -12946,7 +13897,8 @@ const roadmapData = [
                     }
                 ]
             }
-        ]
+        ],
+        "resources": []
     },
     {
         "phase": "PHASE 11",
@@ -14911,7 +15863,8 @@ const roadmapData = [
             "portfolio": [
                 "Publish a multi-language AI microservices project"
             ]
-        }
+        },
+        "resources": []
     }
 ];
 
@@ -15240,11 +16193,29 @@ function renderChecklists(checklists, phaseIndex) {
     return html;
 }
 
+
+function renderResources(resources) {
+    if (!resources || resources.length === 0) return '';
+    let html = `<div class="resources-section"><h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem;">Recommended Resources</h3><div class="resources-grid">`;
+    resources.forEach(r => {
+        html += `
+            <a href="${r.link}" target="_blank" class="resource-card">
+                <div class="resource-type">${r.type}</div>
+                <div class="resource-name">${r.name}</div>
+                <div class="resource-icon">↗</div>
+            </a>
+        `;
+    });
+    html += `</div></div>`;
+    return html;
+}
+
 function renderPhase(index) {
     const phase = roadmapData[index];
     if(!phase) { document.getElementById('content-area').innerHTML = `<h2>Under Construction</h2>`; return; }
     let html = `<div class="header-card"><h1 class="header-title">${phase.phase}: ${phase.title}</h1><p style="font-size: 1.1rem; color: var(--text-secondary);">${phase.overview.why}</p></div>`;
     phase.skills.forEach(skill => { html += renderNode(skill, 0, `p${index}`); });
+    html += renderResources(phase.resources);
     html += renderProjects(phase.projects);
     html += renderChecklists(phase.checklists, index);
     document.getElementById('content-area').innerHTML = html;
