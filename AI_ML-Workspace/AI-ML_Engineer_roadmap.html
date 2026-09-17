@@ -450,8 +450,7 @@
                 </div>
             </div>
 
-            <button class="btn" onclick="toggleTheme()">🌓 Theme</button>
-            <button class="btn" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3); margin-left: 0.75rem;" onclick="logout()">Logout</button>
+            <button class="btn" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);" onclick="logout()">Logout</button>
             <!-- <button class="btn" onclick="window.print()">🖨️ Save PDF</button> -->
         </div>
         <div id="dashboard-area"></div>
@@ -12938,10 +12937,6 @@ function toggleChecklist(key) {
     if(userProgress[key]) { delete userProgress[key]; document.getElementById(`item-${key}`).classList.remove('checked'); }
     else { userProgress[key] = true; document.getElementById(`item-${key}`).classList.add('checked'); }
     localStorage.setItem('aiml_roadmap_progress', JSON.stringify(userProgress));
-}
-function toggleTheme() {
-    const root = document.documentElement;
-    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
 }
 window.onload = init;
 </script>
