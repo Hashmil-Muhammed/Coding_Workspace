@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate AI/ML Engineer Career Roadmap</title>
+    <link rel="icon" type="image/png" href="/logo-transparent-dark.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -80,7 +81,6 @@
         .sidebar-toggle:hover { transform: scale(1.1); }
         .sidebar.collapsed .sidebar-toggle { right: -35px; transform: rotate(180deg); }
         .logo { font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2.5rem; letter-spacing: 0.02em; padding-left: 0.5rem; text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem; }
-        .logo::before { content: ''; display: inline-block; width: 8px; height: 16px; background: var(--accent-primary); border-radius: 4px; }
         
         .nav-item { padding: 0.85rem 1rem; margin-bottom: 0.25rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); transition: var(--transition); border: 1px solid transparent; display: flex; flex-direction: column; gap: 0.2rem; }
         .nav-item strong { color: var(--text-primary); font-weight: 600; font-size: 0.95rem; }
@@ -417,21 +417,11 @@
 
 <div id="app" style="display: none;">
     <aside class="sidebar" id="sidebar">
-        <button class="sidebar-toggle" onclick="document.getElementById('sidebar').classList.toggle('collapsed')">◀</button>
+        <button class="sidebar-toggle" onclick="document.getElementById('sidebar').classList.toggle('collapsed')"></button>
         <div class="sidebar-inner">
             <div class="logo">
-                <a href="https://chatgpt.com/g/g-p-6a3127243d408191bd9433321792e1fa/project?tab=chats" target="_blank" style="display: flex; align-items: center; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="Open AI Assistant">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
-                        <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
-                        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
-                        <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
-                        <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
-                        <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
-                        <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
-                        <path d="M6 18a4 4 0 0 1-1.967-.516"/>
-                        <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
-                    </svg>
+                <a href="https://chatgpt.com/g/g-p-6a3127243d408191bd9433321792e1fa/project?tab=chats" target="_blank" style="display: flex; align-items: center; transition: transform 0.2s; text-decoration: none; border: none; outline: none;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="Open AI Assistant">
+                    <img src="logo-transparent-dark.png" alt="#MIL Logo" style="height: 38px; width: auto; object-fit: contain; border: none;" />
                 </a>
                 AI/ML Roadmap
             </div>
@@ -461,7 +451,7 @@
             </div>
 
             <button class="btn" onclick="toggleTheme()">🌓 Theme</button>
-            <button class="btn" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3); margin-left: 0.75rem;" onclick="logout()">🚪 Logout</button>
+            <button class="btn" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3); margin-left: 0.75rem;" onclick="logout()">Logout</button>
             <!-- <button class="btn" onclick="window.print()">🖨️ Save PDF</button> -->
         </div>
         <div id="dashboard-area"></div>
@@ -12758,7 +12748,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
         // Compare against the pre-computed hashes (Your password is not in this code!)
         const validEmailHash = 'f6181f89b98660c78b8d9302155f326dc91780b0a1f695521a771f087dc500ea';
-        const validPassHash = 'dc7b2e01a57d712014446ab896f7805ed65d4d0acd31bdecdf9a2810c5eb9b94';
+        const validPassHash = '6ead38a47524dac885e4deedcecda953b986379e8a848c0ef3f9f5a73d40f7ce'; // Hashi@123
 
         if (emailHash === validEmailHash && passHash === validPassHash) {
             sessionStorage.setItem('auth', 'true');
