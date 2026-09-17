@@ -91,7 +91,7 @@
         
         /* Main Content Workspace */
         .main-content { flex: 1; overflow-y: auto; padding: 2.5rem 5rem; scroll-behavior: smooth; background-color: var(--bg-primary); position: relative; display: flex; flex-direction: column; }
-        .topbar { display: flex; justify-content: flex-end; align-items: center; gap: 1rem; margin-bottom: 3rem; position: sticky; top: 1.5rem; z-index: 50; padding: 0.75rem 1.5rem; background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); }
+        .topbar { display: flex; justify-content: flex-end; align-items: center; gap: 1rem; margin-bottom: 3rem; position: sticky; top: 1.5rem; z-index: 50; padding: 0.75rem 1.25rem; background: rgba(30, 30, 34, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); }
         .btn { padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid var(--border-strong); background: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: var(--transition); box-shadow: var(--shadow-subtle); display: flex; align-items: center; gap: 0.5rem; }
         .btn:hover { background: var(--bg-hover); border-color: var(--border-hover); transform: translateY(-1px); }
         .btn-logout { padding: 0.6rem 1.2rem; border-radius: 10px; border: 1px solid rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.05); color: #f87171; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); display: flex; align-items: center; gap: 0.5rem; }
@@ -352,10 +352,10 @@
         .password-wrapper { position: relative; width: 100%; margin-bottom: 1.5rem; }
         .password-wrapper input { margin-bottom: 0; padding-right: 2.5rem; }
         
-        /* Premium 3D Action Button */
-        .login-box button[type="submit"] { width: 100%; padding: 1rem 1.5rem; border-radius: 50px; background-color: #f26a4f; color: #fff; font-weight: 700; font-size: 1.15rem; font-family: 'Outfit', sans-serif; letter-spacing: 0.5px; cursor: pointer; border: none; border-bottom: 5px solid #c84b31; transition: all 0.15s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-shadow: 0 1px 2px rgba(0,0,0,0.1); }
-        .login-box button[type="submit"]:hover { background-color: #f47b62; transform: translateY(-2px); border-bottom-width: 7px; margin-bottom: -2px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-        .login-box button[type="submit"]:active { transform: translateY(3px); border-bottom-width: 2px; margin-bottom: 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        /* Glassy Button */
+        .login-box button[type="submit"] { width: 100%; padding: 0.8rem 1.5rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); color: #fff; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(10px); }
+        .login-box button[type="submit"]:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+        .login-box button[type="submit"]:active { transform: translateY(0); }
         
         .login-box .toggle-password { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: auto; padding: 0.25rem; background: none; color: rgba(255, 255, 255, 0.5); border-radius: 4px; transition: color 0.2s ease; border: none; }
         .login-box .toggle-password:hover { color: #fff; background: none; }
