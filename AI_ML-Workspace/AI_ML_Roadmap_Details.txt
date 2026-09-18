@@ -254,7 +254,7 @@ AI relies on scalable computing and optimal algorithms. Missing these leads to s
       - Push all algorithmic solutions to a clean GitHub Repo
 
 
-  ### PHASE 1: Python Deep Dive
+### PHASE 1: Python Deep Dive
 Writing production-grade, asynchronous, and object-oriented Python is required for all modern AI roles.
 
   - Python Core
@@ -548,7 +548,7 @@ Writing production-grade, asynchronous, and object-oriented Python is required f
       - Publish a Python package to PyPI
 
 
-  ### PHASE 2: Mathematics for Machine Learning
+### PHASE 2: Mathematics for Machine Learning
 Deep Learning optimization, backpropagation, and algorithm intuition require solid mathematical foundations.
 
   - Linear Algebra
@@ -732,7 +732,7 @@ Deep Learning optimization, backpropagation, and algorithm intuition require sol
       - Write a blog post explaining PCA without using code
 
 
-  ### PHASE 3: SQL, Data Analysis & Data Engineering
+### PHASE 3: SQL, Data Analysis & Data Engineering
 Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad data = bad models.
 
   - SQL (Deep Dive)
@@ -1292,7 +1292,7 @@ Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad dat
       - Publish an Airflow ETL pipeline project to GitHub
 
 
-  ### PHASE 4: Core Machine Learning
+### PHASE 4: Core Machine Learning
 Deep Learning is hype, but classical ML runs the world's recommendation, pricing, and tabular data systems.
 
   - Feature Engineering (Deep Dive)
@@ -1514,7 +1514,7 @@ Deep Learning is hype, but classical ML runs the world's recommendation, pricing
       - Publish a well-documented Kaggle notebook with EDA and Optuna tuning
 
 
-  ### PHASE 5: Deep Learning, CV & NLP
+### PHASE 5: Deep Learning, CV & NLP
 Neural Networks are the backbone of unstructured data processing (images, audio, text). PyTorch is the industry standard.
 
   - Deep Learning Foundations (PyTorch)
@@ -1820,7 +1820,7 @@ Neural Networks are the backbone of unstructured data processing (images, audio,
       - Train a YOLOv8 model on custom data and deploy the inference script
 
 
-  ### PHASE 6: Generative AI, LLMs & Agentic Frameworks
+### PHASE 6: Generative AI, LLMs & Agentic Frameworks
 The modern frontier of AI requires adapting foundation models, building RAG systems, and orchestrating autonomous agents.
 
   - Prompt Engineering & Guardrails
@@ -2303,7 +2303,7 @@ The modern frontier of AI requires adapting foundation models, building RAG syst
       - Deploy an interactive LangGraph agent on Streamlit Cloud
 
 
-  ### PHASE 7: Backend Engineering, APIs & Async Workers
+### PHASE 7: Backend Engineering, APIs & Async Workers
 An AI model is useless if it lives in a notebook. You must expose it as a secure, scalable API.
 
   - APIs & Web Frameworks
@@ -2507,7 +2507,7 @@ An AI model is useless if it lives in a notebook. You must expose it as a secure
       - Deploy a full-stack FastAPI app with Celery and Postgres
 
 
-  ### PHASE 8: MLOps, Cloud Deployment & Kubernetes
+### PHASE 8: MLOps, Cloud Deployment & Kubernetes
 Packaging, deploying, monitoring, and scaling AI models across enterprise cloud infrastructure.
 
   - Production ML Lifecycle & MLOps Core
@@ -2840,7 +2840,7 @@ Packaging, deploying, monitoring, and scaling AI models across enterprise cloud 
       - Publish a repository with full IaC (Terraform) and CI/CD setup
 
 
-  ### PHASE 9: Portfolio, Resume & FAANG Interview Prep
+### PHASE 9: Portfolio, Resume & FAANG Interview Prep
 Passing the rigorous technical and behavioral loops of FAANG and top-tier AI startups requires specific preparation strategies.
 
   - System Design (ML & Backend)
@@ -2955,7 +2955,7 @@ Passing the rigorous technical and behavioral loops of FAANG and top-tier AI sta
       - Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs
 
 
-  ### PHASE 10: LeetCode & Coding Patterns (Optional)
+### PHASE 10: LeetCode & Coding Patterns (Optional)
 Mastering these coding patterns is essential for clearing technical interviews at FAANG and top-tier tech companies. This phase focuses on practical LeetCode problem solving.
 
   - Arrays & Hashing
@@ -3067,7 +3067,7 @@ Mastering these coding patterns is essential for clearing technical interviews a
     - Pow(x, n)
 
 
-  ### PHASE 11: Additional Programming Languages for AI/ML Engineers (optional)
+### PHASE 11: Additional Programming Languages for AI/ML Engineers (optional)
 Although Python is the primary language for AI/ML, modern AI Engineers also benefit from learning several additional languages depending on the type of systems they build.
 
   - JavaScript
