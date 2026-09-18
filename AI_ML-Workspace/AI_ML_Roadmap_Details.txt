@@ -226,71 +226,162 @@ Writing production-grade, asynchronous, and object-oriented Python is required f
 
   - Python Core
     - Basics
-      - Variables 
+      - Variables
+        - Naming Conventions (PEP 8)
+        - Variable Assignment
+        - Local vs Global Scope
+        - global and nonlocal Keywords
       - Data Types
+        - Numeric Types (int, float, complex)
+        - Boolean (bool)
+        - Sequence Types (str, list, tuple)
+        - Set Types (set, frozenset)
+        - Mapping (dict)
+        - NoneType
       - Type Casting
+        - Implicit Type Conversion
+        - Explicit Type Casting (int(), float(), str(), list(), tuple(), set())
       - Input/Output
+        - input() and print()
+        - f-strings and String Formatting
+        - File I/O Basics (open, read, write)
       - Operators
+        - Arithmetic Operators
+        - Comparison Operators
+        - Logical Operators (and, or, not)
+        - Bitwise Operators
+        - Assignment Operators
+        - Identity Operators (is, is not)
+        - Membership Operators (in, not in)
       - Mutable vs Immutable
-      - Memory management (Reference counting, Garbage Collection)
+        - Memory Address (id())
+        - Mutable Types (List, Dict, Set)
+        - Immutable Types (Int, Float, String, Tuple)
+      - Memory management
+        - Reference counting
+        - Garbage Collection module (gc)
+        - Memory Leaks in Python
       - Basic Syntax
-      - Variables and Data Types
+        - Indentation Rules
+        - Comments and Docstrings
       - Conditionals
+        - if, elif, else
+        - match case (Python 3.10+)
       - Loops
+        - for loops
+        - while loops
+        - break, continue, pass
       - Exceptions
+        - try, except, finally
+        - Custom Exceptions
     - Data Structures
       - Strings (Regex)
+        - Slicing and Indexing
+        - String Methods (split, join, replace, strip)
+        - Regular Expressions (re module)
       - Lists
+        - List Comprehensions
+        - List Methods (append, extend, pop, insert, sort)
+        - Deep Copy vs Shallow Copy
       - Tuples
+        - Tuple Packing and Unpacking
+        - NamedTuples
       - Sets
-      - Dictionary (DefaultDict, OrderedDict, Counter)
+        - Set Operations (Union, Intersection, Difference)
+        - Set Comprehensions
       - Dictionaries
+        - Dictionary Comprehensions
+        - Dictionary Methods (keys, values, items, get)
+        - DefaultDict
+        - OrderedDict
+        - Counter
       - Arrays and Linked Lists
+        - Array Module
+        - Implementing Linked Lists
       - Hash Tables
+        - Internal mechanics of dict
       - Heaps, Stacks and Queues
+        - heapq module
+        - collections.deque
       - Binary Search Tree
+        - Implementation in Python
       - Sorting Algorithms
+        - Timsort (Python's default)
     - Conditions
       - if
+        - Syntax and Usage
       - elif
+        - Multiple Conditions
       - else
+        - Fallback Logic
       - Ternary Operators
+        - Inline if-else
       - match case
+        - Structural Pattern Matching
     - Loops & Iteration
       - for loop
+        - Iterating over sequences
       - while loop
+        - Infinite loops and breaks
       - enumerate()
+        - Index and value unpacking
       - zip()
+        - Parallel iteration over multiple sequences
       - range()
+        - Generating numeric sequences
       - Iterators
+        - __iter__ and __next__
       - Iterable Protocol
+        - Making custom objects iterable
       - Generators
+        - The yield keyword
+        - Generator expressions
       - Async Generators
+        - async for loops
   - Functions & Advanced Concepts
     - Functions
       - Positional & Keyword Arguments
+        - Default parameters
+        - Keyword-only arguments
       - Lambda Functions
+        - Anonymous functions syntax
       - Recursion
+        - Base cases and limits
       - Type Hinting (Generics, Protocols)
+        - typing module
+        - MyPy
       - Docstrings
+        - Sphinx and Google styles
       - Built-in Functions
+        - len, max, min, sum, abs
       - args & kwargs
-      - Lambdas
+        - Unpacking arguments
       - Iterators
-      - Generator Expressions
+        - Custom iterators
       - Regular Expressions
+        - re.match, re.search, re.findall
     - Functional Programming
       - map
+        - Applying functions to iterables
       - filter
+        - Filtering elements
       - reduce
+        - functools.reduce
       - Closures
+        - Lexical scoping
       - Higher-Order Functions
+        - Functions returning functions
       - Partial Functions
+        - functools.partial
     - Advanced Constructs
       - Decorators (Function & Class)
+        - Wrappers and @ syntax
       - Context Managers (__enter__, __exit__, contextlib)
+        - The 'with' statement
       - Descriptors
+        - __get__, __set__, __delete__
       - Metaclasses
+        - type and class customization
       - Slots
       - Weak References
     - Exception Handling
