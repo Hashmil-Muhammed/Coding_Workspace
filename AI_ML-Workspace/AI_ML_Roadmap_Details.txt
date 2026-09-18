@@ -57,6 +57,8 @@ SKILLS:
     * rm
     * mv
     * .gitignore
+    * Git for Data Projects
+    * Version Control / Reproducibility
    B) Branching:
     * branch
     * checkout
@@ -468,6 +470,9 @@ SKILLS:
     * virtualenv
     * pyenv
     * Pipenv
+    * Environment Management
+    * Dependency Management
+    * Reproducible Data Analysis
    C) Static Typing:
     * typing
     * mypy
@@ -746,6 +751,14 @@ SKILLS:
     * Type I and Type II Errors
     * Correlation Analysis
     * Regression Analysis
+   H) Experimentation & A/B Testing:
+    * Statistical Power
+    * Sample Size Calculation
+    * Experiment Design
+    * Randomization
+    * Multiple Testing
+    * Sequential Testing
+    * Practical vs Statistical Significance
 
 9. Product & Business Analytics
     * A/B Testing & Experimentation
@@ -986,6 +999,11 @@ SKILLS:
     * Advanced DAX
     * Macros/VBA Basics
     * excel VBA Macros
+    * SUMIFS / COUNTIFS / AVERAGEIFS
+    * Dynamic Arrays
+    * FILTER / UNIQUE / SORT
+    * Excel Tables
+    * Named Ranges
    C) BI Tools & Dashboards:
     * Power BI
     * Tableau
@@ -999,6 +1017,18 @@ SKILLS:
     * MIS Reporting
     * KPI Dashboards
     * Alteryx
+    * Measures vs Calculated Columns
+    * Row Context
+    * Filter Context
+    * Context Transition
+    * DAX Evaluation Context
+    * RLS (Row-Level Security)
+    * Drill-through
+    * Bookmarks
+    * Tooltips
+    * Scheduled Refresh
+    * Data Gateway
+    * Semantic Models
    D) Product & Business Analytics:
     * Business Metrics
     * North Star Metrics
@@ -1032,6 +1062,10 @@ SKILLS:
     * Retail & Supply Chain Analytics
     * Fraud & Financial Crime Investigation
     * Blockchain & Crypto Transaction Analytics
+    * Time Series Analysis
+    * Data Storytelling
+    * Stakeholder Requirement Gathering
+    * Metric / KPI Definition
    E) Event Tracking:
     * Mixpanel
     * Amplitude
@@ -1050,6 +1084,10 @@ SKILLS:
     * QlikView
     * Basic Concepts
     * D3 Data Visualizations
+   H) Data Quality & Governance:
+    * Data Governance
+    * Data Quality & Data Validation
+    * Data Reconciliation
 
 10. Data Engineering
    A) Big Data Frameworks:
@@ -1104,6 +1142,41 @@ SKILLS:
     * Redis Pub/Sub
     * ETL
     * ELT
+   H) Analytics Engineering:
+    * Dimensional Modeling
+    * Slowly Changing Dimensions (SCD)
+    * dbt Models
+    * dbt Tests
+    * dbt Snapshots
+    * dbt Documentation
+    * dbt Lineage
+    * Incremental Models
+    * Jinja / dbt Macros
+   I) Modern Data Stack & Integration:
+    * Airbyte
+    * Fivetran
+    * Looker
+    * LookML
+    * Great Expectations
+    * Pandera
+    * OpenLineage
+   J) Cloud Data Platforms:
+    * Azure Data Factory
+    * Azure Blob Storage
+    * Azure SQL
+    * Microsoft Fabric
+    * OneLake
+    * Cloud Data Warehousing
+   K) Advanced Data Engineering:
+    * Semantic Layer
+    * Data Lineage
+    * Data Observability
+    * Data Contracts
+    * Reverse ETL
+    * Data Pipeline Monitoring
+    * Data SLAs / SLOs
+    * Data Catalogs
+    * Schema Evolution
 
 11. NoSQL & Graph Databases
    A) MongoDB:
