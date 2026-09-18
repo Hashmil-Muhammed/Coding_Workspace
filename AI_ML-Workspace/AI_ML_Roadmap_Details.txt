@@ -621,6 +621,7 @@ SKILLS:
     * Performance Optimization
     * Data Compilation
     * Data Wrangling & Preparation
+    * Data Cleansing
    C) Alternative Data Libraries:
     * Polars
     * Dask
@@ -656,6 +657,7 @@ SKILLS:
     * Business Metrics
     * North Star Metrics
     * KPI Design
+    * KPI Development
     * Funnel Analysis
     * Retention Analysis
     * Cohort Analysis
@@ -664,6 +666,9 @@ SKILLS:
     * Customer Analytics
     * Marketing Analytics (Ad spend, Funnels, ROI)
     * Financial Data Analysis (Revenue, Margin, Cashflow)
+    * Quantitative Trade Analytics (Fixed Income & FX)
+    * Risk & Regulatory Compliance
+    * ESG, Sustainability Data
     * Business Acquisition
     * M&A Due Diligence
     * Data-Driven Recommendations
@@ -995,6 +1000,7 @@ SKILLS:
 
 2. Supervised Learning
    A) Linear Models:
+    * All Machine Learning Algorithms
     * Linear Regression
     * Logistic Regression
     * Predictive Analysis
@@ -2211,6 +2217,7 @@ SKILLS:
 4. Cloud Architecture (Deep Dive)
    A) AWS:
     * Azure/AWS Cloud basics
+    * Cloud Deployment
     * IAM
     * ECS
     * EKS
@@ -5079,7 +5086,7 @@ The modern frontier of AI requires adapting foundation models, building RAG syst
   - AI Engineering Ecosystem
     - Pre-trained Models & Providers
       - OpenAI API (Chat Completions, Playgrounds, Pricing)
-      - Anthropic Claude, Google Gemini, Meta Llama
+      - Anthropic Claude, Google Gemini, Meta Llama, Llama
       - Azure AI & AWS SageMaker
       - OpenSource AI: Hugging Face (Hub, Tasks, Inference SDK), Transformers.js, Ollama
     - Embeddings & Vector Databases
