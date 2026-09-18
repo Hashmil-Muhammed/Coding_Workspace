@@ -220,8 +220,41 @@ AI relies on scalable computing and optimal algorithms. Missing these leads to s
       - Divide and Conquer
       - Two Pointers & Sliding Window
       - Backtracking
+    - Projects
+      - Beginner
+        - CLI Bash Script Utilities (Uses: Bash, grep, awk)
+        - Custom Stack & Queue Implementation (Uses: Python, Data Structures)
+        - Sorting Algorithm Visualizer (CLI) (Uses: Python, Sorting)
+        - GitHub Profile Readme Stats (Uses: Git, Markdown)
+        - Personal Contact Book (Hash Map) (Uses: Hash Tables, Python)
+      - Intermediate
+        - In-Memory Key-Value Store (Redis Clone) (Uses: Hash Maps, TTL, Concurrency)
+        - Pathfinding Visualizer (Web) (Uses: Dijkstra, A*, HTML/JS)
+        - File Compression Utility (Uses: Huffman Coding, Trees)
+        - Custom Version Control System (Uses: Hashing, File I/O, Trees)
+        - Maze Generator & Solver (Uses: DFS, BFS, Backtracking)
+      - Advanced
+        - Distributed Rate Limiter (Uses: Algorithms, Redis, Sliding Window)
+        - Regex Engine from Scratch (Uses: Automata Theory, Trees, Parsing)
+        - Custom Memory Allocator (C/C++) (Uses: Pointers, OS Memory Management)
+        - B-Tree Database Indexer (Uses: B-Trees, File I/O, Data Structures)
+        - Multi-threaded Web Crawler (Uses: Graph Traversal, Concurrency)
+    - Checklists
+      - Setup Linux Environment
+      - Configure Git and SSH
+      - Understand Big-O Notation
+      - I can write a Bash script with loops
+      - I can implement a BST
+      - I can use git rebase
+      - Revise Graph Algorithms
+      - Revise DP Tabulation
+      - Revise Quick Sort Partitioning
+      - Practice LeetCode Array/String questions
+      - Practice Linked List reversals
+      - Push all algorithmic solutions to a clean GitHub Repo
 
-### PHASE 1: Python Deep Dive
+
+  ### PHASE 1: Python Deep Dive
 Writing production-grade, asynchronous, and object-oriented Python is required for all modern AI roles.
 
   - Python Core
@@ -478,8 +511,44 @@ Writing production-grade, asynchronous, and object-oriented Python is required f
     - If/Else Statements
     - For & While Loops
     - Functions & Lambda Expressions
+    - Projects
+      - Beginner
+        - CLI Expense Tracker (Uses: File I/O, JSON, Functions)
+        - Password Generator & Validator (Uses: Strings, Regex, Random)
+        - Student Management System (Uses: Dictionaries, File Handling, Loops)
+        - Weather API Fetcher (Uses: Requests, JSON, Error Handling)
+        - Text File Analyzer (Uses: File I/O, String Methods, Dictionaries)
+        - CLI expense tracker (Uses: Python, CLI)
+        - CSV summary-stats notebook (Uses: Python, Jupyter)
+      - Intermediate
+        - Task Manager with SQLite (Uses: OOP, SQLite3, Context Managers)
+        - Async Web Scraper (Uses: AsyncIO, Aiohttp, Regex)
+        - Bank Management System (Uses: Encapsulation, Inheritance, Custom Exceptions)
+        - Multithreaded Log Analyzer (Uses: Multithreading, Regex, Logging)
+        - Custom Testing Framework (Uses: Decorators, Metaclasses, Reflection)
+      - Advanced
+        - Distributed Task Queue Clone (Uses: Multiprocessing, Sockets, OOP)
+        - API Rate Limiter Toolkit (Uses: Decorators, Concurrency, Time)
+        - Object-Relational Mapping (ORM) Engine (Uses: Metaclasses, Descriptors, SQLite)
+        - Event-Driven Game Engine (Uses: AsyncIO, Design Patterns, Dataclasses)
+        - Data Pipeline Framework (Uses: Generators, Iterators, Context Managers)
+        - Python package wrapping a public API (Uses: Python, Requests, Packaging)
+    - Checklists
+      - Install Python 3.10+
+      - Understand Python's execution model
+      - Write async code
+      - I can write a decorator
+      - I can use inheritance properly
+      - I can handle JSON files
+      - Revise GIL constraints
+      - Revise MRO
+      - Revise Generators
+      - Practice Python specific tricky output questions
+      - Practice OOP design problems
+      - Publish a Python package to PyPI
 
-### PHASE 2: Mathematics for Machine Learning
+
+  ### PHASE 2: Mathematics for Machine Learning
 Deep Learning optimization, backpropagation, and algorithm intuition require solid mathematical foundations.
 
   - Linear Algebra
@@ -626,8 +695,44 @@ Deep Learning optimization, backpropagation, and algorithm intuition require sol
     - Funnel Analysis
     - Churn Rate & Retention Analysis
     - Customer Lifetime Value (CLV)
+    - Projects
+      - Beginner
+        - Matrix Operations Library from Scratch (Uses: Python, Loops, Linear Algebra)
+        - Descriptive Stats Calculator (Uses: Math, Lists, Functions)
+        - Gradient Descent Visualizer for y=mx+c (Uses: Calculus, Matplotlib)
+        - Coin Toss / Dice Simulator (Uses: Probability, Random)
+        - Covariance Matrix Generator (Uses: Statistics, Python)
+        - Simulate dice rolls vs. theoretical probability (Uses: Python, Stats)
+      - Intermediate
+        - Custom PCA Implementation (Uses: SVD, Eigenvectors, Numpy)
+        - A/B Testing Simulator & Calculator (Uses: Hypothesis Testing, P-Values)
+        - Naive Bayes Engine from Scratch (Uses: Bayes Theorem, Probability Distributions)
+        - Multivariate Gradient Descent (Uses: Partial Derivatives, Gradients)
+        - Monte Carlo Pi Estimator (Uses: Probability, Simulation)
+        - Linear regression from scratch with gradient descent (Uses: Python, Math)
+      - Advanced
+        - Neural Network Backprop from Scratch (Uses: Chain Rule, Calculus, Numpy)
+        - Markov Chain Text Generator (Uses: Probability Matrix, NLP)
+        - Kalman Filter Implementation (Uses: Linear Algebra, Statistics)
+        - Bayesian Network Simulator (Uses: Bayes Theorem, Graph Theory)
+        - Statistical Hypothesis Testing Suite (Uses: ANOVA, T-Tests, Chi-Square)
+        - PCA from scratch vs. scikit-learn (Uses: Math, Linear Algebra)
+    - Checklists
+      - Understand matrix multiplication intuitively
+      - Understand the Chain Rule
+      - Understand Bayes Theorem
+      - I can compute a derivative
+      - I can calculate variance
+      - I can explain an Eigenvector
+      - Revise Gradient Descent
+      - Revise SVD
+      - Revise P-Values
+      - Explain Bias-Variance tradeoff mathematically
+      - Derive Linear Regression cost function derivative
+      - Write a blog post explaining PCA without using code
 
-### PHASE 3: SQL, Data Analysis & Data Engineering
+
+  ### PHASE 3: SQL, Data Analysis & Data Engineering
 Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad data = bad models.
 
   - SQL (Deep Dive)
@@ -1142,8 +1247,52 @@ Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad dat
     - Removing Duplicates
     - Finding Outliers
     - Data Transformation
+    - Projects
+      - Beginner
+        - LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
+        - Exploratory Data Analysis (EDA) on Kaggle dataset (Uses: Pandas, Seaborn)
+        - Interactive Stock Price Dashboard (Uses: Plotly, Streamlit, Pandas)
+        - Excel Sales Dashboard (Uses: Pivot Tables, XLOOKUP)
+        - Basic SQLite Database Manager (Uses: Python sqlite3, SQL CRUD)
+        - MongoDB User Profile Store (Uses: MongoDB, BSON, Python)
+        - EDA notebook on a public dataset (Uses: Pandas, EDA)
+        - Small inventory database (Uses: SQL)
+        - Sales dashboard with filters (Uses: Power BI, Tableau)
+      - Intermediate
+        - E-Commerce Cohort Analysis (Uses: Advanced SQL, CTEs, Time Series)
+        - Airflow Automated ETL Pipeline (Uses: Airflow, Pandas, PostgreSQL)
+        - PySpark Big Data Log Analyzer (Uses: PySpark, Parquet)
+        - Real-time Twitter/X Sentiment Dashboard (Uses: Kafka, Python, Plotly)
+        - dbt Data Transformation Pipeline (Uses: dbt, Snowflake/BigQuery, SQL)
+        - DynamoDB Real-time Leaderboard (Uses: DynamoDB, Streams, AWS)
+        - Data-cleaning pipeline for raw CSVs (Uses: Pandas)
+        - ETL script loading CSVs into SQL (Uses: Python, SQL)
+        - Executive KPI dashboard (Uses: BI)
+      - Advanced
+        - End-to-End Enterprise Data Warehouse (Uses: Airflow, dbt, Snowflake, Kafka)
+        - Real-time Fraud Detection Pipeline (Uses: Spark Streaming, Kafka, Postgres)
+        - Distributed Web Scraper with Celery (Uses: Celery, Redis, Postgres)
+        - Custom BI Dashboard App (Uses: React, FastAPI, Polars, SQL)
+        - Multi-Node Spark Cluster setup (Uses: Docker, MAKE, Zapier, PySpark, Hadoop)
+        - Neo4j Knowledge Graph for Recommendations (Uses: Neo4j, Cypher, Graph Analytics)
+        - Automated data-quality report generator (Uses: Python, Pandas)
+        - E-commerce data-warehouse schema (Uses: SQL, Data Warehousing)
+    - Checklists
+      - Understand ACID properties
+      - Install Airflow locally
+      - Grasp Pandas Vectorization vs Loops
+      - I can write a Window Function
+      - I can merge datasets in Pandas
+      - I can build an Airflow DAG
+      - Revise SQL Joins visually
+      - Revise B-Tree Indexing
+      - Revise PySpark lazy evaluation
+      - Practice LeetCode Hard SQL
+      - Explain difference between WHERE and HAVING
+      - Publish an Airflow ETL pipeline project to GitHub
 
-### PHASE 4: Core Machine Learning
+
+  ### PHASE 4: Core Machine Learning
 Deep Learning is hype, but classical ML runs the world's recommendation, pricing, and tabular data systems.
 
   - Feature Engineering (Deep Dive)
@@ -1323,8 +1472,49 @@ Deep Learning is hype, but classical ML runs the world's recommendation, pricing
     - Logistic Regression (Classification)
     - K-Means Clustering (Segmentation)
     - Scikit-Learn Basics
+    - Projects
+      - Beginner
+        - Titanic Survival Predictor (Uses: Logistic Regression, Pandas, Scikit-Learn)
+        - House Price Estimator (Uses: Linear Regression, Scikit-Learn)
+        - Spam Email Classifier (Uses: Naive Bayes, TF-IDF)
+        - Customer Segmentation Engine (Uses: K-Means, PCA)
+        - Diabetes Prediction App (Uses: Random Forest, Streamlit)
+        - House-price prediction (Uses: Scikit-learn, Regression)
+        - Customer churn prediction (Uses: Logistic Regression)
+        - Swap Random Forest for XGBoost (Uses: XGBoost)
+      - Intermediate
+        - Credit Card Fraud Detection (Uses: Isolation Forest, SMOTE, Imbalanced Data)
+        - Customer Churn Predictor (Uses: XGBoost, ROC-AUC, SHAP)
+        - Advanced Kaggle Competition (e.g. TPS) (Uses: LightGBM, Optuna, Ensembling)
+        - End-to-End ML Pipeline (Uses: Scikit-Learn Pipelines, ColumnTransformer)
+        - Recommendation System (Collaborative Filtering) (Uses: Matrix Factorization, KNN)
+        - Telecom churn model with feature engineering (Uses: Scikit-learn)
+        - Feature pipeline with ColumnTransformer (Uses: Pipelines)
+        - Tuned XGBoost credit-risk model (Uses: Hyperparameter Tuning)
+      - Advanced
+        - Time Series Demand Forecasting (Uses: CatBoost, Time Series Split, Lag Features)
+        - Automated ML (AutoML) Tool Clone (Uses: Python OOP, Metaprogramming, Scikit-Learn)
+        - Custom ML Algorithm from Scratch (C++) (Uses: C++, Pybind11, Linear Algebra)
+        - High-Frequency Trading Algorithm (Simulated) (Uses: XGBoost, Low Latency Data)
+        - ML Model Drift Detector (Uses: Statistical Tests, Evidently AI, Python)
+        - Ensemble of tree, boosting, and neural models for Kaggle (Uses: Ensemble, ML)
+        - Fraud detection with anomaly detection (Uses: Isolation Forest, Boosting)
+    - Checklists
+      - Understand Bias-Variance Tradeoff
+      - Master Scikit-Learn API
+      - Understand Ensembling
+      - I can build a Scikit-Learn Pipeline
+      - I can optimize with Optuna
+      - I can explain SHAP values
+      - Revise Gradient Boosting math
+      - Revise SMOTE
+      - Revise Evaluation Metrics (F1 vs ROC-AUC)
+      - Explain why XGBoost is better than Random Forest
+      - What happens if you don't scale data for KNN?
+      - Publish a well-documented Kaggle notebook with EDA and Optuna tuning
 
-### PHASE 5: Deep Learning, CV & NLP
+
+  ### PHASE 5: Deep Learning, CV & NLP
 Neural Networks are the backbone of unstructured data processing (images, audio, text). PyTorch is the industry standard.
 
   - Deep Learning Foundations (PyTorch)
@@ -1589,8 +1779,48 @@ Neural Networks are the backbone of unstructured data processing (images, audio,
     - Learn the Basics (Neural Networks, CNNs, RNNs)
     - Frameworks (Tensorflow, Pytorch)
     - Practice Training Models (Image Recognition, NLP)
+    - Projects
+      - Beginner
+        - PyTorch MLP for MNIST (Uses: PyTorch, MLP, Cross-Entropy)
+        - Image Filter App (Uses: OpenCV, Numpy)
+        - Spam Detection with RNN (Uses: PyTorch, RNN, Embeddings)
+        - Face Detection Script (Uses: OpenCV, Haar Cascades)
+        - Custom Dataset Loader (Uses: PyTorch DataLoader, Transformations)
+        - Basic Voice Recorder & Spectrogram Viewer (Uses: Python, librosa)
+        - Cats-vs-dogs image classifier via transfer learning (Uses: PyTorch, CNN)
+      - Intermediate
+        - Custom ResNet Image Classifier (Uses: PyTorch, CNN, Skip Connections)
+        - Sentiment Analysis with LSTM (Uses: LSTM, Word2Vec, IMDB Dataset)
+        - Transfer Learning Dog/Cat Classifier (Uses: TorchVision, EfficientNet, Fine-Tuning)
+        - Real-time Mask Detection (YOLO) (Uses: YOLOv8, OpenCV, Webcam)
+        - Named Entity Recognition (NER) (Uses: Bi-LSTM, CRF, spaCy)
+        - Custom Wake Word Detection (Uses: Audio DL, CNN, PyTorch)
+        - Sentiment classifier (Uses: NLP, PyTorch)
+        - Movie/book recommendation system (Uses: Collaborative Filtering)
+      - Advanced
+        - Medical Image Segmentation (Uses: U-Net, Data Augmentation, Dice Loss)
+        - Real-time Multi-Object Tracking (Uses: YOLOv10, DeepSORT, Video Processing)
+        - Neural Machine Translation (Seq2Seq) (Uses: Encoder-Decoder, Attention Mechanism)
+        - Self-Driving Car Lane Detection (Uses: OpenCV Advanced, CNNs, Hough Transform)
+        - End-to-End PyTorch Lightning Pipeline (Uses: PyTorch Lightning, W&B Tracking)
+        - Multimodal Video Search Engine (Uses: CLAP, VectorDB, Vision+Audio)
+        - Sequence model for time-series forecasting (Uses: RNN/LSTM)
+    - Checklists
+      - Setup CUDA/cuDNN for GPU
+      - Understand Backpropagation
+      - Understand CNN Receptive Fields
+      - I can write a custom PyTorch nn.Module
+      - I can implement an LSTM loop
+      - I can use OpenCV
+      - Revise Cross-Entropy vs MSE
+      - Revise Batch Norm vs Layer Norm
+      - Revise BPTT
+      - Why do RNNs suffer from vanishing gradients?
+      - How does a skip connection in ResNet work?
+      - Train a YOLOv8 model on custom data and deploy the inference script
 
-### PHASE 6: Generative AI, LLMs & Agentic Frameworks
+
+  ### PHASE 6: Generative AI, LLMs & Agentic Frameworks
 The modern frontier of AI requires adapting foundation models, building RAG systems, and orchestrating autonomous agents.
 
   - Prompt Engineering & Guardrails
@@ -2036,8 +2266,44 @@ The modern frontier of AI requires adapting foundation models, building RAG syst
       - Whisper API (Speech-to-Text)
       - Audio Processing & Text-to-Speech
       - LangChain/LlamaIndex for Multimodal Apps
+    - Projects
+      - Beginner
+        - Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
+        - Basic PDF Q&A Bot (Naive RAG) (Uses: LangChain, ChromaDB, OpenAI)
+        - Prompt Engineering Playground (Uses: System Prompts, Few-Shot, API)
+        - Function Calling Weather Agent (Uses: OpenAI Tools, API requests)
+        - HF Transformers Text Summarizer (Uses: Hugging Face Pipeline)
+        - Dataset Bias Analyzer (Uses: Python, Pandas, Bias Mitigation)
+      - Intermediate
+        - Advanced RAG with Hybrid Search (Uses: Pinecone, BM25, Cross-Encoders)
+        - Fine-tune Llama 3 with QLoRA (Uses: Unsloth, LoRA, Hugging Face)
+        - LangGraph Autonomous Researcher (Uses: LangGraph, Tavily Search API, StateGraph)
+        - CrewAI Multi-Agent Content Team (Uses: CrewAI, Role-playing, Delegation)
+        - LLM Evaluation Pipeline (Uses: Ragas, LangSmith, RAG)
+        - Differential Privacy Aggregator (Uses: Differential Privacy, Opacus)
+      - Advanced
+        - Enterprise Customer Support Agent (Uses: LangGraph, Human-in-Loop, Checkpointers)
+        - Self-Reflective Coding Assistant (Uses: ReAct, Docker Sandbox execution, LangChain)
+        - Deploy vLLM Server on AWS EC2 (Uses: vLLM, AWS, FastAPI)
+        - DPO Alignment on Custom Dataset (Uses: TRL, DPO, PyTorch)
+        - GraphRAG Knowledge Engine (Uses: Neo4j, LLaMA Index, Cypher queries)
+        - Federated Learning System Simulation (Uses: Federated Learning, PyTorch, Flower)
+    - Checklists
+      - Understand Self-Attention math
+      - Grasp LoRA vs Full Fine-tuning
+      - Understand ReAct Pattern
+      - I can build a StateGraph in LangGraph
+      - I can use QLoRA via Unsloth
+      - I can implement Hybrid Search
+      - Revise KV Caching
+      - Revise Cross-Encoders
+      - Revise PagedAttention
+      - How does LoRA drastically reduce VRAM requirements?
+      - Explain the difference between LangChain and LangGraph.
+      - Deploy an interactive LangGraph agent on Streamlit Cloud
 
-### PHASE 7: Backend Engineering, APIs & Async Workers
+
+  ### PHASE 7: Backend Engineering, APIs & Async Workers
 An AI model is useless if it lives in a notebook. You must expose it as a secure, scalable API.
 
   - APIs & Web Frameworks
@@ -2207,8 +2473,41 @@ An AI model is useless if it lives in a notebook. You must expose it as a secure
     - Route53 (Hosted Zones, Routing Policies, Health Checks)
     - Cloudwatch (Metrics, Events, Logs)
     - SES (Identity Verification, DKIM, Sending Limits)
+    - Projects
+      - Beginner
+        - Simple CRUD FastAPI (Uses: FastAPI, Pydantic, SQLite)
+        - JWT Auth Service (Uses: OAuth2, Bcrypt, JWT)
+        - Text Summarization API (Uses: Hugging Face, FastAPI)
+        - Basic WebSockets Chat (Uses: FastAPI WebSockets, HTML/JS)
+        - Rate Limiter Middleware (Uses: FastAPI, Redis)
+      - Intermediate
+        - Image Generation API with Celery (Uses: FastAPI, Celery, Redis, Stable Diffusion)
+        - Real-time AI Chat Backend (Streaming) (Uses: SSE, OpenAI API)
+        - Database Migration Pipeline (Uses: SQLAlchemy, Alembic, Postgres)
+        - OAuth2 GitHub Login App (Uses: FastAPI, Third-party OAuth)
+        - Stock Price Tracker (Uses: Celery Beat, Requests, PostgreSQL)
+      - Advanced
+        - LiveKit Voice Agent Server (Uses: WebRTC, LiveKit, AsyncIO, LLM APIs)
+        - Microservices AI Architecture (Uses: FastAPI, RabbitMQ, Docker Compose)
+        - Enterprise Gateway Router (Uses: Nginx, Rate Limiting, Load Balancing)
+        - Serverless LLM Inference (Uses: AWS Lambda, API Gateway)
+        - Distributed Cache System (Uses: Redis Cluster, Consistent Hashing)
+    - Checklists
+      - Understand async/await in Python
+      - Understand JWT structure
+      - Understand Message Brokers
+      - I can build a REST API with FastAPI
+      - I can use Celery for background tasks
+      - I can implement WebSockets
+      - Revise SQLAlchemy relationships
+      - Revise HTTP Status Codes
+      - Revise CORS concepts
+      - Explain OAuth2 flow
+      - How do you handle a thundering herd problem in APIs?
+      - Deploy a full-stack FastAPI app with Celery and Postgres
 
-### PHASE 8: MLOps, Cloud Deployment & Kubernetes
+
+  ### PHASE 8: MLOps, Cloud Deployment & Kubernetes
 Packaging, deploying, monitoring, and scaling AI models across enterprise cloud infrastructure.
 
   - Production ML Lifecycle & MLOps Core
@@ -2497,8 +2796,51 @@ Packaging, deploying, monitoring, and scaling AI models across enterprise cloud 
     - Data Storage Solutions
     - Data Processing Frameworks (Hadoop, Spark)
     - Parallel Processing (MPI, MapReduce)
+    - Projects
+      - Beginner
+        - Dockerize a Python Script (Uses: Docker, Dockerfile)
+        - Docker Compose FastAPI + Postgres (Uses: Docker Compose, Networking)
+        - Track Model with MLflow (Uses: MLflow, Scikit-Learn)
+        - GitHub Actions Linter Pipeline (Uses: CI/CD, Flake8, Pytest)
+        - Deploy Static Site to AWS S3 (Uses: AWS S3, IAM)
+        - Browser-based Object Detection (Uses: TensorFlow.js, Webcam)
+        - Dockerize a Flask/FastAPI app (Uses: Docker, FastAPI)
+        - Simple ETL pipeline into a database (Uses: Docker)
+      - Intermediate
+        - Automated Model Training CI/CD (Uses: GitHub Actions, Docker, PyTorch)
+        - Deploy ML Model on AWS EC2 (Uses: EC2, Nginx, Gunicorn)
+        - Terraform AWS Architecture (Uses: Terraform, VPC, EC2)
+        - Prometheus & Grafana Dashboard (Uses: Prometheus, Docker, Monitoring)
+        - Data Version Control (DVC) Setup (Uses: Git, DVC, S3)
+        - SageMaker Automated Training Pipeline (Uses: AWS SageMaker, S3)
+        - Deploy a churn model via API + simple web UI (Uses: FastAPI, Web)
+        - PySpark aggregation job on a large dataset (Uses: PySpark)
+      - Advanced
+        - Deploy Llama 3 with vLLM on K8s (Uses: Kubernetes, vLLM, GPUs)
+        - End-to-End MLOps Pipeline (Uses: Airflow, MLflow, Jenkins, AWS)
+        - Distributed Training with Ray (Uses: Ray Cluster, PyTorch DDP)
+        - Model Drift Monitoring System (Uses: Evidently AI, Grafana, FastAPI)
+        - NVIDIA Triton Inference Cluster (Uses: Triton, ONNX, K8s Helm)
+        - Edge AI People Counter on Jetson Nano (Uses: NVIDIA Jetson, TensorRT, Edge AI)
+        - Full Airflow pipeline with multiple DAGs (Uses: Airflow, ETL)
+        - Add CI/CD and monitoring/alerts to app (Uses: GitHub Actions, Prometheus)
+        - End-to-end ML API with FastAPI + Docker (Uses: Deployment, Docker)
+    - Checklists
+      - Understand Docker networking
+      - Understand K8s Pod lifecycle
+      - Understand CI/CD principles
+      - I can write a multi-stage Dockerfile
+      - I can write a GitHub Actions workflow
+      - I can track experiments in MLflow
+      - Revise Terraform state management
+      - Revise K8s Ingress vs LoadBalancer
+      - Revise Data Drift detection
+      - What happens if a Pod crashes in a K8s Deployment?
+      - Explain Docker Multi-Stage Builds.
+      - Publish a repository with full IaC (Terraform) and CI/CD setup
 
-### PHASE 9: Portfolio, Resume & FAANG Interview Prep
+
+  ### PHASE 9: Portfolio, Resume & FAANG Interview Prep
 Passing the rigorous technical and behavioral loops of FAANG and top-tier AI startups requires specific preparation strategies.
 
   - System Design (ML & Backend)
@@ -2579,8 +2921,41 @@ Passing the rigorous technical and behavioral loops of FAANG and top-tier AI sta
       - Interview Questions
       - Practice Tasks
       - Real-world Examples
+    - Projects
+      - Beginner
+        - Resume Overhaul (Uses: LaTeX, Metrics, Action Verbs)
+        - GitHub Profile Polish (Uses: Markdown, Pinned Repos)
+        - Solve 50 LeetCode Easy (Uses: Python, Data Structures)
+        - Write STAR Stories (Uses: Behavioral Prep, Google Docs)
+        - System Design Primer Read (Uses: Grokking System Design)
+      - Intermediate
+        - Solve 50 LeetCode Medium (Uses: Patterns, Optimization)
+        - Technical Blog Post (Uses: Medium/Substack, System Design Breakdown)
+        - Architecture Diagram Portfolio (Uses: Excalidraw, AWS, Microservices)
+        - Open Source Contribution (Uses: LangChain/HuggingFace repo, Pull Requests)
+        - Live Mock Interview Recordings (Uses: Pramp, Peer Feedback)
+      - Advanced
+        - Capstone: Enterprise Scalable GenAI SaaS (Uses: Next.js, FastAPI, vLLM, Docker, Stripe)
+        - Kaggle Competitions Master Tier (Uses: Ensembling, Custom Architectures)
+        - AI Research Paper Recreation (Uses: PyTorch, ArXiv, GitHub Release)
+        - End-to-End System Design Mock Loop (Uses: FAANG Engineer Mocking)
+        - Full Stack AI Automation Tool (Uses: LangGraph, React, Postgres)
+    - Checklists
+      - Format Resume to Harvard standard
+      - Write 5 STAR behavioral stories
+      - Understand the CAP Theorem
+      - I can solve LeetCode mediums in 25 mins
+      - I can draw a system design architecture
+      - I can articulate time/space complexity smoothly
+      - Revise Sliding Window pattern
+      - Revise Load Balancing algorithms
+      - Revise Canary vs Blue/Green deployments
+      - Practice a full 45-min System Design Mock
+      - Practice Behavioral 'Tell me about yourself'
+      - Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs
 
-### PHASE 10: LeetCode & Coding Patterns (Optional)
+
+  ### PHASE 10: LeetCode & Coding Patterns (Optional)
 Mastering these coding patterns is essential for clearing technical interviews at FAANG and top-tier tech companies. This phase focuses on practical LeetCode problem solving.
 
   - Arrays & Hashing
@@ -2691,7 +3066,8 @@ Mastering these coding patterns is essential for clearing technical interviews a
     - Happy Number
     - Pow(x, n)
 
-### PHASE 11: Additional Programming Languages for AI/ML Engineers (optional)
+
+  ### PHASE 11: Additional Programming Languages for AI/ML Engineers (optional)
 Although Python is the primary language for AI/ML, modern AI Engineers also benefit from learning several additional languages depending on the type of systems they build.
 
   - JavaScript
@@ -3160,3 +3536,32 @@ Although Python is the primary language for AI/ML, modern AI Engineers also bene
 
 
 -------------------------------------------------------------------------------------------------------
+    - Projects
+      - Beginner
+        - TensorFlow.js Image Classifier (Uses: JavaScript, HTML/CSS)
+        - CLI To-Do List in Rust (Uses: Rust, Cargo)
+        - Statistical Data Analysis Script (Uses: R, ggplot2)
+      - Intermediate
+        - Concurrent Web Scraper (Uses: Go, Goroutines)
+        - Custom Matrix Ops Library (Uses: C++, STL)
+        - Spark Data ETL Pipeline (Uses: Scala, Apache Spark)
+      - Advanced
+        - High-Performance LLM Inference Engine (Uses: Rust, CUDA C++, Tensors)
+        - Distributed Microservices AI Backend (Uses: Go, gRPC, Kubernetes)
+        - Enterprise ML Orchestrator (Uses: Java, Spring Boot, Kafka)
+    - Checklists
+      - Install compilers/runtimes for C++, Go, and Rust
+      - Understand when to use high-performance languages over Python
+      - Configure IDEs for polyglot development
+      - I can write a concurrent program in Go
+      - I can manage memory in C++/Rust
+      - I can train a simple model in TF.js
+      - Revise memory management (Heap vs Stack)
+      - Revise OOP principles across Java/C++
+      - Revise Rust ownership
+      - Practice language-specific Leetcode questions
+      - Explain memory leaks and how to avoid them
+      - Publish a multi-language AI microservices project
+
+
+  
