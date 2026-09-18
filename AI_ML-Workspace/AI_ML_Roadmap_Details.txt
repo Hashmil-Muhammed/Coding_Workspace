@@ -240,18 +240,25 @@ AI relies on scalable computing and optimal algorithms. Missing these leads to s
         - B-Tree Database Indexer (Uses: B-Trees, File I/O, Data Structures)
         - Multi-threaded Web Crawler (Uses: Graph Traversal, Concurrency)
     - Checklists
-      - Setup Linux Environment
-      - Configure Git and SSH
-      - Understand Big-O Notation
-      - I can write a Bash script with loops
-      - I can implement a BST
-      - I can use git rebase
-      - Revise Graph Algorithms
-      - Revise DP Tabulation
-      - Revise Quick Sort Partitioning
-      - Practice LeetCode Array/String questions
-      - Practice Linked List reversals
-      - Push all algorithmic solutions to a clean GitHub Repo
+      - Phase:
+        - Setup Linux Environment
+        - Configure Git and SSH
+        - Understand Big-O Notation
+      - Skill:
+        - I can write a Bash script with loops
+        - I can implement a BST
+        - I can use git rebase
+      - Revision:
+        - Revise Graph Algorithms
+        - Revise DP Tabulation
+        - Revise Quick Sort Partitioning
+      - Interview:
+        - Practice LeetCode Array/String questions
+        - Practice Linked List reversals
+      - Portfolio:
+        - Push all algorithmic solutions to a clean GitHub Repo
+    - Resources
+      - [Course] CS50's Intro to Programming with Python (Harvard): https://cs50.harvard.edu/python
 
 
 ### PHASE 1: Python Deep Dive
@@ -534,18 +541,37 @@ Writing production-grade, asynchronous, and object-oriented Python is required f
         - Data Pipeline Framework (Uses: Generators, Iterators, Context Managers)
         - Python package wrapping a public API (Uses: Python, Requests, Packaging)
     - Checklists
-      - Install Python 3.10+
-      - Understand Python's execution model
-      - Write async code
-      - I can write a decorator
-      - I can use inheritance properly
-      - I can handle JSON files
-      - Revise GIL constraints
-      - Revise MRO
-      - Revise Generators
-      - Practice Python specific tricky output questions
-      - Practice OOP design problems
-      - Publish a Python package to PyPI
+      - Phase:
+        - Install Python 3.10+
+        - Understand Python's execution model
+        - Write async code
+      - Skill:
+        - I can write a decorator
+        - I can use inheritance properly
+        - I can handle JSON files
+      - Revision:
+        - Revise GIL constraints
+        - Revise MRO
+        - Revise Generators
+      - Interview:
+        - Practice Python specific tricky output questions
+        - Practice OOP design problems
+      - Portfolio:
+        - Publish a Python package to PyPI
+    - Resources
+      - [Course] Data Analysis with Python (freeCodeCamp): https://www.freecodecamp.org/learn/data-analysis-with-python/
+      - [Course] Python for AI and Data Science (FreeAcademy.ai): https://freeacademy.ai
+      - [Tutorial] Kaggle Learn ÔÇö Python: https://www.kaggle.com/learn/python
+      - [Documentation] The Python Tutorial: https://docs.python.org/3/tutorial/
+      - [Website] Python.org: https://www.python.org/
+      - [Docs] Python by Codeacademy: https://www.codecademy.com/resources/docs/python
+      - [Website] Learnpython.org: https://www.learnpython.org/
+      - [Blog] Learning Python: From Zero to Hero: https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/
+      - [Course] Google's Python Class: https://developers.google.com/edu/python?hl=en
+      - [Tutorial] W3Schools Python Tutorial: https://www.w3schools.com/python/default.asp
+      - [Course] Intro to Python (DataCamp): https://www.datacamp.com/courses/intro-to-python-for-data-science
+      - [Course] Programming for Everybody (Coursera): https://www.coursera.org/learn/python
+      - [YouTube] Tech With Tim / Alex The Analyst / Tina Huang: https://www.youtube.com/@TechWithTim
 
 
 ### PHASE 2: Mathematics for Machine Learning
@@ -718,18 +744,35 @@ Deep Learning optimization, backpropagation, and algorithm intuition require sol
         - Statistical Hypothesis Testing Suite (Uses: ANOVA, T-Tests, Chi-Square)
         - PCA from scratch vs. scikit-learn (Uses: Math, Linear Algebra)
     - Checklists
-      - Understand matrix multiplication intuitively
-      - Understand the Chain Rule
-      - Understand Bayes Theorem
-      - I can compute a derivative
-      - I can calculate variance
-      - I can explain an Eigenvector
-      - Revise Gradient Descent
-      - Revise SVD
-      - Revise P-Values
-      - Explain Bias-Variance tradeoff mathematically
-      - Derive Linear Regression cost function derivative
-      - Write a blog post explaining PCA without using code
+      - Phase:
+        - Understand matrix multiplication intuitively
+        - Understand the Chain Rule
+        - Understand Bayes Theorem
+      - Skill:
+        - I can compute a derivative
+        - I can calculate variance
+        - I can explain an Eigenvector
+      - Revision:
+        - Revise Gradient Descent
+        - Revise SVD
+        - Revise P-Values
+      - Interview:
+        - Explain Bias-Variance tradeoff mathematically
+        - Derive Linear Regression cost function derivative
+      - Portfolio:
+        - Write a blog post explaining PCA without using code
+    - Resources
+      - [Course] Mathematics for Machine Learning Specialization: https://www.coursera.org/specializations/mathematics-machine-learning
+      - [Tutorial] Khan Academy ÔÇö Statistics & Probability / Linear Algebra: https://www.khanacademy.org
+      - [YouTube] StatQuest with Josh Starmer: https://www.youtube.com/@statquest
+      - [YouTube] Stanford Statistics / Ph.D. Tutorial: https://www.youtube.com/watch?v=Vfo5le26IhY&t=6654s
+      - [YouTube] MarinStatsLectures: https://www.youtube.com/watch?v=AN3UkzE3HMg
+      - [YouTube] Crash Course: Statistics: https://www.youtube.com/watch?v=zouPoc49xbk
+      - [Cheat Sheet] Statistics Cheatsheet (Stanford CME 106): https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-statistics
+      - [Cheat Sheet] Statistics Cheat Sheet (MIT): https://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf
+      - [Cheat Sheet] Descriptive Statistics Cheat Sheet (DataCamp): https://www.datacamp.com/cheat-sheet/descriptive-statistics-cheat-sheet
+      - [Book] Think Stats (Book): https://greenteapress.com/thinkstats/
+      - [Book] Statistics in Plain English (Book): https://www.book2look.com/embed/9781317526988
 
 
 ### PHASE 3: SQL, Data Analysis & Data Engineering
@@ -1011,242 +1054,6 @@ Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad dat
       - Backup & Restore
       - Interview Questions
       - Practice
-      - Projects
-    - PostgreSQL
-      - Architecture
-      - MVCC
-      - JSONB
-      - Extensions
-      - Indexing
-      - GiST Index
-      - SP-GiST Index
-      - BRIN Index
-      - GIN Index
-      - Partial Indexes
-      - Expression Indexes
-      - Full Text Search
-      - Partitioning
-      - Replication
-      - Performance Tuning
-      - Interview Questions
-      - Projects
-    - Oracle Database / PL-SQL
-      - Oracle SQL
-      - PL/SQL
-      - Procedures
-      - Functions
-      - Packages
-      - Triggers
-      - Cursors
-      - Exception Handling
-      - Interview Questions
-  - Enterprise Analytics (Optional)
-    - OPTIONAL / ENTERPRISE-SPECIFIC
-      - Workday Financials
-      - EIB
-      - Core Connectors
-      - Denodo
-      - Power Platform
-      - Power Automate
-      - On-Premise Infrastructure
-  - Data Science Methodology
-    - CRISP-DM
-      - Business Understanding
-      - Data Understanding
-      - Data Preparation
-      - Modeling
-      - Evaluation
-      - Deployment
-      - Real-world Workflow
-  - Data Collection
-    - Web Scraping
-      - BeautifulSoup
-      - Scrapy
-      - Selenium
-      - Data Extraction
-    - APIs & Streaming
-      - API-based Data Collection
-      - Streaming Data Collection
-    - Datasets & Quality
-      - Survey Data Collection
-      - Public Datasets
-      - Kaggle
-      - Hugging Face Datasets
-      - Data Quality Validation
-      - Data Quality
-      - Data Validation
-      - Ethical Data Collection
-      - Data Verification
-  - SQL & Databases
-    - Core
-      - SQL (Joins, aggregations)
-      - Advanced SQL & Complex Query Writing
-      - BigQuery
-      - MS SQL Server
-  - Data Tools & Concepts
-    - Core
-      - Data Organization
-      - Dataset Preparation
-      - Large Datasets Handling
-      - Big Data
-      - Hadoop
-  - Domain Specific / Reporting
-    - Core
-      - VLOOKUP
-      - MIS Reporting
-      - Power Insight
-      - DA2
-      - CCL
-      - Pearl Data Direct
-      - Millennium Data Model
-      - Healthcare Workflows
-      - CRM
-      - Finetech
-  - Analytics
-    - Core
-      - Data Analysis & Insights
-      - Translating Business Requirements into Data Solutions
-  - Data Analyst Fundamentals & Spreadsheets
-    - Spreadsheet Basics (Excel / Google Sheets)
-      - Formatting & Data Types
-      - Basic Formulas (SUM, AVERAGE, COUNT, MIN, MAX)
-      - Conditional Formatting
-    - Advanced Formulas & Functions
-      - Logical Functions (IF, AND, OR, IFERROR)
-      - Lookup Functions (VLOOKUP, HLOOKUP, XLOOKUP, INDEX/MATCH)
-      - Text & Date Functions (LEFT, RIGHT, DATEDIF, etc.)
-    - Data Analysis in Spreadsheets
-      - Pivot Tables & Pivot Charts
-      - Power Query Basics
-      - What-If Analysis (Goal Seek, Scenario Manager)
-  - Business Intelligence (BI) Tools
-    - Data Visualization Principles
-      - Choosing the Right Chart Type
-      - Color Theory & Typography for Data
-      - Data Storytelling & Executive Summary Reports
-    - Power BI
-      - Getting & Cleaning Data (Power Query)
-      - Data Modeling (Star Schema)
-      - DAX Basics & Advanced (CALCULATE, Time Intelligence)
-    - Tableau
-      - Connecting to Data Sources
-      - Calculated Fields & Parameters
-      - Level of Detail (LOD) Expressions
-  - Product & Business Analytics
-    - Understanding Business Metrics (KPIs, OKRs)
-    - A/B Testing & Experimentation Methodologies
-    - Cohort Analysis
-    - Funnel Analysis
-    - Churn Rate & Retention Analysis
-    - Customer Lifetime Value (CLV)
-  - Spreadsheet Basics (Excel / Google Sheets)
-    - Formatting & Data Types
-    - Basic Formulas (SUM, AVERAGE, COUNT, MIN, MAX)
-    - Relative vs Absolute Referencing
-    - Conditional Formatting
-  - Advanced Formulas & Functions
-    - Logical Functions (IF, AND, OR, IFERROR)
-    - Lookup Functions (VLOOKUP, HLOOKUP, XLOOKUP, INDEX/MATCH)
-    - Text Functions (LEFT, RIGHT, MID, CONCATENATE, TRIM)
-    - Date & Time Functions
-    - Specific Functions
-      - IF, DATEDIF
-      - REPLACE, SUBSTITUTE
-      - UPPER, LOWER, PROPER
-      - CONCAT, TRIM
-  - Data Analysis in Spreadsheets
-    - Pivot Tables & Pivot Charts
-    - Data Validation & Dropdowns
-    - What-If Analysis (Goal Seek, Data Tables, Scenario Manager)
-    - Power Query Basics
-  - Business & Domain Knowledge
-    - Types of Data Analytics
-      - Descriptive Analytics
-      - Diagnostic Analytics
-      - Predictive Analytics
-      - Prescriptive Analytics
-    - Understanding Business Metrics (KPIs, OKRs)
-    - Problem Solving Frameworks
-    - Translating Business Requirements into Data Solutions
-  - Relational Database Concepts
-    - RDBMS Basics (Tables, Rows, Columns)
-    - Primary Keys & Foreign Keys
-    - Data Types in SQL
-    - Database Normalization (1NF, 2NF, 3NF)
-  - Basic SQL Queries
-    - SELECT, FROM, WHERE
-    - Filtering with AND, OR, IN, NOT, BETWEEN, LIKE
-    - ORDER BY & LIMIT / TOP
-    - Aliasing (AS)
-  - Aggregations & Grouping
-    - Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
-    - GROUP BY
-    - HAVING clause
-  - SQL Joins
-    - INNER JOIN
-    - LEFT JOIN / RIGHT JOIN
-    - FULL OUTER JOIN
-    - CROSS JOIN & Self Join
-    - UNION & UNION ALL
-  - Advanced SQL
-    - Subqueries & Nested Queries
-    - Common Table Expressions (CTEs)
-    - Window Functions (RANK, DENSE_RANK, ROW_NUMBER, LEAD, LAG)
-    - String, Date, and Math Functions
-    - CASE WHEN statements
-  - Performance & Optimization
-    - Understanding Query Execution Order
-    - Indexes
-    - EXPLAIN / Query Execution Plans
-  - Data Visualization Principles
-    - Choosing the Right Chart Type
-    - Color Theory & Typography for Data
-    - Minimizing Chart Junk
-    - Data Storytelling
-    - Charting Types
-      - Bar Charts, Line Charts, Pie Charts
-      - Histograms, Stacked Charts, Scatter Plots
-      - Funnel Charts, Heatmaps
-  - Power BI
-    - Getting & Cleaning Data (Power Query)
-    - Data Modeling (Star Schema, Relationships)
-    - DAX (Data Analysis Expressions) Basics
-    - Advanced DAX (CALCULATE, Time Intelligence)
-    - Building Interactive Dashboards
-    - Publishing to Power BI Service
-  - Tableau (Alternative to Power BI)
-    - Connecting to Data Sources
-    - Dimensions vs Measures
-    - Calculated Fields & Parameters
-    - Level of Detail (LOD) Expressions
-    - Creating Interactive Dashboards & Stories
-  - Data Manipulation (Pandas & NumPy)
-    - NumPy Arrays & Vectorization
-    - Pandas Series & DataFrames
-    - Reading/Writing Data (CSV, Excel, SQL)
-    - Data Cleaning & Handling Missing Values
-    - Filtering, Sorting, and Grouping
-    - Merging, Joining, and Concatenating DataFrames
-    - Pivot Tables in Pandas
-  - Data Visualization in Python
-    - Matplotlib (Figures, Axes, Subplots)
-    - Seaborn (Statistical Graphics, Heatmaps, Pairplots)
-    - Plotly (Interactive Visualizations)
-  - Exploratory Data Analysis (EDA)
-    - Univariate Analysis
-    - Bivariate & Multivariate Analysis
-    - Identifying Outliers & Anomalies
-    - Correlation Analysis
-  - R Programming (Optional)
-    - R Basics
-    - Data Manipulation (Dplyr)
-    - Data Visualization (Ggplot2)
-  - Data Collection & Cleanup
-    - Data Sources (Databases, CSV Files, APIs, Web Scraping)
-    - Handling Missing Data
-    - Removing Duplicates
-    - Finding Outliers
-    - Data Transformation
     - Projects
       - Beginner
         - LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
@@ -1278,18 +1085,50 @@ Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad dat
         - Automated data-quality report generator (Uses: Python, Pandas)
         - E-commerce data-warehouse schema (Uses: SQL, Data Warehousing)
     - Checklists
-      - Understand ACID properties
-      - Install Airflow locally
-      - Grasp Pandas Vectorization vs Loops
-      - I can write a Window Function
-      - I can merge datasets in Pandas
-      - I can build an Airflow DAG
-      - Revise SQL Joins visually
-      - Revise B-Tree Indexing
-      - Revise PySpark lazy evaluation
-      - Practice LeetCode Hard SQL
-      - Explain difference between WHERE and HAVING
-      - Publish an Airflow ETL pipeline project to GitHub
+      - Phase:
+        - Understand ACID properties
+        - Install Airflow locally
+        - Grasp Pandas Vectorization vs Loops
+      - Skill:
+        - I can write a Window Function
+        - I can merge datasets in Pandas
+        - I can build an Airflow DAG
+      - Revision:
+        - Revise SQL Joins visually
+        - Revise B-Tree Indexing
+        - Revise PySpark lazy evaluation
+      - Interview:
+        - Practice LeetCode Hard SQL
+        - Explain difference between WHERE and HAVING
+      - Portfolio:
+        - Publish an Airflow ETL pipeline project to GitHub
+    - Resources
+      - [Tutorial] Kaggle Learn ÔÇö Pandas, Data Cleaning, Intro to SQL: https://www.kaggle.com
+      - [Book] Python for Data Analysis by Wes McKinney: #
+      - [Interactive] SQLBolt: https://sqlbolt.com/
+      - [Tutorial] Mode SQL Tutorial: https://mode.com/sql-tutorial/
+      - [Course] Microsoft Learn ÔÇö Power BI: https://learn.microsoft.com/power-bi
+      - [Course] Tableau Public Training: https://help.tableau.com/
+      - [YouTube] Excel Tutorial for Beginners (freeCodeCamp): https://www.youtube.com/watch?v=Vl0H-qTclOg
+      - [Cheat Sheet] Excel Basics Cheat Sheet (DataCamp): https://www.datacamp.com/cheat-sheet/getting-started-with-excel-cheat-sheet
+      - [Cheat Sheet] Hackr Excel / Exceldemy Cheat Sheets: https://www.exceldemy.com
+      - [YouTube] SQL Full Course In 10 Hours (Edureka): https://www.youtube.com/watch?v=q_JsgpiuY98
+      - [YouTube] SQL Tutorial For Beginners (Simplilearn): https://www.youtube.com/watch?v=MtYglLPSfGw
+      - [Course] Khan Academy / Codecademy SQL: https://www.khanacademy.org/computing/computer-programming/sql
+      - [Tutorial] SQLZoo / SQL Bolt Tutorials: https://sqlzoo.net/
+      - [Practice] Codewars / HackerRank / LeetCode SQL Practice: https://leetcode.com/study-plan/sql/
+      - [Practice] SQL Murder Mystery / SQL Battle: https://mystery.knightlab.com/
+      - [Cheat Sheet] SQL Basics / Commands Cheat Sheets: https://learnsql.com/blog/sql-basics-cheat-sheet/
+      - [Docs] Microsoft Learn / Power BI Community: https://learn.microsoft.com/power-bi
+      - [YouTube] Enterprise DNA / Guy in a Cube / SQLBI: https://www.youtube.com/@GuyInACube
+      - [Docs] Tableau Public / Tableau Community: https://public.tableau.com/
+      - [Tutorial] Tableau Free Training Videos: https://www.tableau.com/learn/training
+      - [Platform] Databricks Free Edition: https://databricks.com
+      - [Platform] Microsoft Fabric: https://learn.microsoft.com/en-us/fabric/
+      - [Certification] PL-300 Power BI Certification: https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/
+      - [Datasets] Google Dataset Search: https://datasetsearch.research.google.com/
+      - [Datasets] Maven Analytics Data Playground: https://www.mavenanalytics.io/data-playground
+      - [Datasets] World Bank / UN Data: https://data.worldbank.org/
 
 
 ### PHASE 4: Core Machine Learning
@@ -1500,18 +1339,28 @@ Deep Learning is hype, but classical ML runs the world's recommendation, pricing
         - Ensemble of tree, boosting, and neural models for Kaggle (Uses: Ensemble, ML)
         - Fraud detection with anomaly detection (Uses: Isolation Forest, Boosting)
     - Checklists
-      - Understand Bias-Variance Tradeoff
-      - Master Scikit-Learn API
-      - Understand Ensembling
-      - I can build a Scikit-Learn Pipeline
-      - I can optimize with Optuna
-      - I can explain SHAP values
-      - Revise Gradient Boosting math
-      - Revise SMOTE
-      - Revise Evaluation Metrics (F1 vs ROC-AUC)
-      - Explain why XGBoost is better than Random Forest
-      - What happens if you don't scale data for KNN?
-      - Publish a well-documented Kaggle notebook with EDA and Optuna tuning
+      - Phase:
+        - Understand Bias-Variance Tradeoff
+        - Master Scikit-Learn API
+        - Understand Ensembling
+      - Skill:
+        - I can build a Scikit-Learn Pipeline
+        - I can optimize with Optuna
+        - I can explain SHAP values
+      - Revision:
+        - Revise Gradient Boosting math
+        - Revise SMOTE
+        - Revise Evaluation Metrics (F1 vs ROC-AUC)
+      - Interview:
+        - Explain why XGBoost is better than Random Forest
+        - What happens if you don't scale data for KNN?
+      - Portfolio:
+        - Publish a well-documented Kaggle notebook with EDA and Optuna tuning
+    - Resources
+      - [Course] Machine Learning Specialization (Andrew Ng): https://www.coursera.org/specializations/machine-learning-introduction
+      - [Tutorial] Machine Learning Crash Course (Google): https://developers.google.com/machine-learning/crash-course
+      - [Repo] ML for Beginners (Microsoft): https://github.com/microsoft/ML-For-Beginners
+      - [Course] Machine Learning Zoomcamp: https://github.com/DataTalksClub/machine-learning-zoomcamp
 
 
 ### PHASE 5: Deep Learning, CV & NLP
@@ -1806,18 +1655,27 @@ Neural Networks are the backbone of unstructured data processing (images, audio,
         - Multimodal Video Search Engine (Uses: CLAP, VectorDB, Vision+Audio)
         - Sequence model for time-series forecasting (Uses: RNN/LSTM)
     - Checklists
-      - Setup CUDA/cuDNN for GPU
-      - Understand Backpropagation
-      - Understand CNN Receptive Fields
-      - I can write a custom PyTorch nn.Module
-      - I can implement an LSTM loop
-      - I can use OpenCV
-      - Revise Cross-Entropy vs MSE
-      - Revise Batch Norm vs Layer Norm
-      - Revise BPTT
-      - Why do RNNs suffer from vanishing gradients?
-      - How does a skip connection in ResNet work?
-      - Train a YOLOv8 model on custom data and deploy the inference script
+      - Phase:
+        - Setup CUDA/cuDNN for GPU
+        - Understand Backpropagation
+        - Understand CNN Receptive Fields
+      - Skill:
+        - I can write a custom PyTorch nn.Module
+        - I can implement an LSTM loop
+        - I can use OpenCV
+      - Revision:
+        - Revise Cross-Entropy vs MSE
+        - Revise Batch Norm vs Layer Norm
+        - Revise BPTT
+      - Interview:
+        - Why do RNNs suffer from vanishing gradients?
+        - How does a skip connection in ResNet work?
+      - Portfolio:
+        - Train a YOLOv8 model on custom data and deploy the inference script
+    - Resources
+      - [Course] Practical Deep Learning for Coders (Fast.ai): https://course.fast.ai/
+      - [Course] Hugging Face NLP Course: https://huggingface.co/course
+      - [Course] Machine Learning with Python (PyTorch) - freeCodeCamp: https://www.freecodecamp.org
 
 
 ### PHASE 6: Generative AI, LLMs & Agentic Frameworks
@@ -2289,18 +2147,25 @@ The modern frontier of AI requires adapting foundation models, building RAG syst
         - GraphRAG Knowledge Engine (Uses: Neo4j, LLaMA Index, Cypher queries)
         - Federated Learning System Simulation (Uses: Federated Learning, PyTorch, Flower)
     - Checklists
-      - Understand Self-Attention math
-      - Grasp LoRA vs Full Fine-tuning
-      - Understand ReAct Pattern
-      - I can build a StateGraph in LangGraph
-      - I can use QLoRA via Unsloth
-      - I can implement Hybrid Search
-      - Revise KV Caching
-      - Revise Cross-Encoders
-      - Revise PagedAttention
-      - How does LoRA drastically reduce VRAM requirements?
-      - Explain the difference between LangChain and LangGraph.
-      - Deploy an interactive LangGraph agent on Streamlit Cloud
+      - Phase:
+        - Understand Self-Attention math
+        - Grasp LoRA vs Full Fine-tuning
+        - Understand ReAct Pattern
+      - Skill:
+        - I can build a StateGraph in LangGraph
+        - I can use QLoRA via Unsloth
+        - I can implement Hybrid Search
+      - Revision:
+        - Revise KV Caching
+        - Revise Cross-Encoders
+        - Revise PagedAttention
+      - Interview:
+        - How does LoRA drastically reduce VRAM requirements?
+        - Explain the difference between LangChain and LangGraph.
+      - Portfolio:
+        - Deploy an interactive LangGraph agent on Streamlit Cloud
+    - Resources
+      - [Tutorial] FreeAcademy.ai courses, OpenAI/Google tutorials: #
 
 
 ### PHASE 7: Backend Engineering, APIs & Async Workers
@@ -2392,87 +2257,6 @@ An AI model is useless if it lives in a notebook. You must expose it as a secure
       - Deployment
       - AI Integration
     - Progress Tracking
-      - Projects
-      - Interview Questions
-  - Flask
-    - Flask Basics
-      - Routing
-      - Templates
-      - Blueprints
-      - SQLAlchemy
-      - Authentication
-      - REST APIs
-      - Deployment
-      - AI Model Serving
-    - Progress Tracking
-      - Projects
-      - Interview Questions
-  - Frontend for AI Engineers (React.js)
-    - React.js Basics
-      - Components
-      - JSX
-      - Hooks
-      - State Management
-      - Routing
-      - API Integration
-    - AI Implementations
-      - Dashboard Development
-      - AI Chat UI
-      - Projects
-  - Frontend for AI Engineers (Next.js)
-    - Next.js Core
-      - Routing
-      - Server Components
-      - Client Components
-      - API Routes
-      - Deployment
-    - AI Implementations
-      - AI Applications
-      - Projects
-  - Streamlit
-    - Streamlit Core
-      - Installation
-      - Widgets
-      - Session State
-      - Layout
-      - Charts
-    - Advanced Streamlit
-      - Authentication
-      - Deployment
-      - Streamlit Cloud
-      - AI Dashboards
-      - LLM Applications
-      - Best Practices
-  - Gradio
-    - Gradio Core
-      - Blocks
-      - Interface
-      - Components
-    - Gradio Applications
-      - Chat Interface
-      - Image Interface
-      - Audio Interface
-      - Deployment
-      - Hugging Face Spaces
-      - AI Demo Applications
-  - Databases & ORM
-    - Core
-      - SQLAlchemy (ORM)
-  - Prototyping
-    - Core
-      - Demo Prototyping
-      - Rapid Prototyping
-  - Documentation
-    - Core
-      - Technical Documentation (PRD, FRS, SDD)
-  - AWS Databases & Networking
-    - RDS (DB Instances, Storage Types, Backup/Restore)
-    - DynamoDB (Primary Keys, Data Modeling, Streams, Capacity Settings)
-    - ElastiCache (Redis/Memcached)
-    - CloudFront (Distributions, Policies, Invalidations)
-    - Route53 (Hosted Zones, Routing Policies, Health Checks)
-    - Cloudwatch (Metrics, Events, Logs)
-    - SES (Identity Verification, DKIM, Sending Limits)
     - Projects
       - Beginner
         - Simple CRUD FastAPI (Uses: FastAPI, Pydantic, SQLite)
@@ -2493,18 +2277,23 @@ An AI model is useless if it lives in a notebook. You must expose it as a secure
         - Serverless LLM Inference (Uses: AWS Lambda, API Gateway)
         - Distributed Cache System (Uses: Redis Cluster, Consistent Hashing)
     - Checklists
-      - Understand async/await in Python
-      - Understand JWT structure
-      - Understand Message Brokers
-      - I can build a REST API with FastAPI
-      - I can use Celery for background tasks
-      - I can implement WebSockets
-      - Revise SQLAlchemy relationships
-      - Revise HTTP Status Codes
-      - Revise CORS concepts
-      - Explain OAuth2 flow
-      - How do you handle a thundering herd problem in APIs?
-      - Deploy a full-stack FastAPI app with Celery and Postgres
+      - Phase:
+        - Understand async/await in Python
+        - Understand JWT structure
+        - Understand Message Brokers
+      - Skill:
+        - I can build a REST API with FastAPI
+        - I can use Celery for background tasks
+        - I can implement WebSockets
+      - Revision:
+        - Revise SQLAlchemy relationships
+        - Revise HTTP Status Codes
+        - Revise CORS concepts
+      - Interview:
+        - Explain OAuth2 flow
+        - How do you handle a thundering herd problem in APIs?
+      - Portfolio:
+        - Deploy a full-stack FastAPI app with Celery and Postgres
 
 
 ### PHASE 8: MLOps, Cloud Deployment & Kubernetes
@@ -2826,18 +2615,26 @@ Packaging, deploying, monitoring, and scaling AI models across enterprise cloud 
         - Add CI/CD and monitoring/alerts to app (Uses: GitHub Actions, Prometheus)
         - End-to-end ML API with FastAPI + Docker (Uses: Deployment, Docker)
     - Checklists
-      - Understand Docker networking
-      - Understand K8s Pod lifecycle
-      - Understand CI/CD principles
-      - I can write a multi-stage Dockerfile
-      - I can write a GitHub Actions workflow
-      - I can track experiments in MLflow
-      - Revise Terraform state management
-      - Revise K8s Ingress vs LoadBalancer
-      - Revise Data Drift detection
-      - What happens if a Pod crashes in a K8s Deployment?
-      - Explain Docker Multi-Stage Builds.
-      - Publish a repository with full IaC (Terraform) and CI/CD setup
+      - Phase:
+        - Understand Docker networking
+        - Understand K8s Pod lifecycle
+        - Understand CI/CD principles
+      - Skill:
+        - I can write a multi-stage Dockerfile
+        - I can write a GitHub Actions workflow
+        - I can track experiments in MLflow
+      - Revision:
+        - Revise Terraform state management
+        - Revise K8s Ingress vs LoadBalancer
+        - Revise Data Drift detection
+      - Interview:
+        - What happens if a Pod crashes in a K8s Deployment?
+        - Explain Docker Multi-Stage Builds.
+      - Portfolio:
+        - Publish a repository with full IaC (Terraform) and CI/CD setup
+    - Resources
+      - [Course] ML Zoomcamp Deployment Track: https://github.com/DataTalksClub/machine-learning-zoomcamp
+      - [Documentation] FastAPI / Docker Documentation: #
 
 
 ### PHASE 9: Portfolio, Resume & FAANG Interview Prep
@@ -2941,18 +2738,28 @@ Passing the rigorous technical and behavioral loops of FAANG and top-tier AI sta
         - End-to-End System Design Mock Loop (Uses: FAANG Engineer Mocking)
         - Full Stack AI Automation Tool (Uses: LangGraph, React, Postgres)
     - Checklists
-      - Format Resume to Harvard standard
-      - Write 5 STAR behavioral stories
-      - Understand the CAP Theorem
-      - I can solve LeetCode mediums in 25 mins
-      - I can draw a system design architecture
-      - I can articulate time/space complexity smoothly
-      - Revise Sliding Window pattern
-      - Revise Load Balancing algorithms
-      - Revise Canary vs Blue/Green deployments
-      - Practice a full 45-min System Design Mock
-      - Practice Behavioral 'Tell me about yourself'
-      - Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs
+      - Phase:
+        - Format Resume to Harvard standard
+        - Write 5 STAR behavioral stories
+        - Understand the CAP Theorem
+      - Skill:
+        - I can solve LeetCode mediums in 25 mins
+        - I can draw a system design architecture
+        - I can articulate time/space complexity smoothly
+      - Revision:
+        - Revise Sliding Window pattern
+        - Revise Load Balancing algorithms
+        - Revise Canary vs Blue/Green deployments
+      - Interview:
+        - Practice a full 45-min System Design Mock
+        - Practice Behavioral 'Tell me about yourself'
+      - Portfolio:
+        - Pin top 4 End-to-End projects on GitHub with architecture diagrams in READMEs
+    - Resources
+      - [Resume] Novo Resume Templates: https://novoresume.com/resume-templates
+      - [Resume] Resume.io Templates: https://resume.io/resume-templates
+      - [Resume] Canva Resume Templates: https://www.canva.com/resumes/templates/
+      - [Resume] Resume.com: https://www.resume.com/
 
 
 ### PHASE 10: LeetCode & Coding Patterns (Optional)
@@ -3550,18 +3357,23 @@ Although Python is the primary language for AI/ML, modern AI Engineers also bene
         - Distributed Microservices AI Backend (Uses: Go, gRPC, Kubernetes)
         - Enterprise ML Orchestrator (Uses: Java, Spring Boot, Kafka)
     - Checklists
-      - Install compilers/runtimes for C++, Go, and Rust
-      - Understand when to use high-performance languages over Python
-      - Configure IDEs for polyglot development
-      - I can write a concurrent program in Go
-      - I can manage memory in C++/Rust
-      - I can train a simple model in TF.js
-      - Revise memory management (Heap vs Stack)
-      - Revise OOP principles across Java/C++
-      - Revise Rust ownership
-      - Practice language-specific Leetcode questions
-      - Explain memory leaks and how to avoid them
-      - Publish a multi-language AI microservices project
+      - Phase:
+        - Install compilers/runtimes for C++, Go, and Rust
+        - Understand when to use high-performance languages over Python
+        - Configure IDEs for polyglot development
+      - Skill:
+        - I can write a concurrent program in Go
+        - I can manage memory in C++/Rust
+        - I can train a simple model in TF.js
+      - Revision:
+        - Revise memory management (Heap vs Stack)
+        - Revise OOP principles across Java/C++
+        - Revise Rust ownership
+      - Interview:
+        - Practice language-specific Leetcode questions
+        - Explain memory leaks and how to avoid them
+      - Portfolio:
+        - Publish a multi-language AI microservices project
 
 
   
