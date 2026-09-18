@@ -6,6 +6,8 @@
     <title>Ultimate AI/ML Engineer Career Roadmap</title>
     <link rel="icon" type="image/png" href="/logo-transparent-dark.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Include CryptoJS to securely hash without exposing plaintext in file:// environments -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <style>
         :root {
             /* Premium Educational Workspace Theme */
@@ -10846,19 +10848,9 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     err.style.display = 'none';
     
     try {
-        // Securely hash the input using the browser's built-in crypto API
+        // Securely hash the input using CryptoJS to support file:// execution
         const hashText = async (text) => {
-            if (crypto && crypto.subtle) {
-                const msgBuffer = new TextEncoder().encode(text);
-                const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-                const hashArray = Array.from(new Uint8Array(hashBuffer));
-                return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-            } else {
-                // Fallback for file:// context where crypto.subtle is disabled
-                // This is a minimal bypass since client-side hashing provides no real security here
-                return text === 'Hashi@031858' ? 'dc7b2e01a57d712014446ab896f7805ed65d4d0acd31bdecdf9a2810c5eb9b94' : 
-                       (text.includes('@') ? 'f6181f89b98660c78b8d9302155f326dc91780b0a1f695521a771f087dc500ea' : text);
-            }
+            return CryptoJS.SHA256(text).toString();
         };
 
         const emailHash = await hashText(email);
@@ -10866,7 +10858,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
         // Compare against the pre-computed hashes (Your password is not in this code!)
         const validEmailHash = 'f6181f89b98660c78b8d9302155f326dc91780b0a1f695521a771f087dc500ea';
-        const validPassHash = 'dc7b2e01a57d712014446ab896f7805ed65d4d0acd31bdecdf9a2810c5eb9b94'; // Hashi@031858
+        const validPassHash = 'dc7b2e01a57d712014446ab896f7805ed65d4d0acd31bdecdf9a2810c5eb9b94';
 
         if (emailHash === validEmailHash && passHash === validPassHash) {
             sessionStorage.setItem('auth', 'true');
