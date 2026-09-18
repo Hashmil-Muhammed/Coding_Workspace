@@ -12206,6 +12206,24 @@ function getProgressStats() {
         }
         
         phase.skills.forEach(skill => traverse(skill, `p${index}`, 0));
+        
+        // Also count checklists
+        if (phase.checklists) {
+            ['phase', 'skill', 'revision', 'interview', 'portfolio'].forEach(category => {
+                if (phase.checklists[category]) {
+                    phase.checklists[category].forEach((item, i) => {
+                        const key = `chk-${index}-${category}-${i}`;
+                        pTotal++;
+                        totalNodes++;
+                        if (userProgress[key]) {
+                            pChecked++;
+                            checkedNodes++;
+                        }
+                    });
+                }
+            });
+        }
+        
         phaseStats.push({ total: pTotal, checked: pChecked, name: phase.phase, originalIndex: index });
     });
     
@@ -12523,15 +12541,11 @@ function renderPhase(index) {
 }
 
 function toggleNode(path) { document.getElementById(`node-${path}`).classList.toggle('expanded'); }
-function toggleProgress(path) {
-    if(userProgress[path]) { delete userProgress[path]; document.getElementById(`node-${path}`).classList.remove('completed'); }  
-    else { userProgress[path] = true; document.getElementById(`node-${path}`).classList.add('completed'); }
-    localStorage.setItem('aiml_roadmap_progress', JSON.stringify(userProgress));
-}
 function toggleChecklist(key) {
     if(userProgress[key]) { delete userProgress[key]; document.getElementById(`item-${key}`).classList.remove('checked'); }
     else { userProgress[key] = true; document.getElementById(`item-${key}`).classList.add('checked'); }
     localStorage.setItem('aiml_roadmap_progress', JSON.stringify(userProgress));
+    renderDashboard();
 }
 window.onload = init;
 </script>
