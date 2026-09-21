@@ -1098,6 +1098,16 @@ SKILLS:
     * Interview Questions
     * Practice
 
+99. Additional Specialized Skills
+   A) Concepts & Tools:
+    * Data Cleansing
+    * KPI Development
+    * ESG, Sustainability Data
+    * SAS
+    * Big Data (Hive, Spark, MapReduce)
+    * Schema Design
+    * Query Execution & Retrieval
+
 PROJECTS:
   Beginner:
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
@@ -1370,6 +1380,16 @@ SKILLS:
    C) Logistic Regression (Classification):
    D) K-Means Clustering (Segmentation):
    E) Scikit-Learn Basics:
+
+99. Additional Specialized Skills
+   A) Concepts & Tools:
+    * All Machine Learning Algorithms
+    * Quantitative Trade Analytics (Fixed Income & FX)
+    * Decision Trees
+    * Bayesian Models
+    * Predictive Modeling & Validation
+    * Pattern & Trend Recognition
+    * ML Troubleshooting
 
 PROJECTS:
   Beginner:
@@ -1701,6 +1721,13 @@ SKILLS:
    A) Learn the Basics (Neural Networks, CNNs, RNNs):
    B) Frameworks (Tensorflow, Pytorch):
    C) Practice Training Models (Image Recognition, NLP):
+
+99. Additional Specialized Skills
+   A) Concepts & Tools:
+    * Neural Models
+    * Reinforcement Learning
+    * Transfer Learning
+    * Computer Vision (OpenCV, Pillow, scikit-image)
 
 PROJECTS:
   Beginner:
@@ -2221,6 +2248,10 @@ SKILLS:
     * Audio Processing & Text-to-Speech
     * LangChain/LlamaIndex for Multimodal Apps
 
+99. Additional Specialized Skills
+   A) Concepts & Tools:
+    * Llama
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -2708,6 +2739,13 @@ SKILLS:
    B) Data Storage Solutions:
    C) Data Processing Frameworks (Hadoop, Spark):
    D) Parallel Processing (MPI, MapReduce):
+
+99. Additional Specialized Skills
+   A) Concepts & Tools:
+    * Cloud Deployment
+    * Risk & Regulatory Compliance
+    * High-Performance Computing
+    * Experiment Tracking
 
 PROJECTS:
   Beginner:
