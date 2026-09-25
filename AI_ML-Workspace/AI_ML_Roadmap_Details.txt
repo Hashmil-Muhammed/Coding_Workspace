@@ -755,6 +755,12 @@ SKILLS:
    D) Churn Rate & Retention Analysis:
    E) Customer Lifetime Value (CLV):
 
+9. Advanced Mathematics
+   A) Core:
+    * Calculus
+    * Linear Algebra
+    * Probability & Statistics
+
 PROJECTS:
   Beginner:
     * Matrix Operations Library from Scratch (Uses: Python, Loops, Linear Algebra)
@@ -1108,6 +1114,25 @@ SKILLS:
     * Schema Design
     * Query Execution & Retrieval
 
+100. Data Management & Governance
+   A) Core:
+    * Data Management
+    * Data Governance & Quality Assurance
+101. Advanced MS Excel
+   A) Core:
+    * Pivot Tables
+    * VLOOKUP / XLOOKUP
+    * Power Query
+102. Finance & Asset Management Domain
+   A) Core:
+    * Asset Management
+    * Investment Platforms
+    * Aladdin Platform
+    * IRIS
+    * Business Data Masters (BDM)
+    * Trade Delivery Configuration
+    * Settlement Instructions
+
 PROJECTS:
   Beginner:
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
@@ -1390,6 +1415,12 @@ SKILLS:
     * Predictive Modeling & Validation
     * Pattern & Trend Recognition
     * ML Troubleshooting
+
+100. Foundational & Interpretable Models
+   A) Core:
+    * Rule-based Systems
+    * Scorecards
+    * Explainable AI (XAI)
 
 PROJECTS:
   Beginner:
@@ -1728,6 +1759,11 @@ SKILLS:
     * Reinforcement Learning
     * Transfer Learning
     * Computer Vision (OpenCV, Pillow, scikit-image)
+
+100. Modern Architectures
+   A) Core:
+    * Embeddings
+    * Transformers
 
 PROJECTS:
   Beginner:
@@ -2252,6 +2288,14 @@ SKILLS:
    A) Concepts & Tools:
     * Llama
 
+100. Agentic & Knowledge Systems
+   A) Core:
+    * Vector Databases (Pinecone, Weaviate, Milvus, Qdrant)
+    * Agent Orchestration
+101. Safety & Evaluation
+   A) Core:
+    * AI Evaluation & Guardrails
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -2746,6 +2790,12 @@ SKILLS:
     * Risk & Regulatory Compliance
     * High-Performance Computing
     * Experiment Tracking
+
+100. Enterprise MLOps & Compliance
+   A) Core:
+    * CI/CD
+    * Audit Trails
+    * Data Privacy & Compliance
 
 PROJECTS:
   Beginner:
