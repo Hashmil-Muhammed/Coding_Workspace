@@ -540,6 +540,10 @@ SKILLS:
    D) For & While Loops:
    E) Functions & Lambda Expressions:
 
+7. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * Pydantic v2
+
 PROJECTS:
   Beginner:
     * CLI Expense Tracker (Uses: File I/O, JSON, Functions)
@@ -1133,6 +1137,24 @@ SKILLS:
     * Trade Delivery Configuration
     * Settlement Instructions
 
+103. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * A/B Testing & Experimentation
+    * Master Data Management (MDM)
+    * Road Asset Data Analysis
+    * Profile Analytics
+    * AI-Powered Analytics Tools
+    * LinkedIn & Meta Platforms Analytics
+    * Community Engagement Metrics
+    * Supply Chain & Inventory Analytics
+    * eShop & Merchandise Data Analysis
+    * Healthcare Standards (HIPAA, EHR/EMR, ICD-10/CPT)
+    * Complex Chart, Graph Interpretation
+    * Data Manipulation
+    * SQL (Complex Joins, Window Functions, CTEs, Query Optimization)
+    * Transactional Data Cleansing
+    * Fintech / Capital Markets
+
 PROJECTS:
   Beginner:
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
@@ -1421,6 +1443,18 @@ SKILLS:
     * Rule-based Systems
     * Scorecards
     * Explainable AI (XAI)
+
+101. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * Recommendation Systems (Collaborative Filtering, Clustering, Nearest Neighbors)
+    * Ranking
+    * Feature Engineering
+    * Sparse Data / Cold-Start Handling
+    * Forecasting
+    * Data Augmentation
+    * Anomaly Detection
+    * Multivariate Regression
+    * Cluster Analysis
 
 PROJECTS:
   Beginner:
@@ -1764,6 +1798,14 @@ SKILLS:
    A) Core:
     * Embeddings
     * Transformers
+
+101. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * Graph / Network Methods (GNNs, Link Prediction)
+    * BERT
+    * Video & Image Data Annotation/Analysis
+    * Trend & Sentiment Analysis
+    * NLP (Transformers, Prompting, Text Classification, Entity Extraction)
 
 PROJECTS:
   Beginner:
@@ -2296,6 +2338,17 @@ SKILLS:
    A) Core:
     * AI Evaluation & Guardrails
 
+102. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * Embeddings & Vector/Similarity Search
+    * Context Engineering (Token Budgeting, Summarisation)
+    * LLM APIs (OpenAI / Anthropic / Azure OpenAI)
+    * Vector Stores (Qdrant / Azure AI Search)
+    * Microsoft Agent Framework
+    * vLLM
+    * Model Fine-Tuning (PEFT, Unsloth)
+    * Autonomous Workflows
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -2436,6 +2489,10 @@ SKILLS:
     * Deployment
     * AI Integration
    C) Progress Tracking:
+
+5. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * Temporal
 
 PROJECTS:
   Beginner:
@@ -2796,6 +2853,14 @@ SKILLS:
     * CI/CD
     * Audit Trails
     * Data Privacy & Compliance
+
+101. Advanced & Domain-Specific Additions
+   A) New Topics:
+    * Human-in-the-Loop (HITL)
+    * Model Scalability
+    * ML Lifecycle Tools
+    * Model Versioning & Monitoring
+    * Benchmarking Frameworks
 
 PROJECTS:
   Beginner:
