@@ -232,6 +232,12 @@ SKILLS:
     * Two Pointers & Sliding Window
     * Backtracking
 
+8. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * CLI Tools
+    * Linux/Shell Scripting
+
+
 PROJECTS:
   Beginner:
     * CLI Bash Script Utilities (Uses: Bash, grep, awk)
@@ -1155,6 +1161,18 @@ SKILLS:
     * Transactional Data Cleansing
     * Fintech / Capital Markets
 
+104. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * Scientific Data Processing
+    * Customer Experience (CX) Analytics
+    * Polars
+    * SQL (Joins, Aggregations, CTEs, Window Functions)
+    * Automated Reporting
+    * Advanced MS Excel (Spreadsheets, Formulas, Models, Dashboards, etc..)
+    * Multi-source Data Management
+    * Test Data Generation (Large Datasets)
+
+
 PROJECTS:
   Beginner:
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
@@ -1455,6 +1473,13 @@ SKILLS:
     * Anomaly Detection
     * Multivariate Regression
     * Cluster Analysis
+
+102. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * Density Estimation
+    * Hyperparameter Tuning
+    * Bayesian Optimization
+
 
 PROJECTS:
   Beginner:
@@ -1806,6 +1831,12 @@ SKILLS:
     * Video & Image Data Annotation/Analysis
     * Trend & Sentiment Analysis
     * NLP (Transformers, Prompting, Text Classification, Entity Extraction)
+
+102. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * JAX
+    * Custom Loss Functions
+
 
 PROJECTS:
   Beginner:
@@ -2349,6 +2380,22 @@ SKILLS:
     * Model Fine-Tuning (PEFT, Unsloth)
     * Autonomous Workflows
 
+103. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * Generative AI Architectures (3D Diffusion Models, Flow Matching, GNNs, Equivariant Networks, VAEs, Transformers)
+    * Audio/Video Synthesis
+    * Prompt Engineering (Zero-shot, Few-shot, Tool calling)
+    * LLM Fine-tuning
+    * LoRA, QLoRA Fine-Tuning
+    * MongoDB Atlas Vector Search
+    * Qwen
+    * GraphRAG
+    * Embeddings
+    * AI Agent Development
+    * Cohere
+    * Fine-Tuning Open-Source LLMs
+
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -2493,6 +2540,14 @@ SKILLS:
 5. Advanced & Domain-Specific Additions
    A) New Topics:
     * Temporal
+
+6. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * Parallel Processing
+    * Process Automation
+    * Jmeter
+    * Backend Integration
+
 
 PROJECTS:
   Beginner:
@@ -2862,6 +2917,16 @@ SKILLS:
     * Model Versioning & Monitoring
     * Benchmarking Frameworks
 
+102. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * GPU, CUDA Memory Optimization
+    * CUDA
+    * Consumption
+    * Cloud AI/ML Deployment & Benchmarking
+    * Log Analysis
+    * Flow Tracking
+
+
 PROJECTS:
   Beginner:
     * Dockerize a Python Script (Uses: Docker, Dockerfile)
@@ -3002,6 +3067,11 @@ SKILLS:
     * Interview Questions
     * Practice Tasks
     * Real-world Examples
+
+5. Advanced & Domain-Specific Additions
+   A) Specialized Topics:
+    * Cross-functional Support
+
 
 PROJECTS:
   Beginner:
