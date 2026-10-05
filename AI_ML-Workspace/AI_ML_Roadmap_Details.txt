@@ -1173,6 +1173,23 @@ SKILLS:
     * Test Data Generation (Large Datasets)
 
 
+105. Domain Knowledge & Enterprise Analytics
+   A) Specialized Topics:
+    * Structured & Unstructured Data Processing
+    * MS Excel (Lookups, Pivot Tables, Filters, Formulas)
+    * Delta Reporting
+    * SAP
+    * Data Lake Integration
+    * Looker Studio
+    * Retail Analytics (Basket Size, Gross Margin, Sell-Through, Stock Cover)
+    * POS & ERP Data Extraction
+    * Query Writing
+    * Utility Value Chain Knowledge
+    * Energy Domain & Market Concepts
+    * Billing & Invoicing Analysis
+    * Data Accuracy
+
+
 PROJECTS:
   Beginner:
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
