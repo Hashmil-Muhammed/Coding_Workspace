@@ -1498,6 +1498,10 @@ SKILLS:
     * Bayesian Optimization
 
 
+103. ML Experimentation
+   A) Core:
+    * ML Experimentation
+
 PROJECTS:
   Beginner:
     * Titanic Survival Predictor (Uses: Logistic Regression, Pandas, Scikit-Learn)
@@ -2413,6 +2417,30 @@ SKILLS:
     * Fine-Tuning Open-Source LLMs
 
 
+105. Agentic AI Architectures
+   A) Core:
+    * Agentic AI Architectures
+
+106. Long-Horizon Reasoning
+   A) Core:
+    * Long-Horizon Reasoning
+
+107. Tool Use & Planning
+   A) Core:
+    * Tool Use & Planning
+
+108. Evaluation Pipelines & Harness Design
+   A) Core:
+    * Evaluation Pipelines & Harness Design
+
+109. AI Alignment & Interpretability
+   A) Core:
+    * AI Alignment & Interpretability
+
+110. Memory Architectures
+   A) Core:
+    * Memory Architectures
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -2565,6 +2593,14 @@ SKILLS:
     * Jmeter
     * Backend Integration
 
+
+7. Backend Systems & Enterprise Data
+   A) Core:
+    * Backend Systems & Enterprise Data
+
+8. Rapid Prototyping
+   A) Core:
+    * Rapid Prototyping
 
 PROJECTS:
   Beginner:
