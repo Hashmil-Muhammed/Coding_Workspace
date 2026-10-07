@@ -238,6 +238,10 @@ SKILLS:
     * Linux/Shell Scripting
 
 
+9. Digital Tools
+   A) Core:
+    * Digital Tools
+
 PROJECTS:
   Beginner:
     * CLI Bash Script Utilities (Uses: Bash, grep, awk)
@@ -549,6 +553,10 @@ SKILLS:
 7. Advanced & Domain-Specific Additions
    A) New Topics:
     * Pydantic v2
+
+8. SciPy
+   A) Core:
+    * SciPy
 
 PROJECTS:
   Beginner:
@@ -1190,6 +1198,54 @@ SKILLS:
     * Data Accuracy
 
 
+106. Advanced Analytics
+   A) Core:
+    * Advanced Analytics
+
+107. Insights Delivery
+   A) Core:
+    * Insights Delivery
+
+108. Decision Support
+   A) Core:
+    * Decision Support
+
+109. Complex SQL Select Queries
+   A) Core:
+    * Complex SQL Select Queries
+
+110. SSIS
+   A) Core:
+    * SSIS
+
+111. SSRS
+   A) Core:
+    * SSRS
+
+112. SSAS
+   A) Core:
+    * SSAS
+
+113. Business Metrics & Reporting
+   A) Core:
+    * Business Metrics & Reporting
+
+114. Data Slicing & Dicing
+   A) Core:
+    * Data Slicing & Dicing
+
+115. Descriptive Insights
+   A) Core:
+    * Descriptive Insights
+
+116. Excel Automation
+   A) Core:
+    * Excel Automation
+
+117. Business Dashboards
+   A) Core:
+    * Business Dashboards
+
 PROJECTS:
   Beginner:
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
@@ -1501,6 +1557,10 @@ SKILLS:
 103. ML Experimentation
    A) Core:
     * ML Experimentation
+
+104. Literature Review
+   A) Core:
+    * Literature Review
 
 PROJECTS:
   Beginner:
@@ -1858,6 +1918,10 @@ SKILLS:
     * JAX
     * Custom Loss Functions
 
+
+103. Vision-Language Models (VLMs)
+   A) Core:
+    * Vision-Language Models (VLMs)
 
 PROJECTS:
   Beginner:
@@ -2441,6 +2505,14 @@ SKILLS:
    A) Core:
     * Memory Architectures
 
+113. WatsonX
+   A) Core:
+    * WatsonX
+
+114. AI Safety & Alignment
+   A) Core:
+    * AI Safety & Alignment
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -2979,6 +3051,26 @@ SKILLS:
     * Log Analysis
     * Flow Tracking
 
+
+103. System Issue Remediation & Enhancements
+   A) Core:
+    * System Issue Remediation & Enhancements
+
+104. Cloud Model Deployment & Monitoring
+   A) Core:
+    * Cloud Model Deployment & Monitoring
+
+105. Risk Assessment
+   A) Core:
+    * Risk Assessment
+
+106. Compliance Workflows
+   A) Core:
+    * Compliance Workflows
+
+107. IBM Cloud
+   A) Core:
+    * IBM Cloud
 
 PROJECTS:
   Beginner:
