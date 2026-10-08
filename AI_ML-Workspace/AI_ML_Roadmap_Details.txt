@@ -242,6 +242,19 @@ SKILLS:
    A) Core:
     * Digital Tools
 
+10. Programming & Software Engineering
+   A) Skills:
+    * Python: Core fundamentals, Object-Oriented Programming (OOP), asynchronous programming (async), type hinting, error handling, unit testing.
+    * Backend Engineering: REST API design, WebSockets, authentication, Pydantic data validation.
+    * Data & Databases: Data modeling, working with structured/unstructured formats (JSON).
+    * DevOps / Environment: Environment management, logging.
+   B) Tools & Technologies:
+    * Python
+    * FastAPI
+    * SQL, PostgreSQL, Redis
+    * Git, GitHub, Linux, Docker
+    * Coding Agents: Claude Code, OpenAI Codex
+
 PROJECTS:
   Beginner:
     * CLI Bash Script Utilities (Uses: Bash, grep, awk)
@@ -1562,6 +1575,15 @@ SKILLS:
    A) Core:
     * Literature Review
 
+105. AI / ML Foundations
+   A) Skills:
+    * Machine Learning: Supervised/unsupervised learning, feature engineering, model evaluation, model serving.
+    * Deep Learning: Neural networks, backpropagation, optimizers, GPU basics.
+    * NLP (Natural Language Processing): Tokenization, vector embeddings, attention mechanisms.
+    * Transformers Architecture: Self-attention, multi-head attention, positional encoding, encoder-decoder structure, pre-training, fine-tuning, inference.
+   B) Tools & Frameworks:
+    * PyTorch, TensorFlow
+
 PROJECTS:
   Beginner:
     * Titanic Survival Predictor (Uses: Logistic Regression, Pandas, Scikit-Learn)
@@ -2513,6 +2535,46 @@ SKILLS:
    A) Core:
     * AI Safety & Alignment
 
+115. Generative AI & Foundation Models
+   A) Skills:
+    * Working with LLM APIs, token usage, context windows, model selection, model quantization.
+    * Multimodal AI (vision, audio, speech, document processing).
+    * Context Engineering & Prompting: Prompt engineering, system prompts, dynamic context, context compression, few-shot prompting, structured context, long-term context management.
+
+116. LLM Application Engineering
+   A) Skills:
+    * Generating structured outputs (JSON Schema), building custom tool calling interfaces, streaming responses, asynchronous execution, retry/fallback mechanisms.
+    * Semantic caching, model routing, rate limiting, cost optimization.
+   B) Tools & Concepts:
+    * LLM Gateways
+
+117. RAG Engineering (Retrieval-Augmented Generation)
+   A) Skills:
+    * Data ingestion, retrieval pipelines, generation.
+    * Advanced RAG: Hybrid search, re-ranking, query expansion, query rewriting, multi-query RAG, parent-child retrieval, Graph RAG, multimodal RAG, Corrective RAG (CRAG), Self-RAG, Agentic RAG.
+
+118. AI Agents & Multi-Agent Orchestration
+   A) Skills:
+    * Agent tools integration (APIs, databases, browser automation, code generation).
+    * Agent memory management, reasoning, planning, reflection, ReAct prompting, task decomposition.
+    * Agent state management, multi-agent workflows, routing, Human-in-the-Loop (HITL) approval mechanisms.
+   B) Frameworks & Protocols:
+    * MCP (Model Context Protocol): MCP Client, MCP Server, tools/resources/prompts integration
+    * LangGraph, Google ADK (Agent Development Kit), OpenAI Swarm / Agent SDKs
+
+119. LLM, RAG & Agent Evaluation
+   A) Skills:
+    * Agent Eval: Task assessment, tool selection, argument accuracy, goal completion.
+    * RAG Eval: Retrieval recall, precision, groundness, faithfulness.
+    * LLM Eval: Accuracy, relevance, hallucination detection, toxicity, LLM-as-a-Judge.
+    * Testing Pipelines: Building golden/annotated evaluation datasets, offline/online evaluations, A/B testing, regression testing, human-in-the-loop review.
+
+120. AI Guardrails & Security
+   A) Skills:
+    * Guardrails implementation (input/output guardrails, PII detection and masking).
+    * AI Threat Mitigation: Prompt injection, indirect prompt injection, jailbreaking, data leakage prevention.
+    * Agent security: Tool permissions, principle of least privilege, secrets management, agent sandboxing, MCP security, rate limiting.
+
 PROJECTS:
   Beginner:
     * Local Llama 3 Chatbot (Uses: Ollama, Python, Streamlit)
@@ -3071,6 +3133,38 @@ SKILLS:
 107. IBM Cloud
    A) Core:
     * IBM Cloud
+
+108. AI Observability & Monitoring
+   A) Skills:
+    * Tracing execution, metrics tracking, structured logging, tracking LLM/tool calls step-by-step.
+   B) Tools & Platforms:
+    * LangSmith
+    * Langfuse
+    * Arize Phoenix
+    * OpenTelemetry
+
+109. GenAI Ops / LLMOps / DevOps
+   A) Skills:
+    * CI/CD pipelines, container orchestration, model versioning, prompt versioning, data versioning, experiment tracking, rollbacks, canary deployments.
+   B) Tools:
+    * GitHub Actions
+    * Docker
+    * Kubernetes
+
+110. Cloud Engineering
+   A) AWS:
+    * Amazon Bedrock, SageMaker, ECS, EKS, AWS Lambda, CloudWatch.
+   B) GCP:
+    * Vertex AI, Gemini models, Cloud Run, GKE (Google Kubernetes Engine), BigQuery.
+   C) Azure:
+    * Azure AI, Azure OpenAI Service, AKS, Azure Functions, Azure Monitor.
+
+111. AI System Design
+   A) Skills & Trade-offs:
+    * End-to-end architecture design.
+    * RAG vs. Fine-tuning trade-offs.
+    * Autonomous agents vs. deterministic workflows.
+    * Database selection, message queues, caching strategies, system reliability, and latency optimization.
 
 PROJECTS:
   Beginner:
