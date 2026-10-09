@@ -634,6 +634,11 @@ Overview: Deep Learning optimization, backpropagation, and algorithm intuition r
 
 SKILLS:
 
+X. Additional Requested Skills
+   A) Core:
+    * Applied Statistics
+
+
 1. Linear Algebra
    A) Vectors:
     * Vector Spaces
@@ -852,6 +857,16 @@ RESOURCES:
 Overview: Cleaning, storing, and transforming data is 70% of an AI Engineer's job. Bad data = bad models.
 
 SKILLS:
+
+X. Additional Requested Skills
+   A) Core:
+    * Advanced SQL (Joins, CTEs, Window Functions)
+    * Data Warehousing (Amazon Redshift, Snowflake, BigQuery)
+    * Data Pipelines (RDS, MySQL, Elasticsearch)
+    * Automated Data Ingestion
+    * Big Data Architectures & Pipelines
+    * Business Requirement Translation
+
 
 1. SQL (Deep Dive)
    A) Database Basics:
@@ -2001,6 +2016,13 @@ RESOURCES:
 Overview: The modern frontier of AI requires adapting foundation models, building RAG systems, and orchestrating autonomous agents.
 
 SKILLS:
+
+X. Additional Requested Skills
+   A) Core:
+    * Multimodal Agentic AI
+    * Retrieval Pipelines
+    * LLM Applications
+
 
 1. Prompt Engineering & Guardrails
    A) Prompting Techniques:
@@ -3224,6 +3246,11 @@ RESOURCES:
 Overview: Passing the rigorous technical and behavioral loops of FAANG and top-tier AI startups requires specific preparation strategies.
 
 SKILLS:
+
+X. Additional Requested Skills
+   A) Core:
+    * Kaggle Portfolio
+
 
 1. System Design (ML & Backend)
    A) Scalability Concepts:
