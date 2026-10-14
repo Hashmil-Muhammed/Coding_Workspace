@@ -6,6 +6,11 @@ Overview: AI relies on scalable computing and optimal algorithms. Missing these 
 
 SKILLS:
 
+X. Additional Requested Skills
+   A) Core:
+    * UNIX / Shell Scripting
+
+
 1. Development Environment & OS
    A) Operating Systems:
     * Kernel Architecture
@@ -637,6 +642,8 @@ SKILLS:
 X. Additional Requested Skills
    A) Core:
     * Applied Statistics
+    * Descriptive & Inferential Statistics
+
 
 
 1. Linear Algebra
@@ -866,6 +873,17 @@ X. Additional Requested Skills
     * Automated Data Ingestion
     * Big Data Architectures & Pipelines
     * Business Requirement Translation
+    * Cloud Data Warehouses
+    * Database Management / Administration
+    * ETL/ELT Orchestration (dbt, Airflow, Prefect)
+    * Apache Airflow
+    * Data Segmentation
+    * Operational Tracking
+    * Google Analytics
+    * Business Intelligence (BI)
+    * BFSI
+    * Risk & Compliance Management
+
 
 
 1. SQL (Deep Dive)
@@ -1658,6 +1676,17 @@ Overview: Neural Networks are the backbone of unstructured data processing (imag
 
 SKILLS:
 
+X. Additional Requested Skills
+   A) Core:
+    * Image Classification
+    * Object Tracking
+    * Scene OCR
+    * Video Analysis
+    * Computer Vision (Handwriting Recognition, CNNs)
+    * Speech AI / ASR (CTC, Attention Models)
+    * Hugging Face Transformers
+
+
 1. Deep Learning Foundations (PyTorch)
    A) Core Concepts:
     * Perceptron
@@ -2022,6 +2051,12 @@ X. Additional Requested Skills
     * Multimodal Agentic AI
     * Retrieval Pipelines
     * LLM Applications
+    * Bedrock Knowledge Bases
+    * Functional Calling
+    * Unsloth
+    * Quantization (NF4, GPTQ, AWQ)
+    * Model Optimization (ONNX, TensorRT, KV Caching)
+
 
 
 1. Prompt Engineering & Guardrails
@@ -2648,6 +2683,12 @@ Overview: An AI model is useless if it lives in a notebook. You must expose it a
 
 SKILLS:
 
+X. Additional Requested Skills
+   A) Core:
+    * FastAPI
+    * ML Backend Development
+
+
 1. APIs & Web Frameworks
    A) API Foundations:
     * HTTP Methods
@@ -2802,6 +2843,15 @@ CHECKLISTS:
 Overview: Packaging, deploying, monitoring, and scaling AI models across enterprise cloud infrastructure.
 
 SKILLS:
+
+X. Additional Requested Skills
+   A) Core:
+    * Model Monitoring & Observability
+    * AWS Batch
+    * AWS (ECS/Fargate, GPU Endpoints)
+    * Model Training & Testing at Scale
+    * End-to-End ML Pipelines
+
 
 1. Production ML Lifecycle & MLOps Core
    A) Feature Store:
