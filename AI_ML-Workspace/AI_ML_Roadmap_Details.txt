@@ -241,6 +241,8 @@ X. Additional Requested Skills
    A) Specialized Topics:
     * CLI Tools
     * Linux/Shell Scripting
+    * Linux (System Administration, File Systems, Networking)
+    * OpenCode (AI-assisted coding tools & IDE integrations)
 
 
 9. Digital Tools
@@ -804,6 +806,28 @@ X. Additional Requested Skills
     * Linear Algebra
     * Probability & Statistics
 
+10. Statistical Software & Operations Research
+   A) Statistical Tools:
+    * SPSS (Statistical Package for the Social Sciences)
+      - Descriptive Statistics
+      - Hypothesis Testing
+      - Regression Analysis
+      - ANOVA in SPSS
+      - Factor Analysis
+      - Cluster Analysis in SPSS
+      - Data Import & Export
+      - Syntax & Script Automation
+   B) Operations Research:
+    * Linear Programming
+    * Integer Programming
+    * Simplex Method
+    * Network Optimization
+    * Queuing Theory
+    * Simulation Modelling
+    * Decision Analysis
+    * Transportation & Assignment Problems
+    * Game Theory Basics
+
 PROJECTS:
   Beginner:
     * Matrix Operations Library from Scratch (Uses: Python, Loops, Linear Algebra)
@@ -1177,6 +1201,28 @@ X. Additional Requested Skills
     * Big Data (Hive, Spark, MapReduce)
     * Schema Design
     * Query Execution & Retrieval
+    * Dataset Integrity & Quality
+      - Data Profiling
+      - Data Quality Dimensions (Completeness, Accuracy, Consistency, Timeliness)
+      - Schema Validation
+      - Data Lineage Tracking
+      - Anomaly Detection in Datasets
+      - Data Auditing
+    * ETL Tools
+      - Informatica PowerCenter
+      - Ab Initio
+      - Talend Open Studio
+      - Talend Data Integration
+      - ETL vs ELT Workflows
+      - Job Design & Scheduling
+      - Error Handling & Logging
+    * Data Mapping & Migration
+      - Source-to-Target Mapping
+      - Data Transformation Rules
+      - Migration Planning & Execution
+      - Incremental vs Full Load
+      - Data Reconciliation
+      - Rollback Strategies
 
 100. Data Management & Governance
    A) Core:
@@ -1402,6 +1448,12 @@ SKILLS:
     * Linear Regression (OLS, Cost Function)
     * Logistic Regression (Sigmoid, Cross-Entropy Loss, Odds Ratio)
     * Predictive Analysis
+    * Classical Regression
+      - Multiple Linear Regression
+      - Polynomial Regression
+      - Stepwise Regression
+      - Ridge & Lasso (Regularized Regression)
+      - Regression Diagnostics (Residual Plots, VIF, Heteroscedasticity)
    B) Regularization:
     * L1 Regularization (Lasso)
     * L2 Regularization (Ridge)
@@ -1428,6 +1480,8 @@ SKILLS:
     * Splitting Criteria
     * Pruning
     * Feature Importance
+    * CHAID (Chi-squared Automatic Interaction Detection)
+    * CART (Classification and Regression Trees)
    B) Bagging:
     * Random Forest
     * Out-of-Bag (OOB) Error
@@ -1454,6 +1508,10 @@ SKILLS:
     * Hierarchical Clustering
     * DBSCAN
     * Handling Outliers
+    * Cluster Analysis
+      - Cluster Validation Metrics
+      - Soft vs Hard Clustering
+      - Gaussian Mixture Models (GMM)
    B) Dimensionality Reduction:
     * Principal Component Analysis (PCA)
     * t-SNE
@@ -1463,6 +1521,17 @@ SKILLS:
     * One-Class SVM
     * Local Outlier Factor (LOF)
     * Data Anomaly Detection
+   D) Association Rules:
+    * Apriori Algorithm
+    * FP-Growth Algorithm
+    * Support, Confidence, Lift
+    * Market Basket Analysis
+    * Rule Pruning
+   E) Sequence Analysis:
+    * Sequential Pattern Mining
+    * Hidden Markov Models (HMM)
+    * Recurrent Patterns
+    * Event Sequence Modeling
 
 5. Time Series & Forecasting
    A) Time Series Foundations:
@@ -1519,6 +1588,16 @@ SKILLS:
    E) Evaluation Metrics:
     * Classification
     * Regression
+    * ML Evaluation Metrics (Deep Dive)
+      - Precision
+      - Recall
+      - F1-Score
+      - IoU (Intersection over Union)
+      - mAP (mean Average Precision)
+      - Confusion Matrix
+      - ROC-AUC
+      - PR Curve
+      - BLEU / ROUGE (for NLP)
    F) Explainable AI (XAI):
     * SHAP
     * LIME
@@ -1574,6 +1653,19 @@ SKILLS:
     * Predictive Modeling & Validation
     * Pattern & Trend Recognition
     * ML Troubleshooting
+    * ML Testing & Validation
+      - Robustness Testing
+      - Generalization Testing (Out-of-distribution data)
+      - Regression Testing (model stability after updates)
+      - Edge Case Testing
+      - A/B Model Testing
+      - Shadow Mode Testing
+    * Root Cause & Failure Analysis
+      - Error Analysis
+      - Model Failure Diagnosis
+      - Data-Centric Debugging
+      - Confusion Matrix Deep Dive
+      - Performance Degradation Tracking
 
 100. Foundational & Interpretable Models
    A) Core:
@@ -1685,6 +1777,34 @@ X. Additional Requested Skills
     * Computer Vision (Handwriting Recognition, CNNs)
     * Speech AI / ASR (CTC, Attention Models)
     * Hugging Face Transformers
+    * Linux-based ML/CV Pipelines
+      - Bash scripting for ML automation
+      - Cron jobs for pipeline scheduling
+      - System resource monitoring (htop, nvidia-smi)
+      - Shell-based dataset management
+    * DeepStream (NVIDIA)
+      - DeepStream SDK
+      - GStreamer Pipelines
+      - Video Analytics at Scale
+      - Integration with TensorRT
+      - Multi-stream processing
+    * Speech Synthesis
+      - Neural TTS Architectures (Tacotron, FastSpeech)
+      - Vocoder Models (WaveNet, HiFi-GAN)
+      - Voice Style Transfer
+      - Prosody Control
+      - Multilingual TTS
+    * Neural Networks (Applied CV/NLP)
+      - Custom Architecture Design
+      - Transfer Learning Strategies
+      - Model Compression & Pruning
+    * Text Mining
+      - Information Extraction
+      - Named Entity Recognition (NER)
+      - Topic Modeling (LDA, NMF)
+      - Keyword Extraction
+      - Sentiment Mining
+      - Text Classification Pipelines
 
 
 1. Deep Learning Foundations (PyTorch)
@@ -2851,6 +2971,19 @@ X. Additional Requested Skills
     * AWS (ECS/Fargate, GPU Endpoints)
     * Model Training & Testing at Scale
     * End-to-End ML Pipelines
+    * On-premises Infrastructure
+      - Bare-metal Server Management
+      - On-prem GPU Clusters
+      - Network-Attached Storage (NAS)
+      - Private Cloud Setup
+      - Data Center Operations
+      - Security & Compliance for On-prem AI
+    * Coolify
+      - Self-hosted Deployment Platform
+      - Application Management
+      - Docker & Kubernetes Integration
+      - CI/CD with Coolify
+      - Database & Service Hosting
 
 
 1. Production ML Lifecycle & MLOps Core
