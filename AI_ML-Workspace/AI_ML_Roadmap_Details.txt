@@ -891,6 +891,23 @@ SKILLS:
 
 X. Additional Requested Skills
    A) Core:
+    * SQL (Joins, Aggregations, Window Functions, CTEs, Etc…)
+    * Zoho Analytics
+    * Data Warehousing Concepts
+      - OLTP vs OLAP Architecture
+      - Dimensional Modeling (Star & Snowflake Schemas)
+      - Fact & Dimension Tables
+      - Slowly Changing Dimensions (SCD Types 1, 2, 3)
+      - Data Marts vs Enterprise Data Warehouse (EDW)
+      - Partitioning, Sharding & Clustering Strategies
+    * Lakehouse & Medallion Architecture
+      - Lakehouse Paradigm (ACID Transactions on Data Lakes)
+      - Bronze Layer (Raw Ingestion / Landing Zone)
+      - Silver Layer (Cleaned, Filtered & Conformed Data)
+      - Gold Layer (Aggregated Business Analytics & Feature Stores)
+      - Delta Lake, Apache Iceberg, Apache Hudi Integration
+      - Unified Batch & Streaming Analytics
+      - Time Travel & Data Versioning
     * Advanced SQL (Joins, CTEs, Window Functions)
     * Data Warehousing (Amazon Redshift, Snowflake, BigQuery)
     * Data Pipelines (RDS, MySQL, Elasticsearch)
@@ -921,13 +938,14 @@ X. Additional Requested Skills
    B) Queries & Joins:
     * SELECT
     * WHERE
-    * JOINs
-    * Set Operations
+    * JOINs (Inner, Left, Right, Full Outer, Cross, Self Joins)
+    * Aggregations (GROUP BY, HAVING, COUNT, SUM, AVG, MIN, MAX)
+    * Set Operations (UNION, UNION ALL, INTERSECT, EXCEPT)
    C) Advanced SQL:
-    * Subqueries
-    * CTEs
+    * Subqueries & Correlated Subqueries
+    * CTEs (Common Table Expressions & Recursive CTEs)
     * Recursive Queries
-    * Window Functions (RANK, LEAD, LAG)
+    * Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE, LEAD, LAG, Running Totals)
     * EXPLAIN
     * EXPLAIN ANALYZE
     * Query Execution Plans
@@ -1020,6 +1038,7 @@ X. Additional Requested Skills
     * Power BI
     * Tableau
     * Looker Studio
+    * Zoho Analytics
     * Dashboard Design
     * Dashboard UX
     * Data Storytelling
@@ -1094,6 +1113,21 @@ X. Additional Requested Skills
     * Hadoop & MapReduce Paradigm
     * Parallel Processing Concepts (MPI)
    B) Data Warehousing & Lakes:
+    * Data Warehousing Concepts
+      - OLTP vs OLAP Architecture
+      - Dimensional Modeling (Star & Snowflake Schemas)
+      - Fact & Dimension Tables
+      - Slowly Changing Dimensions (SCD Types 1, 2, 3)
+      - Data Marts vs Enterprise Data Warehouse (EDW)
+      - Partitioning, Sharding & Clustering Strategies
+    * Lakehouse & Medallion Architecture
+      - Lakehouse Paradigm (ACID Transactions on Data Lakes)
+      - Bronze Layer (Raw Ingestion / Landing Zone)
+      - Silver Layer (Cleaned, Enriched & Validated Data)
+      - Gold Layer (Curated Business Aggregations & ML Feature Stores)
+      - Delta Lake, Apache Iceberg, Apache Hudi Integration
+      - Unified Batch & Real-Time Streaming Analytics
+      - Time Travel & Data Versioning
     * OLTP vs OLAP
     * Star & Snowflake Schemas
     * Snowflake

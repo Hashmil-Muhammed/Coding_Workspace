@@ -3445,7 +3445,10 @@ const roadmapData = [
                                 "name": "WHERE"
                             },
                             {
-                                "name": "JOINs"
+                                "name": "JOINs (Inner, Left, Right, Full Outer, Cross, Self)"
+                            },
+                            {
+                                "name": "Aggregations (GROUP BY, HAVING, COUNT, SUM, AVG, MIN, MAX)"
                             },
                             {
                                 "name": "Set Operations"
@@ -3459,13 +3462,13 @@ const roadmapData = [
                                 "name": "Subqueries"
                             },
                             {
-                                "name": "CTEs"
+                                "name": "CTEs (Common Table Expressions & Recursive CTEs)"
                             },
                             {
                                 "name": "Recursive Queries"
                             },
                             {
-                                "name": "Window Functions (RANK, LEAD, LAG)"
+                                "name": "Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE, LEAD, LAG, Running Totals)"
                             },
                             {
                                 "name": "EXPLAIN"
@@ -3762,6 +3765,9 @@ const roadmapData = [
                                 "name": "Looker Studio"
                             },
                             {
+                                "name": "Zoho Analytics"
+                            },
+                            {
                                 "name": "Dashboard Design"
                             },
                             {
@@ -3996,6 +4002,30 @@ const roadmapData = [
                     {
                         "name": "Data Warehousing & Lakes",
                         "children": [
+                            {
+                                "name": "Data Warehousing Concepts",
+                                "children": [
+                                    { "name": "OLTP vs OLAP Architecture" },
+                                    { "name": "Dimensional Modeling (Kimball vs Inmon)" },
+                                    { "name": "Star & Snowflake Schemas" },
+                                    { "name": "Fact vs Dimension Tables" },
+                                    { "name": "Slowly Changing Dimensions (SCD Types 1, 2, 3)" },
+                                    { "name": "Data Marts vs Enterprise Data Warehouse (EDW)" },
+                                    { "name": "Partitioning, Sharding & Clustering Strategies" }
+                                ]
+                            },
+                            {
+                                "name": "Lakehouse & Medallion Architecture",
+                                "children": [
+                                    { "name": "Lakehouse Paradigm (ACID on Object Storage)" },
+                                    { "name": "Medallion Architecture Design" },
+                                    { "name": "Bronze Layer (Raw Ingestion / Landing Zone)" },
+                                    { "name": "Silver Layer (Cleaned, Filtered & Conformed Data)" },
+                                    { "name": "Gold Layer (Aggregated Business Reporting & ML Feature Stores)" },
+                                    { "name": "Unified Batch & Streaming (Delta Lake, Apache Iceberg, Apache Hudi)" },
+                                    { "name": "Time Travel & Data Versioning" }
+                                ]
+                            },
                             {
                                 "name": "OLTP vs OLAP"
                             },
@@ -4676,6 +4706,31 @@ const roadmapData = [
             {
                 "name": "Additional Requested Skills",
                 "children": [
+                    { "name": "SQL (Joins, Aggregations, Window Functions, CTEs, Etc…)" },
+                    { "name": "Zoho Analytics" },
+                    {
+                        "name": "Data Warehousing Concepts",
+                        "children": [
+                            { "name": "OLTP vs OLAP Architecture" },
+                            { "name": "Dimensional Modeling (Star & Snowflake Schemas)" },
+                            { "name": "Fact & Dimension Tables" },
+                            { "name": "Slowly Changing Dimensions (SCD Types 1, 2, 3)" },
+                            { "name": "Data Marts vs Enterprise Data Warehouse (EDW)" },
+                            { "name": "Partitioning, Sharding & Clustering Strategies" }
+                        ]
+                    },
+                    {
+                        "name": "Lakehouse & Medallion Architecture",
+                        "children": [
+                            { "name": "Lakehouse Paradigm (ACID Transactions on Data Lakes)" },
+                            { "name": "Bronze Layer (Raw Ingestion / Landing Zone)" },
+                            { "name": "Silver Layer (Cleaned, Filtered & Conformed Data)" },
+                            { "name": "Gold Layer (Curated Business Aggregations & ML Feature Stores)" },
+                            { "name": "Delta Lake, Apache Iceberg, Apache Hudi Integration" },
+                            { "name": "Unified Batch & Real-Time Streaming Analytics" },
+                            { "name": "Time Travel & Data Versioning" }
+                        ]
+                    },
                     { "name": "Advanced SQL (Joins, CTEs, Window Functions)" },
                     { "name": "Data Warehousing (Amazon Redshift, Snowflake, BigQuery)" },
                     { "name": "Data Pipelines (RDS, MySQL, Elasticsearch)" },
