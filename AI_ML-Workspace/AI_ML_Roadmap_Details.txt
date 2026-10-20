@@ -1828,6 +1828,15 @@ X. Additional Requested Skills
       - Voice Style Transfer
       - Prosody Control
       - Multilingual TTS
+    * Voice AI (STT & TTS Workflows, etc…)
+      - Speech-to-Text (STT) Pipelines & Workflows
+      - Text-to-Speech (TTS) Neural Synthesis
+      - Whisper & Conformer ASR Models
+      - FastSpeech, VITS & XTTS Workflows
+      - Voice Activity Detection (VAD) & Noise Suppression
+      - Real-Time Low-Latency Audio Streaming (WebSocket, WebRTC)
+      - Turn-Taking, Interruption Handling & Barge-in
+      - End-to-End Voice Agent Pipelines
     * Neural Networks (Applied CV/NLP)
       - Custom Architecture Design
       - Transfer Learning Strategies
@@ -2077,6 +2086,15 @@ X. Additional Requested Skills
     * Interview Questions
     * Practice
     * Resources
+   H) Voice AI (STT & TTS Workflows, etc…):
+    * Speech-to-Text (STT) Pipelines & Workflows
+    * Text-to-Speech (TTS) Neural Synthesis
+    * Whisper & Conformer ASR Models
+    * FastSpeech, VITS & XTTS Workflows
+    * Voice Activity Detection (VAD) & Noise Suppression
+    * Real-Time Low-Latency Audio Streaming (WebSocket, WebRTC)
+    * Turn-Taking, Interruption Handling & Barge-in
+    * End-to-End Voice Agent Pipelines
 
 5. Architectures
    A) Core:
@@ -3005,6 +3023,14 @@ X. Additional Requested Skills
     * AWS (ECS/Fargate, GPU Endpoints)
     * Model Training & Testing at Scale
     * End-to-End ML Pipelines
+    * Test Automation Pipelines
+      - Automated Unit & Integration Testing (pytest, testcontainers)
+      - CI/CD Test Automation Workflows (GitHub Actions, GitLab CI)
+      - End-to-End (E2E) Model Pipeline Testing
+      - Automated Regression & Performance Testing
+      - Continuous Testing & Quality Gates
+      - Test Data Generation & Mocking Services
+      - Test Result Reporting, Coverage & Failure Alerting
     * On-premises Infrastructure
       - Bare-metal Server Management
       - On-prem GPU Clusters
@@ -3144,6 +3170,7 @@ X. Additional Requested Skills
     * GitLab CI
     * ArgoCD
     * Flux (GitOps)
+    * Test Automation Pipelines
    B) Deployment Strategies:
     * Canary Deployment
     * Shadow Deployment
@@ -3251,6 +3278,14 @@ X. Additional Requested Skills
    A) Core:
     * Evaluation & Test Cases
     * Evaluation Frameworks
+   B) Test Automation Pipelines:
+    * Automated Unit & Integration Testing (pytest, testcontainers)
+    * CI/CD Test Automation Workflows (GitHub Actions, GitLab CI)
+    * End-to-End (E2E) Model Pipeline Testing
+    * Automated Regression & Performance Testing
+    * Continuous Testing & Quality Gates
+    * Test Data Generation & Mocking Services
+    * Test Result Reporting, Coverage & Failure Alerting
 
 12. AWS Cloud Essentials for ML
    A) Introduction to AWS:
