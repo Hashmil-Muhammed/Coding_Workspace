@@ -9,6 +9,7 @@ SKILLS:
 X. Additional Requested Skills
    A) Core:
     * UNIX / Shell Scripting
+    * Linux (System Administration, File Systems, Networking, CLI & Shell Scripting)
 
 
 1. Development Environment & OS
@@ -645,6 +646,17 @@ X. Additional Requested Skills
    A) Core:
     * Applied Statistics
     * Descriptive & Inferential Statistics
+    * Statistics (Hypothesis Testing, P-values, Correlation, etc...)
+      - Hypothesis Testing (Null & Alternative Hypotheses)
+      - P-values & Significance Levels (Alpha, Type I & Type II Errors)
+      - Correlation (Pearson, Spearman, Kendall Tau)
+      - Confidence Intervals & Statistical Power
+      - Parametric Tests (Z-test, T-test, ANOVA) & Non-Parametric Tests
+    * MATLAB
+      - Matrix Computing & Vectorized Math
+      - Statistics & Optimization Toolboxes
+      - Signal Processing & Filtering
+      - Simulink Dynamic Modeling & Simulation
 
 
 
@@ -827,6 +839,11 @@ X. Additional Requested Skills
     * Decision Analysis
     * Transportation & Assignment Problems
     * Game Theory Basics
+   C) MATLAB for Mathematical & Statistical Modeling:
+    * MATLAB Matrix Computing & Syntax
+    * Statistics and Machine Learning Toolbox
+    * Curve Fitting & Hypothesis Testing in MATLAB
+    * Signal Processing & Dynamic Simulation (Simulink)
 
 PROJECTS:
   Beginner:
@@ -893,6 +910,17 @@ X. Additional Requested Skills
    A) Core:
     * SQL (Joins, Aggregations, Window Functions, CTEs, Etc…)
     * Zoho Analytics
+    * DBQL / SQL
+      - Database Query Log (DBQL) Architecture & Query Logging
+      - SQL Query Execution Plans & Optimization
+      - CPU & I/O Skew Analysis via DBQL
+      - Query Performance Tuning & Workload Analysis
+    * Data Handling
+      - Data Ingestion & Multi-Format Parsing (CSV, JSON, Parquet)
+      - Data Cleaning & Null Imputation Strategies
+      - Filtering, Slicing & Reshaping (Pandas, Polars)
+      - Memory-Efficient Chunking & Large Dataset Processing
+      - Schema Validation & Data Harmonization
     * Data Warehousing Concepts
       - OLTP vs OLAP Architecture
       - Dimensional Modeling (Star & Snowflake Schemas)
@@ -1848,6 +1876,12 @@ X. Additional Requested Skills
       - Keyword Extraction
       - Sentiment Mining
       - Text Classification Pipelines
+    * Document-Processing Pipelines
+      - Optical Character Recognition (OCR - Tesseract, PaddleOCR)
+      - Document Layout Analysis & LayoutLM
+      - Table, Form & Key-Value Pair Extraction
+      - Multi-modal Document Parsing (PDF, Scanned Docs, Images)
+      - Unstructured Document Ingestion & Vector Indexing Pipelines
 
 
 1. Deep Learning Foundations (PyTorch)
@@ -3044,6 +3078,28 @@ X. Additional Requested Skills
       - Docker & Kubernetes Integration
       - CI/CD with Coolify
       - Database & Service Hosting
+    * AI/ML Validation for ADAS
+      - ADAS Model Validation & Verification (Perception, Detection, Tracking)
+      - Ground Truth Generation & Sensor Fusion Validation
+      - Scenario-Based Closed-Loop Testing (CARLA, SIL/HIL)
+      - Safety Standards Compliance (ISO 26262, SOTIF / ISO 21448)
+      - Corner & Edge-Case Validation
+    * Vehicle Instrumentation
+      - Automotive Sensor Suites (Cameras, LiDAR, Radar, Ultrasonic, IMU, GNSS)
+      - Vehicle Telemetry & High-Bandwidth Data Logging
+      - Hardware-in-the-Loop (HIL) & Test Bench Setups
+      - ECU Interface & Signal Conditioning
+    * CANalyzer / CANoe
+      - Vector CANoe & CANalyzer Tooling
+      - CAN, CAN-FD, LIN, FlexRay & Automotive Ethernet Protocols
+      - Bus Simulation, Trace Logging & Message Analysis
+      - Diagnostic Protocols (UDS - ISO 14229, OBD-II)
+      - CAPL Test Scripting & ECU Automation
+    * Root-Cause Analysis
+      - Systematic Failure Diagnosis & 5 Whys Methodology
+      - Telemetry, System Log & Trace Deep Dive
+      - Model Regression & Misclassification Root-Cause Analysis
+      - Data Pipeline Error Analysis & Corrective Actions
 
 
 1. Production ML Lifecycle & MLOps Core
@@ -3268,6 +3324,19 @@ X. Additional Requested Skills
     * Edge AI
     * NVIDIA Jetson Platforms (Xavier, Orin series)
     * GPU-intensive workloads
+   B) Automotive AI & ADAS Embedded Systems:
+    * AI/ML Validation for ADAS
+      - Model Validation for Perception & Sensor Fusion
+      - Simulation & Closed-Loop Validation (CARLA, HIL/SIL)
+      - Automotive Safety Compliance (ISO 26262, SOTIF)
+    * Vehicle Instrumentation
+      - Automotive Sensors (LiDAR, Radar, Cameras, IMU, GNSS)
+      - High-Bandwidth Telemetry & In-Vehicle Logging
+      - Test Bench Setup & Hardware-in-the-Loop
+    * CANalyzer / CANoe
+      - CAN / CAN-FD / Ethernet Bus Analysis
+      - Vector Toolchain & CAPL Scripting
+      - UDS & OBD-II Diagnostics
 
 10. Observability
    A) Core:
@@ -3286,6 +3355,11 @@ X. Additional Requested Skills
     * Continuous Testing & Quality Gates
     * Test Data Generation & Mocking Services
     * Test Result Reporting, Coverage & Failure Alerting
+   C) Root-Cause Analysis:
+    * Systematic Failure Diagnosis & 5 Whys Methodology
+    * Telemetry & Trace Deep Dive for Edge & Production Models
+    * Misclassification & Distribution Shift Root-Cause Analysis
+    * Remediation & Corrective Action (CAPA) Workflows
 
 12. AWS Cloud Essentials for ML
    A) Introduction to AWS:
