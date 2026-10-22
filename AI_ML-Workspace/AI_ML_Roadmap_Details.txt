@@ -657,8 +657,79 @@ X. Additional Requested Skills
       - Statistics & Optimization Toolboxes
       - Signal Processing & Filtering
       - Simulink Dynamic Modeling & Simulation
+   B) Recommended Final Additions Checklist (Phase 2 — Additional Topics 0/37):
+    * 1. Mathematical Foundations:
+      - [ ] Algebra, equations, inequalities, functions and graphs
+      - [ ] Exponential and logarithmic functions
+      - [ ] Summations, sequences, series and trigonometry
+    * 2. Advanced Linear Algebra:
+      - [ ] Tensor operations, broadcasting and vectorization
+      - [ ] Positive definite matrices and orthogonal projections
+      - [ ] Least squares, QR decomposition and numerical conditioning
+    * 3. Calculus and Automatic Differentiation:
+      - [ ] Matrix calculus and computational graphs
+      - [ ] Automatic differentiation and gradient checking
+      - [ ] Numerical differentiation and finite differences
+    * 4. Advanced Optimization:
+      - [ ] SGD, mini-batches, Momentum, Nesterov, AdaGrad, RMSProp and Adam
+      - [ ] Learning-rate schedules, weight decay and gradient clipping
+      - [ ] Newton and quasi-Newton methods
+    * 5. Probability:
+      - [ ] Counting principles and law of total probability
+      - [ ] Joint, marginal, conditional distributions and conditional independence
+      - [ ] Expectation, conditional expectation and sampling distributions
+    * 6. Advanced Statistical Inference:
+      - [ ] Effect sizes, multiple testing and FDR
+      - [ ] Bootstrap, permutation tests and robust statistics
+      - [ ] Sampling bias, standard errors and statistical assumptions
+    * 7. Bayesian Statistics:
+      - [ ] Priors, likelihoods, posteriors, MLE and MAP
+      - [ ] Conjugate priors and posterior predictive distributions
+      - [ ] Credible intervals and MCMC fundamentals
+    * 8. Information Theory:
+      - [ ] Entropy, conditional entropy and cross-entropy
+      - [ ] KL divergence and mutual information
+      - [ ] Information gain, Gini impurity and perplexity
+    * 9. Mathematics of ML Algorithms:
+      - [ ] Loss functions and empirical risk minimization
+      - [ ] Linear and logistic regression derivations
+      - [ ] Softmax, regularization, distance metrics and kernel functions
+    * 10. Discrete Mathematics:
+      - [ ] Mathematical induction and recurrence relations
+      - [ ] Graph theory, relations, Boolean algebra and basic proofs
+    * 11. Time Series Mathematics:
+      - [ ] Trend, seasonality, autocorrelation and stationarity
+      - [ ] ARIMA, exponential smoothing and forecasting evaluation
+    * 12. Numerical Mathematics:
+      - [ ] Floating-point precision, overflow and underflow
+      - [ ] Numerical stability and stable softmax/log-sum-exp
+      - [ ] Mixed precision and computational cost of matrix operations
+    * 13. Experimental Design and Causal Inference:
+      - [ ] Power and sample-size calculations
+      - [ ] Sequential testing, peeking bias and sample-ratio mismatch
+      - [ ] Confounding, treatment effects and difference-in-differences
+   C) Priority Classification & Implementation Guidance:
+    * Core Priority:
+      - Linear Algebra, Calculus, Probability, Statistics, Optimization, Information Theory, and ML Mathematical Foundations
+    * Practical Implementation:
+      - Python, NumPy, SciPy, SymPy, Matplotlib, and Jupyter Notebook (validate calculations and visualize mathematical ideas)
+    * Specialized / Optional:
+      - MATLAB, Simulink, SPSS, Simplex Method, Queuing Theory, Transportation Problems, and Game Theory (prioritize according to target roles and projects)
 
 
+
+0. Mathematical Foundations
+   A) Algebra & Functions:
+    * Algebraic Equations and Inequalities
+    * Functions and Their Graphs
+    * Exponential and Logarithmic Functions
+    * Summation Notation (Σ) and Product Notation (Π)
+    * Fractions, Ratios, Proportions, and Scientific Notation
+   B) Sequences, Series & Geometry:
+    * Sequences and Series
+    * Logarithm Rules and Exponent Rules
+    * Coordinate Geometry and Slopes
+    * Trigonometry Basics: Sine, Cosine, and Radians
 
 1. Linear Algebra
    A) Vectors:
@@ -693,6 +764,17 @@ X. Additional Requested Skills
     * Eigendecomposition
     * PCA Mathematics
     * Cholesky Decomposition
+   E) Advanced Linear Algebra:
+    * Tensors and Tensor Shapes in Depth
+    * Hadamard (Element-wise) Product vs. Matrix Multiplication
+    * Broadcasting and Vectorization
+    * Positive Definite and Positive Semidefinite Matrices
+    * Orthogonal and Orthonormal Bases
+    * Projection of Vectors onto Subspaces
+    * Least-Squares Solutions
+    * QR Decomposition
+    * Matrix Conditioning and Numerical Stability
+    * Sparse Matrices and Their Computational Advantages
 
 2. Calculus
    A) Differential Calculus:
@@ -717,6 +799,30 @@ X. Additional Requested Skills
     * Learning Rate Intuition
     * Lagrange Multipliers
     * Constrained Optimization
+   D) Matrix Calculus & Automatic Differentiation:
+    * Exponential and Logarithmic Derivatives
+    * Implicit Differentiation
+    * Differentiation of Vector- and Matrix-Valued Functions
+    * Matrix Calculus and Gradients with Respect to Vectors and Matrices
+    * Computational Graphs
+    * Backpropagation: Forward Pass and Backward Pass
+    * Numerical Differentiation and Finite Differences
+    * Gradient Checking
+    * Automatic Differentiation
+    * Numerical Integration Basics
+   E) Advanced Optimization:
+    * Stochastic Gradient Descent (SGD)
+    * Mini-Batch Gradient Descent
+    * Momentum and Nesterov Momentum
+    * AdaGrad, RMSProp, and Adam
+    * Learning-Rate Scheduling and Warm-Up
+    * Weight Decay and L1/L2 Regularization
+    * Vanishing and Exploding Gradients
+    * Gradient Clipping
+    * Numerical Optimization Convergence Criteria
+    * Proximal Gradient Methods (Advanced)
+    * Second-Order Optimization: Newton's Method and Quasi-Newton Methods
+    * Multi-Objective Optimization Basics
 
 3. Probability & Statistics
    A) Descriptive Statistics:
@@ -761,6 +867,32 @@ X. Additional Requested Skills
    G) Distributions & Central Limit Theorem:
    H) Hypothesis Testing & P-Values:
    I) A/B Testing (Minimum Detectable Effect, CUPED, Ratio Metrics):
+   J) Advanced Probability Concepts:
+    * Counting Principles, Permutations, and Combinations
+    * Sample Spaces and Event Algebra
+    * Law of Total Probability
+    * Conditional Independence
+    * Joint, Marginal, and Conditional Distributions
+    * Expectation and Expected Value
+    * Probability Mass and Density Functions in Greater Depth
+    * Cumulative and Survival Probabilities
+    * Variance and Covariance of Random Variables
+    * Conditional Expectation and Conditional Variance
+    * Moment-Generating Functions (Advanced)
+    * Sampling Distributions and Standard Errors
+   K) Advanced Statistical Inference:
+    * Sampling Methods and Sampling Bias
+    * Probability Sampling vs. Non-Probability Sampling
+    * Standard Error and Standard Error of the Mean
+    * Effect Sizes: Cohen's d, Odds Ratios, and Relative Risk
+    * Multiple Hypothesis Testing
+    * Bonferroni Correction and False Discovery Rate (FDR)
+    * Bootstrap and Permutation Tests
+    * Robust Statistics and Outlier-Resistant Estimators
+    * Missing-Data Mechanisms and Their Statistical Implications
+    * Statistical Assumptions and Diagnostic Checks
+    * Practical Significance vs. Statistical Significance
+    * Non-Inferiority and Equivalence Testing
 
 4. Mathematics for Machine Learning
    A) Linear Algebra:
@@ -775,6 +907,28 @@ X. Additional Requested Skills
     * Gradients, Jacobian, Hessian Matrix
    C) Discrete Mathematics:
     * Logic, Set Theory, Combinatorics
+    * Propositional and Predicate Logic
+    * Relations and Functions
+    * Mathematical Induction
+    * Recurrence Relations
+    * Graph Theory Fundamentals
+    * Conditional Independence Graphs
+    * Boolean Algebra
+    * Basic Proofs and Mathematical Notation
+   D) Mathematical Foundations of Machine Learning Algorithms:
+    * Loss Functions: MSE, MAE, Binary Cross-Entropy, Categorical Cross-Entropy
+    * Likelihood-Based Learning
+    * Empirical Risk Minimization
+    * Regularization and the Bias-Variance Trade-Off
+    * Overfitting and Underfitting from a Mathematical Perspective
+    * Linear Regression Derivation and Normal Equation
+    * Logistic Regression and Sigmoid Function
+    * Softmax Function and Multiclass Classification
+    * Decision Boundaries and Geometric Interpretation
+    * L1 and L2 Penalties
+    * Distance Metrics: Euclidean, Manhattan, Minkowski, and Mahalanobis
+    * Kernel Functions and the Intuition Behind the Kernel Trick
+    * Calibration and Uncertainty Estimation Basics
 
 5. Descriptive Statistics
    A) Dispersion:
@@ -811,6 +965,21 @@ X. Additional Requested Skills
    C) Funnel Analysis:
    D) Churn Rate & Retention Analysis:
    E) Customer Lifetime Value (CLV):
+   F) Experimental Design & Causal Inference:
+    * Statistical Power Calculations and Sample-Size Estimation
+    * Randomization and Experimental Design
+    * Blocking and Stratification
+    * Factorial Experiments
+    * Sequential Testing and Stopping Rules
+    * Peeking Bias
+    * Multiple Comparisons in Experiments
+    * Guardrail Metrics
+    * Novelty Effects and Sample-Ratio Mismatch (SRM)
+    * Simpson's Paradox
+    * Causal Inference Fundamentals
+    * Confounding Variables and Selection Bias
+    * Treatment Effects and Heterogeneous Treatment Effects
+    * Difference-in-Differences Basics
 
 9. Advanced Mathematics
    A) Core:
@@ -844,6 +1013,60 @@ X. Additional Requested Skills
     * Statistics and Machine Learning Toolbox
     * Curve Fitting & Hypothesis Testing in MATLAB
     * Signal Processing & Dynamic Simulation (Simulink)
+
+11. Bayesian Statistics
+   A) Bayesian Framework:
+    * Prior, Likelihood, and Posterior Distributions
+    * Maximum Likelihood Estimation (MLE)
+    * Maximum A Posteriori (MAP) Estimation
+    * Bayesian Inference
+    * Conjugate Priors
+   B) Bayesian Computation & Modeling:
+    * Posterior Predictive Distributions
+    * Credible Intervals vs. Confidence Intervals
+    * Bayesian Model Comparison
+    * Markov Chain Monte Carlo (MCMC) Fundamentals
+    * Approximate Bayesian Inference Basics
+
+12. Information Theory
+   A) Entropy & Divergence:
+    * Entropy
+    * Conditional Entropy
+    * Joint Entropy
+    * Cross-Entropy
+    * Kullback-Leibler (KL) Divergence
+   B) Information Metrics in AI:
+    * Mutual Information
+    * Information Gain
+    * Gini Impurity and Entropy in Decision Trees
+    * Perplexity in Language Models
+
+13. Time Series and Statistical Forecasting
+   A) Time Series Mathematics:
+    * Time-Dependent Random Variables
+    * Trend, Seasonality, and Residual Components
+    * Autocorrelation and Partial Autocorrelation (ACF & PACF)
+    * Stationarity and Differencing
+   B) Forecasting Models & Evaluation:
+    * Moving Averages and Exponential Smoothing
+    * AR, MA, ARMA, and ARIMA Fundamentals
+    * Forecast Errors and Evaluation Metrics
+    * Time-Series Cross-Validation
+    * Forecast Uncertainty and Prediction Intervals
+
+14. Numerical Mathematics and Computational Stability
+   A) Floating-Point & Numerical Conditioning:
+    * Floating-Point Representation and Precision
+    * Floating-Point Rounding Errors
+    * Numerical Stability and Numerical Conditioning
+    * Overflow and Underflow
+    * Stable Computation of Logarithms and Exponentials
+   B) Computational Stability in Deep Learning:
+    * Stable Softmax and Log-Sum-Exp
+    * Numerical Solutions of Linear Systems
+    * Computational Complexity of Matrix Operations
+    * Finite Precision in Deep Learning
+    * Mixed-Precision Arithmetic Fundamentals
 
 PROJECTS:
   Beginner:
