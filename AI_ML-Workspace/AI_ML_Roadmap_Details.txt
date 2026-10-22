@@ -1175,6 +1175,26 @@ X. Additional Requested Skills
     * Business Intelligence (BI)
     * BFSI
     * Risk & Compliance Management
+   B) Data Analytics 360 (2026 Edition Master Curriculum & Reference Index):
+    * 1. What is Data Analytics? (Data vs Info, Structured/Semi/Unstructured, NOIR Scales of Measurement, Value Chain, Real-World Domains)
+    * 2. Data Analyst Roadmap & Career Progression (8-Step Learning Path, Tools Ecosystem, Career Ladder Junior to Manager)
+    * 3. Types, Lifecycle and Roles (4 Analytics Types: Descriptive, Diagnostic, Predictive, Prescriptive; 6-Step Lifecycle, CRISP-DM, 5 Whys, Roles)
+    * 4. Excel I: Formulas (Shortcuts, References, Errors, Formula Families, Dynamic Arrays 365, Analyst Recipes)
+    * 5. Excel II: Pivots, Power Query, Charts & AI (PivotTables, Power Query M, Query Folding, Power Pivot, Goal Seek, Solver, Forecast Sheet, AI Copilot)
+    * 6. SQL I: Core Queries (Execution Order, Filtering, Relational Concepts, Joins, Aggregates, Functions, CASE WHEN, DDL/DML/DQL, Normalization)
+    * 7. SQL II: Advanced & Interview Patterns (CTEs, Set Ops, Performance, Window Functions, Retention Cohorts, Pivoting, Top Interview Queries)
+    * 8. Statistics I: Descriptive (Centre, Spread, Shape, Normal Dist, Z-score, Tukey's Fences, Distributions, Correlation, Multi-Tool Code)
+    * 9. Statistics II: Inferential (Sampling, CI, 5-Step Hypothesis Testing, Test Selection Matrix, Errors & Power, A/B Flow, Regression, Metrics)
+    * 10. EDA and Data Cleaning (EDA Workflow, Missing Data MCAR/MAR/MNAR, Plot Matrix, Outlier Winsorization, 6 Quality Dimensions, Pandas Recipes)
+    * 11. Python for Analysis (Setup, Selection/Filtering, Cleaning, Group/Merge/Pivot, Dates/Time Series, NumPy, Plots, Best Practices)
+    * 12. Power BI I: Model + Power Query (Power BI Family, Connectivity Modes, Power Query M, Star Schema, Date Table, Visuals, Interactivity, RLS)
+    * 13. Power BI II: DAX + Service (DAX Fundamentals, Context Transition CALCULATE, Everyday Measures, Iterators, Time Intelligence, Service, Performance, PL-300)
+    * 14. Visualization and Storytelling (Pick the Chart Matrix, 5-Second Test, Z-Pattern Layout, Story Framework, Anti-Patterns)
+    * 15. AI in Analytics 2026 (Ask-Generate-Run-Verify-Explain, AI Tools by Job, Pitfalls, Verification Checklist, R-C-T-C-F Prompt Formula, In-Demand Skills)
+    * 16. Modern Data Stack and Tools (Data Flow Architecture, ETL vs ELT, DWH, Lakehouse, Data Mart, Data Mesh, Cloud AWS/Azure/GCP, dbt, Governance)
+    * 17. Business Metrics and KPIs (SMART Criteria, Sales/Marketing, Product/Customer, Finance, Operations/HR, Cohort & Funnel, 5-Step Root-Cause)
+    * 18. Portfolio, Resume, Interview (4 Core Projects, Resume Bullet Formula, Interview Loop Rounds, STAR Method 5 Stories, Top Questions)
+    * 19. Study Plan + Quick Revision + Final Checklist (12-Week Study Plan, One-Line Revision Rules, Daily Habit, 8-Point Final Checklist)
 
 
 
@@ -1623,8 +1643,286 @@ X. Additional Requested Skills
    A) Core:
     * Business Dashboards
 
+118. Data Analytics 360 Foundations & Lifecycle
+   A) What is Data Analytics & Measurement Scales:
+    * Data Analytics Definition: Collect, Clean, Analyze, Insights, Better Decisions
+    * Data vs Information: Raw facts vs Contextual, Processed, Meaningful insights
+    * Types of Data: Structured (SQL/Excel), Semi-structured (JSON/XML/logs), Unstructured (text/images/audio)
+    * Qualitative vs Quantitative Data (Discrete counts vs Continuous measured)
+    * Scales of Measurement (NOIR Framework): Nominal (labels/no order), Ordinal (ranked/unequal gaps)
+    * Scales of Measurement: Interval (equal gaps/no true zero), Ratio (equal gaps + true zero)
+    * Analytics Value Chain: Data -> Insights -> Action (Data alone has no value without decision impact)
+    * Real-World Industry Domains: E-commerce (behavior, recommendations), Banking (fraud, credit risk)
+    * Real-World Industry Domains: Healthcare (disease risk), Marketing (campaign ROI), Logistics (route optimization)
+   B) The Four Analytics Types & Lifecycle Frameworks:
+    * Descriptive Analytics: What happened? (Monthly sales dashboards, KPI reports; Excel, SQL, Power BI)
+    * Diagnostic Analytics: Why did it happen? (Churn spike, drill-down, cohorts, EDA; SQL, cohorts, EDA)
+    * Predictive Analytics: What will happen? (Demand forecast, churn probability; Python, regression, ML)
+    * Prescriptive Analytics: What should we do? (Dynamic pricing, route optimization, next best offer; Optimization, A/B tests, AI)
+    * 6-Step Analysis Lifecycle: 1. Ask (define question, KPI, stakeholders) -> 2. Prepare (find/collect, check sources)
+    * 6-Step Analysis Lifecycle: 3. Process (clean, transform, validate) -> 4. Analyze (EDA, stats, models)
+    * 6-Step Analysis Lifecycle: 5. Share (dashboards, story, recommendations) -> 6. Act (decision, monitor impact)
+    * CRISP-DM Methodology: Business understanding, Data understanding, Data preparation, Modeling, Evaluation, Deployment
+    * Problem Deconstruction: 5 Whys Analysis & Issue Trees (turning vague questions into testable hypotheses)
+   C) Roles, Responsibilities & Career Progression:
+    * Data Analyst: Answers business questions with data (SQL, Excel, Power BI, Python; Dashboards & insights)
+    * BI Developer: Builds semantic data models & reporting layer (Power BI, DAX, SQL, ETL; Governed reports)
+    * Data Scientist: Predictive models & experimental design (Python, ML, stats; Models & forecasts)
+    * Data Engineer: Builds & maintains data pipelines (SQL, Python, Spark, Cloud; Clean, reliable data)
+    * Analytics Engineer: Models data with SQL & dbt (SQL, dbt, Git; Trusted production tables)
+    * Data Analytics Career Progression: Junior Analyst (0-1 yrs) -> Data Analyst (1-3 yrs) -> Senior Analyst (3-5 yrs)
+    * Data Analytics Career Progression: Lead Analyst (5-8 yrs) -> Analytics Manager (8+ yrs)
+
+119. Excel for Analytics (Formulas, Pivots, Power Query & AI)
+   A) Must-Know Shortcuts, References & Error Handling:
+    * Essential Shortcuts: Ctrl+T (Table), Ctrl+Shift+L (Filter), Ctrl+Arrow (Edge jump), Alt+= (AutoSum)
+    * Productivity Shortcuts: F4 (Lock reference), Ctrl+E (Flash Fill), Ctrl+1 (Format cells), Alt,N,V (PivotTable)
+    * Cell Reference Mastery: A1 relative, $A$1 absolute, A$1 / $A1 mixed, Structured Table1[Sales], Named Ranges
+    * Error Code Resolution: #N/A (lookup not found), #REF! (deleted reference), #DIV/0! (divide by zero)
+    * Error Code Resolution: #VALUE! (wrong data type), #NAME? (typo in function), #SPILL! (array blocked)
+   B) Formula Families & Advanced Lookups:
+    * Math & Stats Formulas: SUM, SUMIFS, COUNTIFS, AVERAGEIFS, ROUND, MOD, SUMPRODUCT, MAX/MIN
+    * Logic Formulas: IF, IFS, AND, OR, NOT, SWITCH, IFERROR, IFNA
+    * Lookup Formulas: XLOOKUP (exact match default, left lookup, no col numbers), VLOOKUP, HLOOKUP, INDEX+MATCH, XMATCH, CHOOSE
+    * Text Functions: LEFT, RIGHT, MID, LEN, TRIM, CLEAN, SUBSTITUTE, TEXTJOIN, CONCAT, TEXTSPLIT, UPPER, PROPER
+    * Date & Time Functions: TODAY, NOW, EDATE, EOMONTH, DATEDIF, NETWORKDAYS, YEAR, MONTH, WEEKDAY, TEXT(d, 'mmm-yy')
+    * Statistical Functions: AVERAGE, MEDIAN, MODE, STDEV.S, VAR.S, PERCENTILE, QUARTILE, CORREL, RANK.EQ
+    * Analyst Recipes: % of Total (B2/SUM($B$2:$B$100)), Growth % ((C2-B2)/B2), Running Total (SUM($B$2:B2))
+    * Analyst Recipes: Extract Name from Email (LEFT(A2, FIND('@', A2)-1)), Distinct Count (COUNTA(UNIQUE(A2:A100)))
+   C) Dynamic Arrays (Excel 365) & Data Cleaning:
+    * Dynamic Arrays: FILTER, SORT, SORTBY, UNIQUE, SEQUENCE, TAKE, HSTACK, VSTACK
+    * LET Function (local variable naming for speed & readability) & LAMBDA (custom reusable functions)
+    * Data Control: Conditional Formatting (rules, data bars, icon sets), Data Validation (dropdowns, limits)
+    * Data Cleaning Checklist: TRIM + CLEAN, Text to Columns, Flash Fill (Ctrl+E), Remove Duplicates
+    * Data Conversion: VALUE / Paste Special for text numbers, Date formatting, Blank imputation or flagging
+   D) PivotTables, Power Query (M) & What-If Analysis:
+    * PivotTables: Rows/Columns/Values/Filters, Value Settings (% of total, running total, difference from)
+    * PivotTable Interactivity: Date grouping (months/quarters/years), Slicers + Timelines, Calculated Fields, PivotCharts
+    * Power Query (Get and Transform): Load from Excel, CSV, Web, SQL, Folder combine; M language Advanced Editor
+    * Power Query Transformations: Remove/keep rows, Split column, Replace values, Unpivot (wide to tidy), Merge/Append joins
+    * Query Folding: Pushing transformation steps to database engine for performance; Staging queries
+    * Data Model (Power Pivot): Star schema relationships, millions of rows, DAX measures in Excel
+    * What-If Analysis: Goal Seek, Data Table + Scenario Manager, Solver (constrained optimization), Forecast Sheet (ETS)
+    * Excel Dashboard Design: 1 sheet data, 1 calcs, 1 dashboard; KPI cards top-left, Z-pattern, multi-pivot slicers
+    * AI inside Excel (2026): Copilot (plain English formulas/charts), Agent Mode (multi-step tasks), Python in Excel (=PY)
+
+120. SQL Analytics & Interview Mastery (Core to Advanced)
+   A) Query Anatomy, Execution Order & Relational Concepts:
+    * SQL Order of Execution: FROM > JOIN > WHERE > GROUP BY > HAVING > SELECT > DISTINCT > ORDER BY > LIMIT
+    * Filtering Toolkit: BETWEEN, IN, LIKE ('A%'), IS NULL / IS NOT NULL, NOT, COALESCE(x, 0)
+    * Relational Database Concepts: Relationships (1:1, 1:many, many:many bridge tables), ACID Properties
+    * OLTP (transactional / small writes) vs OLAP (analytical / large reads / column-oriented)
+    * Views (saved queries), Stored Procedures (saved logic), Transactions (COMMIT, ROLLBACK)
+    * Database Normalization: 1NF (atomic values), 2NF (no partial dependency), 3NF (no transitive dependency)
+    * DDL (CREATE, ALTER, DROP, TRUNCATE), DML (INSERT, UPDATE, DELETE), DQL (SELECT)
+   B) Joins, Aggregations & Dialect Differences:
+    * SQL Joins: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, CROSS JOIN, SELF JOIN
+    * Anti-Join Pattern: LEFT JOIN ... WHERE right.id IS NULL (identifying unmatched records)
+    * Aggregations: COUNT(*), COUNT(col), COUNT(DISTINCT col), SUM, AVG, MIN, MAX; GROUP BY rule
+    * Dialect Differences: MySQL/Postgres (LIMIT 10, CURRENT_DATE, CONCAT, COALESCE) vs SQL Server (TOP 10, GETDATE(), +, ISNULL)
+    * Text & Number Functions: UPPER, LOWER, TRIM, SUBSTRING, CONCAT, REPLACE, LENGTH; ROUND, CEIL, FLOOR, ABS, MOD
+    * Date Functions: CURRENT_DATE, DATE_TRUNC, EXTRACT, DATEDIFF, DATE_ADD
+    * Null Handling & Type Casting: COALESCE, NULLIF, IFNULL, CAST(x AS INT), ::date
+    * Conditional Logic: CASE WHEN condition THEN result ELSE default END
+   C) Advanced SQL: CTEs, Window Functions & Retention:
+    * Common Table Expressions (CTEs): WITH clause, chained CTEs, correlated subqueries vs joins, EXISTS vs IN
+    * Set Operations: UNION (deduplicates) vs UNION ALL (faster, keeps duplicates), INTERSECT, EXCEPT / MINUS
+    * Window Functions Syntax: fn() OVER (PARTITION BY ... ORDER BY ... ROWS BETWEEN ...)
+    * Ranking Functions: ROW_NUMBER() (unique 1,2,3), RANK() (gap ties 1,1,3), DENSE_RANK() (no gap ties 1,1,2)
+    * Offset & Aggregate Windows: LAG() / LEAD() (previous/next row), SUM() OVER (running total), AVG() OVER (moving average)
+    * Distribution Windows: NTILE(4) (quartiles), FIRST_VALUE() / LAST_VALUE()
+    * Date Patterns & Retention: Rolling 30 days, Month-on-Month growth, Day 0 vs Day 7 retention cohort queries
+    * Conditional Aggregation: Pivoting rows to columns with SUM(CASE WHEN month = 1 THEN amount END)
+   D) SQL Performance, Pitfalls & Interview Query Patterns:
+    * Performance Tuning: Specific column selection (no SELECT *), early filtering, joining on indexed keys
+    * Query Plan Analysis: EXPLAIN / EXPLAIN ANALYZE, sargable queries (avoiding functions on indexed filter columns)
+    * Common SQL Pitfalls: Join Fan-Out (duplicate inflation of SUM; check grain), NOT IN with NULLs (use NOT EXISTS)
+    * Common SQL Pitfalls: Integer division truncation, timestamp comparison boundaries (>= and <), DISTINCT hiding bad joins
+    * Interview Pattern: Nth Highest Salary (DENSE_RANK() or subquery with LIMIT/OFFSET)
+    * Interview Pattern: Top N Per Department using DENSE_RANK() OVER (PARTITION BY dept ORDER BY salary DESC)
+    * Interview Pattern: Duplicate Detection & Deletion using CTE with ROW_NUMBER()
+    * Interview Pattern: Running Total and Year-over-Year Growth queries
+    * Practice Platforms: LeetCode SQL 50, HackerRank SQL, StrataScratch, Mode SQL Tutorial, SQLBolt
+
+121. EDA, Data Cleaning & Feature Engineering
+   A) EDA Workflow & Quality Dimensions:
+    * EDA Workflow: Business question first, check data dictionary & grain (what does one row mean?)
+    * Initial Data Inspection: df.shape, df.dtypes, df.head(), df.tail(), df.sample(5), df.info()
+    * Univariate & Bivariate Exploration: Distributions, column vs target relationships, correlation matrices
+    * 6 Core Data Quality Dimensions: Accuracy (true?), Completeness (nulls?), Consistency (same meaning?)
+    * 6 Core Data Quality Dimensions: Validity (format/range?), Uniqueness (duplicates?), Timeliness (fresh?)
+   B) Missing Data Strategies & Plot Selection Matrix:
+    * Missing Data Mechanisms: MCAR (completely at random), MAR (depends on observed cols), MNAR (depends on missing value)
+    * Missing Value Treatments: Drop rows (<5%, random), Mean/Median fill (skew decides), Mode/'Unknown' fill
+    * Advanced Imputation: Group-wise fill (median by segment), Forward fill (time series), Model/KNN imputation, Missing flag column
+    * EDA Plot Matrix: 1 numeric (histogram, KDE, box plot), 1 categorical (bar, value_counts)
+    * EDA Plot Matrix: numeric x numeric (scatter, correlation), category x numeric (box/violin by group)
+    * EDA Plot Matrix: category x category (crosstab, stacked bar), time x numeric (line, rolling mean), many numeric (heatmap, pairplot)
+   C) Outliers, Pandas Recipes & Feature Engineering:
+    * Outlier Detection: IQR rule (Q1 - 1.5*IQR to Q3 + 1.5*IQR), Z-Score > 3, Box plots
+    * Outlier Treatment: Verify data error vs rare event, Cap (Winsorization), Log transformation, Isolate segment
+    * Pandas EDA Recipes: df.isna().mean().sort_values(), df.duplicated().sum(), df.describe(include='all')
+    * Pandas EDA Recipes: df.groupby('cat')['sales'].agg(['mean','count']), sns.heatmap(df.corr(numeric_only=True))
+    * Feature Engineering: Date extraction (month, weekday, is_weekend, days_since), Binning (pd.cut for age/price bands)
+    * Feature Engineering: Categorical encoding (one-hot, label, frequency), Scaling (min-max, standard z-score)
+    * Feature Engineering: Ratio metrics (revenue per user, rate per 1000), Time lags & rolling averages
+
+122. Python for Data Analysis
+   A) Setup, Data Loading & Selection:
+    * Analytics Environment: Jupyter Notebooks, VS Code, Google Colab; virtual environments & requirements.txt
+    * Core Libraries: pandas, numpy, matplotlib.pyplot, seaborn, plotly, streamlit
+    * Data Loading & Export: pd.read_csv(), pd.read_excel(), pd.read_sql(), df.to_csv(index=False)
+    * Selection & Filtering: df['col'], df[['c1','c2']], df.loc[] (label-based), df.iloc[] (index-based)
+    * Advanced Filtering: df.query('sales > 500 and city == "Kochi"'), df.isin(), df.sort_values(), df.nlargest(5)
+   B) Data Manipulation, Grouping & Reshaping:
+    * Data Cleaning in Pandas: df.drop_duplicates(), df.fillna(0), df.dropna(subset=['id']), pd.to_datetime()
+    * String Cleaning: df['city'].str.strip().str.title(), df['sales'].astype(float), df.rename(columns={...})
+    * Aggregation & Grouping: df.groupby('city')['sales'].agg(['mean', 'count']), .reset_index()
+    * Merging & Joining: pd.merge(a, b, on='cust_id', how='left'), pd.concat([jan, feb], ignore_index=True)
+    * Pivoting & Reshaping: pd.pivot_table(index='city', columns='m', values='sales', aggfunc='sum'), pd.crosstab()
+    * Date & Time Intelligence: df['dt'].dt.to_period('M'), df['dt'].dt.day_name(), resample('M').sum(), rolling(7).mean()
+   C) NumPy Basics, Visuals & Analyst Habits:
+    * NumPy Vectorized Operations: np.array(), vectorized arithmetic (a * 2), np.mean(), np.median(), np.std(ddof=1)
+    * NumPy Analytics Functions: np.percentile(a, [25, 75]), np.corrcoef(x, y), np.where(condition, x, y)
+    * Data Visualization: Matplotlib subplots, Seaborn (histplot with kde, barplot, scatterplot)
+    * Interactive Dashboards: Plotly Express (px.line), Streamlit web apps for business sharing
+    * Habits of a Good Analyst: Restart & Run All before sharing, modular functions, keep raw data read-only
+    * Habits of a Good Analyst: Comment 'why not what', Git for version control, commit & push to GitHub
+
+123. Power BI & Business Intelligence Mastery (Model, DAX & Fabric)
+   A) Power BI Architecture & Connectivity Modes:
+    * Power BI Family: Desktop (authoring), Service (cloud sharing/refresh/RLS), Mobile (alerts)
+    * Power BI Family: Report Builder (paginated print-ready reports), Microsoft Fabric (OneLake, Lakehouse, Warehouse)
+    * Connectivity Modes: Import Mode (data copied into VertiPaq engine, fastest, refresh scheduled)
+    * Connectivity Modes: DirectQuery (live source queries, slower, real-time data)
+    * Connectivity Modes: Live Connection (Analysis Services / existing semantic model), Composite Mode (hybrid)
+    * Connectivity Modes: Direct Lake (Microsoft Fabric: reads Lake files directly at import speed without refresh)
+   B) Power Query (M) & Star Schema Modeling:
+    * Power Query Transformations: remove, split, unpivot, merge, append; Query Folding (source query pushdown)
+    * Environment Parameters for servers/dates, disabling load on staging queries to optimize model size
+    * Star Schema Modeling: Fact Table (events & numbers: sales, clicks; keys + measures)
+    * Star Schema Modeling: Dimension Tables (who, what, when, where context; 1-to-many single direction relationships)
+    * Data Modeling Best Practices: Avoid bidirectional filters and many-to-many relationships; flat wide tables are slow
+    * Date Table Creation: ADDCOLUMNS(CALENDAR(DATE(2020,1,1), TODAY()), 'Year', YEAR([Date]), ...) marked as Date Table
+   C) Visuals, Interactivity & Row-Level Security:
+    * Visuals Toolkit: Card, multi-row card, KPI visual, gauge; Clustered/stacked/100% bar & column charts
+    * Advanced Visuals: Line & combo (line+column), Matrix with conditional formatting, Scatter, Decomposition Tree, Key Influencers
+    * Spatial & Flow Visuals: Filled Map, Treemap, Funnel, Waterfall charts; Tooltip pages
+    * Interactivity: Visual/Page/Report filters, Drill-down & drill-through hierarchies, Cross-filtering & Edit Interactions
+    * Dynamic Features: Field parameters (dynamic metric/dimension switching), Bookmarks for views, Navigation buttons
+    * Security: Row-Level Security (RLS) setup per user role, testing roles in Power BI Desktop & Service
+   D) DAX Mastery, Evaluation Context & Time Intelligence:
+    * DAX Fundamentals: Measures (query-time calculation, reacts to filter context, dynamic, use for KPIs)
+    * DAX Fundamentals: Calculated Columns (computed per row at refresh, stored in RAM), Calculated Tables
+    * Evaluation Context: Row Context (current row, iterators) vs Filter Context (slicers, visual axes, filters)
+    * Context Transition: CALCULATE() overrides and transitions filter context (the core of DAX)
+    * Everyday Measures: SUM, DISTINCTCOUNT, DIVIDE(numerator, denominator, 0) safe division
+    * Everyday Measures: CALCULATE([Total Sales], Geo[Region]='South'), DIVIDE([Total Sales], CALCULATE([Total Sales], ALL(Geo)))
+    * Iterators & Variables: SUMX(Sales, Sales[Qty]*Sales[Price]), AVERAGEX, COUNTX; VAR...RETURN construct
+    * Time Intelligence: TOTALYTD, TOTALMTD, SAMEPERIODLASTYEAR, DATESINPERIOD, DATEADD
+    * Filter & Rank Functions: FILTER, ALL, ALLEXCEPT, REMOVEFILTERS, VALUES, SELECTEDVALUE, RELATED, RANKX, TOPN, SWITCH
+   E) Power BI Service, Governance & Performance Tuning:
+    * Power BI Service Architecture: Workspaces, Apps (packaged content for business users), On-premises Data Gateway
+    * Dataflows (shared reusable cleaned ETL tables), Incremental Refresh for large tables, Deployment Pipelines (dev/test/prod)
+    * Governance & Compliance: Sensitivity labels, RLS, certification of datasets
+    * Performance Checklist: Remove unused columns/rows, star schema integer keys, avoid high-cardinality text
+    * Performance Checklist: Prefer measures over calculated columns, Performance Analyzer & DAX Studio to find slow visuals
+    * Copilot & AI (2026): Copilot builds report pages, summaries, DAX drafts; Q&A natural-language queries
+    * Certification Alignment: Microsoft Certified Power BI Data Analyst (Exam PL-300)
+
+124. Modern Data Stack, dbt & Cloud Analytics Architecture
+   A) Data Flow Architecture & Core Paradigms:
+    * Modern Data Stack Flow: Sources (CRM/files/APIs) -> Ingest (Fivetran/Airbyte/ADF) -> Store (Snowflake/BigQuery/Databricks)
+    * Modern Data Stack Flow: Transform (SQL + dbt) -> Serve (Semantic layer/data marts) -> Analyze (Power BI/Tableau/Python)
+    * Architecture Paradigms: ETL (extract, transform, load) vs ELT (load first, transform inside warehouse)
+    * Storage Paradigms: Data Warehouse (structured, modelled) vs Data Lake (raw files, cheap) vs Lakehouse (Delta Lake, Iceberg)
+    * Data Organization: Data Mart (subject slice e.g. sales mart), Data Mesh (domain teams own data products)
+    * Pipeline Orchestration: Apache Airflow & Dagster (scheduling, dependency DAGs, monitoring)
+   B) Cloud Platforms, Dimensional Modeling & dbt:
+    * Cloud Data Platforms: AWS (S3, Redshift, Athena, Glue, QuickSight), Azure (ADLS, Synapse, Fabric, ADF), GCP (Cloud Storage, BigQuery, Looker)
+    * Data Modeling: Star Schema vs Snowflake Schema, Fact Grain definition (what does one row represent?)
+    * Slowly Changing Dimensions (SCD): SCD Type 1 (overwrite current value) vs SCD Type 2 (maintain history with start/end dates)
+    * Medallion Architecture: Bronze (raw ingestion), Silver (cleaned/filtered/conformed), Gold (business aggregations & marts)
+    * dbt in One Box: Modular SQL models with ref('stg_orders'), Jinja templating, incremental models
+    * dbt Testing & Documentation: Schema tests (unique, not_null, relationships, accepted_values), Lineage DAG generation
+   C) Data Governance, Tool Chooser & Best Habits:
+    * Data Governance: Data Catalog & Lineage, Access Control, Masking of PII (Personally Identifiable Information)
+    * Data Privacy Regulations: India DPDP Act, GDPR, single metric definitions in semantic layers
+    * Tool Chooser Matrix: Quick look (Excel, Google Sheets), Microsoft stack (Power BI + Fabric), Design-led viz (Tableau)
+    * Tool Chooser Matrix: Free sharing (Looker Studio), Self-serve SQL (Metabase, Apache Superset), Big data (Spark, Databricks)
+    * Tool Chooser Matrix: Product tracking (GA4, Mixpanel, Microsoft Clarity), Code collaboration (Git + GitHub)
+    * Engineering Habits: Document sources & assumptions, version control everything, test with row-count checks, name things clearly
+
+125. Business Metrics, KPIs & Root-Cause Analysis
+   A) SMART KPI Framework & Domain Metrics:
+    * Good KPI Criteria (SMART): Specific, Measurable, Achievable, Relevant, Time-bound
+    * Leading Indicators (predictive e.g. pipeline) vs Lagging Indicators (reporting e.g. revenue)
+    * Metric Principles: One owner, one definition, one source; Pair metrics (growth + quality e.g. signups + retention)
+    * Sales & Marketing KPIs: Conversion Rate (conversions/visitors), CAC (marketing+sales cost / new customers)
+    * Sales & Marketing KPIs: AOV (revenue/orders), ROAS (ad revenue/ad spend), CTR (clicks/impressions), CLV, Win Rate
+    * Product & Customer KPIs: DAU/MAU Stickiness, Retention Rate (% active after N days), Churn Rate, NPS, CSAT
+   B) Finance, Operations & Cohort/Funnel Thinking:
+    * Finance Metrics: Gross Margin % ((revenue-COGS)/revenue), Net Profit %, EBITDA, ROI ((gain-cost)/cost)
+    * Finance Metrics: MRR / ARR (monthly/annual recurring revenue), Burn Rate, Working Capital (current assets - current liabilities)
+    * Operations & HR Metrics: On-time Delivery Rate, Inventory Turns (COGS / avg inventory), Defect Rate, Attrition Rate, Time to Hire
+    * Funnel Drop-Off Analysis: Visit > Signup > Activate > Pay (identifying stage with highest drop-off)
+    * Cohort Analysis: Grouping users by start month/vintage, tracking and comparing retention decay curves
+   C) 5-Step Root-Cause Analysis Method:
+    * Step 1: Confirm the drop is real (verify data pipeline, rule out tracking bugs or logging failures)
+    * Step 2: Split by dimensions (segment by time, geography, channel, customer segment, device, product category)
+    * Step 3: Decompose the formula (e.g. Revenue = Traffic * Conversion Rate * Average Order Value)
+    * Step 4: Check external events (pricing changes, website/payment outage, seasonality, competitor campaigns)
+    * Step 5: Recommend action & estimate financial/operational impact for leadership
+    * Case Study Walkthrough: 'Sales dropped 10% last month. What do you do?' structured executive response
+
+126. Data Visualization, Storytelling & Dashboard UX
+   A) Chart Selection Matrix & Design Rules:
+    * Chart Selection: Line (trend over time), Bar/Column (compare categories), Scatter (relationship of 2 numbers)
+    * Chart Selection: Donut/Pie (part of whole, 2-4 parts max), Histogram (distribution), Funnel (conversion stages)
+    * Chart Selection: Heatmap (patterns in a grid), Waterfall (what moved a total variance)
+    * Chart Design Rules: Bars must start at zero, sort categories by value, one message per chart (title states insight)
+    * Chart Design Rules: Direct labeling (drop legends when possible), drop distracting gridlines and 3D effects, max 6 slices in pie
+   B) Dashboard UX & Business Storytelling Framework:
+    * Dashboard Design Rules: 5-Second Test (the main takeaway message is immediately obvious)
+    * Dashboard Layout: Z-pattern layout (KPI cards top-left, interactive charts middle, granular detail bottom)
+    * Dashboard Scope: One page = one purpose + one target audience; Max 6-8 visuals with generous white space
+    * Consistent Visual Language: Same metric = same color; highlight key takeaway with 1 accent color, grey for the rest
+    * Contextual Comparison: Always show benchmarks (target, last year, budget, peer performance)
+    * Storytelling Framework: Context (where are we, why now) -> Conflict (what changed or went wrong)
+    * Storytelling Framework: Evidence (one chart per point) -> So What (business implication) -> Action (what to do, who, by when)
+    * Executive Communication: Lead with the answer (headline first, supporting details on request)
+    * Visual Anti-Patterns: 3D charts, rainbow palettes, dual axes that mislead, truncated bar axes, red/green only (use blue+orange)
+
+127. AI in Analytics (2026 Edition)
+   A) AI Workflow & Tools by Job Function:
+    * 5-Step AI Analytics Workflow: Ask -> Generate -> Run -> Verify -> Explain (AI is co-pilot, verify to stay right)
+    * AI Tools for Excel: Copilot (ask formulas/charts in plain English), Agent Mode (multi-step tasks), Python in Excel (=PY)
+    * AI Tools for Power BI: Copilot report page builder, DAX draft generator, automated executive summaries, Q&A
+    * AI Tools for SQL: Text-to-SQL warehouse engines, Claude, ChatGPT, Gemini
+    * AI Tools for Python: Claude Code, GitHub Copilot in VS Code, Jupyter AI, Google Colab Gemini
+    * AI Notebooks & BI: Hex, Deepnote, Julius; Snowflake Cortex, Databricks Genie, BigQuery Gemini; Tableau Pulse, ThoughtSpot
+   B) Capabilities, Failure Modes & Verification Checklist:
+    * What AI is Good At: Rapidly drafting SQL/pandas/DAX/regex, explaining unfamiliar code or complex formulas
+    * What AI is Good At: Cleaning text, categorizing survey comments, suggesting charts, generating test cases & documentation
+    * Where AI Fails: Hallucinates column names/functions/numbers, wrong join grains (fan-out & double counting)
+    * Where AI Fails: Lacks domain business rules and metric definitions, cannot see unobserved data quality defects
+    * Analyst Verification Checklist: Compare row counts before & after each step, reconcile totals with source of truth
+    * Analyst Verification Checklist: Manually spot-check 5 random rows, audit every JOIN and WHERE clause
+    * Data Privacy & Governance: Never paste confidential, proprietary, or PII data into public AI models
+   C) Prompt Engineering (R-C-T-C-F) & In-Demand 2026 Skills:
+    * Prompt Formula R-C-T-C-F: Role (e.g. Senior Data Analyst), Context (table names, columns, grain, dialect)
+    * Prompt Formula R-C-T-C-F: Task (one clear question), Constraints (no SELECT *, use CTEs, PostgreSQL), Format (query + 2-line explanation)
+    * New Skills in Demand 2026: Prompting & critical AI code review, Semantic layer & metric definitions
+    * New Skills in Demand 2026: Data quality & governance, RAG (Retrieval-Augmented Generation) & embeddings basics
+    * New Skills in Demand 2026: Agentic workflows & automation (n8n, Zapier, Model Context Protocol - MCP)
+    * New Skills in Demand 2026: Responsible AI (privacy, algorithmic bias detection, audit trails)
+
 PROJECTS:
   Beginner:
+    * SQL Analytics Case Study (Uses: PostgreSQL, Chained CTEs, Window Functions, DENSE_RANK, Retention Cohorts)
+    * Interactive Business KPI Dashboard in Power BI (Uses: Power Query M, Star Schema, DAX Measures, Time Intelligence, Z-Pattern)
+    * Python EDA & Automated Data Cleaning Pipeline (Uses: Pandas, Missingness MCAR/MAR, Winsorization, Seaborn, Feature Engineering)
+    * End-to-End Analytics Case Study: Acquisition to Retention (Uses: Raw Data, dbt/SQL Transformations, Medallion Architecture, Dashboard, Root-Cause Impact)
     * LeetCode SQL 50 Challenges (Uses: SQL, Window Functions)
     * Exploratory Data Analysis (EDA) on Kaggle dataset (Uses: Pandas, Seaborn)
     * Interactive Stock Price Dashboard (Uses: Plotly, Streamlit, Pandas)
@@ -1672,6 +1970,15 @@ CHECKLISTS:
     - Explain difference between WHERE and HAVING
   Portfolio:
     - Publish an Airflow ETL pipeline project to GitHub
+  Data Analytics 360 Final Checklist:
+    - I can write joins + window functions
+    - I can build a pivot + dashboard
+    - I can explain mean, std, p-value
+    - I can clean data in pandas
+    - I can model a star schema
+    - I use AI and verify output
+    - I have 3+ projects on GitHub
+    - I can tell a data story
 
 RESOURCES:
   * [Tutorial] Kaggle Learn ÔÇö Pandas, Data Cleaning, Intro to SQL: https://www.kaggle.com
@@ -3886,6 +4193,31 @@ X. Additional Requested Skills
 5. Advanced & Domain-Specific Additions
    A) Specialized Topics:
     * Cross-functional Support
+
+6. Data Analytics Portfolio, Resume, Interview & 12-Week Plan
+   A) 4 Core Portfolio Projects & Real Datasets:
+    * Project 1 - SQL Case Study: Joins, Window Functions, CTEs, Business Question Answering
+    * Project 2 - Excel / Power BI Interactive Dashboard: KPIs, DAX, Star Schema, UX Design, Business Storytelling
+    * Project 3 - Python EDA & Data Cleaning: Data Quality Checks, Plots, Statistical Insights on Messy Real Data
+    * Project 4 - End-to-End Analytics Case Study: Business Question -> Data Pipeline -> Dashboard -> Decision Impact
+    * Real-World Datasets: Kaggle, data.gov.in, RBI filings, SEC company financial reports
+    * Project Presentation Format: Problem, Data, Method, Insight, Action, Link; GitHub repo + Power BI public link or video walk-through
+   B) Resume Engineering & Technical Interview Preparation:
+    * Resume Rules: One Page, Clean Format, Bullets = Action Verb + Tool + Quantified Business Impact
+    * Resume Bullet Example: 'Built Power BI executive dashboard cutting reporting turnaround time by 40%'
+    * Interview Loop Rounds: 1. Screening, 2. Live SQL Test, 3. Excel/BI Dashboard Task, 4. Business Case Study
+    * Interview Loop Rounds: 5. Stats Conceptual Check, 6. Behavioral (STAR Method), 7. Take-Home Assignment (EDA + 5 slides)
+    * Behavioral STAR Stories: 5 Prepared Stories (Conflict, Failure, Tight Deadline, Stakeholder Influence, Data Error Discovered)
+    * Top Technical Questions: DELETE vs TRUNCATE vs DROP; INNER vs LEFT JOIN; RANK vs DENSE_RANK
+    * Top Technical Questions: Mean vs Median for Skewed Data; Plain-English p-value; Measure vs Calculated Column; Missing Data & Outliers
+   C) 12-Week Study Plan, Quick Revision & Final Checklist:
+    * 12-Week Plan: Weeks 1-2 (Excel + Stats), Weeks 3-5 (SQL 50 queries), Weeks 6-7 (Python + EDA notebook)
+    * 12-Week Plan: Weeks 8-9 (Power BI, Star Schema, DAX), Weeks 10-11 (Portfolio Projects + AI Co-Pilot), Week 12 (Mock Interviews & Applications)
+    * Daily Habit (2 hrs/day): 30 min SQL, 30 min BI, 30 min Python/Stats, 30 min Project Build & LinkedIn Post
+    * One-Line Revision Rules: WHERE before GROUP BY / HAVING after; LEFT JOIN keeps all left rows; Windows keep rows vs GROUP BY collapses
+    * One-Line Revision Rules: Median beats mean for skewed data; p < 0.05 rejects H0 (not proof); Correlation != causation
+    * One-Line Revision Rules: Measures react to filters, columns do not; Star schema facts in middle; Clean first, chart second
+    * 8-Point Final Checklist: Joins & window functions, Pivots & dashboards, Mean/std/p-value, Pandas cleaning, Star schema, AI verification, 3+ projects, Storytelling
 
 
 PROJECTS:
