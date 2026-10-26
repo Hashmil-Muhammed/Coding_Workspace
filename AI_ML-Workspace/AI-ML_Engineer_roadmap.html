@@ -5752,6 +5752,26 @@ const roadmapData = [
                                 "name": "19. Study Plan + Quick Revision + Final Checklist (12-Week Study Plan, One-Line Revision Rules, 8-Point Checklist)"
                             }
                         ]
+                    },
+                    {
+                        "name": "dbt models",
+                        "children": [
+                            {
+                                "name": "dbt Model Layering Architecture (Staging, Intermediate, Marts / Dimensions / Facts)"
+                            },
+                            {
+                                "name": "Modular SQL Transformations & Jinja / Macro Reusability"
+                            },
+                            {
+                                "name": "Materialization Strategies (Views, Tables, Incremental Models, Ephemeral)"
+                            },
+                            {
+                                "name": "dbt Schema Tests (unique, not_null, relationships, accepted_values) & Custom Generic Tests"
+                            },
+                            {
+                                "name": "dbt Documentation, Lineage DAGs & Source Freshness Checks"
+                            }
+                        ]
                     }
                 ]
             },
@@ -6400,6 +6420,9 @@ const roadmapData = [
                             },
                             {
                                 "name": "dbt Testing & Documentation: Schema tests (unique, not_null, relationships, accepted_values), Lineage DAG generation"
+                            },
+                            {
+                                "name": "dbt models (Staging, Intermediate, Marts, Incremental Models, Tests & Lineage)"
                             }
                         ]
                     },
@@ -10227,6 +10250,9 @@ const roadmapData = [
                             },
                             {
                                 "name": "Workflow Automation"
+                            },
+                            {
+                                "name": "Copilot Studio"
                             }
                         ]
                     }
@@ -11327,6 +11353,51 @@ const roadmapData = [
                     },
                     {
                         "name": "Model Optimization (ONNX, TensorRT, KV Caching)"
+                    },
+                    {
+                        "name": "Copilot Studio",
+                        "children": [
+                            {
+                                "name": "Microsoft Copilot Studio (Low-Code / Pro-Code Conversational AI)"
+                            },
+                            {
+                                "name": "Custom Copilot Agent Creation & Multi-Turn Dialog Management"
+                            },
+                            {
+                                "name": "Generative AI Plugins, Actions & Power Platform Connectors"
+                            },
+                            {
+                                "name": "Azure OpenAI Service & Enterprise Knowledge Base Grounding"
+                            },
+                            {
+                                "name": "Multi-Channel Deployment (Teams, Web, Custom Apps) & Analytics"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Copilot Studio & Enterprise AI Agents",
+                "children": [
+                    {
+                        "name": "Copilot Studio Development",
+                        "children": [
+                            {
+                                "name": "Microsoft Copilot Studio (Low-Code / Pro-Code Conversational AI)"
+                            },
+                            {
+                                "name": "Custom Copilot Agent Creation & Multi-Turn Dialog Management"
+                            },
+                            {
+                                "name": "Generative AI Plugins, Actions & Power Platform Connectors"
+                            },
+                            {
+                                "name": "Azure OpenAI Service & Enterprise Knowledge Base Grounding"
+                            },
+                            {
+                                "name": "Multi-Channel Deployment (Teams, Web, Custom Apps) & Analytics"
+                            }
+                        ]
                     }
                 ]
             }
@@ -12446,13 +12517,22 @@ const roadmapData = [
                         ]
                     },
                     {
-                        "name": "Infrastructure as Code",
+                        "name": "Infrastructure-as-Code (IaC)",
                         "children": [
                             {
                                 "name": "Terraform"
                             },
                             {
                                 "name": "Pulumi"
+                            },
+                            {
+                                "name": "Terraform, OpenTofu & Pulumi"
+                            },
+                            {
+                                "name": "State Management, Remote Backends & Modules"
+                            },
+                            {
+                                "name": "Automated Cluster & GPU Infrastructure Provisioning"
                             }
                         ]
                     }
@@ -13469,6 +13549,72 @@ const roadmapData = [
                             },
                             {
                                 "name": "Data Pipeline Error Analysis & Corrective Actions"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Kubeflow",
+                        "children": [
+                            {
+                                "name": "Kubeflow Machine Learning Toolkit on Kubernetes"
+                            },
+                            {
+                                "name": "Kubeflow Pipelines (KFP) for End-to-End ML Workflows"
+                            },
+                            {
+                                "name": "Katib Hyperparameter Tuning & Neural Architecture Search (NAS)"
+                            },
+                            {
+                                "name": "KServe / KFServing Multi-Model Serving & Autoscaling"
+                            },
+                            {
+                                "name": "Kubeflow Notebooks & Multi-User Collaboration"
+                            },
+                            {
+                                "name": "Kubeflow Operators & Custom Resource Definitions (CRDs)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "W&B",
+                        "children": [
+                            {
+                                "name": "Weights & Biases (W&B) Experiment Tracking & Real-Time Run Metric Logging"
+                            },
+                            {
+                                "name": "Hyperparameter Sweeps (Bayesian, Random, Grid Optimization)"
+                            },
+                            {
+                                "name": "W&B Artifacts (Dataset & Model Checkpoint Versioning)"
+                            },
+                            {
+                                "name": "W&B Model Registry & Lifecycle Management"
+                            },
+                            {
+                                "name": "System & GPU Hardware Utilization Monitoring"
+                            },
+                            {
+                                "name": "W&B Weave / Prompts & LLM Evaluation Tracking"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Infrastructure-as-Code (IaC)",
+                        "children": [
+                            {
+                                "name": "Declarative Cloud Infrastructure Provisioning (Terraform, OpenTofu, Pulumi, CloudFormation)"
+                            },
+                            {
+                                "name": "State Management, Remote Backends & State Locking"
+                            },
+                            {
+                                "name": "Terraform Modules & Reusable Cloud Blueprints for ML Platforms"
+                            },
+                            {
+                                "name": "Automated Provisioning of Kubernetes (EKS, GKE, AKS) & GPU Clusters"
+                            },
+                            {
+                                "name": "IaC Security Scanning, Policy-as-Code (OPA / Checkov) & CI/CD GitOps Workflows"
                             }
                         ]
                     }

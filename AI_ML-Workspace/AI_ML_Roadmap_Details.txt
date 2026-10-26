@@ -1175,6 +1175,12 @@ X. Additional Requested Skills
     * Business Intelligence (BI)
     * BFSI
     * Risk & Compliance Management
+    * dbt models
+      - dbt Model Layering Architecture (Staging, Intermediate, Marts / Dimensions / Facts)
+      - Modular SQL Transformations & Jinja / Macro Reusability
+      - Materialization Strategies (Views, Tables, Incremental Models, Ephemeral)
+      - dbt Schema Tests (unique, not_null, relationships, accepted_values) & Custom Generic Tests
+      - dbt Documentation, Lineage DAGs & Source Freshness Checks
    B) Data Analytics 360 (2026 Edition Master Curriculum & Reference Index):
     * 1. What is Data Analytics? (Data vs Info, Structured/Semi/Unstructured, NOIR Scales of Measurement, Value Chain, Real-World Domains)
     * 2. Data Analyst Roadmap & Career Progression (8-Step Learning Path, Tools Ecosystem, Career Ladder Junior to Manager)
@@ -1844,6 +1850,7 @@ X. Additional Requested Skills
     * Slowly Changing Dimensions (SCD): SCD Type 1 (overwrite current value) vs SCD Type 2 (maintain history with start/end dates)
     * Medallion Architecture: Bronze (raw ingestion), Silver (cleaned/filtered/conformed), Gold (business aggregations & marts)
     * dbt in One Box: Modular SQL models with ref('stg_orders'), Jinja templating, incremental models
+    * dbt models: Staging, Intermediate, Marts, Incremental Materializations, and Lineage DAGs
     * dbt Testing & Documentation: Schema tests (unique, not_null, relationships, accepted_values), Lineage DAG generation
    C) Data Governance, Tool Chooser & Best Habits:
     * Data Governance: Data Catalog & Lineage, Access Control, Masking of PII (Personally Identifiable Information)
@@ -2784,6 +2791,12 @@ SKILLS:
 
 X. Additional Requested Skills
    A) Core:
+    * Copilot Studio
+      - Microsoft Copilot Studio (Low-Code / Pro-Code Conversational AI)
+      - Custom Copilot Agent Creation & Multi-Turn Dialog Management
+      - Generative AI Plugins, Actions & Power Platform Connectors
+      - Azure OpenAI Service & Enterprise Knowledge Base Grounding
+      - Multi-Channel Deployment (Teams, Web, Custom Apps) & Analytics
     * Multimodal Agentic AI
     * Retrieval Pipelines
     * LLM Applications
@@ -3038,6 +3051,9 @@ X. Additional Requested Skills
     * Prompting
     * n8n
     * Workflow Automation
+    * Copilot Studio
+      - Custom Conversational Copilots & Enterprise Agent Studio
+      - Plugin Architecture, Power Platform Actions & Generative Answers
 
 8. LLMOps & Serving
    A) LLM Evaluation & Observability:
@@ -3630,6 +3646,26 @@ X. Additional Requested Skills
       - Telemetry, System Log & Trace Deep Dive
       - Model Regression & Misclassification Root-Cause Analysis
       - Data Pipeline Error Analysis & Corrective Actions
+    * Kubeflow
+      - Kubeflow Machine Learning Toolkit on Kubernetes
+      - Kubeflow Pipelines (KFP) for End-to-End ML Workflows
+      - Katib Hyperparameter Tuning & Neural Architecture Search (NAS)
+      - KServe / KFServing Multi-Model Serving & Autoscaling
+      - Kubeflow Notebooks & Multi-User Collaboration
+      - Kubeflow Operators & Custom Resource Definitions (CRDs)
+    * W&B
+      - Weights & Biases (W&B) Experiment Tracking & Real-Time Run Metric Logging
+      - Hyperparameter Sweeps (Bayesian, Random, Grid Optimization)
+      - W&B Artifacts (Dataset & Model Checkpoint Versioning)
+      - W&B Model Registry & Lifecycle Management
+      - System & GPU Hardware Utilization Monitoring
+      - W&B Weave / Prompts & LLM Evaluation Tracking
+    * Infrastructure-as-Code (IaC)
+      - Declarative Cloud Infrastructure Provisioning (Terraform, OpenTofu, Pulumi, CloudFormation)
+      - State Management, Remote Backends & State Locking
+      - Terraform Modules & Reusable Cloud Blueprints for ML Platforms
+      - Automated Provisioning of Kubernetes (EKS, GKE, AKS) & GPU Clusters
+      - IaC Security Scanning, Policy-as-Code (OPA / Checkov) & CI/CD GitOps Workflows
 
 
 1. Production ML Lifecycle & MLOps Core
@@ -3762,9 +3798,12 @@ X. Additional Requested Skills
     * Shadow Deployment
     * Blue Green Deployment
     * A/B Deployment
-   C) Infrastructure as Code:
+   C) Infrastructure-as-Code (IaC):
+    * Infrastructure as Code Concepts & Declarative Blueprints
     * Terraform
     * Pulumi
+    * State Management, Remote Backends & Modules
+    * Automated Cluster & GPU Infrastructure Provisioning
 
 6. Model Monitoring in Production
    A) Monitoring:
