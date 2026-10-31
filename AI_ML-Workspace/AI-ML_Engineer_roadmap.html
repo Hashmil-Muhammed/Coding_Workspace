@@ -5772,6 +5772,46 @@ const roadmapData = [
                                 "name": "dbt Documentation, Lineage DAGs & Source Freshness Checks"
                             }
                         ]
+                    },
+                    {
+                        "name": "Hubspot",
+                        "children": [
+                            {
+                                "name": "HubSpot CRM & Inbound Marketing Platform Architecture"
+                            },
+                            {
+                                "name": "Contact, Company, Deal & Pipeline Data Modeling"
+                            },
+                            {
+                                "name": "Marketing Campaign Attribution, Lead Scoring & Lifecycle Analytics"
+                            },
+                            {
+                                "name": "HubSpot REST API, Webhooks & Automated ETL / Data Ingestion"
+                            },
+                            {
+                                "name": "Custom Reporting, Sales Funnel Dashboards & Multi-Touch Attribution"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Descriptive & Diagnostic Analysis",
+                        "children": [
+                            {
+                                "name": "Descriptive Analysis Frameworks (Data Summarization, Central Tendency, Spread, Frequency Distributions, KPI Aggregation)"
+                            },
+                            {
+                                "name": "Diagnostic Analysis & Root-Cause Discovery (Drill-Down, Variance Decomposition, Anomaly Detection)"
+                            },
+                            {
+                                "name": "Driver Analysis, Factor Analysis & Segment Performance Comparisons"
+                            },
+                            {
+                                "name": "Correlation vs Causation Analysis & Hypothesis Formulation"
+                            },
+                            {
+                                "name": "Diagnostic Visualizations (Waterfall Variance Charts, Pareto Analysis, Funnel Drop-off Auditing)"
+                            }
+                        ]
                     }
                 ]
             },
@@ -6651,6 +6691,90 @@ const roadmapData = [
                             },
                             {
                                 "name": "New Skills in Demand 2026: Responsible AI (privacy, algorithmic bias detection, audit trails)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "CRM & Marketing Analytics (HubSpot & Enterprise Platforms)",
+                "children": [
+                    {
+                        "name": "HubSpot Architecture & CRM Data Modeling",
+                        "children": [
+                            {
+                                "name": "HubSpot Objects (Contacts, Companies, Deals, Tickets, Custom Objects)"
+                            },
+                            {
+                                "name": "Pipeline Stages, Deal Probability & Sales Funnel Analytics"
+                            },
+                            {
+                                "name": "Lead Scoring, Attribution Models (First-touch, Last-touch, Multi-touch)"
+                            },
+                            {
+                                "name": "Marketing Automation Workflows & Campaign Performance Tracking"
+                            },
+                            {
+                                "name": "Inbound Marketing Analytics, Website Traffic & Conversion Tracking"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Integration, APIs & Data Engineering",
+                        "children": [
+                            {
+                                "name": "HubSpot REST APIs & Webhook Event Streaming"
+                            },
+                            {
+                                "name": "Ingestion into Cloud Warehouses (Snowflake, BigQuery via Fivetran/Airbyte)"
+                            },
+                            {
+                                "name": "Data Harmonization with Product/Billing Systems"
+                            },
+                            {
+                                "name": "Customer Lifetime Value (CLV) & Churn Diagnostics using HubSpot Data"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Descriptive & Diagnostic Analysis",
+                "children": [
+                    {
+                        "name": "Descriptive Analytics Framework",
+                        "children": [
+                            {
+                                "name": "Historical Performance Baselines & KPI Metrics Calculation"
+                            },
+                            {
+                                "name": "Frequency Distributions, Percentiles & Central Tendency Summarization"
+                            },
+                            {
+                                "name": "Multidimensional Data Slicing & Cross-Tabulation"
+                            },
+                            {
+                                "name": "Executive Reporting & Operational Dashboard Metrics"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Diagnostic Analytics & Root-Cause Discovery",
+                        "children": [
+                            {
+                                "name": "Variance Decomposition (Price-Volume-Mix Analysis, Margin Walk)"
+                            },
+                            {
+                                "name": "Drill-Down & Roll-Up Dimensional Analysis"
+                            },
+                            {
+                                "name": "Cohort & Subgroup Divergence Identification"
+                            },
+                            {
+                                "name": "5 Whys Methodology & Hypothesis-Driven Problem Solving"
+                            },
+                            {
+                                "name": "Diagnostic Visuals (Waterfall Charts, Pareto 80/20 Rule, Sankey Flow)"
                             }
                         ]
                     }
@@ -9259,6 +9383,71 @@ const roadmapData = [
                             },
                             {
                                 "name": "Unstructured Document Ingestion & Vector Indexing Pipelines"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CUDA & GPU Acceleration",
+                        "children": [
+                            {
+                                "name": "NVIDIA CUDA Toolkit & GPU Hardware Architecture (Streaming Multiprocessors, Tensor Cores)"
+                            },
+                            {
+                                "name": "PyTorch GPU Acceleration (CUDA Tensors, cuDNN, Device Management & Asynchronous Execution)"
+                            },
+                            {
+                                "name": "Mixed Precision Training (FP16 / BF16 Automatic Mixed Precision - AMP, GradScaler)"
+                            },
+                            {
+                                "name": "Multi-GPU & Distributed Training (DistributedDataParallel - DDP, FSDP, DeepSpeed)"
+                            },
+                            {
+                                "name": "GPU Memory Management & Profiling (VRAM Allocation, PyTorch Profiler, NVIDIA Nsight, nvidia-smi)"
+                            },
+                            {
+                                "name": "Kernel Acceleration & Fusion (torch.compile, OpenAI Triton Kernels, FlashAttention, TensorRT)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "CUDA & GPU Acceleration for Deep Learning",
+                "children": [
+                    {
+                        "name": "CUDA Architecture & GPU Computing Fundamentals",
+                        "children": [
+                            {
+                                "name": "Streaming Multiprocessors (SMs), Warp Scheduling & Thread Hierarchy (Grids, Blocks, Threads)"
+                            },
+                            {
+                                "name": "Shared Memory, Global Memory, Register File & Memory Coalescing"
+                            },
+                            {
+                                "name": "Tensor Cores & Matrix Multiply-Accumulate (MMA) Pipelines"
+                            },
+                            {
+                                "name": "cuDNN, cuBLAS & NCCL Communication Primitives"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Deep Learning Acceleration & Framework Integration",
+                        "children": [
+                            {
+                                "name": "PyTorch CUDA Semantics, Non-Blocking Memory Transfers & Streams"
+                            },
+                            {
+                                "name": "Automatic Mixed Precision (AMP - FP16 / BF16) & Loss Scaling"
+                            },
+                            {
+                                "name": "Distributed GPU Training (DDP, ZeRO / DeepSpeed, Megatron-LM Parallelism)"
+                            },
+                            {
+                                "name": "Custom GPU Kernels with OpenAI Triton & Torch Inductor"
+                            },
+                            {
+                                "name": "GPU Profiling & Benchmarking (PyTorch Profiler, Nsight Systems, Nsight Compute)"
                             }
                         ]
                     }
@@ -13615,6 +13804,26 @@ const roadmapData = [
                             },
                             {
                                 "name": "IaC Security Scanning, Policy-as-Code (OPA / Checkov) & CI/CD GitOps Workflows"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CUDA & GPU Acceleration",
+                        "children": [
+                            {
+                                "name": "Production GPU Cluster Management (Multi-Instance GPU - MIG, GPU Slicing)"
+                            },
+                            {
+                                "name": "NVIDIA GPU Operator for Kubernetes & Dynamic GPU Allocation"
+                            },
+                            {
+                                "name": "High-Performance GPU Serving (NVIDIA Triton Inference Server, vLLM, TensorRT-LLM)"
+                            },
+                            {
+                                "name": "CUDA Memory Optimization & Out-of-Memory (OOM) Troubleshooting"
+                            },
+                            {
+                                "name": "Multi-Node GPU Networking & InfiniBand / RoCE Interconnects"
                             }
                         ]
                     }

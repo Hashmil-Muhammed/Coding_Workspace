@@ -1181,6 +1181,18 @@ X. Additional Requested Skills
       - Materialization Strategies (Views, Tables, Incremental Models, Ephemeral)
       - dbt Schema Tests (unique, not_null, relationships, accepted_values) & Custom Generic Tests
       - dbt Documentation, Lineage DAGs & Source Freshness Checks
+    * Hubspot
+      - HubSpot CRM & Inbound Marketing Platform Architecture
+      - Contact, Company, Deal & Pipeline Data Modeling
+      - Marketing Campaign Attribution, Lead Scoring & Lifecycle Analytics
+      - HubSpot REST API, Webhooks & Automated ETL / Data Ingestion
+      - Custom Reporting, Sales Funnel Dashboards & Multi-Touch Attribution
+    * Descriptive & Diagnostic Analysis
+      - Descriptive Analysis Frameworks (Data Summarization, Central Tendency, Spread, Frequency Distributions, KPI Aggregation)
+      - Diagnostic Analysis & Root-Cause Discovery (Drill-Down, Variance Decomposition, Anomaly Detection)
+      - Driver Analysis, Factor Analysis & Segment Performance Comparisons
+      - Correlation vs Causation Analysis & Hypothesis Formulation
+      - Diagnostic Visualizations (Waterfall Variance Charts, Pareto Analysis, Funnel Drop-off Auditing)
    B) Data Analytics 360 (2026 Edition Master Curriculum & Reference Index):
     * 1. What is Data Analytics? (Data vs Info, Structured/Semi/Unstructured, NOIR Scales of Measurement, Value Chain, Real-World Domains)
     * 2. Data Analyst Roadmap & Career Progression (8-Step Learning Path, Tools Ecosystem, Career Ladder Junior to Manager)
@@ -1924,6 +1936,32 @@ X. Additional Requested Skills
     * New Skills in Demand 2026: Agentic workflows & automation (n8n, Zapier, Model Context Protocol - MCP)
     * New Skills in Demand 2026: Responsible AI (privacy, algorithmic bias detection, audit trails)
 
+128. CRM & Marketing Analytics (HubSpot & Enterprise Platforms)
+   A) HubSpot Architecture & CRM Data Modeling:
+    * HubSpot Objects (Contacts, Companies, Deals, Tickets, Custom Objects)
+    * Pipeline Stages, Deal Probability & Sales Funnel Analytics
+    * Lead Scoring, Attribution Models (First-touch, Last-touch, Multi-touch)
+    * Marketing Automation Workflows & Campaign Performance Tracking
+    * Inbound Marketing Analytics, Website Traffic & Conversion Tracking
+   B) Integration, APIs & Data Engineering:
+    * HubSpot REST APIs & Webhook Event Streaming
+    * Ingestion into Cloud Warehouses (Snowflake, BigQuery via Fivetran/Airbyte)
+    * Data Harmonization with Product/Billing Systems
+    * Customer Lifetime Value (CLV) & Churn Diagnostics using HubSpot Data
+
+129. Descriptive & Diagnostic Analysis
+   A) Descriptive Analytics Framework:
+    * Historical Performance Baselines & KPI Metrics Calculation
+    * Frequency Distributions, Percentiles & Central Tendency Summarization
+    * Multidimensional Data Slicing & Cross-Tabulation
+    * Executive Reporting & Operational Dashboard Metrics
+   B) Diagnostic Analytics & Root-Cause Discovery:
+    * Variance Decomposition (Price-Volume-Mix Analysis, Margin Walk)
+    * Drill-Down & Roll-Up Dimensional Analysis
+    * Cohort & Subgroup Divergence Identification
+    * 5 Whys Methodology & Hypothesis-Driven Problem Solving
+    * Diagnostic Visuals (Waterfall Charts, Pareto 80/20 Rule, Sankey Flow)
+
 PROJECTS:
   Beginner:
     * SQL Analytics Case Study (Uses: PostgreSQL, Chained CTEs, Window Functions, DENSE_RANK, Retention Cohorts)
@@ -2419,6 +2457,13 @@ X. Additional Requested Skills
       - Table, Form & Key-Value Pair Extraction
       - Multi-modal Document Parsing (PDF, Scanned Docs, Images)
       - Unstructured Document Ingestion & Vector Indexing Pipelines
+    * CUDA & GPU Acceleration
+      - NVIDIA CUDA Toolkit & GPU Hardware Architecture (Streaming Multiprocessors, Tensor Cores)
+      - PyTorch GPU Acceleration (CUDA Tensors, cuDNN, Device Management & Asynchronous Execution)
+      - Mixed Precision Training (FP16 / BF16 Automatic Mixed Precision - AMP, GradScaler)
+      - Multi-GPU & Distributed Training (DistributedDataParallel - DDP, FSDP, DeepSpeed)
+      - GPU Memory Management & Profiling (VRAM Allocation, PyTorch Profiler, NVIDIA Nsight, nvidia-smi)
+      - Kernel Acceleration & Fusion (torch.compile, OpenAI Triton Kernels, FlashAttention, TensorRT)
 
 
 1. Deep Learning Foundations (PyTorch)
@@ -2731,6 +2776,19 @@ X. Additional Requested Skills
 103. Vision-Language Models (VLMs)
    A) Core:
     * Vision-Language Models (VLMs)
+
+104. CUDA & GPU Acceleration for Deep Learning
+   A) CUDA Architecture & GPU Computing Fundamentals:
+    * Streaming Multiprocessors (SMs), Warp Scheduling & Thread Hierarchy (Grids, Blocks, Threads)
+    * Shared Memory, Global Memory, Register File & Memory Coalescing
+    * Tensor Cores & Matrix Multiply-Accumulate (MMA) Pipelines
+    * cuDNN, cuBLAS & NCCL Communication Primitives
+   B) Deep Learning Acceleration & Framework Integration:
+    * PyTorch CUDA Semantics, Non-Blocking Memory Transfers & Streams
+    * Automatic Mixed Precision (AMP - FP16 / BF16) & Loss Scaling
+    * Distributed GPU Training (DDP, ZeRO / DeepSpeed, Megatron-LM Parallelism)
+    * Custom GPU Kernels with OpenAI Triton & Torch Inductor
+    * GPU Profiling & Benchmarking (PyTorch Profiler, Nsight Systems, Nsight Compute)
 
 PROJECTS:
   Beginner:
@@ -3666,6 +3724,12 @@ X. Additional Requested Skills
       - Terraform Modules & Reusable Cloud Blueprints for ML Platforms
       - Automated Provisioning of Kubernetes (EKS, GKE, AKS) & GPU Clusters
       - IaC Security Scanning, Policy-as-Code (OPA / Checkov) & CI/CD GitOps Workflows
+    * CUDA & GPU Acceleration
+      - Production GPU Cluster Management (Multi-Instance GPU - MIG, GPU Slicing)
+      - NVIDIA GPU Operator for Kubernetes & Dynamic GPU Allocation
+      - High-Performance GPU Serving (NVIDIA Triton Inference Server, vLLM, TensorRT-LLM)
+      - CUDA Memory Optimization & Out-of-Memory (OOM) Troubleshooting
+      - Multi-Node GPU Networking & InfiniBand / RoCE Interconnects
 
 
 1. Production ML Lifecycle & MLOps Core
